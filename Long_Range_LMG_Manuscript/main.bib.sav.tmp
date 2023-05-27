@@ -1,0 +1,694 @@
+@article{yamada_localization_2022,
+	title = {Localization and delocalization properties in quasi-periodically-driven one-dimensional disordered systems},
+	volume = {105},
+	url = {https://link.aps.org/doi/10.1103/PhysRevE.105.054201},
+	doi = {10.1103/PhysRevE.105.054201},
+	abstract = {Localization and delocalization of quantum diffusion in a time-continuous one-dimensional Anderson model perturbed by the quasiperiodic harmonic oscillations of M colors is investigated systematically, which has been partly reported by a preliminary Letter [H. S. Yamada and K. S. Ikeda, Phys. Rev. E 103, L040202 (2021)]. We investigate in detail the localization-delocalization characteristics of the model with respect to three parameters: the disorder strength W, the perturbation strength ε, and the number of colors, M, which plays the similar role of spatial dimension. In particular, attention is focused on the presence of localization-delocalization transition ({LDT}) and its critical properties. For M≥3 the {LDT} exists and a normal diffusion is recovered above a critical strength ε, and the characteristics of diffusion dynamics mimic the diffusion process predicted for the stochastically perturbed Anderson model even though M is not large. These results are compared with the results of discrete-time quantum maps, i.e., the Anderson map and the standard map. Further, the features of delocalized dynamics are discussed in comparison with a limit model which has no static disordered part.},
+	pages = {054201},
+	number = {5},
+	journaltitle = {Phys. Rev. E},
+	author = {Yamada, Hiroaki S. and Ikeda, Kensuke S.},
+	urldate = {2023-01-23},
+	date = {2022-05-02},
+	file = {APS Snapshot:/home/mahi/Zotero/storage/PMRBCTPB/Yamada and Ikeda - 2022 - Localization and delocalization properties in quas.html:text/html},
+}
+
+@article{bordia_periodically_2017,
+	title = {Periodically driving a many-body localized quantum system},
+	volume = {13},
+	rights = {2017 Nature Publishing Group},
+	issn = {1745-2481},
+	url = {https://www.nature.com/articles/nphys4020},
+	doi = {10.1038/nphys4020},
+	abstract = {Periodically driven quantum many-body systems can display rich dynamics and host exotic phases that are absent in their undriven counterparts. However, in the presence of interactions such systems are expected to eventually heat up to a simple infinite-temperature state. One possible exception is a periodically driven many-body localized system, in which heating is precluded by strong disorder. Here, we use a gas of ultracold fermionic potassium atoms in optical lattices to prepare and probe such a driven system and show that it is indeed stable for high enough driving frequency. Moreover, we find a novel regime in which the system is exceedingly stable even at low drive frequencies, a particular feature of our driving scheme. Our experimental findings are well supported by numerical simulations and may provide avenues for engineering novel phases in periodically driven matter.},
+	pages = {460--464},
+	number = {5},
+	journaltitle = {Nature Phys},
+	author = {Bordia, Pranjal and Lüschen, Henrik and Schneider, Ulrich and Knap, Michael and Bloch, Immanuel},
+	urldate = {2023-01-23},
+	date = {2017-05},
+	langid = {english},
+	keywords = {Phase transitions and critical phenomena, Ultracold gases},
+}
+
+@article{haugland_changing_2021,
+	title = {The changing notion of chimera states, a critical review},
+	volume = {2},
+	issn = {2632-072X},
+	url = {https://dx.doi.org/10.1088/2632-072X/ac0810},
+	doi = {10.1088/2632-072X/ac0810},
+	abstract = {Chimera states, states of coexistence of synchronous and asynchronous motion, have been a subject of extensive research since they were first given a name in 2004. Increased interest has lead to their discovery in ever new settings, both theoretical and experimental. Less well-discussed is the fact that successive results have also broadened the notion of what actually constitutes a chimera state. In this article, we critically examine how the results for different model types and coupling schemes, as well as varying implicit interpretations of terms such as coexistence, synchrony and incoherence, have influenced the common understanding of what constitutes a chimera. We cover both theoretical and experimental systems, address various chimera-derived terms that have emerged over the years and finally reflect on the question of chimera states in real-world contexts.},
+	pages = {032001},
+	number = {3},
+	journaltitle = {J. Phys. Complex.},
+	author = {Haugland, Sindre W.},
+	urldate = {2023-01-21},
+	date = {2021-06},
+	langid = {english},
+	file = {IOP Full Text PDF:/home/mahi/Zotero/storage/HRGDECW6/Haugland - 2021 - The changing notion of chimera states, a critical .pdf:application/pdf},
+}
+
+@book{reichl_transition_2021,
+	location = {Cham},
+	title = {The Transition to Chaos: Conservative Classical and Quantum Systems},
+	volume = {200},
+	isbn = {978-3-030-63533-6 978-3-030-63534-3},
+	url = {https://link.springer.com/10.1007/978-3-030-63534-3},
+	series = {Fundamental Theories of Physics},
+	shorttitle = {The Transition to Chaos},
+	publisher = {Springer International Publishing},
+	author = {Reichl, Linda},
+	urldate = {2023-01-23},
+	date = {2021},
+	langid = {english},
+	doi = {10.1007/978-3-030-63534-3},
+	keywords = {fractal phase space structure, nonlinear resonance, classical and quantum, open quantum system, path integral, quantum billiards, quantum chaos, quantum chaotic system, radiation induced chaos, signatures of chaos, the Arnold web, transition to chaos},
+	file = {Submitted Version:/home/mahi/Zotero/storage/U6E2AU7B/Reichl - 2021 - The Transition to Chaos Conservative Classical an.pdf:application/pdf},
+}
+
+@article{sahoo_periodically_2019,
+	title = {Periodically Driven Many-Body Systems: A Floquet Density Matrix Renormalization Group Study},
+	url = {https://www.semanticscholar.org/paper/Periodically-Driven-Many-Body-Systems%3A-A-Floquet-Sahoo-Schneider/52f9de5e8dab99c85f89c668b6b2c839711d8064},
+	shorttitle = {Periodically Driven Many-Body Systems},
+	abstract = {Driving a quantum system periodically in time can profoundly alter its long-time correlations and give rise to exotic quantum states of matter. The complexity of the combination of many-body correlations and dynamic manipulations has the potential to uncover a whole field of new phenomena, but the theoretical and numerical understanding becomes extremely difficult. We now propose a promising numerical method by generalizing the density matrix renormalization group to a superposition of Fourier components of periodically driven many-body systems using Floquet theory. With this method we can study the full time-dependent quantum solution in a large parameter range for all evolution times, beyond the commonly used high-frequency approximations. Numerical results are presented for the isotropic Heisenberg antiferromagnetic spin-1/2 chain under both local(edge) and global driving for spin-spin correlations and temporal fluctuations. As the frequency is lowered, we demonstrate that more and more Fourier components become relevant and determine strong length- and frequency-dependent changes of the quantum correlations that cannot be described by effective static models.},
+	journaltitle = {{arXiv}: Strongly Correlated Electrons},
+	author = {Sahoo, S. and Schneider, I. and Eggert, S.},
+	urldate = {2023-01-23},
+	date = {2019-05-31},
+}
+
+@article{roy_fate_2015,
+	title = {Fate of dynamical many-body localization in the presence of disorder},
+	volume = {91},
+	url = {https://link.aps.org/doi/10.1103/PhysRevB.91.121106},
+	doi = {10.1103/PhysRevB.91.121106},
+	abstract = {Dynamical localization is one of the most startling manifestations of quantum interference, where the evolution of a simple system is frozen out under a suitably tuned coherent periodic drive. Here we show that, although any randomness in the interactions of a many-body system kills dynamical localization eventually, spectacular remnants survive even when the disorder is strong. We consider a disordered quantum Ising chain where the transverse magnetization relaxes exponentially with time with a decay time-scale τ due to random longitudinal interactions between the spins. We show that, under external periodic drive, this relaxation slows down (τ shoots up) by orders of magnitude as the ratio of the drive frequency ω and amplitude h0 tends to certain specific values (the freezing condition). If ω is increased while maintaining the ratio h0/ω at a fixed freezing value, then τ diverges exponentially with ω. The results can be easily extended for a larger family of disordered fermionic and bosonic systems.},
+	pages = {121106},
+	number = {12},
+	journaltitle = {Phys. Rev. B},
+	author = {Roy, Analabha and Das, Arnab},
+	urldate = {2023-01-23},
+	date = {2015-03-13},
+	file = {APS Snapshot:/home/mahi/Zotero/storage/MAR7J5XA/Roy and Das - 2015 - Fate of dynamical many-body localization in the pr.html:text/html},
+}
+
+@article{campa_statistical_2009,
+	title = {Statistical mechanics and dynamics of solvable models with long-range interactions},
+	volume = {480},
+	issn = {0370-1573},
+	url = {https://www.sciencedirect.com/science/article/pii/S0370157309001586},
+	doi = {10.1016/j.physrep.2009.07.001},
+	abstract = {For systems with long-range interactions, the two-body potential decays at large distances as V(r)∼1/rα, with α≤d, where d is the space dimension. Examples are: gravitational systems, two-dimensional hydrodynamics, two-dimensional elasticity, charged and dipolar systems. Although such systems can be made extensive, they are intrinsically non additive: the sum of the energies of macroscopic subsystems is not equal to the energy of the whole system. Moreover, the space of accessible macroscopic thermodynamic parameters might be non convex. The violation of these two basic properties of the thermodynamics of short-range systems is at the origin of ensemble inequivalence. In turn, this inequivalence implies that specific heat can be negative in the microcanonical ensemble, and temperature jumps can appear at microcanonical first order phase transitions. The lack of convexity allows us to easily spot regions of parameter space where ergodicity may be broken. Historically, negative specific heat had been found for gravitational systems and was thought to be a specific property of a system for which the existence of standard equilibrium statistical mechanics itself was doubted. Realizing that such properties may be present for a wider class of systems has renewed the interest in long-range interactions. Here, we present a comprehensive review of the recent advances on the statistical mechanics and out-of-equilibrium dynamics of solvable systems with long-range interactions. The core of the review consists in the detailed presentation of the concept of ensemble inequivalence, as exemplified by the exact solution, in the microcanonical and canonical ensembles, of mean-field type models. Remarkably, the entropy of all these models can be obtained using the method of large deviations. Long-range interacting systems display an extremely slow relaxation towards thermodynamic equilibrium and, what is more striking, the convergence towards quasi-stationary states. The understanding of such unusual relaxation process is obtained by the introduction of an appropriate kinetic theory based on the Vlasov equation. A statistical approach, founded on a variational principle introduced by Lynden-Bell, is shown to explain qualitatively and quantitatively some features of quasi-stationary states. Generalizations to models with both short and long-range interactions, and to models with weakly decaying interactions, show the robustness of the effects obtained for mean-field models.},
+	pages = {57--159},
+	number = {3},
+	journaltitle = {Physics Reports},
+	author = {Campa, Alessandro and Dauxois, Thierry and Ruffo, Stefano},
+	urldate = {2023-01-23},
+	date = {2009-09-01},
+	langid = {english},
+	keywords = {Ensemble inequivalence, Ergodicity breaking, Long-range interactions, Negative specific heat, Quasi-stationary states, Vlasov equation},
+	file = {ScienceDirect Snapshot:/home/mahi/Zotero/storage/W4R7K4SU/Campa et al. - 2009 - Statistical mechanics and dynamics of solvable mod.html:text/html},
+}
+
+@article{eisele_multiple_1988,
+	title = {Multiple phase transitions in the generalized Curie-Weiss model},
+	volume = {52},
+	issn = {1572-9613},
+	url = {https://doi.org/10.1007/BF01016409},
+	doi = {10.1007/BF01016409},
+	abstract = {The generalized Curie-Weiss model is an extension of the classical Curie-Weiss model in which the quadratic interaction function of the mean spin value is replaced by a more general interaction function. It is shown that the generalized Curie-Weiss model can have a sequence of phase transitions at different critical temperatures. Both first-order and second-order phase transitions can occur, and explicit criteria for the two types are given. Three examples of generalized Curie-Weiss models are worked out in detail, including one example with infinitely many phase transitions. A number of results are derived using large-deviation techniques.},
+	pages = {161--202},
+	number = {1},
+	journaltitle = {J Stat Phys},
+	author = {Eisele, Theodor and Ellis, Richard S.},
+	urldate = {2023-01-23},
+	date = {1988-07-01},
+	langid = {english},
+	keywords = {first-order phase transition, Generalized Curie-Weiss model, large deviations, second-order phase transition, specific Gibbs free energy},
+}
+
+@article{canning_class_1992,
+	title = {A class of long range Ising spin models described by Curie-Weiss mean field theory},
+	volume = {185},
+	issn = {0378-4371},
+	url = {https://www.sciencedirect.com/science/article/pii/0378437192904642},
+	doi = {10.1016/0378-4371(92)90464-2},
+	abstract = {We show that Ising spin models where the interaction matrix has eigenvalues whose number and values are finite and invariant with respect to N (the system size) in the limit N → ∞ are exactly solvable (subject also to a few other weaker conditions on the eigenvectors). Systems of this type are described by Curie-Weiss mean field type equations (〈Si〉 = tanh β (Σ{iJij} 〈Sj〉 )), which we shall refer to as the naive mean field type equations ({NMFE}), to distinguish them from other mean field equations which have an extra “reaction term”. Some models for which {NMFE} are valid will briefly be reviewed. It is found that, for certain choices of the interaction architecture, ferromagnetic systems (Jij ⩾ 0) exhibit weak spin-glass-like behaviour in the sense that they have many stable states and not just those associated with ferromagnetism. These extra stable states appear discontinuously. The application of these techniques to structured models of spin glasses and neural networks will also be briefly reviewed.},
+	pages = {254--260},
+	number = {1},
+	journaltitle = {Physica A: Statistical Mechanics and its Applications},
+	author = {Canning, Andrew},
+	urldate = {2023-01-23},
+	date = {1992-06-15},
+	langid = {english},
+	file = {ScienceDirect Snapshot:/home/mahi/Zotero/storage/2FVAPKQ6/Canning - 1992 - A class of long range Ising spin models described .html:text/html},
+}
+
+@article{roy_fate_2015-1,
+	title = {Fate of dynamical many-body localization in the presence of disorder},
+	volume = {91},
+	url = {https://link.aps.org/doi/10.1103/PhysRevB.91.121106},
+	doi = {10.1103/PhysRevB.91.121106},
+	abstract = {Dynamical localization is one of the most startling manifestations of quantum interference, where the evolution of a simple system is frozen out under a suitably tuned coherent periodic drive. Here we show that, although any randomness in the interactions of a many-body system kills dynamical localization eventually, spectacular remnants survive even when the disorder is strong. We consider a disordered quantum Ising chain where the transverse magnetization relaxes exponentially with time with a decay time-scale τ due to random longitudinal interactions between the spins. We show that, under external periodic drive, this relaxation slows down (τ shoots up) by orders of magnitude as the ratio of the drive frequency ω and amplitude h0 tends to certain specific values (the freezing condition). If ω is increased while maintaining the ratio h0/ω at a fixed freezing value, then τ diverges exponentially with ω. The results can be easily extended for a larger family of disordered fermionic and bosonic systems.},
+	pages = {121106},
+	number = {12},
+	journaltitle = {Phys. Rev. B},
+	author = {Roy, Analabha and Das, Arnab},
+	urldate = {2023-01-23},
+	date = {2015-03-13},
+	file = {APS Snapshot:/home/mahi/Zotero/storage/2G2K9JSF/Roy and Das - 2015 - Fate of dynamical many-body localization in the pr.html:text/html},
+}
+
+@article{srivatsa_many-body_2020,
+	title = {Many-Body Delocalization via Emergent Symmetry},
+	volume = {125},
+	url = {https://link.aps.org/doi/10.1103/PhysRevLett.125.240401},
+	doi = {10.1103/PhysRevLett.125.240401},
+	abstract = {Many-body localization ({MBL}) provides a mechanism to avoid thermalization in many-body quantum systems. Here, we show that an emergent symmetry can protect a state from {MBL}. Specifically, we propose a Z2 symmetric model with nonlocal interactions, which has an analytically known, {SU}(2) invariant, critical ground state. At large disorder strength, all states at finite energy density are in a glassy {MBL} phase, while the lowest energy states are not. These do, however, localize when a perturbation destroys the emergent {SU}(2) symmetry. The model also provides an example of {MBL} in the presence of nonlocal, disordered interactions that are more structured than a power law. Finally, we show how the protected state can be moved into the bulk of the spectrum.},
+	pages = {240401},
+	number = {24},
+	journaltitle = {Phys. Rev. Lett.},
+	author = {Srivatsa, N. S. and Moessner, Roderich and Nielsen, Anne E. B.},
+	urldate = {2023-01-23},
+	date = {2020-12-08},
+	file = {APS Snapshot:/home/mahi/Zotero/storage/6CQNI2GT/Srivatsa et al. - 2020 - Many-Body Delocalization via Emergent Symmetry.html:text/html;Full Text PDF:/home/mahi/Zotero/storage/NXNSDZ5D/Srivatsa et al. - 2020 - Many-Body Delocalization via Emergent Symmetry.pdf:application/pdf},
+}
+
+@article{das_exotic_2010,
+	title = {Exotic freezing of response in a quantum many-body system},
+	volume = {82},
+	url = {https://link.aps.org/doi/10.1103/PhysRevB.82.172402},
+	doi = {10.1103/PhysRevB.82.172402},
+	abstract = {We show that when a quantum many-body system is subjected to coherent periodic driving, the response may exhibit exotic freezing behavior in high driving frequency (ω) regime. In a periodically driven classical thermodynamic system, freezing at high ω occurs when 1/ω is much smaller than the characteristic relaxation time of the system and hence the freezing always increases there as ω is increased. Here, in the contrary, we see surprising nonmonotonic freezing behavior of the response with ω, showing curious peak-valley structure. Quite interestingly, the entire system tends to freeze almost absolutely (the freezing peaks) when driven with a certain combination of driving parameters values (amplitude and ω) due to coherent suppression of dynamics of the quantum many-body modes, which has no classical analog. We demonstrate this new freezing phenomenon analytically (supported by large-scale numerics) for a general class of integrable quantum spin systems.},
+	pages = {172402},
+	number = {17},
+	journaltitle = {Phys. Rev. B},
+	author = {Das, Arnab},
+	urldate = {2023-01-23},
+	date = {2010-11-03},
+}
+
+@article{fujii_introduction_2017,
+	title = {Introduction to the Rotating Wave Approximation ({RWA}): Two Coherent Oscillations},
+	volume = {8},
+	rights = {http://creativecommons.org/licenses/by/4.0/},
+	url = {http://www.scirp.org/Journal/Paperabs.aspx?paperid=80654},
+	doi = {10.4236/jmp.2017.812124},
+	shorttitle = {Introduction to the Rotating Wave Approximation ({RWA})},
+	abstract = {In this note, I introduce a mysterious approximation called the rotating wave approximation ({RWA}) to undergraduates or non-experts who are interested in both Mathematics and Quantum Optics. In Quantum Optics, it plays a very important role in order to obtain an analytic approximate solution of some {SchrÖdinger} equation, while it is curious from the mathematical point of view. I explain it carefully with two coherent oscillations for them and expect that they will overcome the problem in the near future.},
+	pages = {2042--2058},
+	number = {12},
+	journaltitle = {Journal of Modern Physics},
+	author = {Fujii, Kazuyuki},
+	urldate = {2023-01-23},
+	date = {2017-11-09},
+	langid = {english},
+	file = {Full Text PDF:/home/mahi/Zotero/storage/KDSFSJGN/Fujii - 2017 - Introduction to the Rotating Wave Approximation (R.pdf:application/pdf},
+}
+
+@online{noauthor_quantum_nodate,
+	title = {Quantum Ising Phase Transition},
+	url = {https://juliaphysics.github.io/PhysicsTutorials.jl/tutorials/general/quantum_ising/quantum_ising.html},
+	urldate = {2023-01-23},
+}
+
+@article{stinchcombe_ising_1973,
+	title = {Ising model in a transverse field. I. Basic theory},
+	volume = {6},
+	issn = {0022-3719},
+	url = {https://dx.doi.org/10.1088/0022-3719/6/15/009},
+	doi = {10.1088/0022-3719/6/15/009},
+	abstract = {A brief review is first made of systems for which the spin-1/2 Ising model in a transverse field provides a useful description (insulating magnetic systems, order-disorder ferroelectrics, cooperative Jahn-Teller systems and other systems with 'pseudo-spin'- phonon interactions). A perturbation expansion is then developed which provides for all temperatures an approximate description of the model. The perturbation series is classified with respect to the small parameter 1/z, where z is the number of psins interacting with a given spin; this generates the molecular-field approximation and the random-phase approximation as the lowest-order description of the thermodynamic functions and correlation functions respectively. The leading-order approximations for the correlation functions, susceptibilities and spectral functions are discussed in detail. The formalism, which is the first application of such techniques to systems with varying magnetization direction, provides a basis for subsequent higher-order calculations of the free energy and correlation functions.},
+	pages = {2459},
+	number = {15},
+	journaltitle = {J. Phys. C: Solid State Phys.},
+	author = {Stinchcombe, R. B.},
+	urldate = {2023-01-23},
+	date = {1973-08},
+	langid = {english},
+}
+
+@article{murphy_generalized_2011,
+	title = {Generalized inverse participation ratio as a possible measure of localization for interacting systems},
+	volume = {83},
+	url = {https://link.aps.org/doi/10.1103/PhysRevB.83.184206},
+	doi = {10.1103/PhysRevB.83.184206},
+	abstract = {We test the usefulness of a generalized inverse participation ratio ({GIPR}) as a measure of Anderson localization. The {GIPR} differs from the usual inverse participation ratio in that it is constructed from the local density of states rather than the single-electron wave functions. This makes it suitable for application to many-body systems. We benchmark the {GIPR} by performing a finite-size scaling analysis of a disordered, noninteracting, three-dimensional tight-binding lattice. We find values for the critical disorder and critical exponents that are in agreement with published values.},
+	pages = {184206},
+	number = {18},
+	journaltitle = {Phys. Rev. B},
+	author = {Murphy, N. C. and Wortis, R. and Atkinson, W. A.},
+	urldate = {2023-01-23},
+	date = {2011-05-31},
+	file = {APS Snapshot:/home/mahi/Zotero/storage/4WGPTH3X/Murphy et al. - 2011 - Generalized inverse participation ratio as a possi.html:text/html},
+}
+
+@article{calixto_inverse_2015,
+	title = {Inverse participation ratio and localization in topological insulator phase transitions},
+	volume = {2015},
+	issn = {1742-5468},
+	url = {https://dx.doi.org/10.1088/1742-5468/2015/06/P06029},
+	doi = {10.1088/1742-5468/2015/06/P06029},
+	abstract = {Fluctuations of Hamiltonian eigenfunctions, measured by the inverse participation ratio ({IPR}), turn out to characterize topological-band insulator transitions occurring in 2D Dirac materials like silicene, which is isostructural with graphene but with a strong spin–orbit interaction. Using monotonic properties of the {IPR}, as a function of a perpendicular electric field (which provides a tunable band gap), we define topological-like quantum numbers that take different values in the topological-insulator and band-insulator phases.},
+	pages = {P06029},
+	number = {6},
+	journaltitle = {J. Stat. Mech.},
+	author = {Calixto, M. and Romera, E.},
+	urldate = {2023-01-23},
+	date = {2015-06},
+	langid = {english},
+}
+
+@article{sciolla_quantum_2010,
+	title = {Quantum Quenches and Off-Equilibrium Dynamical Transition in the Infinite-Dimensional Bose-Hubbard Model},
+	volume = {105},
+	url = {https://link.aps.org/doi/10.1103/PhysRevLett.105.220401},
+	doi = {10.1103/PhysRevLett.105.220401},
+	abstract = {We study the off-equilibrium dynamics of the infinite-dimensional Bose-Hubbard model after a quantum quench. The dynamics can be analyzed exactly by mapping it to an effective Newtonian evolution. For integer filling, we find a dynamical transition separating regimes of small and large quantum quenches starting from the superfluid state. This transition is very similar to the one found for the fermionic Hubbard model by mean field approximations.},
+	pages = {220401},
+	number = {22},
+	journaltitle = {Phys. Rev. Lett.},
+	author = {Sciolla, Bruno and Biroli, Giulio},
+	urldate = {2023-01-23},
+	date = {2010-11-22},
+	file = {APS Snapshot:/home/mahi/Zotero/storage/WNDKKACH/Sciolla and Biroli - 2010 - Quantum Quenches and Off-Equilibrium Dynamical Tra.html:text/html},
+}
+
+@article{marcos_relaxation_2012,
+	title = {Relaxation of quasi-stationary states in long range interacting systems and a classification of the range of pair interactions},
+	volume = {10},
+	issn = {2391-5471},
+	url = {https://www.degruyter.com/document/doi/10.2478/s11534-012-0032-0/html},
+	doi = {10.2478/s11534-012-0032-0},
+	abstract = {Systems of particles interacting with long range interactions present generically ”quasi-stationary states” ({QSS}), which are approximately time-independent out of equilibrium states. In this proceedings, we explore the generalization of the formation of such {QSS} and their relaxation from the much studied case of gravity to a generic pair interaction with the asymptotic form of the potential v(r) ∼ 1/r γ with γ \&gt; 0 in d dimensions. We compute analytic estimations of the relaxation time calculating the rate of two body collisionality in a virialized system approximated as homogeneous. We show that for γ \&lt; (d − 1/2), the collision integral is dominated by the size of the system, while for γ \&gt; (d − 1/2), it is dominated by small impact parameters. In addition, the lifetime of {QSS} increases with the number of particles if γ \&lt; d − 1 (i.e. the force is not integrable) and decreases if γ \&gt; d − 1. Using numerical simulations we confirm our analytic results. A corollary of our work gives a ”dynamical” classification of interactions: the dynamical properties of the system depend on whether the pair force is integrable or not.},
+	pages = {676--683},
+	number = {3},
+	journaltitle = {Open Physics},
+	author = {Marcos, Bruno and Gabrielli, Andrea and Joyce, Michael},
+	urldate = {2023-01-23},
+	date = {2012-06-01},
+	langid = {english},
+	keywords = {Vlasov equation, collisional relaxation, long range interacting systems},
+}
+
+@misc{mbeng_quantum_2020,
+	title = {The quantum Ising chain for beginners},
+	url = {http://arxiv.org/abs/2009.09208},
+	doi = {10.48550/arXiv.2009.09208},
+	abstract = {We present here various techniques to work with clean and disordered quantum Ising chains, for the benefit of students and non-experts. Starting from the Jordan-Wigner transformation, which maps spin-1/2 systems into fermionic ones, we review some of the basic approaches to deal with the superconducting correlations that naturally emerge in this context. In particular, we analyse the form of the ground state and excitations of the model, relating them to the symmetry-breaking physics, and illustrate aspects connected to calculating dynamical quantities, thermal averages, correlation functions and entanglement entropy. A few problems provide simple applications of the techniques.},
+	number = {{arXiv}:2009.09208},
+	publisher = {{arXiv}},
+	author = {Mbeng, Glen Bigan and Russomanno, Angelo and Santoro, Giuseppe E.},
+	urldate = {2023-01-23},
+	date = {2020-09-19},
+	eprinttype = {arxiv},
+	eprint = {2009.09208 [cond-mat, physics:quant-ph]},
+	keywords = {Condensed Matter - Quantum Gases, Quantum Physics},
+	file = {arXiv Fulltext PDF:/home/mahi/Zotero/storage/W2ZSB7D5/Mbeng et al. - 2020 - The quantum Ising chain for beginners.pdf:application/pdf;arXiv.org Snapshot:/home/mahi/Zotero/storage/QWSGUBG4/Mbeng et al. - 2020 - The quantum Ising chain for beginners.html:text/html},
+}
+
+@article{russomanno_thermalization_2015,
+	title = {Thermalization in a periodically driven fully connected quantum Ising ferromagnet},
+	volume = {110},
+	issn = {0295-5075},
+	url = {https://dx.doi.org/10.1209/0295-5075/110/37005},
+	doi = {10.1209/0295-5075/110/37005},
+	abstract = {By means of a Floquet analysis, we study the quantum dynamics of a fully connected Lipkin-Ising ferromagnet in a periodically driven transverse field showing that thermalization in the steady state is intimately connected to properties of the classical Hamiltonian dynamics. When the dynamics is ergodic, the Floquet spectrum obeys a Wigner-Dyson statistics and the system satisfies the eigenstate thermalization hypothesis ({ETH}): Independently of the initial state, local observables relax to the thermal value, and Floquet states are delocalized in the Hilbert space. On the contrary, if the classical dynamics is regular no thermalization occurs. We further discuss the relationship between ergodicity and dynamical phase transitions, and the relevance of our results to other fully connected periodically driven models (like the Bose-Hubbard one), and possibilities of experimental realization in the case of two coupled {BEC}.},
+	pages = {37005},
+	number = {3},
+	journaltitle = {{EPL}},
+	author = {Russomanno, Angelo and Fazio, Rosario and Santoro, Giuseppe E.},
+	urldate = {2023-01-23},
+	date = {2015-05},
+	langid = {english},
+}
+
+@article{mori_prethermalization_2019,
+	title = {Prethermalization in the transverse-field Ising chain with long-range interactions},
+	volume = {52},
+	issn = {1751-8121},
+	url = {https://dx.doi.org/10.1088/1751-8121/aaf9db},
+	doi = {10.1088/1751-8121/aaf9db},
+	abstract = {Nonequilibrium dynamics in an isolated quantum spin chain with long-range Ising interactions that decay as () with the distance r is studied. It turns out that long-range interactions give rise to a big timescale separation, which causes prethermalization for all . This conclusion is deduced by comparing two important timescales relevant for relaxation dynamics; one is the relaxation time of local permutation operators, which are quasi-conserved quantities in this system, and the other is the timescale of the initial relaxation of local quantities due to the growth of quantum fluctuations. We also explore the entire nonequilibrium dynamics by using the discrete truncated Wigner approximation, which is consistent with the result mentioned above.},
+	pages = {054001},
+	number = {5},
+	journaltitle = {J. Phys. A: Math. Theor.},
+	author = {Mori, Takashi},
+	urldate = {2023-01-23},
+	date = {2019-01},
+	langid = {english},
+	note = {Publisher: {IOP} Publishing},
+	file = {Submitted Version:/home/mahi/Zotero/storage/FHUV4S9J/Mori - 2019 - Prethermalization in the transverse-field Ising ch.pdf:application/pdf},
+}
+
+@inreference{noauthor_jacobianger_2022,
+	title = {Jacobi–Anger expansion},
+	rights = {Creative Commons Attribution-{ShareAlike} License},
+	url = {https://en.wikipedia.org/w/index.php?title=Jacobi%E2%80%93Anger_expansion&oldid=1118429066},
+	abstract = {In mathematics, the Jacobi–Anger expansion (or Jacobi–Anger identity) is an expansion of exponentials of trigonometric functions in the basis of their harmonics. It is useful in physics (for example, to convert between plane waves and cylindrical waves), and in signal processing (to describe {FM} signals). This identity is named after the 19th-century mathematicians Carl Jacobi and Carl Theodor Anger.
+The most general identity is given by:
+
+  
+    
+      
+        
+          e
+          
+            i
+            z
+            cos
+            ⁡
+            θ
+          
+        
+        ≡
+        
+          ∑
+          
+            n
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          i
+          
+            n
+          
+        
+        
+        
+          J
+          
+            n
+          
+        
+        (
+        z
+        )
+        
+        
+          e
+          
+            i
+            n
+            θ
+          
+        
+        ,
+      
+    
+    \{{\textbackslash}displaystyle e{\textasciicircum}\{iz{\textbackslash}cos {\textbackslash}theta \}{\textbackslash}equiv {\textbackslash}sum \_\{n=-{\textbackslash}infty \}{\textasciicircum}\{{\textbackslash}infty \}i{\textasciicircum}\{n\}{\textbackslash},J\_\{n\}(z){\textbackslash},e{\textasciicircum}\{in{\textbackslash}theta \},\}
+  where 
+  
+    
+      
+        
+          J
+          
+            n
+          
+        
+        (
+        z
+        )
+      
+    
+    \{{\textbackslash}displaystyle J\_\{n\}(z)\}
+   is the 
+  
+    
+      
+        n
+      
+    
+    \{{\textbackslash}displaystyle n\}
+  -th Bessel function of the first kind and 
+  
+    
+      
+        i
+      
+    
+    \{{\textbackslash}displaystyle i\}
+   is the imaginary unit, 
+  
+    
+      
+        
+          i
+          
+            2
+          
+        
+        =
+        −
+        1.
+      
+    
+    \{{\textbackslash}textstyle i{\textasciicircum}\{2\}=-1.\}
+   
+Substituting 
+  
+    
+      
+        θ
+      
+    
+    \{{\textbackslash}textstyle {\textbackslash}theta \}
+   by 
+  
+    
+      
+        θ
+        −
+        
+          
+            π
+            2
+          
+        
+      
+    
+    \{{\textbackslash}textstyle {\textbackslash}theta -\{{\textbackslash}frac \{{\textbackslash}pi \}\{2\}\}\}
+  , we also get:
+
+  
+    
+      
+        
+          e
+          
+            i
+            z
+            sin
+            ⁡
+            θ
+          
+        
+        ≡
+        
+          ∑
+          
+            n
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          J
+          
+            n
+          
+        
+        (
+        z
+        )
+        
+        
+          e
+          
+            i
+            n
+            θ
+          
+        
+        .
+      
+    
+    \{{\textbackslash}displaystyle e{\textasciicircum}\{iz{\textbackslash}sin {\textbackslash}theta \}{\textbackslash}equiv {\textbackslash}sum \_\{n=-{\textbackslash}infty \}{\textasciicircum}\{{\textbackslash}infty \}J\_\{n\}(z){\textbackslash},e{\textasciicircum}\{in{\textbackslash}theta \}.\}
+  Using the relation 
+  
+    
+      
+        
+          J
+          
+            −
+            n
+          
+        
+        (
+        z
+        )
+        =
+        (
+        −
+        1
+        
+          )
+          
+            n
+          
+        
+        
+        
+          J
+          
+            n
+          
+        
+        (
+        z
+        )
+        ,
+      
+    
+    \{{\textbackslash}displaystyle J\_\{-n\}(z)=(-1){\textasciicircum}\{n\}{\textbackslash},J\_\{n\}(z),\}
+   valid for integer 
+  
+    
+      
+        n
+      
+    
+    \{{\textbackslash}displaystyle n\}
+  , the expansion becomes:
+
+  
+    
+      
+        
+          e
+          
+            i
+            z
+            cos
+            ⁡
+            θ
+          
+        
+        ≡
+        
+          J
+          
+            0
+          
+        
+        (
+        z
+        )
+        
+        +
+        
+        2
+        
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+        
+          i
+          
+            n
+          
+        
+        
+        
+          J
+          
+            n
+          
+        
+        (
+        z
+        )
+        
+        cos
+        
+        (
+        n
+        θ
+        )
+        .
+      
+    
+    \{{\textbackslash}displaystyle e{\textasciicircum}\{iz{\textbackslash}cos {\textbackslash}theta \}{\textbackslash}equiv J\_\{0\}(z){\textbackslash},+{\textbackslash},2{\textbackslash},{\textbackslash}sum \_\{n=1\}{\textasciicircum}\{{\textbackslash}infty \}{\textbackslash},i{\textasciicircum}\{n\}{\textbackslash},J\_\{n\}(z){\textbackslash},{\textbackslash}cos {\textbackslash},(n{\textbackslash}theta ).\}},
+	booktitle = {Wikipedia},
+	urldate = {2023-01-23},
+	date = {2022-10-27},
+	langid = {english},
+	note = {Page Version {ID}: 1118429066},
+	file = {Snapshot:/home/mahi/Zotero/storage/YSQS2NTL/Jacobi–Anger_expansion.html:text/html},
+}
+
+@article{haldar_dynamical_2017,
+	title = {Dynamical many-body localization and delocalization in periodically driven closed quantum systems},
+	volume = {529},
+	issn = {1521-3889},
+	url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.201600333},
+	doi = {10.1002/andp.201600333},
+	abstract = {Quantum interference lies at the heart of several surprising equilibrium and non-equilibrium phenomena in many-body Physics. Here we discuss two recently explored non-equilibrium scenarios where external periodic drive applied to closed (i.e., not attached to any external bath) quantum many-body systems have apparently opposite effects in respective cases. In one case it freezes/localizes a disorder free system dynamically, while in the other it delocalizes a disordered many-body localized system, and quantum interference is responsible for both the effects. We review these in the perspective of more general questions of ergodicity, energy absorption, asymptotic behavior, and finally the essential role of quantum mechanics in understanding these issues in periodically driven closed many-body systems. In this article we intend to deliver a non-technical account of some recent developments in this field in a manner accessible to a broad readership.},
+	pages = {1600333},
+	number = {7},
+	journaltitle = {Annalen der Physik},
+	author = {Haldar, Asmi and Das, Arnab},
+	urldate = {2023-01-23},
+	date = {2017},
+	note = {\_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/andp.201600333},
+	keywords = {dynamical many-body freezing, Floquet system, many-body localozation, periodic Gibbs' ensemble, thermalization},
+	file = {Snapshot:/home/mahi/Zotero/storage/UYIXFPKA/andp.html:text/html},
+}
+
+@article{yunger_halpern_quantum_2019,
+	title = {Quantum engine based on many-body localization},
+	volume = {99},
+	url = {https://link.aps.org/doi/10.1103/PhysRevB.99.024203},
+	doi = {10.1103/PhysRevB.99.024203},
+	abstract = {Many-body-localized ({MBL}) systems do not thermalize under their intrinsic dynamics. The athermality of {MBL}, we propose, can be harnessed for thermodynamic tasks. We illustrate this ability by formulating an Otto engine cycle for a quantum many-body system. The system is ramped between a strongly localized {MBL} regime and a thermal (or weakly localized) regime. The difference between the energy-level correlations of {MBL} systems and of thermal systems enables mesoscale engines to run in parallel in the thermodynamic limit, enhances the engine's reliability, and suppresses worst-case trials. We estimate analytically and calculate numerically the engine's efficiency and per-cycle power. The efficiency mirrors the efficiency of the conventional thermodynamic Otto engine. The per-cycle power scales linearly with the system size and inverse-exponentially with a localization length. This work introduces a thermodynamic lens onto {MBL}, which, having been studied much recently, can now be considered for use in thermodynamic tasks.},
+	pages = {024203},
+	number = {2},
+	journaltitle = {Phys. Rev. B},
+	author = {Yunger Halpern, Nicole and White, Christopher David and Gopalakrishnan, Sarang and Refael, Gil},
+	urldate = {2023-01-23},
+	date = {2019-01-22},
+	file = {APS Snapshot:/home/mahi/Zotero/storage/3DI7573B/Yunger Halpern et al. - 2019 - Quantum engine based on many-body localization.html:text/html},
+}
+
+@Article{Deutsch1991,
+  author       = {Deutsch, J. M.},
+  date         = {1991},
+  journaltitle = {Phys. Rev. A},
+  title        = {Quantum statistical mechanics in a closed system},
+  pages        = {2046--2049},
+  volume       = {43},
+}
+
+@Article{Srednicki1994,
+  author       = {Sred
