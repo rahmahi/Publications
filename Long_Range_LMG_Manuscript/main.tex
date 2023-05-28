@@ -111,71 +111,46 @@ prb,
 	
 	PROOFREADING THIS NOW.
 	
-	If a generic closed isolated interacting quantum many-body system is prepared in a state that is far enough from equilibrium, the ensuing dynamics is expected to reproduce the statistical behaviour of a microcanonical ensemble. The long-term averages of observables, resolved in the framework of the Eigenstate Thermalization Hypothesis (ETH)\cite{Joshua_2018, Nandkishore_2015}. Let the system be described by a Hamiltonian $\hat{H}$, and be populated at an initial state $\ket{\Psi_0}$ at $t=0$. The expectation value of an observable $\hat{O}$ can be obtained at all times by solving the Heisenberg equation of motion
-	\begin{equation}
-		\label{eq:heisenberg}
-	\dv{t}\;\ev{\hat{O}(t)} = i \ev{\comm\Big{\hat{H}}{\hat{O}(t)}}.
-	\end{equation}
-	The solution can be written as
-	\begin{align*}
-		\expval{\hat{O}(t)} &= \expval{ e^{i\hat{H}t}\hat{O}e^{-i\hat{H}t}}\nonumber\\
-		&= \sum_{ij}e^{-i\big(e_i-e_j\big)t}O_{ij}\ip{\Psi_0}{e_i}\ip{e_j}{\Psi_0}
-	\end{align*}
-	Here, the reduced Planck's constant $\hbar$ has been set to unity. Furthermore, the eigendecomposition of $\hat{H}$ yields eigenvalues $e_i$ and corresponding eigenvectors $\ket{e_i}$, indexed by a count $i$, and are expected to be non-degenerate. Also, the matrix element $O_{ij}\equiv \mel{e_i}{\hat{O}}{e_j}$. If the long-time average of an object is expressed by an overline, then
-	\begin{align}
-		\overline{\ev{\hat{O}(t)}} &= \sum_{ij}\overline{e^{-i\big(e_i-e_j\big)t}}O_{ij} \ip{\Psi_0}{e_i}\ip{e_j}{\Psi_0}.\nonumber\\
-		&\approx\sum_i O_{ii} \abs\Big{ \ip{e_i}{\Psi_0}}^2 + \mathcal{O}\big(e^{-S/2}\big).
-		\label{eq:eth:diagonal:avg}
-	\end{align}
-	In equation~\ref{eq:eth:diagonal:avg} the entropy $S$ is a monotonic function of the initial energy $E_0 = \expval{\hat{H}}{\Psi_0}$ that arises from the Srednicki ansatz~\cite{Srednicki_1999, Rigol_2012} concerning the nature of the matrix elements $O_{ij}$, \textit{viz.}
-	\begin{equation*}
-	O_{ij} \approx O_{ii}\delta_{ij} + e^{-S/2} \mathcal{R}_{ij},	
-	\end{equation*}
-with nearly random off-diagonal contributions $\mathcal{R}_{ij}$. This ansatz, together with the fact that, at sufficiently long times, $\overline{e^{-i\big(e_i-e_j\big)t}}\rightarrow \delta_{ij}$, justifies neglecting the second term in the RHS of equation~\ref{eq:eth:diagonal:avg}.
-	
-	Next, the 'typicality' conjecture proposes that  the resolution of $\ket{\Psi_0}$ in the eigenbasis of the Hamiltonian is `typical', \textit{i.e.}, the dominant modes have energies that lie in a small but nonzero neighbourhood $\delta E$ of $E_0$, which is assumed to be  significantly greater than the ground state energy. When this conjecture is evoked, the \textit{diagonal average} in equation~\ref{eq:eth:diagonal:avg} can be simplified further to yield
-	\begin{equation}
-		\label{eq:eth:sumek}
-		\overline{\ev{\hat{O}(t)}} \approx \sum_{\ket{e_k}\in \mathcal{S}(E_0, \delta E)}O_{kk}\abs{\ip{e_k}{\Psi_0}}^2
-	\end{equation}
-Here, the summed sector consists of the states $\ket{e_k}$ whose energies lie in a $\delta E-$neighbourhood of $E_0$, \textit{i.e} 
-\begin{equation*}
-	\mathcal{S}(E_0, \delta E) = \Bigg\{\ket{e_k}\ni E_0-\frac{\delta E}{2}\leq e_k \leq E_0+\frac{\delta E}{2}\Bigg\}
-\end{equation*}
-The final proposition is that the RHS of equation~\ref{eq:eth:sumek} can be represented by an integral over a continuous energy measure $dE$, such that
-\begin{multline}
-\overline{\expval{\hat{O}(t)}} = \sum_{\ket{e_k}\in \mathcal{S}(E_0, \delta E)}O_{kk}\abs{\ip{e_k}{\Psi_0}}^2\\
- \approx \frac{1}{\left\vert\mathcal{S}(E_0, \delta E) \right\vert} \int O(E)\; g(E)\;dE,
- \label{eq:eth:continuum}
-\end{multline} 
-where $O(E)$ is a sufficiently smooth function that represents $O_{kk}$ in the summed sector $\mathcal{S}(E_0, \delta E)$, $g(E)$ is the density of states at $E$, and $\vert\mathcal{S}(E_0, \delta E) \vert = \displaystyle\int g(E)\;dE$ denotes the cardinality of the set $\mathcal{S}(E_0, \delta E)$. Here, the integrals are performed in the range $D(E_0)=\big[{E_0 - \frac{\delta E}{2}}, {E_0+\frac{\delta E}{2}}\big]$. With this proposition, the Lagrange Integral Mean Value Theorem (see, for instance~\cite{hobson_e_w_1909_1447800}) may be evoked, where there exists a value $\bar{E}\in D(E_0)$ such that
-\begin{equation*}
-\int O(E)\; g(E)\;dE = O(\bar{E})\; \int g(E)\;dE.
-\end{equation*}
-Substituting this result into eqn~\ref{eq:eth:continuum} yields
-      \begin{equation}
-		\label{eq:eth:final}
-		\overline{\ev{\hat{O}(t)}} \approx  O(\bar{E})
-	\end{equation}
-	If $\delta E \ll E_0$, the quantity $O(\bar{E})$ in eqn~\ref{eq:eth:final} should be close to an average of $O_{kk}$ over the states in $\mathcal{S}(E_0, \delta E)$. Thus,
-	\begin{equation}
-		\label{eq:eth:microcan}
-	\overline{\ev{\hat{O}(t)}} \approx O(\bar{E})\approx \frac{1}{\left\vert\mathcal{S}(E_0, \delta E) \right\vert}\;\sum_{\ket{e_k}\in \mathcal{S}(E_0, \delta E)} O_{kk}.
-	\end{equation}
-The RHS of equation~\ref{eq:eth:microcan} corresponds to the standard microcanonical average in statistical mechanics. This is the \textit{Eigenstate Thermalization Hypothesis} (ETH), first proposed by Deutsch~\cite{Deutsch1991} and presented in this form by Srednicki~\cite{Srednicki1994}. The long-term behaviour of a system obeying ETH is independent of the initial condition $\ket{\Psi_0}$ as a direct result of equation~\ref{eq:eth:microcan}. Despite the lack of ergodicity in the underlying Heisenberg dynamics, the system can start from any typical state at $t=0$ and exhibit universal thermal behaviour.
+	The Floquet Eigenstate Thermalization Hypothesis (FETH) is a concept that describes the thermalization of a quantum system governed by a time-periodic many-body Hamiltonian. It provides a framework to understand how such a system can exhibit thermal-like behavior even though it is inherently out of equilibrium. The FETH is particularly relevant in the study of driven quantum systems, where the Hamiltonian periodically varies in time.
 
-If the many body system is described by a time-periodic Hamiltonian $\hat H(t)$ with a very small time period $T$, we can expect the system to behave similarly to the time-independent case discussed above, except that it will thermalize at infinite temperature. If the system is strobed at integer multiples of the time period $T$, \emph{Floquet Theory} allows us to obtain \textit{quasi-stationary states} (stationary only at integer multiples of time period $T$) from the eigendecomposition of the Floquet Hamiltonian $\hat{H}_F\equiv \hat{H}(T) - i \frac{\partial}{\partial t}\vert_T$ (see, for instance,~\cite{reichl_transition_2021, bukov2014} and references therein). In that case, the ETH introduced in equations~\ref{eq:eth:diagonal:avg} and~\ref{eq:eth:sumek} may be modified with $e_i, \ket{e_i}$ replaced by the eigendecomposition of $\hat{H}_F$, given by $\Omega_i,\; \ket{\phi_i}$, provided that $T$ is sufficiently small to ignore the Floquet micromotions between two successive periods. Thus,
-	\begin{align}
-		\overline{\ev{\hat{O}(nT)}} &\approx \sum_{ij}\overline{e^{-i\big(\Omega_i-\Omega_j\big)nT}}O_{ij} \ip{\Psi_0}{\phi_i}\ip{\phi_j}{\Psi_0}.\nonumber\\
-		&\approx\sum_i O_{ii} \abs\Big{ \ip{\phi_i}{\Psi_0}}^2\approx \sum_{\ket{\phi_k}\in \mathcal{S}^\prime(\Omega_0, \delta \Omega)}O_{kk}\abs{\ip{\phi_k}{\Psi_0}}^2,
-		\label{eq:floquet:eth:diagonal:avg}
-	\end{align}
-	where the new set
-	\begin{equation}
-	\mathcal{S}^\prime(\Omega_0, \delta \Omega) = \Bigg\{\ket{\phi_k}\ni \Omega_0-\frac{\delta \Omega}{2}\leq \Omega_k \leq \Omega_0+\frac{\delta \Omega}{2}\Bigg\},\nonumber
-	\end{equation}
-	and the quantities $\Omega_0, \delta\Omega$ are obtained by adding integer multiples of $\omega=2\pi/T$ to $E_0, \delta E$ to make them lie within a Floquet photon \textit{viz.} an interval of width $\omega$.
-	Even in this limit, drive parameters like amplitude, frequency, and duty-cycle strongly affect the $\phi_i$s. Thus, they can be engineered to make $O {kk}$ in equation~\ref{eq:floquet:eth:diagonal:avg} weakly dependent on $\ket{\phi k}$, but the initial quasi energy $\Omega 0$ heavily dependent. In particular,  the functional derivative $\displaystyle\frac{\var{O_{kk}}}{\var{\ket{\phi_k}}}$ can be made arbitrarily large.  The continuum limit in eqn~\ref{eq:eth:continuum} can no longer be justified, suppressing thermalization dynamically. Thus, Floquet Engineering of quasienergies can produce Dynamical Many Body Localization (DMBL), where the system fails to reach thermal equilibrium and remains localised near its initial state even at large times. This paradigm is similar to MBL, where disorder, locality, and integrability cause athermality. Localization can occur regardless of disorder, locality of observables, or system integrability, all of which have been studied for MBL onset~\cite{Sougata2023,Fabien2018,garratt_resonant_2022}. However, DMBL has been shown in integrable systems where specific drive parameters can produce additional approximate Noether charges that cause dynamical localization~\cite{roy_fate_2015}.
+To understand FETH, let's consider a many-body system described by a time-periodic Hamiltonian H(t) with a period T. The time evolution of the system is governed by the Schrödinger equation, $i\hbar \frac{\partial{\psi(t)}}{\partial{t}} = H(t)\psi(t)$, where $\psi(t)$ is the state vector of the system at time t.
+
+The Floquet theorem states that for a time-periodic Hamiltonian, the solutions of the Schrödinger equation can be written as $\psi(t) = e^{-i\epsilon t/\hbar} \phi(t)$, where $\phi(t)$ is a T-periodic function and$\epsilon$ is the quasienergy. The quasienergy spectrum is bounded within a range of $[-\hbar\omega/2, \hbar\omega/2]$, where $\omega = 2\pi/T$ is the driving frequency.
+
+According to FETH, in the limit of large system size and under certain conditions, the quasienergy eigenstates of the time-periodic Hamiltonian behave like thermal states. Specifically, for an observable A, the expectation value of A in a quasienergy eigenstate $\psi_\alpha$ with quasienergy$epsilon_\alpha$ can be approximated by the thermal expectation value:
+\begin{equation}
+\bra{\psi_\alpha}\hat{A}\ket{\psi_\alpha} = \frac{Tr (Ae^{-\beta H_{eq}})}{Tr(e^{-\beta H_{eq}})}
+\end{equation}
+ 
+where $\beta = 1/(k_B T)$ is the inverse temperature, $H_{eq}$ is an effective Hamiltonian that captures the long-time average dynamics of the system, and $k_B$ is the Boltzmann constant.
+
+In summary, FETH suggests that the time-periodic many-body Hamiltonian exhibits thermalization in the long-time limit, with the quasienergy eigenstates resembling thermal states. This hypothesis provides a valuable tool for understanding the behavior of driven quantum systems and their connection to thermal equilibrium.
+
+
+The Eigenstate Thermalization Hypothesis (ETH) is a conjecture that relates the expectation values of observables in individual eigenstates of a quantum system to the predictions of statistical mechanics. The derivation of ETH involves the assumption of ergodicity, which states that a system explores all accessible states in its phase space uniformly over time.
+Consider a many-body quantum system described by a time-dependent periodic Hamiltonian H(t) with a period T. The Schrödinger equation governing the time evolution of the system is given by iħ∂ψ(t)/∂t = H(t)ψ(t), where ψ(t) is the state vector of the system at time t. We aim to derive ETH by examining the expectation value of an observable A in an eigenstate of the Hamiltonian.
+Let $\ket{n(t)}$ be an eigenstate of H(t) with energy $E_n (t)$, such that $H(t)\ket{n(t)} = E_n (t)\ket{n(t)}$. We want to calculate the expectation value of the observable A in this eigenstate: $\expval{\hat{A}(t)}_n = \expval{\hat{A}(t)}{{n(t)}}$.
+To proceed with the derivation, we invoke the concept of adiabatic perturbation theory, assuming that the Hamiltonian slowly varies in time. We can expand the eigenstate and eigenenergy as perturbative series:
+\begin{align*}
+\ket{n(t)} =& \ket{n(\theta)} + \sum_m c_m(t)\ket{m(\theta)},\\ 
+E_n (\theta) =& E_n (\theta) + \sum_m E_m (t) c_m(t)
+\end{align*}
+where $\ket{m(\theta)}$ represents the unperturbed eigenstates of $H(\theta)$ with energy $E_m(\theta)$. The coefficients $c_m (t)$ describe the time-dependent amplitude of the expansion.
+Plugging these expansions into the expression for the expectation value, we obtain:
+\begin{widetext}
+		\expval{\hat{A}(t)}_n = \sum_{m,k} c_M^*(t) c_k(t) \bra{n(\theta)}\ket{m(\theta}\bra{m(t)}\hat(A)(t)\ket{k(t)} \bra{k(\theta)}\ket(n(\theta))
+\end{widetext}
+where $ \bra{m(t)}\hat(A)(t)\ket{k(t)}$ represents the matrix element of the observable $\hat{A}$ between the time-dependent states $\ket{m(t)}$ and $\ket{k(t)}$.
+In the ergodic hypothesis, it is assumed that the system explores the entire Hilbert space uniformly, such that the matrix elements ⟨m(t)|A(t)|k(t)⟩ become indistinguishable for most pairs of m and k. This allows us to approximate $\bra{m(t)}\hat{A}(t)\ket{k(t)} ≈ A_{eq} \delta_{mk}$, where $A_{eq}$ is the expectation value of the observable $\hat{A}$ in the equilibrium thermal ensemble.
+Applying this approximation, the expression for the expectation value becomes:
+\begin{equation*}
+\expval{\hat{A}(t)}_n = \sum_m \abs{c_m(t)}^2 \bra{n(\theta)}\ket{m(\theta)} \hat{A}_{eq} \bra{n(0)}\ket{m(0)}
+\end{equation*}
+Finally, assuming that the initial state |n(0)⟩ is random and uncorrelated with the Hamiltonian eigenstates, we can use the property $\bra{n(0)}\ket{m(0)}=\delta_{nm}$. This yields:
+\begin{equation*}
+\expval{\hat{A}(t)}_n = \sum_m |c_m(t)|^2 \hat{A}_{eq} = \hat{A}_{eq}
+\end{equation*}
+Therefore, in the limit of large systems and under the ergodic assumption, the expectation value of an observable A in an eigenstate of the time-dependent Hamiltonian is approximately equal to the thermal expectation value $A_{eq}$. This is the essence of the Eigenstate Thermalization Hypothesis, which suggests that individual eigenstates of a quantum system can be described by statistical mechanics in the long-time limit.
 	
 	A paradigmatic example of an integrable system where DMBL occurs is  the driven Transverse Field Ising model (TFIM) in one dimension~\cite{stinchcombe_ising_1973}. The Hamiltonian is given by
 	\begin{align}
