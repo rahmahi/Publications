@@ -229,14 +229,9 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	\end{figure}
 	
 	Because the dependence of observable expectations on the eigenstates is always fairly strong for integrable systems like the TFIM, such systems will never exhibit any kind of thermal behaviour unless integrability breaking terms are included. As a result, it is not physically meaningful to refer to this as "Many Body Localization," because the parameter space lacks a region where ETH holds to contrast with this state. The type of Floquet Engineering described above, on the other hand, can be easily applied to a broad class of nonintegrable systems where ETH is expected to hold in certain regions. Long-range spin systems, in particular, where the exchange energies between far-off spins are taken into account in the model Hamiltonian, are good candidates because they are known to thermalize when driven with low frequencies~\cite{russomanno_thermalization_2015}.
-	\section{\label{sec:level3}Lipkin Meshkov Glick Model: Long range interaction}
+	\section{\label{sec:level3}Lipkin Meshkov Glick Model: Long range interaction}	
 	
-	PROOFREAD FROM HERE!!!
-	
-	FROM HERE ON OUT, PLZ USE THE PHYSICS LATEX PACKAGE!!!
-	
-	
-	Consider the Hamiltonian of the type
+	The Hamiltonian of the network comprising spin 1/2 particles with Heisenberg interaction type shall be taken into consideration as below,
 	\begin{equation}
 	\hat{H}(t) = \hat{H}_0 + \left(h \cos{(\omega t)} + h_0\right)\; \hat{H}_1
 	\label{eq:lmg:ham}
@@ -248,7 +243,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	\end{eqnarray*}
 	here,
 	\begin{equation*}
-		J_{ij} =\frac{J_\alpha}{N^{1-\alpha}}\frac{1}{r_{ij}}.
+		J_{ij} =\frac{J_\alpha}{N^{1-\alpha}}\frac{1}{r_{ij}^{\alpha}}
 	\end{equation*}
 	Putting  $\alpha = 0$ yields the Lipkin Meshkov Glick (LMG) model with all-to-all interaction, yielding $J_{ij} = J_0/N$. We choose to maintain the extensivity of the interaction energy by enforcing the condition
 	\begin{equation*}
@@ -259,8 +254,8 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	
 	\begin{align}
 		(H_0)_{ij} &= -\frac{4}{N-1} s^2_i \delta_{ij},\nonumber\\
-		(H_1)_{ij} &= \Bigg[\sqrt{\frac{N}{2}\left(\frac{N}{2}+1\right) - Ns_i\left(Ns_{i + 1}\right)}\delta_{i+1, j} \nonumber\\ 
-		&\hskip 0.7cm +\sqrt{\frac{N}{2}\left(\frac{N}{2}+1\right) - Ns_i(Ns_{i- 1})}\delta_{i-1,j}\Bigg]
+		(H_1)_{ij} &= \Bigg[\sqrt{\frac{N}{2}\left(\frac{N}{2}+1\right) - Ns_i(Ns_{i + 1})}\delta_{i+1, j} \nonumber\\ 
+		&\hskip 0.7cm +\sqrt{\frac{N}{2}(\frac{N}{2}+1) - Ns_i(Ns_{i- 1})}\delta_{i-1,j}\Bigg]
 		\label{eq:lmg:tssham}
 	\end{align}
 	Now we transform the Hamiltonian to the Rotated frame given by the transformation
@@ -270,7 +265,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	\end{equation}
 	Defining $\tau = \displaystyle\frac{h}{\omega}\sin{\omega t}$, we use the fact that $\hat{H}_1 = 2 S^x$, and the identity  
 	\begin{equation}
-	e^{i 2\tau\hat{S^{x}}} \hat{S^{z}} e^{-i 2\tau \hat{S^{x}}}=\hat{S^{z}} \cos \left(2\tau\right)+\hat{S}^{y} \sin \left(2\tau\right)
+	e^{i 2\tau\hat{S^{x}}} \hat{S^{z}} e^{-i 2\tau \hat{S^{x}}}=\hat{S^{z}} \cos \left(2\tau\right)+\hat{S}^{y} \sin (2\tau)
 	\end{equation}
 	to simplify the transformed Hamiltonian, yielding
 	
@@ -286,7 +281,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 		\cos(\eta \sin\omega t) &= J_{0}(\eta)+2 \sum_{n=1}^{\infty} J_{2 n}(\eta) \cos (2 n \omega t) \\
 		\sin(\eta \sin\omega t) &= 2 \sum_{n=1}^{\infty} J_{2 n-1}(\eta)\sin [(2 n-1) \omega t]
 	\end{align*}
-	to simplify the expression for $\tilde{H}(t)$. Finally, we assume that the drive frequency $\omega$ is large enough that all harmonic terms in the Hamiltonian can be averaged out over discernible time scales. This yields the Hamiltonian in the Rotated Wave Approximation (RWA) to be (ignoring constant terms in the addition)
+	to simplify the expression for $\tilde{H}(t)$. It is assumed that the frequency of the drive, denoted by $\omega$, is sufficiently high such that all harmonic components present in the Hamiltonian can be effectively smoothed out over distinguishable time intervals. The Hamiltonian in the Rotated Wave Approximation (RWA) is obtained as follows, neglecting constant terms in the sum.
 	
 	\begin{equation}
 	\tilde{H}_{\mathrm{RWA}}= \frac{\big(\hat{S}^x\big)^{2}}{N-1} - 2h_0 \hat{S}^x - \frac{J_0(\eta)}{N-1}\bigg[\big(\hat{S}^z\big)^{2} - \big(\hat{S}^y\big)^{2} \bigg]
@@ -310,7 +305,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	If $N\gg 1$ (substantially large), then this condition can be met by assuring that $(1-2h_0)^{-1}$ is never an integer that is divisible by $N$. To ensure this in our numerical simulations we have kept $h_0$ at a small irrational value.
 	
 	
-	This result is tentatively supported by exact simulations, as can be seen in the plots below in FIG. \ref{lmg_ipr_exact}. There, we show plots of the IPR of the Floquet mode $\ket{\phi^n}$ for all $n$ corresponding to eigenvalues of $S^x$ for a fixed eigenvalue of $S^2 = N/2\big(N/2 + 1\big)$. The IPR is thus
+	This result is supported by exact numerical results, as can be seen in the plots below in FIG. \ref{lmg_ipr_exact}. There, we show plots of the IPR of the Floquet mode $\ket{\phi^n}$ for all $n$ corresponding to eigenvalues of $S^x$ for a fixed eigenvalue of $S^2 = N/2\big(N/2 + 1\big)$. The IPR is thus
 	\begin{equation}
 	\phi_{IPR}(n) = \sum_m \abs{\ip{m}{\phi^n}}^4
 	\label{iprlmg}
@@ -326,11 +321,11 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 		\caption{The IPR for exact dynamics for spin model size N$\sim$ 30. The upper panel shows a density plot of the IPR of Floquet modes for different parameter points corresponding to the ratio between strength and the frequency of the symmetry-breaking field which is the lowest root among Bessel's roots of the first kind and zeroth order $\frac{4h}{\omega}$. The dc part of the symmetry-breaking field is kept at a small irrational number to avoid the symmetry arising from degeneracy in Flqouet states. The IPR density is high at Bessel's first order roots, $J_0\Big(\frac{4h}{\omega}\Big)=0$ for all the available floquet states. The lower panel shows the crossectional plot of IPR for four different floquet IPR density points. The point corresponding $J_0\Big(\frac{4h}{\omega}\Big)=0$ has ~unity value for all states where points away from the roots have lower and high fluctuations.}
 		\label{lmg_ipr_exact}
 	\end{figure}
-	The top panel has a density plot of the IPR of the Floquet states, with $\eta=4h/\omega$ on the abscissa and the spin index $m/(2N+1)$ on the ordinate. The dashed vertical lines (blue) correspond to roots of $J_0(\eta)$. As can be seen, the IPR is essentially unity at large roots of $J_0(\eta)$, indicating complete Many Body localization. However, there is some departure from unity at the smallest root of $J_0(\eta)$. This is due to the fact that at the smallest root of $J_0(\eta)\approx 2.405$, the amplitudes of the contributions of the higher order terms in the RW expansion, which are of $\mathcal{O}(J_n(\eta))$, are large enough to contribute to delocalization.
+	The uppermost section displays a density plot that depicts the Inverse Participation Ratio (IPR) of the Floquet states. The abscissa represents $\eta=4h/\omega$, while the ordinate represents the spin index $m/(2N+1)$. The vertical lines that are dashed and colored blue correspond to the roots of the Bessel function of the first kind with order zero, denoted as $J_0(\eta)$. Evidently, the Inverse Participation Ratio (IPR) approaches a value of one for high values of the root of the Bessel function $J_0(\eta)$, which suggests a state of full localization of the Many Body system. Nevertheless, a deviation from unity occurs at the smallest root of $J_0(\eta)$. The observed phenomenon can be attributed to the fact that when $\eta$ approaches the smallest root of $J_0(\eta)$, which is approximately equal to $2.405$, the amplitudes of the higher order terms in the RW expansion, denoted by $\mathcal{O}(J_n(\eta))$, become significant enough to contribute to the process of delocalization.  Thus, a greater magnitude of the root is favored for the purpose of investigating the phenomena.
 	
 	The bottom panel contains cross sections of the full IPR plot for selected values of $\eta$ as indicated in the legend. When the drive amplitude $h$ is adjusted to make $J_0(\eta)\neq 0$, the Floquet States are mixed, but not entirely thermal, since the IPR does not fall to $\mathcal{O}(N^{-1})$, indicating that localization persists to some extent always.
 	
-	So, as long as there is an appropriate DC field, $S^x$ is mostly conserved and $H_F$ is mostly diagonal in the $S^x$ representation at the freezing point. The small deviations from this conservation occur due to the role of higher order terms in the Fourier expansion of the Hamiltonian on the rotating basis that contribute additional time-periodic terms to the RWA Hamiltonian, as can be seen in FIG.\ref{lmg_ipr_rwa}.
+	So, as long as there is an appropriate DC field, $S^x$ is mostly conserved and $H_F$ is mostly diagonal in the $S^x$ representation at the freezing point. The small deviations from this conservation occur due to the role of higher order terms in the Fourier expansion of the Hamiltonian on the rotating basis that contribute additional time-periodic terms to the RWA Hamiltonian, as can be seen in FIG.\ref{lmg_ipr_rwa11}.
 	
 	The full Hamiltonian for the LMG model on the rotated basis is
 	\begin{widetext}
@@ -343,7 +338,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	\begin{figure}[ht!]
 		\centering
 		\includegraphics[height = 12.0cm, width =9.0cm]{comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg}
-		\label{lmg_ipr_rwa}
+		\label{lmg_ipr_rwa11}
 		\caption{The comparison between IPR for exact dynamics and RWA with corresponding correction orders. IPR is calculated for four different $\eta$'s and corresponding $J_0(\eta)\neq 0$ values. blue:$\eta = 2.40, J_0(\eta) = 0.0$, dashed orange:$\eta = 18.07, J_0(\eta) = 0.0$, green:$\eta =13.03, J_0(\eta) = 0.21$, red:$\eta = 1.62, J_0(\eta)= 0.44$. IPR plots for RWA with zeroth order aren't enough to describe the exact dynamics, but plots for RWA with first-order correction are similar to the exact dynamics.}
 	\end{figure}
 	

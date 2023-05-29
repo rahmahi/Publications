@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.10)  29 MAY 2023 13:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.10)  29 MAY 2023 15:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -578,7 +578,7 @@ Overfull \hbox (10.07838pt too wide) in paragraph at lines 226--227
 
 [4 <./ising_exact_ipr.jpeg> <./phase_transition_ising.jpeg> <./low_frq_exactN50
 0_ipr.jpeg>] [5]
-Overfull \hbox (10.01886pt too wide) detected at line 308
+Overfull \hbox (10.01886pt too wide) detected at line 303
 [][][] \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 h[][][] \OMS/cmsy
 /m/n/10 ^^@ \OML/cmm/m/it/10 m[][] \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 = [] \OMS/
 cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 h[][][] \OMS/cmsy/m/n/10 ^^@ 
@@ -589,10 +589,10 @@ cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 h[][][] \OMS/cmsy/m/n/10 ^^@
 File: ipr_exact_dynm_N50_frq_90_.jpeg Graphic file (type jpg)
 <use ipr_exact_dynm_N50_frq_90_.jpeg>
 Package pdftex.def Info: ipr_exact_dynm_N50_frq_90_.jpeg  used on input line 32
-5.
+0.
 (pdftex.def)             Requested size: 256.07838pt x 256.07838pt.
 
-Overfull \hbox (10.07838pt too wide) in paragraph at lines 325--326
+Overfull \hbox (10.07838pt too wide) in paragraph at lines 320--321
  [][] 
  []
 
@@ -601,10 +601,10 @@ Overfull \hbox (10.07838pt too wide) in paragraph at lines 325--326
 File: comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg Graphic file (type jpg)
 <use comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg>
 Package pdftex.def Info: comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg  used on 
-input line 345.
+input line 340.
 (pdftex.def)             Requested size: 256.06737pt x 341.43344pt.
 
-Overfull \hbox (10.06737pt too wide) in paragraph at lines 345--347
+Overfull \hbox (10.06737pt too wide) in paragraph at lines 340--342
  [][] 
  []
 
@@ -612,27 +612,27 @@ Overfull \hbox (10.06737pt too wide) in paragraph at lines 345--347
 <lmg_poincare.jpeg, id=180, 1084.05pt x 1084.05pt>
 File: lmg_poincare.jpeg Graphic file (type jpg)
 <use lmg_poincare.jpeg>
-Package pdftex.def Info: lmg_poincare.jpeg  used on input line 383.
+Package pdftex.def Info: lmg_poincare.jpeg  used on input line 378.
 (pdftex.def)             Requested size: 256.07509pt x 256.07509pt.
 
-Overfull \hbox (10.07509pt too wide) in paragraph at lines 383--384
+Overfull \hbox (10.07509pt too wide) in paragraph at lines 378--379
  [][] 
  []
 
 <phase_transition_LMG_N.jpeg, id=182, 722.7pt x 722.7pt>
 File: phase_transition_LMG_N.jpeg Graphic file (type jpg)
 <use phase_transition_LMG_N.jpeg>
-Package pdftex.def Info: phase_transition_LMG_N.jpeg  used on input line 392.
+Package pdftex.def Info: phase_transition_LMG_N.jpeg  used on input line 387.
 (pdftex.def)             Requested size: 250.37938pt x 256.06956pt.
 
-Overfull \hbox (4.37938pt too wide) in paragraph at lines 392--393
+Overfull \hbox (4.37938pt too wide) in paragraph at lines 387--388
  [][] 
  []
 
 [8 <./lmg_poincare.jpeg>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 408.
+ on input line 403.
 
 (./main.bbl [9 <./phase_transition_LMG_N.jpeg>]
 Underfull \hbox (badness 2913) in paragraph at lines 180--189
@@ -681,7 +681,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  13100 strings out of 478287
- 197331 string characters out of 5849289
+ 197333 string characters out of 5849289
  562731 words of memory out of 5000000
  31013 multiletter control sequences out of 15000+600000
  480657 words of font info for 69 fonts, out of 8000000 for 9000
@@ -707,7 +707,7 @@ fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (10 pages, 14431144 bytes).
+Output written on main.pdf (10 pages, 14430959 bytes).
 PDF statistics:
  387 PDF objects out of 1000 (max. 8388607)
  320 compressed objects within 4 object streams
