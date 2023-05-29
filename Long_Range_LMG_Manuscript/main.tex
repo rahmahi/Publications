@@ -177,7 +177,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	\begin{align}
 		H^\prime(t) =& \sum_{\substack{(k,-k) \\ \mbox{pairs}}} \psi^\dagger_k
 		\bigg[\ \tau_z f_k + 2\tau_x \Delta_k \sum_{n\geq 0} J_{2n}(\eta)\cos{\big(2n\omega t\big)} \nonumber\\
-		&\hskip 1.2cm- 2\tau^y\Delta_k \sum_{n\geq 0} J_{2n+1}(\eta)\sin{\big\{\big(2n+1\big)\omega t\big\}}   \bigg]\psi_k,
+		&\hskip 0.7cm- 2\tau^y\Delta_k \sum_{n\geq 0} J_{2n+1}(\eta)\sin{\big\{\big(2n+1\big)\omega t\big\}}   \bigg]\psi_k,
 	\end{align}\\
 	
 	In the regime where $\omega$ is significantly larger than $f_k$ $i.e.$  $\omega \gg f_k$, the long-term average $\overline{H^\prime(t)}$ can serve as a suitable approximation for $H^\prime(t)$. This approximation, known as the Rotated Wave Approximation (RWA), eliminates the oscillating modes and results in an effective Hamiltonian that is independent of time.
@@ -186,9 +186,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 		H^{RWA} = \sum_{(k,-k)-\mbox{pairs}} \psi^\dagger_k
 		\bigg[\ f_k\tau_z + 2 J_0(\eta) \Delta_k\tau_x \bigg]\psi_k,
 	\end{equation}
-	Clearly, if we engineer drive parameters such that $\eta$ lies on a root of $J_0(\eta)$, a straightforward case of Floquet Engineering, then the fermion number (THIS PART STILL NEEDS WORK) becomes an approximately conserved quantity at this resonance. Thus, it is possible to directly control $H^{RWA}$ and induce a complete freezing of otherwise responsive observables. That this leads to a spectacular breakdown of ETH can be readily demonstrated by ... NOW CONTEXUALIZE THIS WRT THE DREK ABOUT FUNCTIONAL DERIVATIVES...
-	t\q
-	The extent to which a particular (quasi) stationary state is localized (or frozen) in a physically meaningful representation can be quantified by the \emph{Inverse Participation Ratio} (IPR). In the position representation, the IPR for a state $\ket{\psi}$  \cite{mukherjee_modulation-assisted_2015,lin_many-body_2018,murphy_generalized_2011, torres-herrera_self-averaging_2020} is defined as
+	It is evident that by manipulating the drive parameters, specifically the amplitude denoted by $h$ and the frequency denoted by $\omega$, in a manner such that $\eta$ is positioned on a root of $J_0(\eta)$, the fermion number can be conserved to a significant extent at this particular resonance. Consequently, it is feasible to exercise direct control over $H^{RWA}$, resulting in a comprehensive cessation of otherwise responsive observables. The quantification of the degree of localization or freezing of a specific (quasi) stationary state in a physically significant representation can be achieved through the utilization of the \emph{Inverse Participation Ratio} (IPR).  In the position representation, the IPR for a state $\ket{\psi}$  \cite{mukherjee_modulation-assisted_2015,lin_many-body_2018,murphy_generalized_2011, torres-herrera_self-averaging_2020} is defined as
 	\begin{equation*}
 		\phi_{IPR}\equiv \int \mathrm{d}\mathbf{x}\;\vert\ip{\mathbf{x}}{\psi}\vert^4
 	\end{equation*}
