@@ -107,32 +107,31 @@ prb,
 	
 	In the first section of this paper, we presented a brief overview of essential theoretical frameworks. The Ising Model driven by a transverse periodic field which breaks symmetry is presented next in section II. Rotating Wave Approximation (RWA) ~\cite{fujii_introduction_2017}, where only the slowest rotating terms in the Fourier expansion of the Hamiltonian in a frame co-rotating with symmetry breaking drive field are retained, is used to make a close approximation of the Ising Hamiltonian, and higher-order corrections are obtained also. We have applied the Floquet theory of a periodically driven system and obtained Floquet modes to get the IPR of the Floquet modes. It is used to probe the system dynamics in the high and low-frequency domains. In section III we introduce  LMG model as a paradigmatic spin model for long-range spin-spin interaction. We formulated the system Hamiltonian which governs it at a continuum limit and also simplified it using RWA to find Floquet-IPR for low and high-frequency regions of operation. In section IV we have contrasted the classical Lipkin model driven with both at a higher frequency and sufficient lower frequency for phase-space and Hushimi Q-functions analysis. In section V we have discussed the  system dynamics driven by adiabatically increased drive frequency from low to high limit thereby we discover a phase transition at the system localization resonance point. Finally, we conclude and discuss the outlook. 
 	
-	\section{\label{sec:background} Background}
-	
-	PROOFREADING THIS NOW.
+\section{\label{sec:background} Background}
 	
 The Floquet Eigenstate Thermalization Hypothesis (FETH) is a theoretical construct that characterizes the thermalization process of a quantum system that is subject to a time-periodic many-body Hamiltonian. The framework presented enables comprehension of the thermal-like behavior exhibited by a system that is intrinsically out of equilibrium. The Floquet Engineering Theorem (FETH) holds significant relevance in the investigation of stimulated quantum systems, wherein the Hamiltonian undergoes periodic fluctuations over time.
 
 To understand FETH, let's consider a many-body system described by a time-periodic Hamiltonian H(t) with a period T. The time evolution of the system is governed by the Schrödinger equation, $i\hbar \frac{\partial{\psi(t)}}{\partial{t}} = H(t)\psi(t)$, where $\psi(t)$ is the state vector of the system at time t.
 
-The Floquet theorem states that for a time-periodic Hamiltonian, the solutions of the Schrödinger equation can be written as $\psi(t) = e^{-i\epsilon t/\hbar} \phi(t)$, where $\phi(t)$ is a T-periodic function and$\epsilon$ is the quasienergy. The quasienergy spectrum is bounded within a range of $[-\hbar\omega/2, \hbar\omega/2]$, where $\omega = 2\pi/T$ is the driving frequency.
+The Floquet theorem states that for a time-periodic Hamiltonian, the solutions of the Schrödinger equation can be written as $\ket{\psi(t)} = e^{-i\epsilon t/\hbar} \ket{\phi(t)}$, where $\ket{\phi(t)}$ is a T-periodic function and $``\epsilon"$ is the quasienergy. The quasienergy spectrum is bounded within a range of $[-\hbar\omega/2, \hbar\omega/2]$, where $\omega = 2\pi/T$ is the driving frequency.
 
-According to FETH, in the limit of large system size and under certain conditions, the quasienergy eigenstates of the time-periodic Hamiltonian behave like thermal states. Specifically, for an observable A, the expectation value of A in a quasienergy eigenstate $\psi_\alpha$ with quasienergy $\epsilon_\alpha$ can be approximated by the thermal expectation value:
+FETH posits that subject to specific conditions and in the context of a system of significant size, the quasienergy eigenstates of a time-periodic Hamiltonian exhibit thermal state-like behavior. In the context of quantum mechanics, it is possible to estimate the expectation value of an observable A in a quasienergy eigenstate $\psi_\alpha$ with quasienergy $\epsilon_\alpha$ by utilizing the thermal expectation value:
+
 \begin{equation}
 \bra{\psi_\alpha}\hat{A}\ket{\psi_\alpha} = \frac{Tr (Ae^{-\beta H_{eq}})}{Tr(e^{-\beta H_{eq}})}
 \end{equation}
  
 where $\beta = 1/(k_B T)$ is the inverse temperature, $H_{eq}$ is an effective Hamiltonian that captures the long-time average dynamics of the system, and $k_B$ is the Boltzmann constant.
 
-In summary, FETH suggests that the time-periodic many-body Hamiltonian exhibits thermalization in the long-time limit, with the quasienergy eigenstates resembling thermal states. This hypothesis provides a valuable tool for understanding the behavior of driven quantum systems and their connection to thermal equilibrium.
+To put it simply, the findings of FETH propose that the many-body Hamiltonian with time-periodic characteristics undergoes thermalization over an extended period, with the quasienergy eigenstates bearing resemblance to thermal states. The aforementioned hypothesis serves as a valuable instrument for comprehending the conduct of stimulated quantum systems and their correlation with thermal equilibrium.
 
 
 The Eigenstate Thermalization Hypothesis (ETH) is a conjecture that relates the expectation values of observables in individual eigenstates of a quantum system to the predictions of statistical mechanics. The derivation of ETH involves the assumption of ergodicity, which states that a system explores all accessible states in its phase space uniformly over time.
 Consider a many-body quantum system described by a time-dependent periodic Hamiltonian H(t) with a period T. The Schrödinger equation governing the time evolution of the system is given by $i\hbar \pdv{\psi(t)}{t} = \hat{H}(t) \ket{\psi(t)}$
 
-$i\hbar \pdv{\psi(t)}{t} = H(t) \ket{\psi(t)}$, where $\ket{\psi(t)}$ is the state vector of the system at time t. We aim to derive ETH by examining the expectation value of an observable A in an eigenstate of the Hamiltonian.
+$i\hbar \pdv{\psi(t)}{t} = \hat{H}(t) \ket{\psi(t)}$, where $\ket{\psi(t)}$ is the state vector of the system at time t. We aim to derive ETH by examining the expectation value of an observable $\hat{A}$ in an eigenstate of the Hamiltonian.
 
-Let $\ket{n(t)}$ be an eigenstate of H(t) with energy $E_n (t)$, such that $H(t)\ket{n(t)} = E_n (t)\ket{n(t)}$. We want to calculate the expectation value of the observable A in this eigenstate: $\expval{\hat{A}(t)}_n = \expval{\hat{A}(t)}{{n(t)}}$.
+Let $\ket{n(t)}$ be an eigenstate of $\hat{H}(t)$ with energy $E_n (t)$, such that $H(t)\ket{n(t)} = E_n (t)\ket{n(t)}$. We want to calculate the expectation value of the observable $\hat{A}$ in this eigenstate: $\expval{\hat{A}(t)}_n = \expval{\hat{A}(t)}{{n(t)}}$.
 
 To proceed with the derivation, we invoke the concept of adiabatic perturbation theory, assuming that the Hamiltonian slowly varies in time. We can expand the eigenstate and eigenenergy as perturbative series:
 \begin{align*}
@@ -145,12 +144,12 @@ Plugging these expansions into the expression for the expectation value, we obta
 \expval{\hat{A}(t)}_n = \sum_{m,k} c_M^*(t) c_k(t) \bra{n(\theta)}\ket{m(\theta}\bra{m(t)}\hat(A)(t)\ket{k(t)} \bra{k(\theta)}\ket(n(\theta))
 \end{widetext}
 where $ \bra{m(t)}\hat(A)(t)\ket{k(t)}$ represents the matrix element of the observable $\hat{A}$ between the time-dependent states $\ket{m(t)}$ and $\ket{k(t)}$.
-In the ergodic hypothesis, it is assumed that the system explores the entire Hilbert space uniformly, such that the matrix elements ⟨m(t)|A(t)|k(t)⟩ become indistinguishable for most pairs of m and k. This allows us to approximate $\bra{m(t)}\hat{A}(t)\ket{k(t)} ≈ A_{eq} \delta_{mk}$, where $A_{eq}$ is the expectation value of the observable $\hat{A}$ in the equilibrium thermal ensemble.
+In the ergodic hypothesis, it is assumed that the system explores the entire Hilbert space uniformly, such that the matrix elements $\bra{m(t)}\hat{A}(t)\ket{k(t)}$ become indistinguishable for most pairs of m and k. This allows us to approximate $\bra{m(t)}\hat{A}(t)\ket{k(t)} ≈ A_{eq} \delta_{mk}$, where $A_{eq}$ is the expectation value of the observable $\hat{A}$ in the equilibrium thermal ensemble.
 Applying this approximation, the expression for the expectation value becomes:
 \begin{equation*}
 \expval{\hat{A}(t)}_n = \sum_m \abs{c_m(t)}^2 \bra{n(\theta)}\ket{m(\theta)} \hat{A}_{eq} \bra{n(0)}\ket{m(0)}
 \end{equation*}
-Finally, assuming that the initial state |n(0)⟩ is random and uncorrelated with the Hamiltonian eigenstates, we can use the property $\bra{n(0)}\ket{m(0)}=\delta_{nm}$. This yields:
+Finally, assuming that the initial state $\ket{n(0)}$ is random and uncorrelated with the Hamiltonian eigenstates, we can use the property $\bra{n(0)}\ket{m(0)}=\delta_{nm}$. This yields:
 \begin{equation*}
 \expval{\hat{A}(t)}_n = \sum_m |c_m(t)|^2 \hat{A}_{eq} = \hat{A}_{eq}
 \end{equation*}
@@ -163,12 +162,12 @@ Therefore, in the limit of large systems and under the ergodic assumption, the e
 		\hat{H}_0 &= -\frac{1}{2}\sum^N_{i=1} \sigma^x_i \sigma^x_{i+1}\\
 		\hat{H}_1 &= -\frac{1}{2}\sum_{i=1}^N \sigma^z_{i}.
 	\end{align}
-	Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour itneractions between $N$ spin-$1/2$ particles on a one-dimensional lattice. The transverse field is given by $\hat{H}_1$, and is being modulated by a time-periodic and harmonic signal $h_z(t) = h_0 + h\cos{\omega t}$, yielding a time period $T=2\pi/\omega$ with amplitude $h$, drive frequency $\omega$, and d.c. field $h_0$. This Hamiltonian can be readily transformed into a spinless pseudo-fermionic system via the Jordan-Wigner transformation. Written in momentum space spanned by spinors $\psi_k = (c_{-k}, c^\dagger_k)^T$ of fermions at momentum $k$ created (annihilated) by operators $c^\dagger_k$ ($c_k$). This yields an effective Hamiltonian ~\cite{mbeng_quantum_2020}
+Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interactions between $N$ number of  spin-$1/2$ particles on a one-dimensional spin network. The transverse field is denoted by $\hat{H}_1$, and is being modulated by a time-periodic and harmonic signal $h_z(t) = h_0 + h\cos{\omega t}$, yielding a time period $T=2\pi/\omega$ with amplitude $h$, drive frequency $\omega$, and d.c. field $h_0$. This Hamiltonian can be readily transformed into a spinless pseudo-fermionic system via the Jordan-Wigner transformation. Written in momentum space spanned by spinors $\psi_k = (c_{-k}, c^\dagger_k)^T$ of fermions at momentum $k$ created (annihilated) by operators $c^\dagger_k$ ($c_k$). This yields an effective Hamiltonian ~\cite{mbeng_quantum_2020}
 	\begin{equation}
 		H(t) = \sum_{(k,-k)-\mbox{pairs}} \psi^\dagger_k
 		\Bigg[\ \bigg(f_k - h_z(t)\bigg)\tau_z +  \tau_x \Delta_k\Bigg]\psi_k
 	\end{equation}
-	with $f_k = J\cos{k}$, $\Delta_k = J\sin{k}$, $\tau_{xyz}$ are the three Pauli Matrices, and the sum is over distinct $(k, -k)$ \textit{Cooper Pairs}. Now, we transform to the rotated frame via the unitary transformation operator $U(t) = \prod_k U_k(t)$, where $U_k(t) = \exp{\Big[\frac{i h}{\omega}\sin{\omega t}\Big]\tau_z}$. This yields the transformed Hamiltonian
+	with $f_k = J\cos{k}$, $\Delta_k = J\sin{k}$, $\tau_{xyz}$ are the three Pauli Matrices, and the sum is over distinct $(k, -k)$ \textit{Cooper Pairs}. The transformation to the rotated frame is achieved by means of the unitary transformation operator denoted as $U(t) = \prod_k U_k(t)$, where $U_k(t) = \exp{\Big[\frac{i h}{\omega}\sin{\omega t}\Big]\tau_z}$. The resulting Hamiltonian is obtained through transformation,
 	\begin{multline*}
 		H^\prime(t) = \sum_{(k,-k)-\mbox{pairs}} \psi^\dagger_k
 		\bigg[\ \tau_z f_k + \tau_x \cos{\big(\eta\sin{\omega t}\big)}  \\
@@ -176,18 +175,19 @@ Therefore, in the limit of large systems and under the ergodic assumption, the e
 	\end{multline*}
 	where we defined $\eta=2h/\omega$. Using the Jacobi-Anger formula $e^{i \eta \sin{\omega t}} = \sum_{n=-\infty}^{\infty} J_n(\eta)\, e^{i n \omega t}$, the transformed Hamiltonian simplifies to \\
 	\begin{align}
-		H^\prime(t) =& \sum_{(k,-k)-\mbox{pairs}} \psi^\dagger_k
+		H^\prime(t) =& \sum_{\substack{(k,-k) \\ \mbox{pairs}}} \psi^\dagger_k
 		\bigg[\ \tau_z f_k + 2\tau_x \Delta_k \sum_{n\geq 0} J_{2n}(\eta)\cos{\big(2n\omega t\big)} \nonumber\\
 		&\hskip 1.2cm- 2\tau^y\Delta_k \sum_{n\geq 0} J_{2n+1}(\eta)\sin{\big\{\big(2n+1\big)\omega t\big\}}   \bigg]\psi_k,
 	\end{align}\\
-	Now, for large $\omega \gg f_k$, we can approximate $H^\prime(t)$ by its long-time average $\overline{H^\prime(t)}$, leaving behind only the non-oscillating modes, a  \textit{Rotated Wave Approximation} that yields an effective time-independent Hamiltonian,
+	
+	In the regime where $\omega$ is significantly larger than $f_k$ $i.e.$  $\omega \gg f_k$, the long-term average $\overline{H^\prime(t)}$ can serve as a suitable approximation for $H^\prime(t)$. This approximation, known as the Rotated Wave Approximation (RWA), eliminates the oscillating modes and results in an effective Hamiltonian that is independent of time.
 	\begin{equation}
 		\label{eq:hrwa:tfim}
 		H^{RWA} = \sum_{(k,-k)-\mbox{pairs}} \psi^\dagger_k
 		\bigg[\ f_k\tau_z + 2 J_0(\eta) \Delta_k\tau_x \bigg]\psi_k,
 	\end{equation}
 	Clearly, if we engineer drive parameters such that $\eta$ lies on a root of $J_0(\eta)$, a straightforward case of Floquet Engineering, then the fermion number (THIS PART STILL NEEDS WORK) becomes an approximately conserved quantity at this resonance. Thus, it is possible to directly control $H^{RWA}$ and induce a complete freezing of otherwise responsive observables. That this leads to a spectacular breakdown of ETH can be readily demonstrated by ... NOW CONTEXUALIZE THIS WRT THE DREK ABOUT FUNCTIONAL DERIVATIVES...
-	
+	t\q
 	The extent to which a particular (quasi) stationary state is localized (or frozen) in a physically meaningful representation can be quantified by the \emph{Inverse Participation Ratio} (IPR). In the position representation, the IPR for a state $\ket{\psi}$  \cite{mukherjee_modulation-assisted_2015,lin_many-body_2018,murphy_generalized_2011, torres-herrera_self-averaging_2020} is defined as
 	\begin{equation*}
 		\phi_{IPR}\equiv \int \mathrm{d}\mathbf{x}\;\vert\ip{\mathbf{x}}{\psi}\vert^4
