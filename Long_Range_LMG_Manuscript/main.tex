@@ -339,16 +339,21 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 		\centering
 		\includegraphics[height = 12.0cm, width =9.0cm]{comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg}
 		\label{lmg_ipr_rwa11}
-		\caption{The comparison between IPR for exact dynamics and RWA with corresponding correction orders. IPR is calculated for four different $\eta$'s and corresponding $J_0(\eta)\neq 0$ values. blue:$\eta = 2.40, J_0(\eta) = 0.0$, dashed orange:$\eta = 18.07, J_0(\eta) = 0.0$, green:$\eta =13.03, J_0(\eta) = 0.21$, red:$\eta = 1.62, J_0(\eta)= 0.44$. IPR plots for RWA with zeroth order aren't enough to describe the exact dynamics, but plots for RWA with first-order correction are similar to the exact dynamics.}
+		\caption{The comparison between IPR for exact dynamics and RWA with corresponding correction orders. IPR is calculated for four different $\eta$'s and corresponding $J_0(\eta)\neq 0$ values for colors, Blue :$\eta = 2.40, J_0(\eta) = 0.0$, dashed orange:$\eta = 18.07, J_0(\eta) = 0.0$, Green:$\eta =13.03, J_0(\eta) = 0.21$, Red:$\eta = 1.62, J_0(\eta)= 0.44$. IPR plots for RWA with zeroth order aren't enough to describe the exact dynamics, but plots for RWA with first-order correction are similar to the exact dynamics.}
 	\end{figure}
 	
-	IPR plots for precise dynamics describe that the freezing point at first (blue colour curve) Bessel's root of zeroth order of first kind is not enough for many-body localization in the top panel. This is because of the corresponding higher magnitude of other Bessel's roots of higher order. At higher localization points (shown in orange with dashes), many-body localization is most noticeable. Away from the point of localization, various curves, both green and red, represent how scattered the system is.	RWA for zeroth order in the centre panel has a nearly identical pattern at places that are further away from localization points (green and red), but the curves for both higher and lower localization points have fully localised, which contradicts the precise conclusion found in the panel on top. In the bottom panel, RWA which has been corrected to the first order exhibits a similar curve structure with exact dynamics.
+	The IPR plots pertaining to exact dynamics indicate that the freezing point, represented by the initial blue curve corresponding to Bessel's root of zeroth order of first kind, is insufficient for achieving many-body localization, as depicted in the top panel. The reason for this phenomenon is attributed to the greater magnitude of other Bessel roots of higher order, which in turn leads to delocalization. However, it is worth noting that at elevated localization points (as depicted by the dashed orange curve), localization is particularly conspicuous. In terms of system distribution, a range of curves, denoted by both green and red, illustrates the degree of distribution. The zeroth order RWA in the central panel exhibits a consistent pattern at locations distant from the resonance point, as evidenced by the congruent green and red curves. However, the curves for both higher and lower localization points display complete localization, which contradicts the precise findings presented in the top panel. This necessitates the incorporation of higher-order corrections into the Rotating Wave Approximation (RWA). The application of the first-order correction to the Rotating Wave Approximation (RWA) in the lower panel results in a curve structure that is recognizable and consistent with the exact dynamics.
 	
 	\section{\label{sec:level4}Classical Lipkin Dynamics}
-	In the classical(continuum) limit, $N\rightarrow\infty$, we can ignore the difference between adjacent values of $s_i$ in equation \ref{eq:lmg:tssham}, and the Hamiltonian per particle becomes $h(t)\equiv \frac{1}{N}H(t) = h + h_0\cos{(\omega t)}h_1$, where
+	In the context of the classical (continuum) limit, where $N$ approaches infinity, the disparity between neighboring values of $s_i$ in equation \ref{eq:lmg:tssham} can be disregarded, resulting in a Hamiltonian per particle of $h(t)\equiv \frac{1}{N}$ and the Hamiltonian per particle becomes
+	
+	\begin{equation}
+	h(t)\equiv \frac{1}{N}H(t) = h + h_0\cos{(\omega t)}h_1,
+	\end{equation}
+	where,
 	\begin{eqnarray}
 	(h)_{ij} &\approx& - 2s^2_i \delta_{ij},\nonumber\\
-	H_0 &\rightarrow& -2s^2\\
+	H_0 &\rightarrow& -2s^2\nonumber\\
 	(h_1)_{ij} &\approx& \sqrt{1 - 4s^2_i}\left[\delta_{i+1, j}  + \delta_{i-1,j}\right]\nonumber\\
 	H_1 &\rightarrow& \sqrt{1 - 4s^2_i}\cos{p},
 	\end{eqnarray}
@@ -365,14 +370,14 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 		\label{eq:class:poinc}
 	\end{align}
 	
-	We solved Hamiltonian \ref{eq:class:ham} using equations \ref{eq:class:poinc} to obtain position and moemntum coordinates $p,q$ and plotted in the Poincar$\acute{e}$ surface of section (PSOS) strobbed at each multiple of time period. A chaotic Poincare pattern is found for all small drive amplitude $s.t.$  $A/J < 0.5 $ and also a regular pattern emerges at for ratios $A/J$ $\geq$ 0.5 both at small drive frequency $\omega \sim 2.0$ ~\cite{russomanno_thermalization_2015}. 
+	We solved Hamiltonian numerically \ref{eq:class:ham} using equations \ref{eq:class:poinc} to obtain position and moemntum coordinates $p,q$ and plotted in the Poincar$\acute{e}$ surface of section (PSOS) strobbed at each multiple of time period. A chaotic Poincare pattern is found for all small drive amplitude $s.t.$  $A/J < 0.5 $ and also a regular pattern emerges at for ratios $A/J$ $\geq$ 0.5 both at small drive frequency $\omega \sim 2.0$ ~\cite{russomanno_thermalization_2015}. 
 	
-	But at a sufficient high-frequency regime, the system behaves differently. We have compared  Poincare sections of the ensuing dynamics for $h(t)=h\cos{\omega t}$ for two cases, one for which $\omega=2.5$ (smaller frequency and consequently small amplitude) and one at $\omega=90.0$ (high frequency and corresponding high amplitude) at $J_0(4h/\omega)=0$. These are compared with the Husimi Q-functions of the obtained Floquet States. The quantum phase space is described by the Spectral Average of the Husimi functions of all the Floquet modes $|\phi^n\rangle$ for the chosen value of $S^2$, i.e. for a coherent state $|q, p\rangle$, we plot in FIG. \ref{fig:classical_lipkin}.
+	However, under a regime of sufficiently high frequency, the system exhibits distinct behavior. The study involves a comparison of the Poincar$\acute{e}$ sections of the ensuing dynamics under the influence of $h(t)=h\cos{\omega t}$, where two distinct scenarios have been considered. The first scenario pertains to the case where $\omega=2.5$, corresponds to a lower frequency and, consequently, a smaller amplitude. The second scenario pertains to the case where $\omega=90.0$,  corresponds to a higher frequency and, correspondingly, a higher amplitude. Both scenarios have been evaluated at $J_0(4h/\omega)=0$. The Husimi Q-functions of the acquired Floquet States are compared with these. The quantum phase space is characterized by the Spectral Average of the Husimi functions of all the Floquet modes $\ket{\phi^n}$ for a given value of $S^2$. Specifically, for a coherent state $\ket{q,p}$, the corresponding plot is presented in FIG.\ref{fig:classical_lipkin}.
 	\begin{equation*}
 		H(q,p)\equiv \frac{1}{\big(2N+1\big)\pi}\sum_n \ip{q,p}{\phi^n}\ip{\phi^n}{q,p}
 	\end{equation*}
 	
-	At small $\omega$, where the classical plots are chaos dominated ~\cite{Kidd2019}, and at large $\omega$ the sharp regular pattern proves localization in the Poincar$\acute{e}$ plot. 
+	The classical plots are dominated by chaos at low values of $\omega$, as noted in Kidd's work~\cite{Kidd2019}. Conversely, at high values of $\omega$, the Poincar$\acute{e}$ plot exhibits a distinct regular pattern, indicating localization.
 	\begin{figure}[ht!]
 		\centering
 		\includegraphics[height = 9.0cm, width = 9.0 cm]{lmg_poincare.jpeg}
