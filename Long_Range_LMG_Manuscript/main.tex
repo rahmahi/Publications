@@ -111,13 +111,13 @@ prb,
 	
 	PROOFREADING THIS NOW.
 	
-	The Floquet Eigenstate Thermalization Hypothesis (FETH) is a concept that describes the thermalization of a quantum system governed by a time-periodic many-body Hamiltonian. It provides a framework to understand how such a system can exhibit thermal-like behavior even though it is inherently out of equilibrium. The FETH is particularly relevant in the study of driven quantum systems, where the Hamiltonian periodically varies in time.
+The Floquet Eigenstate Thermalization Hypothesis (FETH) is a theoretical construct that characterizes the thermalization process of a quantum system that is subject to a time-periodic many-body Hamiltonian. The framework presented enables comprehension of the thermal-like behavior exhibited by a system that is intrinsically out of equilibrium. The Floquet Engineering Theorem (FETH) holds significant relevance in the investigation of stimulated quantum systems, wherein the Hamiltonian undergoes periodic fluctuations over time.
 
 To understand FETH, let's consider a many-body system described by a time-periodic Hamiltonian H(t) with a period T. The time evolution of the system is governed by the Schrödinger equation, $i\hbar \frac{\partial{\psi(t)}}{\partial{t}} = H(t)\psi(t)$, where $\psi(t)$ is the state vector of the system at time t.
 
 The Floquet theorem states that for a time-periodic Hamiltonian, the solutions of the Schrödinger equation can be written as $\psi(t) = e^{-i\epsilon t/\hbar} \phi(t)$, where $\phi(t)$ is a T-periodic function and$\epsilon$ is the quasienergy. The quasienergy spectrum is bounded within a range of $[-\hbar\omega/2, \hbar\omega/2]$, where $\omega = 2\pi/T$ is the driving frequency.
 
-According to FETH, in the limit of large system size and under certain conditions, the quasienergy eigenstates of the time-periodic Hamiltonian behave like thermal states. Specifically, for an observable A, the expectation value of A in a quasienergy eigenstate $\psi_\alpha$ with quasienergy$epsilon_\alpha$ can be approximated by the thermal expectation value:
+According to FETH, in the limit of large system size and under certain conditions, the quasienergy eigenstates of the time-periodic Hamiltonian behave like thermal states. Specifically, for an observable A, the expectation value of A in a quasienergy eigenstate $\psi_\alpha$ with quasienergy $\epsilon_\alpha$ can be approximated by the thermal expectation value:
 \begin{equation}
 \bra{\psi_\alpha}\hat{A}\ket{\psi_\alpha} = \frac{Tr (Ae^{-\beta H_{eq}})}{Tr(e^{-\beta H_{eq}})}
 \end{equation}
@@ -128,8 +128,12 @@ In summary, FETH suggests that the time-periodic many-body Hamiltonian exhibits 
 
 
 The Eigenstate Thermalization Hypothesis (ETH) is a conjecture that relates the expectation values of observables in individual eigenstates of a quantum system to the predictions of statistical mechanics. The derivation of ETH involves the assumption of ergodicity, which states that a system explores all accessible states in its phase space uniformly over time.
-Consider a many-body quantum system described by a time-dependent periodic Hamiltonian H(t) with a period T. The Schrödinger equation governing the time evolution of the system is given by iħ∂ψ(t)/∂t = H(t)ψ(t), where ψ(t) is the state vector of the system at time t. We aim to derive ETH by examining the expectation value of an observable A in an eigenstate of the Hamiltonian.
+Consider a many-body quantum system described by a time-dependent periodic Hamiltonian H(t) with a period T. The Schrödinger equation governing the time evolution of the system is given by $i\hbar \pdv{\psi(t)}{t} = \hat{H}(t) \ket{\psi(t)}$
+
+$i\hbar \pdv{\psi(t)}{t} = H(t) \ket{\psi(t)}$, where $\ket{\psi(t)}$ is the state vector of the system at time t. We aim to derive ETH by examining the expectation value of an observable A in an eigenstate of the Hamiltonian.
+
 Let $\ket{n(t)}$ be an eigenstate of H(t) with energy $E_n (t)$, such that $H(t)\ket{n(t)} = E_n (t)\ket{n(t)}$. We want to calculate the expectation value of the observable A in this eigenstate: $\expval{\hat{A}(t)}_n = \expval{\hat{A}(t)}{{n(t)}}$.
+
 To proceed with the derivation, we invoke the concept of adiabatic perturbation theory, assuming that the Hamiltonian slowly varies in time. We can expand the eigenstate and eigenenergy as perturbative series:
 \begin{align*}
 \ket{n(t)} =& \ket{n(\theta)} + \sum_m c_m(t)\ket{m(\theta)},\\ 
@@ -138,7 +142,7 @@ E_n (\theta) =& E_n (\theta) + \sum_m E_m (t) c_m(t)
 where $\ket{m(\theta)}$ represents the unperturbed eigenstates of $H(\theta)$ with energy $E_m(\theta)$. The coefficients $c_m (t)$ describe the time-dependent amplitude of the expansion.
 Plugging these expansions into the expression for the expectation value, we obtain:
 \begin{widetext}
-		\expval{\hat{A}(t)}_n = \sum_{m,k} c_M^*(t) c_k(t) \bra{n(\theta)}\ket{m(\theta}\bra{m(t)}\hat(A)(t)\ket{k(t)} \bra{k(\theta)}\ket(n(\theta))
+\expval{\hat{A}(t)}_n = \sum_{m,k} c_M^*(t) c_k(t) \bra{n(\theta)}\ket{m(\theta}\bra{m(t)}\hat(A)(t)\ket{k(t)} \bra{k(\theta)}\ket(n(\theta))
 \end{widetext}
 where $ \bra{m(t)}\hat(A)(t)\ket{k(t)}$ represents the matrix element of the observable $\hat{A}$ between the time-dependent states $\ket{m(t)}$ and $\ket{k(t)}$.
 In the ergodic hypothesis, it is assumed that the system explores the entire Hilbert space uniformly, such that the matrix elements ⟨m(t)|A(t)|k(t)⟩ become indistinguishable for most pairs of m and k. This allows us to approximate $\bra{m(t)}\hat{A}(t)\ket{k(t)} ≈ A_{eq} \delta_{mk}$, where $A_{eq}$ is the expectation value of the observable $\hat{A}$ in the equilibrium thermal ensemble.
