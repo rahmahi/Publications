@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{42}%
+\begin{thebibliography}{43}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -165,107 +165,6 @@
   rotating wave approximation ({RWA}): Two coherent oscillations},\ }\href
   {https://doi.org/10.4236/jmp.2017.812124} {\ \textbf {\bibinfo {volume}
   {8}},\ \bibinfo {pages} {2042}}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Deutsch}({\natexlab{a}})}]{Joshua_2018}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
-  {Deutsch}},\ }\bibfield  {title} {\bibinfo {title} {Eigenstate thermalization
-  hypothesis},\ }\href {https://doi.org/10.1088/1361-6633/aac9f1} {\ \textbf
-  {\bibinfo {volume} {81}},\ \bibinfo {pages} {296}
-  ({\natexlab{a}})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Nandkishore}\ and\ \citenamefont
-  {Huse}(2015)}]{Nandkishore_2015}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
-  {Nandkishore}}\ and\ \bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
-  {Huse}},\ }\bibfield  {title} {\bibinfo {title} {Many-body localization and
-  thermalization in quantum statistical mechanics},\ }\href
-  {https://doi.org/10.1146/annurev-conmatphys-031214-014726} {\bibfield
-  {journal} {\bibinfo  {journal} {Annual Review of Condensed Matter Physics}\
-  }\textbf {\bibinfo {volume} {6}},\ \bibinfo {pages} {15} (\bibinfo {year}
-  {2015})},\ \Eprint
-  {https://arxiv.org/abs/https://doi.org/10.1146/annurev-conmatphys-031214-014726}
-  {https://doi.org/10.1146/annurev-conmatphys-031214-014726} \BibitemShut
-  {NoStop}%
-\bibitem [{\citenamefont {Srednicki}(1999)}]{Srednicki_1999}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Srednicki}},\ }\bibfield  {title} {\bibinfo {title} {The approach to thermal
-  equilibrium in quantized chaotic systems},\ }\href
-  {https://doi.org/10.1088/0305-4470/32/7/007} {\bibfield  {journal} {\bibinfo
-  {journal} {Journal of Physics A: Mathematical and General}\ }\textbf
-  {\bibinfo {volume} {32}},\ \bibinfo {pages} {1163} (\bibinfo {year}
-  {1999})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Rigol}\ and\ \citenamefont
-  {Srednicki}(2012)}]{Rigol_2012}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Rigol}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Srednicki}},\ }\bibfield  {title} {\bibinfo {title} {Alternatives to
-  eigenstate thermalization},\ }\bibfield  {journal} {\bibinfo  {journal}
-  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {108}},\ \href
-  {https://doi.org/10.1103/physrevlett.108.110601}
-  {10.1103/physrevlett.108.110601} (\bibinfo {year} {2012})\BibitemShut
-  {NoStop}%
-\bibitem [{\citenamefont {Hobson}(1909)}]{hobson_e_w_1909_1447800}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~W.}\ \bibnamefont
-  {Hobson}},\ }\href {https://doi.org/10.1112/plms/s2-7.1.14} {\bibinfo {title}
-  {{On the Second Mean-Value Theorem of the Integral Calculus}}} (\bibinfo
-  {year} {1909})\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Deutsch}({\natexlab{b}})}]{Deutsch1991}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
-  {Deutsch}},\ }\bibfield  {title} {\bibinfo {title} {Quantum statistical
-  mechanics in a closed system},\ }\href@noop {} {\ \textbf {\bibinfo {volume}
-  {43}},\ \bibinfo {pages} {2046} ({\natexlab{b}})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Srednicki}()}]{Srednicki1994}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Srednicki}},\ }\bibfield  {title} {\bibinfo {title} {Chaos and quantum
-  thermalization},\ }\href@noop {} {\ \textbf {\bibinfo {volume} {50}},\
-  \bibinfo {pages} {888}}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Reichl}()}]{reichl_transition_2021}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
-  {Reichl}},\ }\href {https://doi.org/10.1007/978-3-030-63534-3} {\emph
-  {\bibinfo {title} {The Transition to Chaos: Conservative Classical and
-  Quantum Systems}}},\ \bibinfo {series} {Fundamental Theories of Physics},
-  Vol.\ \bibinfo {volume} {200}\ (\bibinfo  {publisher} {Springer International
-  Publishing})\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Bukov}\ \emph {et~al.}()\citenamefont {Bukov},
-  \citenamefont {D'Alessio},\ and\ \citenamefont {Polkovnikov}}]{bukov2014}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Bukov}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {D'Alessio}},\
-  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Polkovnikov}},\
-  }\bibfield  {title} {\bibinfo {title} {Universal {High}-{Frequency}
-  {Behavior} of {Periodically} {Driven} {Systems}: from {Dynamical}
-  {Stabilization} to {Floquet} {Engineering}},\ }\href@noop {} {\ }\bibinfo
-  {note} {ArXiv: 1407.4803v2}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Rozhin}()}]{Sougata2023}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Rozhin}, \bibfnamefont {Abolfazl}},\ }\bibfield  {title} {\bibinfo {title}
-  {Floquet-induced localization in long-range many-body systems}\ }\href
-  {https://doi.org/10.1103/PhysRevResearch.5.013094}
-  {10.1103/PhysRevResearch.5.013094}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Alet~Fabien}()}]{Fabien2018}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~N.}\ \bibnamefont
-  {Alet~Fabien}},\ }\bibfield  {title} {\bibinfo {title} {Many-body
-  localization: An introduction and selected topics}\ }\href
-  {https://doi.org/10.1016/j.crhy.2018.03.003}
-  {10.1016/j.crhy.2018.03.003}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Garratt}\ and\ \citenamefont
-  {Roy}()}]{garratt_resonant_2022}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~J.}\ \bibnamefont
-  {Garratt}}\ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Roy}},\
-  }\bibfield  {title} {\bibinfo {title} {Resonant energy scales and local
-  observables in the many-body localized phase},\ }\href
-  {https://doi.org/10.1103/PhysRevB.106.054309} {\ \textbf {\bibinfo {volume}
-  {106}},\ \bibinfo {pages} {054309}},\ \bibinfo {note} {publisher: American
-  Physical Society}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Stinchcombe}()}]{stinchcombe_ising_1973}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~B.}\ \bibnamefont
@@ -396,6 +295,22 @@
   {https://doi.org/10.1103/PhysRevA.100.013625} {\bibfield  {journal} {\bibinfo
    {journal} {Phys. Rev. A}\ }\textbf {\bibinfo {volume} {100}},\ \bibinfo
   {pages} {013625} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Reimann}()}]{reimann_symmetry-prohibited_2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Reimann}},\ }\bibfield  {title} {\bibinfo {title} {Symmetry-prohibited
+  thermalization after a quantum quench},\ }\href
+  {https://doi.org/10.1088/1742-5468/ac2a9c} {\ \textbf {\bibinfo {volume}
+  {2021}},\ \bibinfo {pages} {103106}},\ \bibinfo {note} {publisher: {IOP}
+  Publishing and {SISSA}}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Reichl}()}]{reichl_transition_2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Reichl}},\ }\href {https://doi.org/10.1007/978-3-030-63534-3} {\emph
+  {\bibinfo {title} {The Transition to Chaos: Conservative Classical and
+  Quantum Systems}}},\ \bibinfo {series} {Fundamental Theories of Physics},
+  Vol.\ \bibinfo {volume} {200}\ (\bibinfo  {publisher} {Springer International
+  Publishing})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Roy}\ and\ \citenamefont
   {Das}({\natexlab{b}})}]{roy_fate_2015-1}%
   \BibitemOpen
@@ -452,5 +367,98 @@
   {Refael}},\ }\bibfield  {title} {\bibinfo {title} {Quantum engine based on
   many-body localization},\ }\href {https://doi.org/10.1103/PhysRevB.99.024203}
   {\ \textbf {\bibinfo {volume} {99}},\ \bibinfo {pages} {024203}}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Deutsch}({\natexlab{a}})}]{Deutsch1991}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Deutsch}},\ }\bibfield  {title} {\bibinfo {title} {Quantum statistical
+  mechanics in a closed system},\ }\href@noop {} {\ \textbf {\bibinfo {volume}
+  {43}},\ \bibinfo {pages} {2046} ({\natexlab{a}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Srednicki}()}]{Srednicki1994}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Srednicki}},\ }\bibfield  {title} {\bibinfo {title} {Chaos and quantum
+  thermalization},\ }\href@noop {} {\ \textbf {\bibinfo {volume} {50}},\
+  \bibinfo {pages} {888}}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hobson}(1909)}]{hobson_e_w_1909_1447800}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~W.}\ \bibnamefont
+  {Hobson}},\ }\href {https://doi.org/10.1112/plms/s2-7.1.14} {\bibinfo {title}
+  {{On the Second Mean-Value Theorem of the Integral Calculus}}} (\bibinfo
+  {year} {1909})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bukov}\ \emph {et~al.}()\citenamefont {Bukov},
+  \citenamefont {D'Alessio},\ and\ \citenamefont {Polkovnikov}}]{Bukov2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Bukov}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {D'Alessio}},\
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Polkovnikov}},\
+  }\bibfield  {title} {\bibinfo {title} {Universal {High}-{Frequency}
+  {Behavior} of {Periodically} {Driven} {Systems}: from {Dynamical}
+  {Stabilization} to {Floquet} {Engineering}},\ }\href@noop {} {\ }\bibinfo
+  {note} {ArXiv: 1407.4803v2}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rozhin}()}]{Sougata2023}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Rozhin}, \bibfnamefont {Abolfazl}},\ }\bibfield  {title} {\bibinfo {title}
+  {Floquet-induced localization in long-range many-body systems}\ }\href
+  {https://doi.org/10.1103/PhysRevResearch.5.013094}
+  {10.1103/PhysRevResearch.5.013094}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Alet~Fabien}()}]{Fabien2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~N.}\ \bibnamefont
+  {Alet~Fabien}},\ }\bibfield  {title} {\bibinfo {title} {Many-body
+  localization: An introduction and selected topics}\ }\href
+  {https://doi.org/10.1016/j.crhy.2018.03.003}
+  {10.1016/j.crhy.2018.03.003}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Garratt}\ and\ \citenamefont
+  {Roy}()}]{garratt_resonant_2022}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~J.}\ \bibnamefont
+  {Garratt}}\ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Roy}},\
+  }\bibfield  {title} {\bibinfo {title} {Resonant energy scales and local
+  observables in the many-body localized phase},\ }\href
+  {https://doi.org/10.1103/PhysRevB.106.054309} {\ \textbf {\bibinfo {volume}
+  {106}},\ \bibinfo {pages} {054309}},\ \bibinfo {note} {publisher: American
+  Physical Society}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Srednicki}(1999)}]{Srednicki_1999}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Srednicki}},\ }\bibfield  {title} {\bibinfo {title} {The approach to thermal
+  equilibrium in quantized chaotic systems},\ }\href
+  {https://doi.org/10.1088/0305-4470/32/7/007} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of Physics A: Mathematical and General}\ }\textbf
+  {\bibinfo {volume} {32}},\ \bibinfo {pages} {1163} (\bibinfo {year}
+  {1999})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rigol}\ and\ \citenamefont
+  {Srednicki}(2012)}]{Rigol_2012}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Rigol}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Srednicki}},\ }\bibfield  {title} {\bibinfo {title} {Alternatives to
+  eigenstate thermalization},\ }\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {108}},\ \href
+  {https://doi.org/10.1103/physrevlett.108.110601}
+  {10.1103/physrevlett.108.110601} (\bibinfo {year} {2012})\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Deutsch}({\natexlab{b}})}]{Joshua_2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Deutsch}},\ }\bibfield  {title} {\bibinfo {title} {Eigenstate thermalization
+  hypothesis},\ }\href {https://doi.org/10.1088/1361-6633/aac9f1} {\ \textbf
+  {\bibinfo {volume} {81}},\ \bibinfo {pages} {296}
+  ({\natexlab{b}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Nandkishore}\ and\ \citenamefont
+  {Huse}(2015)}]{Nandkishore_2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Nandkishore}}\ and\ \bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
+  {Huse}},\ }\bibfield  {title} {\bibinfo {title} {Many-body localization and
+  thermalization in quantum statistical mechanics},\ }\href
+  {https://doi.org/10.1146/annurev-conmatphys-031214-014726} {\bibfield
+  {journal} {\bibinfo  {journal} {Annual Review of Condensed Matter Physics}\
+  }\textbf {\bibinfo {volume} {6}},\ \bibinfo {pages} {15} (\bibinfo {year}
+  {2015})},\ \Eprint
+  {https://arxiv.org/abs/https://doi.org/10.1146/annurev-conmatphys-031214-014726}
+  {https://doi.org/10.1146/annurev-conmatphys-031214-014726} \BibitemShut
   {NoStop}%
 \end{thebibliography}%
