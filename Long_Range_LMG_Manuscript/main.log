@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.3.29)  1 JUN 2023 15:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  1 JUN 2023 15:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -516,12 +516,7 @@ Overfull \hbox (10.06737pt too wide) in paragraph at lines 209--210
  [][] 
  []
 
-[3]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 214.
-
-<phase_transition_ising.jpeg, id=124, 650.43pt x 433.62pt>
+<phase_transition_ising.jpeg, id=108, 650.43pt x 433.62pt>
 File: phase_transition_ising.jpeg Graphic file (type jpg)
 <use phase_transition_ising.jpeg>
 Package pdftex.def Info: phase_transition_ising.jpeg  used on input line 219.
@@ -535,7 +530,7 @@ Overfull \hbox (10.07838pt too wide) in paragraph at lines 219--220
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 225.
 
-<low_frq_exactN500_ipr.jpeg, id=125, 650.43pt x 433.62pt>
+<low_frq_exactN500_ipr.jpeg, id=109, 650.43pt x 433.62pt>
 File: low_frq_exactN500_ipr.jpeg Graphic file (type jpg)
 <use low_frq_exactN500_ipr.jpeg>
 Package pdftex.def Info: low_frq_exactN500_ipr.jpeg  used on input line 227.
@@ -544,6 +539,11 @@ Package pdftex.def Info: low_frq_exactN500_ipr.jpeg  used on input line 227.
 Overfull \hbox (10.07838pt too wide) in paragraph at lines 227--228
  [][] 
  []
+
+[3]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 233.
 
 [4 <./ising_exact_ipr.jpeg> <./phase_transition_ising.jpeg> <./low_frq_exactN50
 0_ipr.jpeg>]
@@ -555,7 +555,11 @@ cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 h[][][] \OMS/cmsy/m/n/10 ^^@
  []
 
 [5]
-<ipr_exact_dynm_N50_frq_90_.jpeg, id=151, 650.43pt x 650.43pt>
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 319.
+
+<ipr_exact_dynm_N50_frq_90_.jpeg, id=152, 650.43pt x 650.43pt>
 File: ipr_exact_dynm_N50_frq_90_.jpeg Graphic file (type jpg)
 <use ipr_exact_dynm_N50_frq_90_.jpeg>
 Package pdftex.def Info: ipr_exact_dynm_N50_frq_90_.jpeg  used on input line 32
@@ -566,7 +570,7 @@ Overfull \hbox (10.07838pt too wide) in paragraph at lines 321--322
  [][] 
  []
 
-<comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg, id=153, 578.16pt x 722.7pt>
+<comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg, id=154, 578.16pt x 722.7pt>
 File: comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg Graphic file (type jpg)
 <use comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg>
 Package pdftex.def Info: comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg  used on 
@@ -577,13 +581,19 @@ Overfull \hbox (10.06737pt too wide) in paragraph at lines 341--343
  [][] 
  []
 
-[6]
+
+Overfull \vbox (8.43733pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (8.43733pt too high) has occurred while \output is active []
+
+
+[6 <./ipr_exact_dynm_N50_frq_90_.jpeg>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 351.
+ on input line 347.
 
-[7 <./ipr_exact_dynm_N50_frq_90_.jpeg> <./comprasion_LMG_50_highFr90_exact_nd_r
-wa.jpeg>]
+[7 <./comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg>]
 <lmg_poincare.jpeg, id=182, 1084.05pt x 1084.05pt>
 File: lmg_poincare.jpeg Graphic file (type jpg)
 <use lmg_poincare.jpeg>
@@ -665,13 +675,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 29C5D75E175BD1F627FD463501B53E22;2230.
  ) 
 Here is how much of TeX's memory you used:
- 13113 strings out of 479621
- 197604 string characters out of 5882880
- 541704 words of memory out of 5000000
- 30932 multiletter control sequences out of 15000+600000
+ 13111 strings out of 478287
+ 197585 string characters out of 5849289
+ 548169 words of memory out of 5000000
+ 31018 multiletter control sequences out of 15000+600000
  479959 words of font info for 67 fonts, out of 8000000 for 9000
- 331 hyphenation exceptions out of 8191
- 69i,14n,77p,1928b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 1141 hyphenation exceptions out of 8191
+ 69i,14n,77p,1928b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
@@ -692,7 +702,7 @@ fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (11 pages, 16378785 bytes).
+Output written on main.pdf (11 pages, 16378835 bytes).
 PDF statistics:
  400 PDF objects out of 1000 (max. 8388607)
  331 compressed objects within 4 object streams
