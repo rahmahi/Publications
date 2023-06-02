@@ -165,6 +165,48 @@
   rotating wave approximation ({RWA}): Two coherent oscillations},\ }\href
   {https://doi.org/10.4236/jmp.2017.812124} {\ \textbf {\bibinfo {volume}
   {8}},\ \bibinfo {pages} {2042}}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Reichl}()}]{reichl_transition_2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Reichl}},\ }\href {https://doi.org/10.1007/978-3-030-63534-3} {\emph
+  {\bibinfo {title} {The Transition to Chaos: Conservative Classical and
+  Quantum Systems}}},\ \bibinfo {series} {Fundamental Theories of Physics},
+  Vol.\ \bibinfo {volume} {200}\ (\bibinfo  {publisher} {Springer International
+  Publishing})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bukov}\ \emph {et~al.}()\citenamefont {Bukov},
+  \citenamefont {D'Alessio},\ and\ \citenamefont {Polkovnikov}}]{bukov2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Bukov}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {D'Alessio}},\
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Polkovnikov}},\
+  }\bibfield  {title} {\bibinfo {title} {Universal {High}-{Frequency}
+  {Behavior} of {Periodically} {Driven} {Systems}: from {Dynamical}
+  {Stabilization} to {Floquet} {Engineering}},\ }\href@noop {} {\ }\bibinfo
+  {note} {ArXiv: 1407.4803v2}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rozhin}()}]{Sougata2023}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Rozhin}, \bibfnamefont {Abolfazl}},\ }\bibfield  {title} {\bibinfo {title}
+  {Floquet-induced localization in long-range many-body systems}\ }\href
+  {https://doi.org/10.1103/PhysRevResearch.5.013094}
+  {10.1103/PhysRevResearch.5.013094}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Alet~Fabien}()}]{Fabien2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~N.}\ \bibnamefont
+  {Alet~Fabien}},\ }\bibfield  {title} {\bibinfo {title} {Many-body
+  localization: An introduction and selected topics}\ }\href
+  {https://doi.org/10.1016/j.crhy.2018.03.003}
+  {10.1016/j.crhy.2018.03.003}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Garratt}\ and\ \citenamefont
+  {Roy}()}]{garratt_resonant_2022}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~J.}\ \bibnamefont
+  {Garratt}}\ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Roy}},\
+  }\bibfield  {title} {\bibinfo {title} {Resonant energy scales and local
+  observables in the many-body localized phase},\ }\href
+  {https://doi.org/10.1103/PhysRevB.106.054309} {\ \textbf {\bibinfo {volume}
+  {106}},\ \bibinfo {pages} {054309}},\ \bibinfo {note} {publisher: American
+  Physical Society}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Stinchcombe}()}]{stinchcombe_ising_1973}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~B.}\ \bibnamefont
@@ -303,14 +345,6 @@
   {https://doi.org/10.1088/1742-5468/ac2a9c} {\ \textbf {\bibinfo {volume}
   {2021}},\ \bibinfo {pages} {103106}},\ \bibinfo {note} {publisher: {IOP}
   Publishing and {SISSA}}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Reichl}()}]{reichl_transition_2021}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
-  {Reichl}},\ }\href {https://doi.org/10.1007/978-3-030-63534-3} {\emph
-  {\bibinfo {title} {The Transition to Chaos: Conservative Classical and
-  Quantum Systems}}},\ \bibinfo {series} {Fundamental Theories of Physics},
-  Vol.\ \bibinfo {volume} {200}\ (\bibinfo  {publisher} {Springer International
-  Publishing})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Roy}\ and\ \citenamefont
   {Das}({\natexlab{b}})}]{roy_fate_2015-1}%
   \BibitemOpen
@@ -386,40 +420,6 @@
   {Hobson}},\ }\href {https://doi.org/10.1112/plms/s2-7.1.14} {\bibinfo {title}
   {{On the Second Mean-Value Theorem of the Integral Calculus}}} (\bibinfo
   {year} {1909})\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Bukov}\ \emph {et~al.}()\citenamefont {Bukov},
-  \citenamefont {D'Alessio},\ and\ \citenamefont {Polkovnikov}}]{Bukov2014}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Bukov}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {D'Alessio}},\
-  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Polkovnikov}},\
-  }\bibfield  {title} {\bibinfo {title} {Universal {High}-{Frequency}
-  {Behavior} of {Periodically} {Driven} {Systems}: from {Dynamical}
-  {Stabilization} to {Floquet} {Engineering}},\ }\href@noop {} {\ }\bibinfo
-  {note} {ArXiv: 1407.4803v2}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Rozhin}()}]{Sougata2023}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Rozhin}, \bibfnamefont {Abolfazl}},\ }\bibfield  {title} {\bibinfo {title}
-  {Floquet-induced localization in long-range many-body systems}\ }\href
-  {https://doi.org/10.1103/PhysRevResearch.5.013094}
-  {10.1103/PhysRevResearch.5.013094}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Alet~Fabien}()}]{Fabien2018}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~N.}\ \bibnamefont
-  {Alet~Fabien}},\ }\bibfield  {title} {\bibinfo {title} {Many-body
-  localization: An introduction and selected topics}\ }\href
-  {https://doi.org/10.1016/j.crhy.2018.03.003}
-  {10.1016/j.crhy.2018.03.003}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Garratt}\ and\ \citenamefont
-  {Roy}()}]{garratt_resonant_2022}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~J.}\ \bibnamefont
-  {Garratt}}\ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Roy}},\
-  }\bibfield  {title} {\bibinfo {title} {Resonant energy scales and local
-  observables in the many-body localized phase},\ }\href
-  {https://doi.org/10.1103/PhysRevB.106.054309} {\ \textbf {\bibinfo {volume}
-  {106}},\ \bibinfo {pages} {054309}},\ \bibinfo {note} {publisher: American
-  Physical Society}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Srednicki}(1999)}]{Srednicki_1999}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
