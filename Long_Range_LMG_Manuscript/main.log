@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  2 JUN 2023 12:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  2 JUN 2023 13:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -803,19 +803,19 @@ e document class option showkeys.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 158.
-
-Overfull \hbox (12.8883pt too wide) detected at line 165
+ine 160.
+ [2]
+Overfull \hbox (12.8883pt too wide) detected at line 167
 []
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 192--194
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--196
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
@@ -823,49 +823,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 198--199
 4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.216 		
-        ]
-<ising_exact_ipr.jpeg, id=129, 578.16pt x 578.16pt>
+l.207 	\end{equation}
+                     ]
+<ising_exact_ipr.jpeg, id=124, 578.16pt x 578.16pt>
 File: ising_exact_ipr.jpeg Graphic file (type jpg)
 <use ising_exact_ipr.jpeg>
-Package pdftex.def Info: ising_exact_ipr.jpeg  used on input line 225.
+Package pdftex.def Info: ising_exact_ipr.jpeg  used on input line 227.
 (pdftex.def)             Requested size: 256.06737pt x 284.52713pt.
 
-Overfull \hbox (10.06737pt too wide) in paragraph at lines 225--226
+Overfull \hbox (10.06737pt too wide) in paragraph at lines 227--228
  [][] 
  []
 
-<phase_transition_ising.jpeg, id=136, 650.43pt x 433.62pt>
+<phase_transition_ising.jpeg, id=131, 650.43pt x 433.62pt>
 File: phase_transition_ising.jpeg Graphic file (type jpg)
 <use phase_transition_ising.jpeg>
-Package pdftex.def Info: phase_transition_ising.jpeg  used on input line 235.
+Package pdftex.def Info: phase_transition_ising.jpeg  used on input line 237.
 (pdftex.def)             Requested size: 256.07838pt x 170.71892pt.
 
-Overfull \hbox (10.07838pt too wide) in paragraph at lines 235--236
+Overfull \hbox (10.07838pt too wide) in paragraph at lines 237--238
  [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 241.
+               Default added (so using `tbp') on input line 243.
 
-<low_frq_exactN500_ipr.jpeg, id=137, 650.43pt x 433.62pt>
+<low_frq_exactN500_ipr.jpeg, id=132, 650.43pt x 433.62pt>
 File: low_frq_exactN500_ipr.jpeg Graphic file (type jpg)
 <use low_frq_exactN500_ipr.jpeg>
-Package pdftex.def Info: low_frq_exactN500_ipr.jpeg  used on input line 243.
+Package pdftex.def Info: low_frq_exactN500_ipr.jpeg  used on input line 245.
 (pdftex.def)             Requested size: 256.07838pt x 170.71892pt.
 
-Overfull \hbox (10.07838pt too wide) in paragraph at lines 243--244
+Overfull \hbox (10.07838pt too wide) in paragraph at lines 245--246
  [][] 
  []
 
 [4 <./ising_exact_ipr.jpeg>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 266.
+ on input line 251.
 
 [5 <./phase_transition_ising.jpeg> <./low_frq_exactN500_ipr.jpeg>]
-Overfull \hbox (10.01886pt too wide) detected at line 320
+Overfull \hbox (10.01886pt too wide) detected at line 322
 [][][] \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 h[][][] \OMS/cmsy
 /m/n/10 ^^@ \OML/cmm/m/it/10 m[][] \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 = [] \OMS/
 cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 h[][][] \OMS/cmsy/m/n/10 ^^@ 
@@ -874,68 +874,77 @@ cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 h[][][] \OMS/cmsy/m/n/10 ^^@
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 335.
+               Default added (so using `tbp') on input line 337.
 
-<ipr_exact_dynm_N50_frq_90_.jpeg, id=165, 650.43pt x 650.43pt>
+<ipr_exact_dynm_N50_frq_90_.jpeg, id=161, 650.43pt x 650.43pt>
 File: ipr_exact_dynm_N50_frq_90_.jpeg Graphic file (type jpg)
 <use ipr_exact_dynm_N50_frq_90_.jpeg>
 Package pdftex.def Info: ipr_exact_dynm_N50_frq_90_.jpeg  used on input line 33
-7.
+9.
 (pdftex.def)             Requested size: 256.07838pt x 256.07838pt.
 
-Overfull \hbox (10.07838pt too wide) in paragraph at lines 337--338
+Overfull \hbox (10.07838pt too wide) in paragraph at lines 339--340
  [][] 
  []
 
-[6 <./ipr_exact_dynm_N50_frq_90_.jpeg>]
-<comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg, id=178, 578.16pt x 722.7pt>
+[6]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 348.
+
+<comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg, id=176, 578.16pt x 722.7pt>
 File: comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg Graphic file (type jpg)
 <use comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg>
 Package pdftex.def Info: comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg  used on 
-input line 357.
+input line 359.
 (pdftex.def)             Requested size: 256.06737pt x 341.43344pt.
 
-Overfull \hbox (10.06737pt too wide) in paragraph at lines 357--359
+Overfull \hbox (10.06737pt too wide) in paragraph at lines 359--361
  [][] 
  []
 
-[7]
+[7 <./ipr_exact_dynm_N50_frq_90_.jpeg>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 393.
+ on input line 365.
 
-<lmg_poincare.jpeg, id=197, 1084.05pt x 1084.05pt>
+<lmg_poincare.jpeg, id=192, 1084.05pt x 1084.05pt>
 File: lmg_poincare.jpeg Graphic file (type jpg)
 <use lmg_poincare.jpeg>
-Package pdftex.def Info: lmg_poincare.jpeg  used on input line 400.
+Package pdftex.def Info: lmg_poincare.jpeg  used on input line 402.
 (pdftex.def)             Requested size: 256.07509pt x 256.07509pt.
 
-Overfull \hbox (10.07509pt too wide) in paragraph at lines 400--401
+Overfull \hbox (10.07509pt too wide) in paragraph at lines 402--403
  [][] 
  []
 
-[8 <./comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg> <./lmg_poincare.jpeg>]
-<phase_crossover_LMG.jpeg, id=207, 722.7pt x 722.7pt>
+[8 <./comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 408.
+
+<phase_crossover_LMG.jpeg, id=206, 722.7pt x 722.7pt>
 File: phase_crossover_LMG.jpeg Graphic file (type jpg)
 <use phase_crossover_LMG.jpeg>
-Package pdftex.def Info: phase_crossover_LMG.jpeg  used on input line 409.
+Package pdftex.def Info: phase_crossover_LMG.jpeg  used on input line 411.
 (pdftex.def)             Requested size: 256.06956pt x 256.0748pt.
 
-Overfull \hbox (10.06956pt too wide) in paragraph at lines 409--410
+Overfull \hbox (10.06956pt too wide) in paragraph at lines 411--412
  [][] 
  []
 
-<hbar_std.jpg, id=210, 650.43pt x 433.62pt>
+[9 <./lmg_poincare.jpeg> <./phase_crossover_LMG.jpeg>]
+<hbar_std.jpg, id=214, 650.43pt x 433.62pt>
 File: hbar_std.jpg Graphic file (type jpg)
 <use hbar_std.jpg>
-Package pdftex.def Info: hbar_std.jpg  used on input line 418.
+Package pdftex.def Info: hbar_std.jpg  used on input line 420.
 (pdftex.def)             Requested size: 256.0748pt x 170.71892pt.
 
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 418--419
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 420--421
  [][] 
  []
 
-[9 <./phase_crossover_LMG.jpeg> <./hbar_std.jpg>] (./main.bbl [10]
+[10 <./hbar_std.jpg>] (./main.bbl
 Underfull \hbox (badness 1087) in paragraph at lines 189--193
  []\OT1/cmr/m/n/9 S. Rozhin, Abol-fazl, Floquet-induced lo-cal-iza-tion in
  []
@@ -945,7 +954,7 @@ Underfull \hbox (badness 3407) in paragraph at lines 189--193
  \OT1/cmr/m/n/9 long-range many-body sys-tems []10.1103/Phys-RevRe-
  []
 
-
+[11]
 Underfull \hbox (badness 2521) in paragraph at lines 325--330
  []\OT1/cmr/m/n/9 B. Sci-olla and G. Biroli, Quan-tum quenches and
  []
@@ -967,24 +976,32 @@ x/n/9 108\OT1/cmr/m/n/9 ,
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 455--464
+Underfull \hbox (badness 2913) in paragraph at lines 455--467
  []\OT1/cmr/m/n/9 R. Nand-k-ishore and D. A. Huse, Many-body lo-
  []
 
 
-Underfull \hbox (badness 3623) in paragraph at lines 455--464
+Underfull \hbox (badness 3623) in paragraph at lines 455--467
  \OT1/cmr/m/n/9 cal-iza-tion and ther-mal-iza-tion in quan-tum sta-tis-ti-
  []
 
-) [11] (./main.aux)
+! Not loaded.
+\selectlanguage ...ing it}\errmessage {Not loaded}
+                                                  
+l.479   programmable random disorder}},\ }
+                                          \href {https://doi.org/10.1038/nph...
+
+Selecting a language requires a package supporting it
+
+) [12] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 5AC3889E33BD5528E6FF9804CC966B96;2231.
  ) 
 Here is how much of TeX's memory you used:
- 23730 strings out of 478287
- 430861 string characters out of 5849289
- 754877 words of memory out of 5000000
- 41407 multiletter control sequences out of 15000+600000
+ 23734 strings out of 478287
+ 430966 string characters out of 5849289
+ 737876 words of memory out of 5000000
+ 41409 multiletter control sequences out of 15000+600000
  479959 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,14n,118p,1928b,951s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1009,10 +1026,10 @@ pe1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/symbols/msbm7.pfb>
-Output written on main.pdf (11 pages, 16400097 bytes).
+Output written on main.pdf (12 pages, 16402100 bytes).
 PDF statistics:
- 417 PDF objects out of 1000 (max. 8388607)
- 346 compressed objects within 4 object streams
- 97 named destinations out of 1000 (max. 500000)
+ 424 PDF objects out of 1000 (max. 8388607)
+ 352 compressed objects within 4 object streams
+ 99 named destinations out of 1000 (max. 500000)
  125 words of extra memory for PDF output out of 10000 (max. 10000000)
 
