@@ -39,7 +39,7 @@ prb,
 %prstper,
 %floatfix,
 ]{revtex4-2}
-
+\usepackage{todonotes}
 \usepackage{graphicx}% Include figure files
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
@@ -50,8 +50,8 @@ prb,
 \usepackage{dsfont}
 
 \usepackage{hyperref}
-\usepackage[usenames,dvipsnames]{xcolor}
-\hypersetup{colorlinks, linkcolor={red},citecolor={blue}, urlcolor={MidnightBlue}}
+%\usepackage[usenames,dvipsnames]{xcolor}
+%\hypersetup{colorlinks, linkcolor={red},citecolor={blue}, urlcolor={MidnightBlue}}
 
 %\usepackage{hyperref}% add hypertext capabilities
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
@@ -155,7 +155,7 @@ Finally, assuming that the initial state $\ket{n(0)}$ is random and uncorrelated
 \expval{\hat{A}(t)}_n = \sum_m |c_m(t)|^2 \hat{A}_{eq} = \hat{A}_{eq}
 \end{equation*}
 Therefore, in the limit of large systems and under the ergodic assumption, the expectation value of an observable A in an eigenstate of the time-dependent Hamiltonian is approximately equal to the thermal expectation value $A_{eq}$. This is the essence of the Eigenstate Thermalization Hypothesis, which suggests that individual eigenstates of a quantum system can be described by statistical mechanics in the long-time limit.
-	
+	\todo{\tiny{You're talking about DMBL without defining or explaining. Put descriptions.}}
 	A paradigmatic example of an integrable system where DMBL occurs is  the driven Transverse Field Ising model (TFIM) in one dimension~\cite{stinchcombe_ising_1973}. The Hamiltonian is given by
 	\begin{align}
 		\label{eq:tfim:hamilt}
