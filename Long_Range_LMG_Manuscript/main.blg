@@ -15,11 +15,7 @@ Database file #1: mainNotes.bib
 Database file #2: main.bib
 Warning--entry type for "noauthor_quantum_nodate" isn't style-file defined
 --line 192 of file main.bib
-I was expecting a `,' or a `}'---line 418 of file main.bib
- :   
- :   volume = {19}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "abanin_colloquzium_2019"
 control{REVTEX42Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
 control{apsrev42Control}, control.key{N/A}, control.author{08}, control.editor{1}, control.title{0}, control.pages{0}, control.year{1}, control.eprint{N/A}, 
 Warning--jnrlst (dependency: not reversed) set 1
@@ -1387,45 +1383,86 @@ while executing---line 3515 of file apsrev4-2.bst
 ---they aren't the same literal types for entry Joshua_2018
 while executing---line 3515 of file apsrev4-2.bst
 Warning--missing journal in Joshua_2018
+"J. High Energy Phys." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry abanin_colloquium_2019
+while executing---line 3515 of file apsrev4-2.bst
+"J. High Energ. Phys." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry abanin_colloquium_2019
+while executing---line 3515 of file apsrev4-2.bst
+"JHEP" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry abanin_colloquium_2019
+while executing---line 3515 of file apsrev4-2.bst
+"Journal of Cosmology and Astroparticle Physics" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry abanin_colloquium_2019
+while executing---line 3515 of file apsrev4-2.bst
+"J. Cosmol. Astropart. Phys." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry abanin_colloquium_2019
+while executing---line 3515 of file apsrev4-2.bst
+"JCAP" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry abanin_colloquium_2019
+while executing---line 3515 of file apsrev4-2.bst
+"Journal of Instrumentation" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry abanin_colloquium_2019
+while executing---line 3515 of file apsrev4-2.bst
+"J. Instrum." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry abanin_colloquium_2019
+while executing---line 3515 of file apsrev4-2.bst
+"JINST" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry abanin_colloquium_2019
+while executing---line 3515 of file apsrev4-2.bst
+"Journal of Statistical Mechanics" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry abanin_colloquium_2019
+while executing---line 3515 of file apsrev4-2.bst
+"J. of Stat. Mech." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry abanin_colloquium_2019
+while executing---line 3515 of file apsrev4-2.bst
+"J. Stat. Mech.: Theory Exp." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry abanin_colloquium_2019
+while executing---line 3515 of file apsrev4-2.bst
+"JSTAT" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry abanin_colloquium_2019
+while executing---line 3515 of file apsrev4-2.bst
+Warning--missing journal in abanin_colloquium_2019
+Warning--empty year in abanin_colloquium_2019
 You've used 46 entries,
             6079 wiz_defined-function locations,
-            1951 strings with 24764 characters,
-and the built_in function-call counts, 42641 in all, are:
-= -- 3044
-> -- 925
-< -- 239
-+ -- 314
-- -- 228
-* -- 6151
-:= -- 4115
+            1950 strings with 24686 characters,
+and the built_in function-call counts, 42150 in all, are:
+= -- 3032
+> -- 889
+< -- 234
++ -- 304
+- -- 218
+* -- 6039
+:= -- 4083
 add.period$ -- 44
 call.type$ -- 46
 change.case$ -- 229
 chr.to.int$ -- 54
-cite$ -- 115
-duplicate$ -- 3992
-empty$ -- 3111
-format.name$ -- 537
-if$ -- 8562
+cite$ -- 117
+duplicate$ -- 3950
+empty$ -- 3082
+format.name$ -- 517
+if$ -- 8459
 int.to.chr$ -- 3
 int.to.str$ -- 53
-missing$ -- 662
+missing$ -- 658
 newline$ -- 184
 num.names$ -- 129
-pop$ -- 1843
+pop$ -- 1835
 preamble$ -- 1
-purify$ -- 183
+purify$ -- 182
 quote$ -- 0
-skip$ -- 1926
+skip$ -- 1917
 stack$ -- 0
-substring$ -- 1092
-swap$ -- 3564
-text.length$ -- 105
+substring$ -- 1100
+swap$ -- 3505
+text.length$ -- 100
 text.prefix$ -- 0
 top$ -- 10
-type$ -- 598
-warning$ -- 68
+type$ -- 593
+warning$ -- 70
 while$ -- 131
 width$ -- 0
-write$ -- 383
-(There were 430 error messages)
+write$ -- 382
+(There were 442 error messages)

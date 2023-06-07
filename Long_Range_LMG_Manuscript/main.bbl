@@ -194,8 +194,8 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~N.}\ \bibnamefont
   {Alet~Fabien}},\ }\bibfield  {title} {\bibinfo {title} {Many-body
-  localization: An introduction and selected topics}\ }\href
-  {https://doi.org/10.1016/j.crhy.2018.03.003}
+  localization: An introduction and selected topics}\ }\textbf {\bibinfo
+  {volume} {19}},\ \href {https://doi.org/10.1016/j.crhy.2018.03.003}
   {10.1016/j.crhy.2018.03.003}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Garratt}\ and\ \citenamefont
   {Roy}()}]{garratt_resonant_2022}%
@@ -447,6 +447,18 @@
   hypothesis},\ }\href {https://doi.org/10.1088/1361-6633/aac9f1} {\ \textbf
   {\bibinfo {volume} {81}},\ \bibinfo {pages} {296}
   ({\natexlab{b}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Abanin}\ \emph {et~al.}()\citenamefont {Abanin},
+  \citenamefont {Altman}, \citenamefont {Bloch},\ and\ \citenamefont
+  {Serbyn}}]{abanin_colloquium_2019}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
+  {Abanin}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Altman}},
+  \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Bloch}},\ and\ \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Serbyn}},\ }\bibfield  {title}
+  {\bibinfo {title} {Colloquium: Many-body localization, thermalization, and
+  entanglement},\ }\href {https://doi.org/10.1103/RevModPhys.91.021001} {\
+  \textbf {\bibinfo {volume} {91}},\ \bibinfo {pages} {021001}},\ \bibinfo
+  {note} {publisher: American Physical Society}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Nandkishore}\ and\ \citenamefont
   {Huse}(2015)}]{Nandkishore_2015}%
   \BibitemOpen
@@ -461,23 +473,4 @@
   {https://arxiv.org/abs/https://doi.org/10.1146/annurev-conmatphys-031214-014726}
   {https://doi.org/10.1146/annurev-conmatphys-031214-014726} \BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {Smith}\ \emph {et~al.}(2016)\citenamefont {Smith},
-  \citenamefont {Lee}, \citenamefont {Richerme}, \citenamefont {Neyenhuis},
-  \citenamefont {Hess}, \citenamefont {Hauke}, \citenamefont {Heyl},
-  \citenamefont {Huse},\ and\ \citenamefont {Monroe}}]{smith_many-body_2016}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Smith}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Lee}}, \bibinfo
-  {author} {\bibfnamefont {P.}~\bibnamefont {Richerme}}, \bibinfo {author}
-  {\bibfnamefont {B.}~\bibnamefont {Neyenhuis}}, \bibinfo {author}
-  {\bibfnamefont {P.~W.}\ \bibnamefont {Hess}}, \bibinfo {author}
-  {\bibfnamefont {P.}~\bibnamefont {Hauke}}, \bibinfo {author} {\bibfnamefont
-  {M.}~\bibnamefont {Heyl}}, \bibinfo {author} {\bibfnamefont {D.~A.}\
-  \bibnamefont {Huse}},\ and\ \bibinfo {author} {\bibfnamefont
-  {C.}~\bibnamefont {Monroe}},\ }\bibfield  {title} {{\selectlanguage
-  {en}\bibinfo {title} {Many-body localization in a quantum simulator with
-  programmable random disorder}},\ }\href {https://doi.org/10.1038/nphys3783}
-  {\bibfield  {journal} {\bibinfo  {journal} {Nature Phys}\ }\textbf {\bibinfo
-  {volume} {12}},\ \bibinfo {pages} {907} (\bibinfo {year} {2016})},\ \bibinfo
-  {note} {number: 10 Publisher: Nature Publishing Group}\BibitemShut {NoStop}%
 \end{thebibliography}%
