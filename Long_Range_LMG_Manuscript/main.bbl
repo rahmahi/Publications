@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{49}%
+\begin{thebibliography}{51}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -134,18 +134,6 @@
   {\bibinfo  {journal} {New J. Phys.}\ }\textbf {\bibinfo {volume} {17}},\
   \bibinfo {pages} {093039} (\bibinfo {year} {2015})},\ \bibinfo {note}
   {publisher: IOP Publishing}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Yunger~Halpern}\ \emph {et~al.}()\citenamefont
-  {Yunger~Halpern}, \citenamefont {White}, \citenamefont {Gopalakrishnan},\
-  and\ \citenamefont {Refael}}]{yunger_halpern_quantum_2019}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
-  {Yunger~Halpern}}, \bibinfo {author} {\bibfnamefont {C.~D.}\ \bibnamefont
-  {White}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Gopalakrishnan}},\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {Refael}},\ }\bibfield  {title} {\bibinfo {title} {Quantum engine based on
-  many-body localization},\ }\href {https://doi.org/10.1103/PhysRevB.99.024203}
-  {\ \textbf {\bibinfo {volume} {99}},\ \bibinfo {pages} {024203}}\BibitemShut
-  {NoStop}%
 \bibitem [{\citenamefont {Zhang}\ \emph {et~al.}(2016)\citenamefont {Zhang},
   \citenamefont {Khemani},\ and\ \citenamefont {Huse}}]{zhang_floquet_2016}%
   \BibitemOpen
@@ -158,6 +146,30 @@
   {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {94}},\ \bibinfo
   {pages} {224202} (\bibinfo {year} {2016})},\ \bibinfo {note} {publisher:
   American Physical Society}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Khemani}\ \emph {et~al.}()\citenamefont {Khemani},
+  \citenamefont {Lazarides}, \citenamefont {Moessner},\ and\ \citenamefont
+  {Sondhi}}]{khemani_phase_2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Khemani}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Lazarides}},
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Moessner}},\ and\
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Sondhi}},\ }\bibfield
+  {title} {\bibinfo {title} {Phase structure of driven quantum systems},\
+  }\href {https://doi.org/10.1103/PhysRevLett.116.250401} {\ \textbf {\bibinfo
+  {volume} {116}},\ \bibinfo {pages} {250401}},\ \bibinfo {note} {publisher:
+  American Physical Society}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Yunger~Halpern}\ \emph {et~al.}()\citenamefont
+  {Yunger~Halpern}, \citenamefont {White}, \citenamefont {Gopalakrishnan},\
+  and\ \citenamefont {Refael}}]{yunger_halpern_quantum_2019}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Yunger~Halpern}}, \bibinfo {author} {\bibfnamefont {C.~D.}\ \bibnamefont
+  {White}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Gopalakrishnan}},\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Refael}},\ }\bibfield  {title} {\bibinfo {title} {Quantum engine based on
+  many-body localization},\ }\href {https://doi.org/10.1103/PhysRevB.99.024203}
+  {\ \textbf {\bibinfo {volume} {99}},\ \bibinfo {pages} {024203}}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Campa}\ \emph {et~al.}()\citenamefont {Campa},
   \citenamefont {Dauxois},\ and\ \citenamefont
   {Ruffo}}]{campa_statistical_2009}%
@@ -185,6 +197,20 @@
   ising spin models described by curie-weiss mean field theory},\ }\href
   {https://doi.org/10.1016/0378-4371(92)90464-2} {\ \textbf {\bibinfo {volume}
   {185}},\ \bibinfo {pages} {254}}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Vu}\ \emph {et~al.}(2022)\citenamefont {Vu},
+  \citenamefont {Huang}, \citenamefont {Li},\ and\ \citenamefont
+  {Das~Sarma}}]{vu_fermionic_2022}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Vu}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Huang}}, \bibinfo
+  {author} {\bibfnamefont {X.}~\bibnamefont {Li}},\ and\ \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {Das~Sarma}},\ }\bibfield  {title} {\bibinfo
+  {title} {Fermionic manybody localization for random and quasiperiodic systems
+  in the presence of short- and long-rangeinteraction},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.128.146601} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {128}},\
+  \bibinfo {pages} {146601} (\bibinfo {year} {2022})},\ \bibinfo {note}
+  {publisher: American Physical Society}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Misguich}\ \emph {et~al.}(2016)\citenamefont
   {Misguich}, \citenamefont {Pasquier},\ and\ \citenamefont
   {Luck}}]{Misguich2016}%
@@ -213,6 +239,24 @@
   rotating wave approximation ({RWA}): Two coherent oscillations},\ }\href
   {https://doi.org/10.4236/jmp.2017.812124} {\ \textbf {\bibinfo {volume}
   {8}},\ \bibinfo {pages} {2042}}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Reichl}()}]{reichl_transition_2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Reichl}},\ }\href {https://doi.org/10.1007/978-3-030-63534-3} {\emph
+  {\bibinfo {title} {The Transition to Chaos: Conservative Classical and
+  Quantum Systems}}},\ \bibinfo {series} {Fundamental Theories of Physics},
+  Vol.\ \bibinfo {volume} {200}\ (\bibinfo  {publisher} {Springer International
+  Publishing})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bukov}\ \emph {et~al.}()\citenamefont {Bukov},
+  \citenamefont {D'Alessio},\ and\ \citenamefont {Polkovnikov}}]{bukov2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Bukov}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {D'Alessio}},\
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Polkovnikov}},\
+  }\bibfield  {title} {\bibinfo {title} {Universal {High}-{Frequency}
+  {Behavior} of {Periodically} {Driven} {Systems}: from {Dynamical}
+  {Stabilization} to {Floquet} {Engineering}},\ }\href@noop {} {\ }\bibinfo
+  {note} {ArXiv: 1407.4803v2}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Holthaus}(2016)}]{holthaus_floquet_2016}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
@@ -235,24 +279,6 @@
    {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {101}},\ \bibinfo
   {pages} {024303} (\bibinfo {year} {2020})},\ \bibinfo {note} {publisher:
   American Physical Society}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Reichl}()}]{reichl_transition_2021}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
-  {Reichl}},\ }\href {https://doi.org/10.1007/978-3-030-63534-3} {\emph
-  {\bibinfo {title} {The Transition to Chaos: Conservative Classical and
-  Quantum Systems}}},\ \bibinfo {series} {Fundamental Theories of Physics},
-  Vol.\ \bibinfo {volume} {200}\ (\bibinfo  {publisher} {Springer International
-  Publishing})\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Bukov}\ \emph {et~al.}()\citenamefont {Bukov},
-  \citenamefont {D'Alessio},\ and\ \citenamefont {Polkovnikov}}]{bukov2014}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Bukov}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {D'Alessio}},\
-  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Polkovnikov}},\
-  }\bibfield  {title} {\bibinfo {title} {Universal {High}-{Frequency}
-  {Behavior} of {Periodically} {Driven} {Systems}: from {Dynamical}
-  {Stabilization} to {Floquet} {Engineering}},\ }\href@noop {} {\ }\bibinfo
-  {note} {ArXiv: 1407.4803v2}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Rozhin}()}]{Sougata2023}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
@@ -513,7 +539,7 @@
   {Abanin}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Altman}},
   \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Bloch}},\ and\ \bibinfo
   {author} {\bibfnamefont {M.}~\bibnamefont {Serbyn}},\ }\bibfield  {title}
-  {\bibinfo {title} {Colloquium: Many-body localization, thermalization, and
+  {\bibinfo {title} {Colloquium: Many-body localization thermalization and
   entanglement},\ }\href {https://doi.org/10.1103/RevModPhys.91.021001} {\
   \textbf {\bibinfo {volume} {91}},\ \bibinfo {pages} {021001}},\ \bibinfo
   {note} {publisher: American Physical Society}\BibitemShut {NoStop}%

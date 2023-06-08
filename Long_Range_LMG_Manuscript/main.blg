@@ -15,7 +15,6 @@ Database file #1: mainNotes.bib
 Database file #2: main.bib
 Warning--entry type for "noauthor_quantum_nodate" isn't style-file defined
 --line 192 of file main.bib
-Warning--I didn't find a database entry for "alet_2018"
 Warning--I didn't find a database entry for "abanin_colloquzium_2019"
 control{REVTEX42Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
 control{apsrev42Control}, control.key{N/A}, control.author{08}, control.editor{1}, control.title{0}, control.pages{0}, control.year{1}, control.eprint{N/A}, 
@@ -235,6 +234,47 @@ while executing---line 3515 of file apsrev4-2.bst
 ---they aren't the same literal types for entry roy_fate_2015
 while executing---line 3515 of file apsrev4-2.bst
 Warning--missing journal in roy_fate_2015
+"J. High Energy Phys." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry khemani_phase_2016
+while executing---line 3515 of file apsrev4-2.bst
+"J. High Energ. Phys." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry khemani_phase_2016
+while executing---line 3515 of file apsrev4-2.bst
+"JHEP" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry khemani_phase_2016
+while executing---line 3515 of file apsrev4-2.bst
+"Journal of Cosmology and Astroparticle Physics" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry khemani_phase_2016
+while executing---line 3515 of file apsrev4-2.bst
+"J. Cosmol. Astropart. Phys." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry khemani_phase_2016
+while executing---line 3515 of file apsrev4-2.bst
+"JCAP" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry khemani_phase_2016
+while executing---line 3515 of file apsrev4-2.bst
+"Journal of Instrumentation" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry khemani_phase_2016
+while executing---line 3515 of file apsrev4-2.bst
+"J. Instrum." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry khemani_phase_2016
+while executing---line 3515 of file apsrev4-2.bst
+"JINST" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry khemani_phase_2016
+while executing---line 3515 of file apsrev4-2.bst
+"Journal of Statistical Mechanics" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry khemani_phase_2016
+while executing---line 3515 of file apsrev4-2.bst
+"J. of Stat. Mech." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry khemani_phase_2016
+while executing---line 3515 of file apsrev4-2.bst
+"J. Stat. Mech.: Theory Exp." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry khemani_phase_2016
+while executing---line 3515 of file apsrev4-2.bst
+"JSTAT" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry khemani_phase_2016
+while executing---line 3515 of file apsrev4-2.bst
+Warning--missing journal in khemani_phase_2016
+Warning--empty year in khemani_phase_2016
 "J. High Energy Phys." is a string literal, `journal' is a missing field
 ---they aren't the same literal types for entry yunger_halpern_quantum_2019
 while executing---line 3515 of file apsrev4-2.bst
@@ -1425,45 +1465,45 @@ while executing---line 3515 of file apsrev4-2.bst
 while executing---line 3515 of file apsrev4-2.bst
 Warning--missing journal in abanin_colloquium_2019
 Warning--empty year in abanin_colloquium_2019
-You've used 51 entries,
+You've used 53 entries,
             6079 wiz_defined-function locations,
-            1991 strings with 25938 characters,
-and the built_in function-call counts, 47616 in all, are:
-= -- 3479
-> -- 1001
-< -- 258
-+ -- 340
-- -- 242
-* -- 6842
-:= -- 4602
-add.period$ -- 49
-call.type$ -- 51
-change.case$ -- 258
-chr.to.int$ -- 59
-cite$ -- 122
-duplicate$ -- 4443
-empty$ -- 3476
-format.name$ -- 580
-if$ -- 9595
+            2006 strings with 26455 characters,
+and the built_in function-call counts, 50066 in all, are:
+= -- 3651
+> -- 1068
+< -- 270
++ -- 360
+- -- 258
+* -- 7229
+:= -- 4822
+add.period$ -- 51
+call.type$ -- 53
+change.case$ -- 270
+chr.to.int$ -- 61
+cite$ -- 126
+duplicate$ -- 4663
+empty$ -- 3650
+format.name$ -- 618
+if$ -- 10100
 int.to.chr$ -- 3
-int.to.str$ -- 58
-missing$ -- 739
-newline$ -- 199
-num.names$ -- 144
-pop$ -- 2017
+int.to.str$ -- 60
+missing$ -- 775
+newline$ -- 205
+num.names$ -- 150
+pop$ -- 2102
 preamble$ -- 1
-purify$ -- 207
+purify$ -- 216
 quote$ -- 0
-skip$ -- 2181
+skip$ -- 2288
 stack$ -- 0
-substring$ -- 1270
-swap$ -- 3971
-text.length$ -- 112
+substring$ -- 1337
+swap$ -- 4186
+text.length$ -- 120
 text.prefix$ -- 0
 top$ -- 10
-type$ -- 660
-warning$ -- 70
-while$ -- 146
+type$ -- 690
+warning$ -- 72
+while$ -- 152
 width$ -- 0
-write$ -- 431
-(There were 442 error messages)
+write$ -- 449
+(There were 455 error messages)
