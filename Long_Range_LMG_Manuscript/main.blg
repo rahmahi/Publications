@@ -15,6 +15,7 @@ Database file #1: mainNotes.bib
 Database file #2: main.bib
 Warning--entry type for "noauthor_quantum_nodate" isn't style-file defined
 --line 192 of file main.bib
+Warning--I didn't find a database entry for "alet_2018"
 Warning--I didn't find a database entry for "abanin_colloquzium_2019"
 control{REVTEX42Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
 control{apsrev42Control}, control.key{N/A}, control.author{08}, control.editor{1}, control.title{0}, control.pages{0}, control.year{1}, control.eprint{N/A}, 
@@ -234,6 +235,47 @@ while executing---line 3515 of file apsrev4-2.bst
 ---they aren't the same literal types for entry roy_fate_2015
 while executing---line 3515 of file apsrev4-2.bst
 Warning--missing journal in roy_fate_2015
+"J. High Energy Phys." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry yunger_halpern_quantum_2019
+while executing---line 3515 of file apsrev4-2.bst
+"J. High Energ. Phys." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry yunger_halpern_quantum_2019
+while executing---line 3515 of file apsrev4-2.bst
+"JHEP" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry yunger_halpern_quantum_2019
+while executing---line 3515 of file apsrev4-2.bst
+"Journal of Cosmology and Astroparticle Physics" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry yunger_halpern_quantum_2019
+while executing---line 3515 of file apsrev4-2.bst
+"J. Cosmol. Astropart. Phys." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry yunger_halpern_quantum_2019
+while executing---line 3515 of file apsrev4-2.bst
+"JCAP" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry yunger_halpern_quantum_2019
+while executing---line 3515 of file apsrev4-2.bst
+"Journal of Instrumentation" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry yunger_halpern_quantum_2019
+while executing---line 3515 of file apsrev4-2.bst
+"J. Instrum." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry yunger_halpern_quantum_2019
+while executing---line 3515 of file apsrev4-2.bst
+"JINST" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry yunger_halpern_quantum_2019
+while executing---line 3515 of file apsrev4-2.bst
+"Journal of Statistical Mechanics" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry yunger_halpern_quantum_2019
+while executing---line 3515 of file apsrev4-2.bst
+"J. of Stat. Mech." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry yunger_halpern_quantum_2019
+while executing---line 3515 of file apsrev4-2.bst
+"J. Stat. Mech.: Theory Exp." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry yunger_halpern_quantum_2019
+while executing---line 3515 of file apsrev4-2.bst
+"JSTAT" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry yunger_halpern_quantum_2019
+while executing---line 3515 of file apsrev4-2.bst
+Warning--missing journal in yunger_halpern_quantum_2019
+Warning--empty year in yunger_halpern_quantum_2019
 "J. High Energy Phys." is a string literal, `journal' is a missing field
 ---they aren't the same literal types for entry campa_statistical_2009
 while executing---line 3515 of file apsrev4-2.bst
@@ -1222,47 +1264,6 @@ while executing---line 3515 of file apsrev4-2.bst
 Warning--missing journal in haldar_dynamical_2017
 Warning--empty year in haldar_dynamical_2017
 "J. High Energy Phys." is a string literal, `journal' is a missing field
----they aren't the same literal types for entry yunger_halpern_quantum_2019
-while executing---line 3515 of file apsrev4-2.bst
-"J. High Energ. Phys." is a string literal, `journal' is a missing field
----they aren't the same literal types for entry yunger_halpern_quantum_2019
-while executing---line 3515 of file apsrev4-2.bst
-"JHEP" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry yunger_halpern_quantum_2019
-while executing---line 3515 of file apsrev4-2.bst
-"Journal of Cosmology and Astroparticle Physics" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry yunger_halpern_quantum_2019
-while executing---line 3515 of file apsrev4-2.bst
-"J. Cosmol. Astropart. Phys." is a string literal, `journal' is a missing field
----they aren't the same literal types for entry yunger_halpern_quantum_2019
-while executing---line 3515 of file apsrev4-2.bst
-"JCAP" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry yunger_halpern_quantum_2019
-while executing---line 3515 of file apsrev4-2.bst
-"Journal of Instrumentation" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry yunger_halpern_quantum_2019
-while executing---line 3515 of file apsrev4-2.bst
-"J. Instrum." is a string literal, `journal' is a missing field
----they aren't the same literal types for entry yunger_halpern_quantum_2019
-while executing---line 3515 of file apsrev4-2.bst
-"JINST" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry yunger_halpern_quantum_2019
-while executing---line 3515 of file apsrev4-2.bst
-"Journal of Statistical Mechanics" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry yunger_halpern_quantum_2019
-while executing---line 3515 of file apsrev4-2.bst
-"J. of Stat. Mech." is a string literal, `journal' is a missing field
----they aren't the same literal types for entry yunger_halpern_quantum_2019
-while executing---line 3515 of file apsrev4-2.bst
-"J. Stat. Mech.: Theory Exp." is a string literal, `journal' is a missing field
----they aren't the same literal types for entry yunger_halpern_quantum_2019
-while executing---line 3515 of file apsrev4-2.bst
-"JSTAT" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry yunger_halpern_quantum_2019
-while executing---line 3515 of file apsrev4-2.bst
-Warning--missing journal in yunger_halpern_quantum_2019
-Warning--empty year in yunger_halpern_quantum_2019
-"J. High Energy Phys." is a string literal, `journal' is a missing field
 ---they aren't the same literal types for entry Deutsch1991
 while executing---line 3515 of file apsrev4-2.bst
 "J. High Energ. Phys." is a string literal, `journal' is a missing field
@@ -1424,45 +1425,45 @@ while executing---line 3515 of file apsrev4-2.bst
 while executing---line 3515 of file apsrev4-2.bst
 Warning--missing journal in abanin_colloquium_2019
 Warning--empty year in abanin_colloquium_2019
-You've used 48 entries,
+You've used 51 entries,
             6079 wiz_defined-function locations,
-            1967 strings with 25191 characters,
-and the built_in function-call counts, 44205 in all, are:
-= -- 3203
-> -- 927
-< -- 243
-+ -- 316
-- -- 226
-* -- 6330
-:= -- 4284
-add.period$ -- 46
-call.type$ -- 48
-change.case$ -- 240
-chr.to.int$ -- 56
-cite$ -- 119
-duplicate$ -- 4136
-empty$ -- 3233
-format.name$ -- 537
-if$ -- 8887
+            1991 strings with 25938 characters,
+and the built_in function-call counts, 47616 in all, are:
+= -- 3479
+> -- 1001
+< -- 258
++ -- 340
+- -- 242
+* -- 6842
+:= -- 4602
+add.period$ -- 49
+call.type$ -- 51
+change.case$ -- 258
+chr.to.int$ -- 59
+cite$ -- 122
+duplicate$ -- 4443
+empty$ -- 3476
+format.name$ -- 580
+if$ -- 9595
 int.to.chr$ -- 3
-int.to.str$ -- 55
-missing$ -- 689
-newline$ -- 190
-num.names$ -- 135
-pop$ -- 1905
+int.to.str$ -- 58
+missing$ -- 739
+newline$ -- 199
+num.names$ -- 144
+pop$ -- 2017
 preamble$ -- 1
-purify$ -- 192
+purify$ -- 207
 quote$ -- 0
-skip$ -- 2020
+skip$ -- 2181
 stack$ -- 0
-substring$ -- 1166
-swap$ -- 3677
-text.length$ -- 104
+substring$ -- 1270
+swap$ -- 3971
+text.length$ -- 112
 text.prefix$ -- 0
 top$ -- 10
-type$ -- 619
+type$ -- 660
 warning$ -- 70
-while$ -- 137
+while$ -- 146
 width$ -- 0
-write$ -- 401
+write$ -- 431
 (There were 442 error messages)
