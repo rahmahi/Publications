@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.2)  8 JUN 2023 18:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.2)  8 JUN 2023 21:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -903,8 +903,8 @@ Underfull \hbox (badness 2932) in paragraph at lines 190--192
 4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.195 	\end{equation}
-                     ]
+l.197 	\begin{multline*}
+                        ]
 Underfull \hbox (badness 1242) in paragraph at lines 201--203
 \T1/fve/m/n/10 for-mula $\OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 = [][] \OML/cmm/m
 /it/10 J[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^Q\OT1/cmr/m/n/10 ) \OML/cmm/m/it/
@@ -921,7 +921,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
-<ising_exact_ipr.jpeg, id=139, 578.16pt x 578.16pt>
+<ising_exact_ipr.jpeg, id=140, 578.16pt x 578.16pt>
 File: ising_exact_ipr.jpeg Graphic file (type jpg)
 <use ising_exact_ipr.jpeg>
 Package pdftex.def Info: ising_exact_ipr.jpeg  used on input line 234.
@@ -931,7 +931,7 @@ Overfull \hbox (10.06737pt too wide) in paragraph at lines 234--235
  [][] 
  []
 
-<phase_transition_ising.jpeg, id=146, 650.43pt x 433.62pt>
+<phase_transition_ising.jpeg, id=147, 650.43pt x 433.62pt>
 File: phase_transition_ising.jpeg Graphic file (type jpg)
 <use phase_transition_ising.jpeg>
 Package pdftex.def Info: phase_transition_ising.jpeg  used on input line 244.
@@ -945,7 +945,7 @@ Overfull \hbox (10.07838pt too wide) in paragraph at lines 244--245
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 250.
 
-<low_frq_exactN500_ipr.jpeg, id=147, 650.43pt x 433.62pt>
+<low_frq_exactN500_ipr.jpeg, id=148, 650.43pt x 433.62pt>
 File: low_frq_exactN500_ipr.jpeg Graphic file (type jpg)
 <use low_frq_exactN500_ipr.jpeg>
 Package pdftex.def Info: low_frq_exactN500_ipr.jpeg  used on input line 252.
@@ -974,7 +974,7 @@ cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 h[][][] \OMS/cmsy/m/n/10 ^^@
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 344.
 
-<ipr_exact_dynm_N50_frq_90_.jpeg, id=190, 650.43pt x 650.43pt>
+<ipr_exact_dynm_N50_frq_90_.jpeg, id=191, 650.43pt x 650.43pt>
 File: ipr_exact_dynm_N50_frq_90_.jpeg Graphic file (type jpg)
 <use ipr_exact_dynm_N50_frq_90_.jpeg>
 Package pdftex.def Info: ipr_exact_dynm_N50_frq_90_.jpeg  used on input line 34
@@ -998,7 +998,7 @@ Overfull \hbox (10.06737pt too wide) in paragraph at lines 366--368
  []
 
 [8 <./comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg>]
-<lmg_poincare.jpeg, id=219, 1084.05pt x 1084.05pt>
+<lmg_poincare.jpeg, id=220, 1084.05pt x 1084.05pt>
 File: lmg_poincare.jpeg Graphic file (type jpg)
 <use lmg_poincare.jpeg>
 Package pdftex.def Info: lmg_poincare.jpeg  used on input line 409.
@@ -1008,7 +1008,7 @@ Overfull \hbox (10.07509pt too wide) in paragraph at lines 409--410
  [][] 
  []
 
-<phase_crossover_LMG.jpeg, id=221, 722.7pt x 722.7pt>
+<phase_crossover_LMG.jpeg, id=222, 722.7pt x 722.7pt>
 File: phase_crossover_LMG.jpeg Graphic file (type jpg)
 <use phase_crossover_LMG.jpeg>
 Package pdftex.def Info: phase_crossover_LMG.jpeg  used on input line 418.
@@ -1018,12 +1018,7 @@ Overfull \hbox (10.06956pt too wide) in paragraph at lines 418--419
  [][] 
  []
 
-[9 <./lmg_poincare.jpeg>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 424.
-
-<hbar_std.jpg, id=232, 650.43pt x 433.62pt>
+<hbar_std.jpg, id=225, 650.43pt x 433.62pt>
 File: hbar_std.jpg Graphic file (type jpg)
 <use hbar_std.jpg>
 Package pdftex.def Info: hbar_std.jpg  used on input line 427.
@@ -1033,12 +1028,17 @@ Overfull \hbox (10.0748pt too wide) in paragraph at lines 427--428
  [][] 
  []
 
-[10 <./phase_crossover_LMG.jpeg> <./hbar_std.jpg>]
+[9 <./lmg_poincare.jpeg>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 436.
+
+
 Underfull \hbox (badness 1270) in paragraph at lines 444--445
 \T1/fve/m/n/10 model, specif-i-cally in reg-u-larly driven long-range
  []
 
-(./main.bbl [11]
+[10 <./phase_crossover_LMG.jpeg> <./hbar_std.jpg>] (./main.bbl
 ! Not loaded.
 \selectlanguage ...ing it}\errmessage {Not loaded}
                                                   
@@ -1046,7 +1046,7 @@ l.132   {Floquet}-space perspective}},\ }
                                          \href
 Selecting a language requires a package supporting it
 
-
+[11]
 Underfull \hbox (badness 2809) in paragraph at lines 207--216
  \T1/fve/m/n/9 many-body lo-cal-iza-tion for ran-dom and quasiperi-
  []
@@ -1082,7 +1082,7 @@ Underfull \hbox (badness 1038) in paragraph at lines 421--426
  \T1/fve/m/n/9 off-equilibrium dy-nam-i-cal tran-si-tion in the infinite-
  []
 
-[12]
+
 Underfull \hbox (badness 1082) in paragraph at lines 521--527
  []\T1/fve/m/n/9 M. Rigol and M. Sred-nicki, Al-ter-na-tives to eigen-
  []
@@ -1093,7 +1093,7 @@ Underfull \hbox (badness 1062) in paragraph at lines 521--527
 /9 108\T1/fve/m/n/9 ,
  []
 
-
+[12]
 Underfull \hbox (badness 3098) in paragraph at lines 551--560
  []\T1/fve/m/n/9 R. Nand-k-ishore and D. A. Huse, Many-body lo-
  []
@@ -1109,8 +1109,8 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  24319 strings out of 478287
- 440082 string characters out of 5849290
- 745944 words of memory out of 5000000
+ 440083 string characters out of 5849290
+ 744359 words of memory out of 5000000
  41952 multiletter control sequences out of 15000+600000
  511181 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1135,7 +1135,7 @@ lic/bera/fveb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (13 pages, 16338262 bytes).
+Output written on main.pdf (13 pages, 16338324 bytes).
 PDF statistics:
  451 PDF objects out of 1000 (max. 8388607)
  380 compressed objects within 4 object streams
