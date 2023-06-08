@@ -142,14 +142,12 @@ where $\beta = 1/(k_B T)$ is the inverse temperature, $H_{eq}$ is an effective H
 
 To put it simply, the findings of FETH propose that the many-body Hamiltonian with time-periodic characteristics undergoes thermalization over an extended period, with the quasienergy eigenstates bearing resemblance to thermal states. The aforementioned hypothesis serves as a valuable instrument for comprehending the conduct of stimulated quantum systems and their correlation with thermal equilibrium.
 
-We aim to justify ETH by examining the expectation value of an observable $\hat{A}$ in an eigenstate of the Hamiltonian.
-
-Let $\ket{n(t)}$ be an eigenstate of $\hat{H}(t)$ with energy $E_n (t)$, such that $H(t)\ket{n(t)} = E_n (t)\ket{n(t)}$. We want to calculate the expectation value of the observable $\hat{A}$ in this eigenstate: $\expval{\hat{A}(t)}_n = \expval{\hat{A}(t)}{{n(t)}}$. Let us now invoke the concept of adiabatic perturbation theory, assuming that the Hamiltonian slowly varies in time. We can expand the eigenstate and eigenenergy as perturbative series:
+We aim to justify ETH by examining the expectation value of an observable $\hat{A}$ in an eigenstate of the Hamiltonian. Let us now invoke the concept of adiabatic perturbation theory, assuming that the Hamiltonian slowly varies in time. We can expand the eigenstate and eigenenergy as perturbative series:
 \begin{align*}
 \ket{n(t)} =& \ket{n(\theta)} + \sum_m c_m(t)\ket{m(\theta)},\\ 
 E_n (\theta) =& E_n (\theta) + \sum_m E_m (t) c_m(t)
 \end{align*}
-where $\ket{m(\theta)}$ represents the unperturbed eigenstates of $H(\theta)$ with energy $E_m(\theta)$. The coefficients $c_m (t)$ describe the time-dependent amplitude of the expansion.
+where $\ket{m(\theta)}$ represents the unperturbed eigenstates of $\hat{H}(\theta)$ with energy $E_m(\theta)$. The coefficients $c_m (t)$ describe the time-dependent amplitude of the expansion.
 Plugging these expansions into the expression for the expectation value, we obtain:
 \begin{multline}
 	\expval{\hat{A}(t)_n} 
@@ -168,7 +166,7 @@ Finally, assuming that the initial state $\ket{n(0)}$ is random and uncorrelated
 \expval{\hat{A}(t)}_n = \sum_m |c_m(t)|^2 \hat{A}_{eq} = \hat{A}_{eq}
 \end{equation*}
 Therefore, in the limit of large systems and under the ergodic assumption, the expectation value of an observable $\hat{A}$ in an eigenstate of the time-dependent Hamiltonian is approximately equal to the thermal expectation value $A_{eq}$. This is the essence of the Eigenstate Thermalization Hypothesis, which suggests that individual eigenstates of a quantum system can be described by statistical mechanics in the long-time limit.
-	\todo{Review from here.} Abanin's formulations on ETH ~\cite{abanin_colloquzium_2019} enables the computation of the expectation value of an observable $\hat{A}$ within the framework of the Heisenberg equation of motion for the $`i'$th and $`j'$th Floquet quasienergies and their corresponding Floquet modes. This is relevant when the Floquet micromotions between two successive periods can be ignored, which requires a sufficiently small value of $T$.
+	\todo{Review from here.} Abanin's formulations on ETH ~\cite{abanin_colloquzium_2019} enables the computation of the expectation value of an observable $\hat{A}$ within the framework of the Heisenberg equation of motion for the $`i'$th and $`j'$th \textit{Floquet quasienergies} and their corresponding \textit{Floquet modes}. This is relevant when the \textit{Floquet micromotions} between two successive periods can be ignored, which requires a sufficiently small value of $T$.
 \begin{align}
 	\overline{\ev{\hat{A}(nT)}} &\approx \sum_{ij}\overline{e^{-i\big(\Omega_i-\Omega_j\big)nT}}A_{ij} \ip{\Psi_0}{\phi_i}\ip{\phi_j}{\Psi_0}.\nonumber\\
 	&\approx\sum_i A_{ii} \abs\Big{ \ip{\phi_i}{\Psi_0}}^2\approx \sum_{\ket{\phi_k}\in \mathcal{S}(\Omega_0, \delta \Omega)}A_{kk}\abs{\ip{\phi_k}{\Psi_0}}^2,
@@ -190,7 +188,7 @@ Here the quasienergies lies in $\delta \Omega$ neighbourhood of $\Omega_0$ and a
 		\hat{H}_0 &= -\frac{1}{2}\sum^N_{i=1} \sigma^x_i \sigma^x_{i+1}\\
 		\hat{H}_1 &= -\frac{1}{2}\sum_{i=1}^N \sigma^z_{i}.
 	\end{align}
-Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interactions between $N$ number of  spin-$1/2$ particles on a one-dimensional spin network. The transverse field is denoted by $\hat{H}_1$, and is being modulated by a time-periodic and harmonic signal $h_z(t) = h_0 + h\cos{\omega t}$, yielding a time period $T=2\pi/\omega$ with amplitude $h$, drive frequency $\omega$, and d.c. field $h_0$. This Hamiltonian can be readily transformed into a spinless pseudo-fermionic system via the Jordan-Wigner transformation. Written in momentum space spanned by spinors $\psi_k = (c_{-k}, c^\dagger_k)^T$ of fermions at momentum $k$ created (annihilated) by operators $c^\dagger_k$ ($c_k$). This yields an effective Hamiltonian ~\cite{mbeng_quantum_2020}
+Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interactions between $N$ number of  spin-$1/2$ particles on a one-dimensional spin network. The transverse field is denoted by $\hat{H}_1$, and is being varied by a time-periodic and harmonic signal $h_z(t) = h_0 + h\cos{\omega t}$, yielding a time period $T=2\pi/\omega$ with amplitude $h$, drive frequency $\omega$, and d.c. field $h_0$. This Hamiltonian can be readily transformed into a spinless pseudo-fermionic system via the Jordan-Wigner transformation. Written in momentum space spanned by spinors $\psi_k = (c_{-k}, c^\dagger_k)^T$ of fermions at momentum $k$ created (annihilated) by operators $c^\dagger_k$ ($c_k$). This yields an effective Hamiltonian ~\cite{mbeng_quantum_2020}
 	\begin{equation}
 		H(t) = \sum_{(k,-k)-\mbox{pairs}} \psi^\dagger_k
 		\Bigg[\ \bigg(f_k - h_z(t)\bigg)\tau_z +  \tau_x \Delta_k\Bigg]\psi_k
@@ -208,7 +206,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 		&\hskip 0.7cm- 2\tau^y\Delta_k \sum_{n\geq 0} J_{2n+1}(\eta)\sin{\big\{\big(2n+1\big)\omega t\big\}}   \bigg]\psi_k,
 	\end{align}\\
 	
-	In the regime where $\omega$ is significantly larger than $f_k$ $i.e.$  $\omega \gg f_k$, the long-term average $\overline{H^\prime(t)}$ can serve as a suitable approximation for $H^\prime(t)$. This approximation, known as the Rotated Wave Approximation (RWA), eliminates the oscillating modes and results in an effective Hamiltonian that is independent of time.
+	In the frequency regime where $\omega$ is significantly larger than $f_k$ $i.e.$  $\omega \gg f_k$, the long-term average $\overline{H^\prime(t)}$ can serve as a suitable approximation for $H^\prime(t)$. This approximation, known as the Rotated Wave Approximation (RWA), eliminates the oscillating modes and results in an effective Hamiltonian that is independent of time.
 	\begin{equation}
 		\label{eq:hrwa:tfim}
 		H^{RWA} = \sum_{(k,-k)-\mbox{pairs}} \psi^\dagger_k
