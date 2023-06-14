@@ -126,74 +126,63 @@ a time-independent effective Hamiltonian, provided the system is strobed at inte
 	
 \section{\label{sec:background} Background}
 	
-The Floquet Eigenstate Thermalization Hypothesis (FETH) is a series of conjectures that allows for the thermalization of a closed quantum system that is governed by a time-periodic many-body Hamiltonian. The framework presented enables comprehension of the thermal-like behavior exhibited by a system that is intrinsically out of equilibrium. FETH holds significant relevance in the investigation of driven quantum systems.
-
-To understand FETH, let's consider a many-body system described by a time-periodic Hamiltonian $\hat{H}(t)$ with a period $T$ and frequency $\omega = 2\pi/T$. The time evolution of the system is governed by the Schrödinger equation, $i\hbar \partial_t\ket{\psi(t)} = \hat{H}(t)\ket{\psi(t)}$, where $\ket{\psi(t)}$ is the state vector of the system at time $t$, and yields a wavefunction $\psi(t)=\ip{{\vec{r}}}{{\psi(t)}}$ ~\cite{reichl_transition_2021, bukov2014}.
-
-The Floquet theorem states that for a time-periodic Hamiltonian, the solutions of the Schrödinger equation can be written as $\ket{\psi(t)} = e^{-i\epsilon t/\hbar} \ket{\phi(t)}$, where the $\ket{\phi(t)}$ are $T$-periodic states, the corresponding $\epsilon\in \mathbb{R}$, and are called \textit{quasienergies}. The quasienergy spectrum is bounded within a Floquet photon,\textit{viz.} a range $[-\hbar\omega/2, \hbar\omega/2]$\cite{holthaus_floquet_2016,vogl_effective_2020}.
-
-FETH posits that subject to specific conditions and in the context of a system of significant size, the quasienergy eigenstates of a time-periodic Hamiltonian exhibit thermal state-like behavior. In the context of quantum mechanics, it is possible to estimate the expectation value of an observable $\hat{A}$ in a quasienergy eigenstate $\ket{\phi_\alpha}$ with quasienergy $\epsilon_\alpha$ by utilizing the thermal expectation value:
-
+The Eigenstate Thermalization Hypothesis (ETH) is a series of conjectures that allows for the thermalization of an isolated quantum many body system. The state of the system, $\ket{\psi(t)}$, evolves according to the Schr\"odinger equation $\hat{H}\ket{\psi(t)} = i\displaystyle\frac{\partial}{\partial t}\ket{\psi}$. The Hamiltonian $\hat{H}$ is assumed to be \textit{non-integrable}, in that it lacks an extensive number of \textit{local} additive conserved quantities, that is to say, there are no set of observables $\hat{O}_s$ such that $\hat{H}=\sum_s \hat{O}_s$ for any extensive index $s$. Here, the $\hat{O}_s$ constitute an arbitrary CSCO (complete set of commuting observables) that are \textit{local}, having sub-extensive support in the system size. In addition, we postulate the existence of an equivalent Hamiltonian $\hat{H}_{eq}$ for every Hamiltonian $\hat{H}$ as well as an "equilibrium" value $A_{eq}$ for every observable $\hat{A}$, such that
 \begin{equation}
-\bra{\phi_\alpha}\hat{A}\ket{\phi_\alpha} = \frac{Tr (Ae^{-\beta H_{eq}})}{Tr(e^{-\beta H_{eq}})}
+	\label{eq:aeq}
+ A_{eq}(E)\equiv \frac{\Tr \left(\hat{A}e^{-\beta \hat{H}_{eq}}\right)}{\Tr(e^{-\beta \hat{H}_{eq}})}.
 \end{equation}
- 
-where $\beta = 1/(k_B T)$ is the inverse temperature, $H_{eq}$ is an effective Hamiltonian that captures the long-time average dynamics of the system, and $k_B$ is the Boltzmann constant.
 
-To put it simply, the findings of FETH propose that the many-body Hamiltonian with time-periodic characteristics undergoes thermalization over an extended period, with the quasienergy eigenstates bearing resemblance to thermal states. The aforementioned hypothesis serves as a valuable instrument for comprehending the conduct of stimulated quantum systems and their correlation with thermal equilibrium.
+where $E=\expval{\hat{H}}{\psi(t)}$ is the conserved energy of the system, and $\beta = 1/(k_B T)$ is the inverse temperature, $H_{eq}$ is an effective Hamiltonian that captures the long-time average dynamics of the system, and $k_B$ is the Boltzmann constant.
 
-We aim to justify ETH by examining the expectation value of an observable $\hat{A}$ in an eigenstate of the Hamiltonian. Let us now invoke the concept of adiabatic perturbation theory, assuming that the Hamiltonian slowly varies in time. We can expand the eigenstate and eigenenergy as perturbative series:
-\begin{align*}
-\ket{n(t)} =& \ket{n(\theta)} + \sum_m c_m(t)\ket{m(\theta)},\\ 
-E_n (\theta) =& E_n (\theta) + \sum_m E_m (t) c_m(t)
-\end{align*}
-where $\ket{m(\theta)}$ represents the unperturbed eigenstates of $\hat{H}(\theta)$ with energy $E_m(\theta)$. The coefficients $c_m (t)$ describe the time-dependent amplitude of the expansion.
-Plugging these expansions into the expression for the expectation value, we obtain:
+To put it simply, ETH proposes that this many-body Hamiltonian undergoes thermalization as seen in the \textit{long-time averages} of observables, with the eigenstates bearing resemblance to thermal states. The aforementioned hypothesis serves as a valuable instrument for comprehending the conduct of stimulated quantum systems and their correlation with thermal equilibrium. This assertion can be justified by examining the expectation value of an observable $\hat{A}$ as it evolves under the Schr\"odinger equation. To see this, we first expand the state of the system $\ket{\psi(t)}$ as:
+\begin{equation*}
+\ket{\psi(t)} =  \sum_m c_m(t)\ket{m(0)},\\ 
+\end{equation*}
+where $\ket{m(0)}$ represents the eigenstates of $\hat{H}(0)$ with energy $E_m$. The coefficients $c_m (t)$ describe the time-dependent amplitude of the expansion.
+Plugging these expansions into the expression for the expectation value, we obtain the long-time average of the expectation value~\cite{abanin_colloquium_2019}:
+\begin{equation}
+	\overline{\expval{\hat{A}(t)}} 
+	= \sum_{m,k} \overline{c_m^\ast(t) c_k(t)}
+	\mel{m(0)}{\hat{A}}{k(0)},
+\end{equation}
+Had the system been integrable, the large number of conserved quantities would restrict mixing between the states during unitary evolution. In the non-integrable case,
+the system explores the entire Hilbert space spanned by eigenstates with eigenvalues close to $E$ more-or-less uniformly. In that case, the matrix elements $\mel{m(0)}{\hat{A}}{k(0)}$ are said to satisfy the Srednicki ansatz~\cite{Srednicki1994,Srednicki_1999}:
 \begin{multline}
-	\expval{\hat{A}(t)_n} 
-	= \sum_{m,k} c_M^\ast(t) c_k(t) \bra{n(\theta)}\ket{m(\theta)}\\
-	\bra{m(t)}\hat{A}(t)
-	\ket{k(t)} \bra{k(\theta)}\ket{n(\theta)}
+	\mel{m(0)}{\hat{A}}{k(0)} \approx A_{eq} \delta_{mk} +\\ e^{-\frac12 S\left(\frac{E_m+E_k}{2}\right)} f\;\left(\frac{E_m+E_k}{2}, E_m-E_k\right)R_{mk}.
 \end{multline}
-where $ \bra{m(t)}\hat{A}(t)\ket{k(t)}$ represents the matrix element of the observable $\hat{A}$ between the time-dependent states $\ket{m(t)}$ and $\ket{k(t)}$.
-If the system explores the entire Hilbert space uniformly,  then the matrix elements $\bra{m(t)}\hat{A}(t)\ket{k(t)}$ become indistinguishable for most pairs of $m$ and $k$. This allows us to approximate $\bra{m(t)}\hat{A}(t)\ket{k(t)} \approx A_{eq} \delta_{mk}$, where $A_{eq}$ is the expectation value of the observable $\hat{A}$ in the equilibrium thermal ensemble.
-Applying this approximation, the expression for the expectation value becomes:
+Here, $S$ is the thermodynamic entropy and $R_{mk}$ are elements of a random matrix with vanishing mean and unit variance. What this means for the ensuing dynamics is that the system explores the accessible Hilbert space uniformly,  and the matrix elements $\bra{m(0)}\hat{A}(t)\ket{k(0)}$ become indistinguishable for most pairs of $m$ and $k$.
+Applying this ansatz and taking the thermodynamic limit by ignoring terms $\mathcal{O}(e^{-S/2})$, the expression for the expectation value becomes:
 \begin{equation*}
-\expval{\hat{A}(t)}_n = \sum_m \abs{c_m(t)}^2 \bra{n(\theta)}\ket{m(\theta)} \hat{A}_{eq} \bra{n(0)}\ket{m(0)}
+\overline{\expval{\hat{A}(t)}} \approx \sum_m \overline{\abs{c_m(t)}^2} {A}_{eq}= {A}_{eq},
 \end{equation*}
-Finally, assuming that the initial state $\ket{n(0)}$ is random and uncorrelated with the Hamiltonian eigenstates, we can use the property $\bra{n(0)}\ket{m(0)}=\delta_{nm}$. This yields:
-\begin{equation*}
-\expval{\hat{A}(t)}_n = \sum_m |c_m(t)|^2 \hat{A}_{eq} = \hat{A}_{eq}
-\end{equation*}
-Therefore, in the limit of large systems the expectation value of an observable $\hat{A}$ in an eigenstate of the time-dependent Hamiltonian is approximately equal to the thermal expectation value $A_{eq}$. This is the essence of the Eigenstate Thermalization Hypothesis, which suggests that individual eigenstates of a quantum system can be described by statistical mechanics in the long-time limit.
-	\todo{Review from here.} Abanin's formulations on ETH ~\cite{abanin_colloquium_2019} enables the computation of the expectation value of an observable $\hat{A}$ within the framework of the Heisenberg equation of motion for the $`i'$th and $`j'$th \textit{Floquet quasienergies} and their corresponding \textit{Floquet modes}. This is relevant when the \textit{Floquet micromotions} between two successive periods can be ignored, which requires a sufficiently small value of $T$.
-\begin{align}
-	\overline{\ev{\hat{A}(nT)}} &\approx \sum_{ij}\overline{e^{-i\big(\Omega_i-\Omega_j\big)nT}}A_{ij} \ip{\Psi_0}{\phi_i}\ip{\phi_j}{\Psi_0}.\nonumber\\
-	&\approx\sum_i A_{ii} \abs\Big{ \ip{\phi_i}{\Psi_0}}^2\approx \sum_{\ket{\phi_k}\in \mathcal{S}(\Omega_0, \delta \Omega)}A_{kk}\abs{\ip{\phi_k}{\Psi_0}}^2,
-	\label{eq:floquet:eth:diagonal:avg}
-\end{align}
-where 
+
+Therefore, in the limit of large systems the expectation value of an observable $\hat{A}$ is approximately equal to the thermal expectation value $A_{eq}$. This is the essence of the ETH, which suggests that individual eigenstates of a quantum system can be described by statistical mechanics in the long-time limit.
+
+We now generalize the ETH to non-integrable many body systems that are closed, but not isolated. In that case, it is possible to impart a periodic time-dependence on the Hamiltonian while still ensuring unitary evolution. If the time period of the drive is $T$, and the corresponding drive frequency $\omega\equiv 2\pi/T$, the Floquet theorem states that the solutions to the Schrödinger equation can be written as $\ket{\psi(t)} = e^{-i\epsilon t/\hbar} \ket{\phi(t)}$, where the $\ket{\phi(t)}$ are $T$-periodic states called \textit{Floquet Modes}, the corresponding $\epsilon\in \mathbb{R}$, are called \textit{quasienergies}. Quasienergy values are not unique, and can be made to be bounded within a Floquet photon,\textit{viz.} a range $[-\omega/2, \omega/2]$\cite{holthaus_floquet_2016,vogl_effective_2020}. As a consequence, the unitary evolution operator can be spit into two parts as follows~\cite{Bukov2014}.
 \begin{equation}
-	\mathcal{S}(\Omega_0, \delta \Omega) = \Bigg\{\ket{\phi_k}\ni \Omega_0-\frac{\delta \Omega}{2}\leq \Omega_k \leq \Omega_0+\frac{\delta \Omega}{2}\Bigg\},\nonumber
+	U(t) = e^{-i\hat{K}_F(t)}\;e^{-i\hat{H}_Ft}.
 \end{equation}
+Here, the micromotion operator $\hat{K}_F(t)$ is time-periodic in $T$, with $\hat{K}_F(0)=0$, and the Floquet Hamiltonian $\hat{H}_F = \hat{H}(t) - i \displaystyle\frac{\partial}{\partial t}\bigg\vert_{t=T}$. Thus, if the system is strobed at integer multiples of $T$ only, then the unitary evolution matches that of a time independent Hamiltonian $H_F$. This can capture a representative cross-section of the exact dynamics at large frequencies.
 
-Here the quasienergies lies in $\delta \Omega$ neighbourhood of $\Omega_0$ and are obtained by adding integer multiples of $\omega=2\pi/T$ to corresponding energy eigenvalue $E_0, \delta E$ to make them lie within a Floquet photon \textit{viz.} an interval of width $\omega$. In this limit, drive parameters like amplitude, frequency, and duty-cycle strongly affect the $\phi_i$s. Thus, they can be engineered to make $A_{kk}$ in equation~\ref{eq:floquet:eth:diagonal:avg} weakly dependent on $\ket{\phi_k}$, but the initial quasi energy $\Omega_0$ heavily dependent. In particular,  the functional derivative $\displaystyle\frac{\var{A_{kk}}}{\var{\ket{\phi_k}}}$ can be made arbitrarily large mnifesting suppression of thermalization dynamically. Thus, Floquet Engineering of quasienergies can produce Dynamical Many Body Localization (DMBL), where the system fails to reach thermal equilibrium and remains localised near its initial state even at large times. This paradigm is similar to MBL, where disorder, locality, and integrability cause athermality. Localization can occur regardless of disorder, locality of observables, or system integrability, all of which have been studied for MBL onset~\cite{Sougata2023,Fabien2018,garratt_resonant_2022}. However, DMBL has been shown in integrable systems where specific drive parameters can produce additional approximate Noether charges that cause dynamical localization~\cite{roy_fate_2015}.
+In such systems, the Floquet Eigenstate Thermalization Hypothesis (FETH) posits that subject to specific conditions and in the context of a system of significant size, the Floquet modes themselves exhibit thermal state-like behavior, \textit{i.e.}, $\hat{H}_{eq}\approx \hat{H}_F$ in eqn~\ref{eq:aeq}. However, in contrast to the isolated systems, the loss of energy conservation allows for the mixing of all Floquet modes in the ensuing dynamics, not just those with quasienergies near $E$. Were this to happen, this can be reconciled with ETH~\cite{alessio} by ensuring that $\beta=0$ in eq~\ref{eq:aeq}. In other words, the nonequilibrium steady state of the system tends to an infinite temperature, maximum entropy density matrix.
 
+However, drive parameters like amplitude, frequency, and duty-cycle strongly affect the structure of the Floquet modes $\ket{\phi}$. Thus, they can be engineered to prevent the kind of full mixing that would lead to infinite temperatures, manifesting suppression of thermalization dynamically. Thus, this type of \textit{Floquet Engineering} can produce \textit{Dynamical Many Body Localization} (DMBL), where the system fails to reach thermal equilibrium and remains localised, possibly  near its initial state, even at large times. This paradigm seems similar to standard Many-Body Localization\todo{CITE REFS}, where disorder, locality, and integrability can cause athermality via breakdown in the Srednicki ansatz. However, DMBL is a purely dynamical phenomenon, and thus can occur regardless of disorder, locality of observables, or system integrability, all of which have been studied for MBL onset~\cite{Sougata2023,Fabien2018,garratt_resonant_2022}.
 
-
-	A paradigmatic example of an integrable system where DMBL occurs is  the driven Transverse Field Ising model (TFIM) in one dimension~\cite{stinchcombe_ising_1973}. The Hamiltonian is given by
+Integrable Many Body systems do not exhibit thermalization.When subjected to time-periodic drives, Floquet engineering allows for the introduction of additional approximate conserved quantities that dynamically suppress the evolution of certain observables by hysteresis. This type of \textit{freezing} of response
+has been shown in integrable systems~\cite{roy_fate_2015}.
+A paradigmatic example is  the driven Transverse Field Ising model (TFIM) in one dimension~\cite{stinchcombe_ising_1973}. The Hamiltonian is given by
 	\begin{align}
 		\label{eq:tfim:hamilt}
 		\hat{H}(t) &= \hat{H}_0 + h_z(t) \; \hat{H}_1\\
 		\hat{H}_0 &= -\frac{1}{2}\sum^N_{i=1} \sigma^x_i \sigma^x_{i+1}\\
 		\hat{H}_1 &= -\frac{1}{2}\sum_{i=1}^N \sigma^z_{i}.
 	\end{align}
-Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interactions between $N$ number of  spin-$1/2$ particles on a one-dimensional spin network. The transverse field is denoted by $\hat{H}_1$, and is being varied by a time-periodic and harmonic signal $h_z(t) = h_0 + h\cos{\omega t}$, yielding a time period $T=2\pi/\omega$ with amplitude $h$, drive frequency $\omega$, and d.c. field $h_0$. This Hamiltonian can be readily transformed into a spinless pseudo-fermionic system via the Jordan-Wigner transformation. Written in momentum space spanned by spinors $\psi_k = (c_{-k}, c^\dagger_k)^T$ of fermions at momentum $k$ created (annihilated) by operators $c^\dagger_k$ ($c_k$). This yields an effective Hamiltonian ~\cite{mbeng_quantum_2020}
+Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interactions between $N$ number of  spin-$1/2$ particles on a one-dimensional spin network. The transverse field is denoted by $\hat{H}_1$, and is being varied by a time-periodic and harmonic signal $h_z(t) = h_0 + h\cos{\omega t}$, yielding a time period $T=2\pi/\omega$ with amplitude $h$, drive frequency $\omega$, and d.c. field $h_0$. This Hamiltonian can be readily transformed into a spinless pseudo-fermionic system via the Jordan-Wigner transformation. When written in momentum space spanned by spinors $\psi_k = (c_{-k}, c^\dagger_k)^T$ of fermions at momentum $k$ created (annihilated) by operators $c^\dagger_k$ ($c_k$), the effective Hamiltonian ~\cite{mbeng_quantum_2020}
 	\begin{equation}
 		H(t) = \sum_{(k,-k)-\mbox{pairs}} \psi^\dagger_k
 		\Bigg[\ \bigg(f_k - h_z(t)\bigg)\tau_z +  \tau_x \Delta_k\Bigg]\psi_k
 	\end{equation}
-	with $f_k = J\cos{k}$, $\Delta_k = J\sin{k}$, $\tau_{xyz}$ are the three Pauli Matrices, and the sum is over distinct $(k, -k)$ \textit{Cooper Pairs}. The transformation to the rotated frame is achieved by means of the unitary transformation operator denoted as $U(t) = \prod_k U_k(t)$, where $U_k(t) = \exp{\Big[\frac{i h}{\omega}\sin{\omega t}\Big]\tau_z}$. The resulting Hamiltonian is obtained through transformation,
+	with $f_k = J\cos{k}$, $\Delta_k = J\sin{k}$, $\tau_{xyz}$ are the three Pauli Matrices, and the sum is over distinct $(k, -k)$ \textit{Cooper Pairs}. A transformation to the rotated frame is achieved by means of the unitary transformation operator $U(t) = \prod_k U_k(t)$, where $U_k(t) = \exp{\Big[\frac{i h}{\omega}\sin{\omega t}\Big]\tau_z}$. The resulting transformed Hamiltonian is 
 	\begin{multline*}
 		H^\prime(t) = \sum_{(k,-k)-\mbox{pairs}} \psi^\dagger_k
 		\bigg[\ \tau_z f_k + \tau_x \cos{\big(\eta\sin{\omega t}\big)}  \\
@@ -205,14 +194,15 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 		\bigg[\ \tau_z f_k + 2\tau_x \Delta_k \sum_{n\geq 0} J_{2n}(\eta)\cos{\big(2n\omega t\big)} \nonumber\\
 		&\hskip 0.7cm- 2\tau^y\Delta_k \sum_{n\geq 0} J_{2n+1}(\eta)\sin{\big\{\big(2n+1\big)\omega t\big\}}   \bigg]\psi_k,
 	\end{align}\\
-	
 	In the frequency regime where $\omega$ is significantly larger than $f_k$ $i.e.$  $\omega \gg f_k$, the long-term average $\overline{H^\prime(t)}$ can serve as a suitable approximation for $H^\prime(t)$. This approximation, known as the Rotated Wave Approximation (RWA), eliminates the oscillating modes and results in an effective Hamiltonian that is independent of time.
 	\begin{equation}
 		\label{eq:hrwa:tfim}
 		H^{RWA} = \sum_{(k,-k)-\mbox{pairs}} \psi^\dagger_k
 		\bigg[\ f_k\tau_z + 2 J_0(\eta) \Delta_k\tau_x \bigg]\psi_k,
 	\end{equation}
-	It is evident that by manipulating the drive parameters, specifically the amplitude denoted by $h$ and the frequency denoted by $\omega$, in a manner such that $\eta$ is positioned on a root of $J_0(\eta)$, the fermion number can be conserved to a significant extent at this particular resonance. Consequently, it is feasible to exercise direct control over $H^{RWA}$, resulting in a comprehensive cessation of otherwise responsive observables. The quantification of the degree of localization or freezing of a specific (quasi) stationary state in a physically significant representation can be achieved through the utilization of the \emph{Inverse Participation Ratio} (IPR).  In the position representation, the IPR for a state $\ket{\psi}$  \cite{mukherjee_modulation-assisted_2015,lin_many-body_2018,murphy_generalized_2011, torres-herrera_self-averaging_2020} is defined as
+	It is evident that by manipulating the drive parameters, specifically the amplitude denoted by $h$ and the frequency denoted by $\omega$, in a manner such that $\eta$ is positioned on a root of $J_0(\eta)$, the fermion number can be conserved to a significant extent at this particular resonance. Consequently, it is feasible to exercise direct control over $H^{RWA}$, resulting in a comprehensive cessation of otherwise responsive observables. 
+	
+	This phenomenon is highly general in nature, and can be readily adapted to non-integrable systems. In such cases, freezing has the additional effect of inducing DMBL, suppressing thermalization to infinite temperatures. Numerical quantification of localization of a specific (quasi) stationary state in a physically significant representation can be achieved through the computation of the \emph{Inverse Participation Ratio} (IPR).  In the position representation, the IPR for a state $\ket{\psi}$  \cite{mukherjee_modulation-assisted_2015,lin_many-body_2018,murphy_generalized_2011, torres-herrera_self-averaging_2020} is defined as
 	\begin{equation*}
 		\phi_{IPR}\equiv \int \mathrm{d}\mathbf{x}\;\vert\ip{\mathbf{x}}{\psi}\vert^4
 	\end{equation*}
@@ -235,7 +225,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 		\caption{The plots above are for the exact dynamics of the TFIM in Fermionic representation for size N = 100, with the reduced IPR (defined in equation~\ref{eq:ipr:ising}) plotted for the entire Brillouin zone for a few drive amplitudes. The frequency is set to $\omega = 90$ and the IPR of one of the two Floquet modes are plotted at time $t=T$ for four different chosen amplitudes. The exact result is consistent with the RWA approximation. When $J_0(2h/\omega) = 0$, the RWA Hamiltonian vanishes, yielding an IPR of unity. At other points, the IPR is unity only when $k=\pm \pi$ (since $\Delta_k=0$) and $k=0$ (since $f_k = 0$ and the Hamiltonian for each $k$ $\sim \sigma_x$); other than that, there is freezing due to the ensuing dynamics.}
 		\label{fig:ipr:tfim}
 	\end{figure}
-	Figure~\ref{fig:ipr:tfim} shows results from numerically simulating the TFIM dynamics. The reduced IPR for a particular Floquet mode was obtained by simulating the exact Heisenberg dynamics over a single time period of the drive, and plotted as a function of momentum $k$ for different $\eta$'s. At resonance, when $\eta$ lies at the root of the Bessel function $J_0(\eta)$,  the IPR is exactly unity for all momenta. Outside this resonance, the IPR is unity only for some momenta because the effective Hamiltonian is perfect diagonal at $k \in{\{-\pi, 0, \pi\}}$ as can be seen in the cross-sectional plots of figure~\ref{fig:ipr:tfim}. Away from the resonance point, IPR is less than unity but as TFIM is integrable spin model, it does not follow thermalization maintaining posetive value. However, at low frequencies, when RWA fails due to unavailibity of zero offdiagonal terms in the  effective transformed Hamiltonian (in matrix representation) and no integrability breaking terms to counteract the off diagonal terms, the IPR remains quite high ($IPR \sim 0.5$) even at resonance point as can be seen figure~\ref{fig:ipr:isinglowfr}. At low frequency, this is valid for all momentum and parameter $\eta$, see figure~\ref{fig:ipr:isinglowfrk}.
+	Figure~\ref{fig:ipr:tfim} shows results from numerically simulating the TFIM dynamics. The reduced IPR for a particular Floquet mode was obtained by simulating the exact Heisenberg dynamics over a single time period of the drive, and plotted as a function of momentum $k$ for different $\eta$'s. At resonance, when $\eta$ lies at the root of the Bessel function $J_0(\eta)$,  the IPR is exactly unity for all momenta. Outside this resonance, the IPR is unity only for some momenta because the effective Hamiltonian is perfect diagonal at $k \in{\{-\pi, 0, \pi\}}$ as can be seen in the cross-sectional plots of figure~\ref{fig:ipr:tfim}. Away from the resonance point, IPR is less than unity but as TFIM is integrable spin model, it does not follow thermalization maintaining positive value. However, at low frequencies, when RWA fails due to unavailibity of zero off-diagonal terms in the  effective transformed Hamiltonian (in matrix representation) and no integrability breaking terms to counteract the off diagonal terms, the IPR remains quite high ($IPR \sim 0.5$) even at resonance point as can be seen figure~\ref{fig:ipr:isinglowfr}. At low frequency, this is valid for all momentum and parameter $\eta$, see figure~\ref{fig:ipr:isinglowfrk}.
 	
 	
 	
@@ -254,28 +244,31 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 		\label{fig:ipr:isinglowfrk}
 	\end{figure}
 	
-	Because the dependence of observable expectations on the eigenstates is always fairly strong for integrable systems like the TFIM, such systems will never exhibit any kind of thermal behaviour unless integrability breaking terms are included. As a result, it is not physically meaningful to refer to this as "Many Body Localization," because the parameter space lacks a region where ETH holds to contrast with this state. The type of Floquet Engineering described above, on the other hand, can be easily applied to a broad class of nonintegrable systems where ETH is expected to hold in certain regions. Long-range spin systems, in particular, where the exchange energies between far-off spins are taken into account in the model Hamiltonian, are good candidates because they are known to thermalize when driven with low frequencies~\cite{russomanno_thermalization_2015}.
+	Because the dependence of observable expectations on the eigenstates is always fairly strong for integrable systems like the TFIM, such systems will never exhibit any kind of thermal behaviour unless integrability breaking terms are included. As a result, it is not physically meaningful to refer to this as "Many Body Localization," because the parameter space lacks a region where FETH holds to contrast with this state. The type of Floquet Engineering described above, on the other hand, can be easily applied to a broad class of nonintegrable systems where FETH is expected to hold in certain regions. Long-range spin systems, in particular, where the exchange energies between far-off spins are taken into account in the model Hamiltonian, are good candidates because they are known to thermalize when driven with low frequencies~\cite{russomanno_thermalization_2015}.
 	\section{\label{sec:level3}Lipkin Meshkov Glick Model: Long range interaction}	
 	
 	The Hamiltonian of the network comprising spin 1/2 particles with Heisenberg interaction type shall be taken into consideration as below,
 	\begin{equation}
 	\hat{H}(t) = \hat{H}_0 + \left(h \cos{(\omega t)} + h_0\right)\; \hat{H}_1
-	\label{eq:lmg:ham}
+	\label{eq:driven:ham}
 	\end{equation}
 	where
-	\begin{eqnarray*}
+	\begin{eqnarray}
+		\label{eq:curieweiss:ham}
 		\hat{H}_0 &=& \frac12 \sum_{ij}J_{ij}\hat{\sigma}^z_i\hat{\sigma}^z_j,\\
-		\hat{H}_1 &=& \sum_i\hat{\sigma}^x_i.
-	\end{eqnarray*}
+		\hat{H}_1 &=& \sum_i\hat{\sigma}^x_i.\nonumber
+	\end{eqnarray}
 	here,
-	\begin{equation*}
-		J_{ij} =\frac{J_\alpha}{N^{1-\alpha}}\frac{1}{r_{ij}^{\alpha}}
-	\end{equation*}
+	\begin{equation}
+		\label{eq:jij}
+		J_{ij} =\frac{J_\alpha}{N^{1-\alpha}}\frac{1}{r_{ij}^{\alpha}},
+	\end{equation}
+	with $r_{ij}$ representing the smallest graph distance between spins $i$ and $j$.
 	Putting  $\alpha = 0$ yields the Lipkin Meshkov Glick (LMG) model with all-to-all interaction, yielding $J_{ij} = J_0/N$. We choose to maintain the extensivity of the interaction energy by enforcing the condition
 	\begin{equation*}
 		\frac{J_0}{N} \sum_{i\neq j}1=\frac{J_0}{N}\frac{N(N-1)}{2}=1\\
 	\end{equation*}
-	yielding the Kac-norm $J_0=2/(N-1)$. Here, we have $N$ spin-$1/2$ particles in a $1-$ dimensional lattice, and $i,j$ are site indices. The Hamiltonianin equation \ref{eq:lmg:ham} commutes with $P_{ij}$  with $P_{ij}$ defined as $P_{ij} = \displaystyle\frac{1}{2}(1+ \vec{\sigma}_i\cdot\vec{\sigma}_j)$. In addition $[S^2, H]=0$, therefore the $S^2$ is invariant of motion, where $S^2=\abs{\vec{S}}^2$ with $\vec{S}$ defined as, $ \vec{S}=S^x\hat{x}+S^y\hat{y}+S^z\hat{z}\equiv\frac12 \sum_i \vec{\sigma}_i$. We now choose to populate the system in a state whose  measured value of $S^2$ is $\displaystyle\frac{N}{2}\left(\frac{N}{2}+1\right)$, in that case the dynamics remains invariant in the space spanned by the common eigen states of $P_{ij}, \abs{S}^2$ and $S_z$, these are also eigenstates in the so-called TSS subspace ~\cite{mori_prethermalization_2019}. Let the eigenvalues be $s_n$, and the eigen vectors be $\ket{s_n}$, where $s_n=-\frac{1}{2}+\frac{n}{N}$ and the index
+	yielding the Kac-norm $J_0=2/(N-1)$. Here, we have $N$ spin-$1/2$ particles in a $1-$ dimensional lattice, and $i,j$ are site indices. The Hamiltonianin equation \ref{eq:driven:ham} commutes with $P_{ij}$  with $P_{ij}$ defined as $P_{ij} = \displaystyle\frac{1}{2}(1+ \vec{\sigma}_i\cdot\vec{\sigma}_j)$. In addition $[S^2, H]=0$, therefore the $S^2$ is invariant of motion, where $S^2=\abs{\vec{S}}^2$ with $\vec{S}$ defined as, $ \vec{S}=S^x\hat{x}+S^y\hat{y}+S^z\hat{z}\equiv\frac12 \sum_i \vec{\sigma}_i$. We now choose to populate the system in a state whose  measured value of $S^2$ is $\displaystyle\frac{N}{2}\left(\frac{N}{2}+1\right)$, in that case the dynamics remains invariant in the space spanned by the common eigen states of $P_{ij}, \abs{S}^2$ and $S_z$, these are also eigenstates in the so-called TSS subspace ~\cite{mori_prethermalization_2019}. Let the eigenvalues be $s_n$, and the eigen vectors be $\ket{s_n}$, where $s_n=-\frac{1}{2}+\frac{n}{N}$ and the index
 	$n= 0 (1) N$ has $N+1$ values. So, the dynamics is restricted to a (N$\times$N) invariant subspace where the matrix elements are given by 
 	
 	\begin{align}
@@ -446,13 +439,11 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	\emph{Conclusion}: Long-range spins exhibit strong localization in spin-coordinate space for the LMG model when the drive frequency is $\omega \gg J$, where $J$ represents the spin exchange energy. The localization of the LMG model occurs at specific resonances of the drive frequency $\omega$ and amplitude $h$, where $J_0(4h/\omega)=0$. The TFIM case has shown comparable localization (in momentum space) at resonances determined by $J_0(2h/\omega)=0$. However, the mechanism differs in long-range systems as a distinct observable $(S_x)^2$ is conserved in the LMG case, where $\mathbf{S}$ represents the total spin. Upon the removal of accidental degeneracy through the application of a DC transverse field in the form of $\sim \hat{S_x}$, the eigenstates can be mapped into a coordinate representation, leading to a robust spatial localization. The periodically driven LMG model exhibits a pronounced mobility edge when the frequency is gradually increased from $\omega \sim J$ to $\omega \gg J$ in an adiabatic manner. In the first region where frequency $\omega$ is small, the quantum system is expected to undergo thermalization at exceedingly high temperatures due to the attainment of dynamical chaos in classical dynamics.However, in the latter high frequency regime, the perpetual postponement occurs due to dynamical localization. The point of transition in mobility between these two regimes exhibits anomalous characteristics when analyzed in the context of thermodynamic principles, indicating a quantum change in phase which detected as $phase-crossover$ between them. The absence of thermal behavior in the low-frequency limit of the short-range transverse field Ising model (TFIM) can be attributed to the significant magnitude of the inverse participation ratio (IPR). The induction of Thermal and Localized states in long-range systems can be achieved through Floquet engineering, without the need for disorder.	
 	
 	\emph{Outlook}: 	
-	A system characterized by high symmetry has been thoroughly examined in a pristine state. Thermalization takes place in all scenarios, alongside integrability-disrupting factors, such as disorder. However, akin to TFIM, the onset of thermalization in LMG can be postponed when the condition $\omega\gg J$ and $J_0(4h/\omega) = 0$ is satisfied. In systems possessing a Hamiltonian of the form $\mathcal{H} = -\frac{J_{ij}}{|i-j|^\beta} \sum_{ij}\sigma^z_i\sigma^z_j -\sum_i \sigma^x_i$, the time-independent Schrödinger equation can be solved analytically for certain potentials.The expression above represents the summation of the product of the coupling constant Jij and the difference between the indices i and j raised to the power of beta, multiplied by the sum of the spin variables sigma over all possible pairs of indices i and j.The intermediate spin-spin interaction power law limits have received less attention compared to the infinite and long-range limit. Further research can be conducted on this topic. The LMG spin configuration undergoes a phase cross-over due to the adiabatic increase in drive frequency. This suggests the possibility of a future MBL engine that can operate between the thermal and localized regimes, with a thermodynamic cycle. Additionally, there exist prospects for diabatic corrections. 
+	A system characterized by high symmetry has been thoroughly examined in a pristine state. Thermalization takes place in all scenarios, alongside integrability-disrupting factors, such as disorder. However, akin to TFIM, the onset of thermalization in LMG can be postponed when the condition $\omega\gg J$ and $J_0(4h/\omega) = 0$ is satisfied. In systems possessing a Hamiltonian of the form given by equations~\ref{eq:curieweiss:ham} and~\ref{eq:jij}, the time-independent Schrödinger equation can be solved analytically for certain potentials. The intermediate spin-spin interaction power law limits have received less attention compared to the infinite and long-range limit. Further research can be conducted on this topic. The LMG spin configuration undergoes a phase cross-over due to the adiabatic increase in drive frequency. This suggests the possibility of a future MBL engine that can operate between the thermal and localized regimes, with a thermodynamic cycle. Additionally, there exist prospects for diabatic corrections. 
 	
 	
 	{\it Acknowledgement:}
-	One of the authors, MR would like to express gratitude to The University of Burdwan for awarding the state-funded fellowship and facilitating access to advanced computational resources.
-	
-	
+	One of the authors, MR would like to acknowledge The University of Burdwan for support via a state-funded fellowship, as well as for providing computational resources. AR acknowledges support from the University Grants Commission (UGC) of India, via BSR Startup Grant No. F.30-425/2018(BSR), as well as from the Science and Engineering Research Board (SERB) Core Research Grant No. CRG/20l8/004002.
 	
 	% The \nocite command causes all entries in a bibliography to be printed out
 	% whether or not they are actually referenced in the text. This is appropriate

@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{51}%
+\begin{thebibliography}{52}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -127,13 +127,12 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
   {Eckardt}}\ and\ \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
-  {Anisimovas}},\ }\bibfield  {title} {{\selectlanguage {en}\bibinfo {title}
-  {High-frequency approximation for periodically driven quantum systems from a
-  {Floquet}-space perspective}},\ }\href
-  {https://doi.org/10.1088/1367-2630/17/9/093039} {\bibfield  {journal}
-  {\bibinfo  {journal} {New J. Phys.}\ }\textbf {\bibinfo {volume} {17}},\
-  \bibinfo {pages} {093039} (\bibinfo {year} {2015})},\ \bibinfo {note}
-  {publisher: IOP Publishing}\BibitemShut {NoStop}%
+  {Anisimovas}},\ }\bibfield  {title} {\bibinfo {title} {High-frequency
+  approximation for periodically driven quantum systems from a {Floquet}-space
+  perspective},\ }\href {https://doi.org/10.1088/1367-2630/17/9/093039}
+  {\bibfield  {journal} {\bibinfo  {journal} {New J. Phys.}\ }\textbf {\bibinfo
+  {volume} {17}},\ \bibinfo {pages} {093039} (\bibinfo {year} {2015})},\
+  \bibinfo {note} {publisher: IOP Publishing}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Zhang}\ \emph {et~al.}(2016)\citenamefont {Zhang},
   \citenamefont {Khemani},\ and\ \citenamefont {Huse}}]{zhang_floquet_2016}%
   \BibitemOpen
@@ -239,24 +238,35 @@
   rotating wave approximation ({RWA}): Two coherent oscillations},\ }\href
   {https://doi.org/10.4236/jmp.2017.812124} {\ \textbf {\bibinfo {volume}
   {8}},\ \bibinfo {pages} {2042}}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Reichl}()}]{reichl_transition_2021}%
+\bibitem [{\citenamefont {Abanin}\ \emph {et~al.}(2019)\citenamefont {Abanin},
+  \citenamefont {Altman}, \citenamefont {Bloch},\ and\ \citenamefont
+  {Serbyn}}]{abanin_colloquium_2019}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
-  {Reichl}},\ }\href {https://doi.org/10.1007/978-3-030-63534-3} {\emph
-  {\bibinfo {title} {The Transition to Chaos: Conservative Classical and
-  Quantum Systems}}},\ \bibinfo {series} {Fundamental Theories of Physics},
-  Vol.\ \bibinfo {volume} {200}\ (\bibinfo  {publisher} {Springer International
-  Publishing})\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Bukov}\ \emph {et~al.}()\citenamefont {Bukov},
-  \citenamefont {D'Alessio},\ and\ \citenamefont {Polkovnikov}}]{bukov2014}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
+  {Abanin}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Altman}},
+  \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Bloch}},\ and\ \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Serbyn}},\ }\bibfield  {title}
+  {\bibinfo {title} {Colloquium: {Many}-body localization, thermalization, and
+  entanglement},\ }\href {https://doi.org/10.1103/RevModPhys.91.021001}
+  {\bibfield  {journal} {\bibinfo  {journal} {Rev. Mod. Phys.}\ }\textbf
+  {\bibinfo {volume} {91}},\ \bibinfo {pages} {021001} (\bibinfo {year}
+  {2019})},\ \bibinfo {note} {publisher: American Physical Society}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Srednicki}()}]{Srednicki1994}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Bukov}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {D'Alessio}},\
-  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Polkovnikov}},\
-  }\bibfield  {title} {\bibinfo {title} {Universal {High}-{Frequency}
-  {Behavior} of {Periodically} {Driven} {Systems}: from {Dynamical}
-  {Stabilization} to {Floquet} {Engineering}},\ }\href@noop {} {\ }\bibinfo
-  {note} {ArXiv: 1407.4803v2}\BibitemShut {NoStop}%
+  {Srednicki}},\ }\bibfield  {title} {\bibinfo {title} {Chaos and quantum
+  thermalization},\ }\href@noop {} {\ \textbf {\bibinfo {volume} {50}},\
+  \bibinfo {pages} {888}}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Srednicki}(1999)}]{Srednicki_1999}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Srednicki}},\ }\bibfield  {title} {\bibinfo {title} {The approach to thermal
+  equilibrium in quantized chaotic systems},\ }\href
+  {https://doi.org/10.1088/0305-4470/32/7/007} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of Physics A: Mathematical and General}\ }\textbf
+  {\bibinfo {volume} {32}},\ \bibinfo {pages} {1163} (\bibinfo {year}
+  {1999})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Holthaus}(2016)}]{holthaus_floquet_2016}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
@@ -279,6 +289,26 @@
    {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {101}},\ \bibinfo
   {pages} {024303} (\bibinfo {year} {2020})},\ \bibinfo {note} {publisher:
   American Physical Society}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bukov}\ \emph {et~al.}()\citenamefont {Bukov},
+  \citenamefont {D'Alessio},\ and\ \citenamefont {Polkovnikov}}]{Bukov2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Bukov}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {D'Alessio}},\
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Polkovnikov}},\
+  }\bibfield  {title} {\bibinfo {title} {Universal {High}-{Frequency}
+  {Behavior} of {Periodically} {Driven} {Systems}: from {Dynamical}
+  {Stabilization} to {Floquet} {Engineering}},\ }\href@noop {} {\ }\bibinfo
+  {note} {ArXiv: 1407.4803v2}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {D'Alessio}\ and\ \citenamefont
+  {Rigol}(2014)}]{alessio}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {D'Alessio}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Rigol}},\ }\bibfield  {title} {\bibinfo {title} {Long-time behavior of
+  isolated periodically driven interacting lattice systems},\ }\href
+  {https://doi.org/10.1103/PhysRevX.4.041048} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. X}\ }\textbf {\bibinfo {volume} {4}},\ \bibinfo {pages}
+  {041048} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Rozhin}()}]{Sougata2023}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
@@ -441,6 +471,14 @@
   {https://doi.org/10.1088/1742-5468/ac2a9c} {\ \textbf {\bibinfo {volume}
   {2021}},\ \bibinfo {pages} {103106}},\ \bibinfo {note} {publisher: {IOP}
   Publishing and {SISSA}}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Reichl}()}]{reichl_transition_2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Reichl}},\ }\href {https://doi.org/10.1007/978-3-030-63534-3} {\emph
+  {\bibinfo {title} {The Transition to Chaos: Conservative Classical and
+  Quantum Systems}}},\ \bibinfo {series} {Fundamental Theories of Physics},
+  Vol.\ \bibinfo {volume} {200}\ (\bibinfo  {publisher} {Springer International
+  Publishing})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Roy}\ and\ \citenamefont
   {Das}({\natexlab{b}})}]{roy_fate_2015-1}%
   \BibitemOpen
@@ -492,27 +530,12 @@
   {Deutsch}},\ }\bibfield  {title} {\bibinfo {title} {Quantum statistical
   mechanics in a closed system},\ }\href@noop {} {\ \textbf {\bibinfo {volume}
   {43}},\ \bibinfo {pages} {2046} ({\natexlab{a}})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Srednicki}()}]{Srednicki1994}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Srednicki}},\ }\bibfield  {title} {\bibinfo {title} {Chaos and quantum
-  thermalization},\ }\href@noop {} {\ \textbf {\bibinfo {volume} {50}},\
-  \bibinfo {pages} {888}}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Hobson}(1909)}]{hobson_e_w_1909_1447800}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~W.}\ \bibnamefont
   {Hobson}},\ }\href {https://doi.org/10.1112/plms/s2-7.1.14} {\bibinfo {title}
   {{On the Second Mean-Value Theorem of the Integral Calculus}}} (\bibinfo
   {year} {1909})\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Srednicki}(1999)}]{Srednicki_1999}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Srednicki}},\ }\bibfield  {title} {\bibinfo {title} {The approach to thermal
-  equilibrium in quantized chaotic systems},\ }\href
-  {https://doi.org/10.1088/0305-4470/32/7/007} {\bibfield  {journal} {\bibinfo
-  {journal} {Journal of Physics A: Mathematical and General}\ }\textbf
-  {\bibinfo {volume} {32}},\ \bibinfo {pages} {1163} (\bibinfo {year}
-  {1999})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Rigol}\ and\ \citenamefont
   {Srednicki}(2012)}]{Rigol_2012}%
   \BibitemOpen
@@ -531,18 +554,6 @@
   hypothesis},\ }\href {https://doi.org/10.1088/1361-6633/aac9f1} {\ \textbf
   {\bibinfo {volume} {81}},\ \bibinfo {pages} {296}
   ({\natexlab{b}})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Abanin}\ \emph {et~al.}()\citenamefont {Abanin},
-  \citenamefont {Altman}, \citenamefont {Bloch},\ and\ \citenamefont
-  {Serbyn}}]{abanin_colloquium_2019}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
-  {Abanin}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Altman}},
-  \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Bloch}},\ and\ \bibinfo
-  {author} {\bibfnamefont {M.}~\bibnamefont {Serbyn}},\ }\bibfield  {title}
-  {\bibinfo {title} {Colloquium: Many-body localization thermalization and
-  entanglement},\ }\href {https://doi.org/10.1103/RevModPhys.91.021001} {\
-  \textbf {\bibinfo {volume} {91}},\ \bibinfo {pages} {021001}},\ \bibinfo
-  {note} {publisher: American Physical Society}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Nandkishore}\ and\ \citenamefont
   {Huse}(2015)}]{Nandkishore_2015}%
   \BibitemOpen
