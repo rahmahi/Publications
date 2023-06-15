@@ -1423,45 +1423,45 @@ while executing---line 3515 of file apsrev4-2.bst
 ---they aren't the same literal types for entry Joshua_2018
 while executing---line 3515 of file apsrev4-2.bst
 Warning--missing journal in Joshua_2018
-You've used 54 entries,
+You've used 57 entries,
             6079 wiz_defined-function locations,
-            2013 strings with 26613 characters,
-and the built_in function-call counts, 51161 in all, are:
-= -- 3750
-> -- 1089
-< -- 275
-+ -- 366
-- -- 262
-* -- 7381
-:= -- 4929
-add.period$ -- 52
-call.type$ -- 54
-change.case$ -- 275
-chr.to.int$ -- 62
-cite$ -- 125
-duplicate$ -- 4761
-empty$ -- 3729
-format.name$ -- 631
-if$ -- 10333
+            2037 strings with 27249 characters,
+and the built_in function-call counts, 54244 in all, are:
+= -- 3975
+> -- 1161
+< -- 289
++ -- 388
+- -- 278
+* -- 7844
+:= -- 5232
+add.period$ -- 55
+call.type$ -- 57
+change.case$ -- 291
+chr.to.int$ -- 68
+cite$ -- 128
+duplicate$ -- 5047
+empty$ -- 3966
+format.name$ -- 670
+if$ -- 10965
 int.to.chr$ -- 3
-int.to.str$ -- 61
-missing$ -- 790
-newline$ -- 208
-num.names$ -- 153
-pop$ -- 2133
+int.to.str$ -- 64
+missing$ -- 831
+newline$ -- 217
+num.names$ -- 162
+pop$ -- 2241
 preamble$ -- 1
-purify$ -- 222
+purify$ -- 237
 quote$ -- 0
-skip$ -- 2346
+skip$ -- 2480
 stack$ -- 0
-substring$ -- 1370
-swap$ -- 4280
-text.length$ -- 122
+substring$ -- 1449
+swap$ -- 4542
+text.length$ -- 130
 text.prefix$ -- 0
 top$ -- 10
-type$ -- 703
+type$ -- 743
 warning$ -- 70
-while$ -- 155
+while$ -- 164
 width$ -- 0
-write$ -- 460
+write$ -- 486
 (There were 442 error messages)
