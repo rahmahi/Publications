@@ -365,6 +365,13 @@
   transverse field. i. basic theory},\ }\href
   {https://doi.org/10.1088/0022-3719/6/15/009} {\ \textbf {\bibinfo {volume}
   {6}},\ \bibinfo {pages} {2459}}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {George~Arfken}()}]{arfkenmath}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.~E.~H.}\
+  \bibnamefont {George~Arfken}, \bibfnamefont {Hans~Weber}},\ }\href
+  {https://www.elsevier.com/books/mathematical-methods-for-physicists/arfken/978-0-12-384654-9}
+  {\emph {\bibinfo {title} {Mathematical Methods for Physicists}}}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Mukherjee}\ \emph {et~al.}()\citenamefont
   {Mukherjee}, \citenamefont {Spracklen}, \citenamefont {Choudhury},
   \citenamefont {Goldman}, \citenamefont {Öhberg}, \citenamefont {Andersson},\
@@ -461,13 +468,6 @@
   {https://doi.org/10.1088/1751-8121/aaf9db} {\ \textbf {\bibinfo {volume}
   {52}},\ \bibinfo {pages} {054001}},\ \bibinfo {note} {publisher: {IOP}
   Publishing}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {George~Arfken}()}]{arfkenmath}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.~E.~H.}\
-  \bibnamefont {George~Arfken}, \bibfnamefont {Hans~Weber}},\ }\href
-  {https://www.elsevier.com/books/mathematical-methods-for-physicists/arfken/978-0-12-384654-9}
-  {\emph {\bibinfo {title} {Mathematical Methods for Physicists}}}\BibitemShut
-  {NoStop}%
 \bibitem [{\citenamefont {Sciolla}\ and\ \citenamefont
   {Biroli}()}]{sciolla_quantum_2010}%
   \BibitemOpen
