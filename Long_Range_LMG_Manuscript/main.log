@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.2)  18 JUN 2023 22:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  19 JUN 2023 10:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -947,14 +947,14 @@ cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 h[][][] \OMS/cmsy/m/n/10 ^^@
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 333.
 
-<ipr_exact_dynm_N50_frq_90_.jpeg, id=205, 433.62pt x 578.16pt>
+<ipr_exact_dynm_N50_frq_90_.jpeg, id=207, 433.62pt x 578.16pt>
 File: ipr_exact_dynm_N50_frq_90_.jpeg Graphic file (type jpg)
 <use ipr_exact_dynm_N50_frq_90_.jpeg>
 Package pdftex.def Info: ipr_exact_dynm_N50_frq_90_.jpeg  used on input line 33
 5.
 (pdftex.def)             Requested size: 241.84842pt x 322.47055pt.
 [7 <./ipr_exact_dynm_N50_frq_90_.jpeg>]
-<comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg, id=217, 433.62pt x 650.43pt>
+<comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg, id=219, 433.62pt x 650.43pt>
 File: comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg Graphic file (type jpg)
 <use comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg>
 Package pdftex.def Info: comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg  used on 
@@ -966,7 +966,7 @@ Overfull \hbox (10.0748pt too wide) in paragraph at lines 353--355
  []
 
 [8 <./comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg>]
-<lmg_poincare.jpeg, id=234, 1084.05pt x 1084.05pt>
+<lmg_poincare.jpeg, id=236, 1084.05pt x 1084.05pt>
 File: lmg_poincare.jpeg Graphic file (type jpg)
 <use lmg_poincare.jpeg>
 Package pdftex.def Info: lmg_poincare.jpeg  used on input line 396.
@@ -976,7 +976,7 @@ Overfull \hbox (10.07509pt too wide) in paragraph at lines 396--397
  [][] 
  []
 
-<phase_crossover_LMG.jpeg, id=238, 722.7pt x 722.7pt>
+<phase_crossover_LMG.jpeg, id=240, 722.7pt x 722.7pt>
 File: phase_crossover_LMG.jpeg Graphic file (type jpg)
 <use phase_crossover_LMG.jpeg>
 Package pdftex.def Info: phase_crossover_LMG.jpeg  used on input line 405.
@@ -991,7 +991,7 @@ Overfull \hbox (10.06956pt too wide) in paragraph at lines 405--406
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
  on input line 411.
 
-<hbar_std.jpg, id=250, 650.43pt x 433.62pt>
+<hbar_std.jpg, id=252, 650.43pt x 433.62pt>
 File: hbar_std.jpg Graphic file (type jpg)
 <use hbar_std.jpg>
 Package pdftex.def Info: hbar_std.jpg  used on input line 414.
@@ -1072,8 +1072,8 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  24342 strings out of 478287
- 440513 string characters out of 5849290
- 749468 words of memory out of 5000000
+ 440513 string characters out of 5849289
+ 749373 words of memory out of 5000000
  41967 multiletter control sequences out of 15000+600000
  514554 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1099,10 +1099,10 @@ c/bera/fveb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (13 pages, 9404887 bytes).
+Output written on main.pdf (13 pages, 9405310 bytes).
 PDF statistics:
- 482 PDF objects out of 1000 (max. 8388607)
- 408 compressed objects within 5 object streams
+ 484 PDF objects out of 1000 (max. 8388607)
+ 409 compressed objects within 5 object streams
  114 named destinations out of 1000 (max. 500000)
  125 words of extra memory for PDF output out of 10000 (max. 10000000)
 
