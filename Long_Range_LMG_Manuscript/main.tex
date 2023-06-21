@@ -148,23 +148,23 @@ Plugging these expansions into the expression for the expectation value, we obta
 Had the system been integrable, the large number of conserved quantities would restrict mixing between the states during unitary evolution. In the non-integrable case,
 the system explores the entire Hilbert space spanned by eigenstates with eigenvalues close to $E$ more-or-less uniformly. In that case, the matrix elements $\mel{m(0)}{\hat{A}}{k(0)}$ are said to satisfy the Srednicki ansatz~\cite{Srednicki1994,Srednicki_1999}:
 \begin{multline}
-	\mel{m(0)}{\hat{A}}{k(0)} \approx A_{eq} \delta_{mk} +\\ e^{-\frac12 S\left(\frac{E_m+E_k}{2}\right)} f\;\left(\frac{E_m+E_k}{2}, E_m-E_k\right)R_{mk}.
+	\mel{m(0)}{\hat{A}}{k(0)} \approx A_{eq}\left(\frac{E_m+E_k}{2}\right) \delta_{mk} +\\ e^{-\frac12 S\left(\frac{E_m+E_k}{2}\right)} f\;\left(\frac{E_m+E_k}{2}, E_m-E_k\right)R_{mk}.
 \end{multline}
 Here, $S$ is the thermodynamic entropy and $R_{mk}$ are elements of a random matrix with vanishing mean and unit variance. What this means for the ensuing dynamics is that the system explores the accessible Hilbert space uniformly,  and the matrix elements $\bra{m(0)}\hat{A}(t)\ket{k(0)}$ become indistinguishable for most pairs of $m$ and $k$.
 Applying this ansatz and taking the thermodynamic limit by ignoring terms $\mathcal{O}(e^{-S/2})$, the expression for the expectation value becomes:
-\begin{equation*}
-\overline{\expval{\hat{A}(t)}} \approx \sum_m \overline{\abs{c_m(t)}^2} {A}_{eq}= {A}_{eq},
-\end{equation*}
-
-Therefore, in the limit of large systems the expectation value of an observable $\hat{A}$ is approximately equal to the thermal expectation value $A_{eq}$. This is the essence of the ETH, which suggests that individual eigenstates of a quantum system can be described by statistical mechanics in the long-time limit.
+\begin{multline*}
+\overline{\expval{\hat{A}(t)}} \approx \sum_m \overline{\abs{c_m(t)}^2}\; {A}_{eq}\left(\frac{E_m+E_k}{2}\right)\\
+ \approx {A}_{eq}(E)\sum_m \overline{\abs{c_m(t)}^2} = A_{eq}(E),
+\end{multline*}
+where, in the last step, we utilized the fact that $A_{eq}$ is a smooth function, and that the states with energies far from $E$ have $\abs{c_m(t)}^2\approx 0$. Therefore, in the limit of large systems the expectation value of an observable $\hat{A}$ is approximately equal to the thermal expectation value $A_{eq}$. This is the essence of the ETH, which suggests that individual eigenstates of a quantum system can be described by statistical mechanics in the long-time limit.
 
 We now generalize the ETH to non-integrable many body systems that are closed, but not isolated. In that case, it is possible to impart a periodic time-dependence on the Hamiltonian while still ensuring unitary evolution. If the time period of the drive is $T$, and the corresponding drive frequency $\omega\equiv 2\pi/T$, the Floquet theorem states that the solutions to the Schrödinger equation can be written as $\ket{\psi(t)} = e^{-i\epsilon t/\hbar} \ket{\phi(t)}$, where the $\ket{\phi(t)}$ are $T$-periodic states called \textit{Floquet Modes}, the corresponding $\epsilon\in \mathbb{R}$, are called \textit{quasienergies}. Quasienergy values are not unique, and can be made to be bounded within a Floquet photon,\textit{viz.} a range $[-\omega/2, \omega/2]$\cite{holthaus_floquet_2016,vogl_effective_2020}. As a consequence, the unitary evolution operator can be spit into two parts as follows~\cite{Bukov2014}.
 \begin{equation}
 	U(t) = e^{-i\hat{K}_F(t)}\;e^{-i\hat{H}_Ft}.
 \end{equation}
-Here, the micromotion operator $\hat{K}_F(t)$ is time-periodic in $T$, with $\hat{K}_F(0)=0$, and the Floquet Hamiltonian $\hat{H}_F = \hat{H}(t) - i \displaystyle\frac{\partial}{\partial t}\bigg\vert_{t=T}$. Thus, if the system is strobed at integer multiples of $T$ only, then the unitary evolution matches that of a time independent Hamiltonian $H_F$. This can capture a representative cross-section of the exact dynamics at large frequencies.
+Here, the micromotion operator $\hat{K}_F(t)$ is time-periodic in $T$, with $\hat{K}_F(0)=0$, and the Floquet Hamiltonian $\hat{H}_F = \hat{H}(t) - i \displaystyle\frac{\partial}{\partial t}\bigg\vert_{t=T}$. Thus, if the system is strobed at integer multiples of $T$ only, then the unitary evolution matches that of a time independent Hamiltonian $H_F$. This can capture most of the exact dynamics at large frequencies.
 
-In such systems, the Floquet Eigenstate Thermalization Hypothesis (FETH) posits that subject to specific conditions and in the context of a system of significant size, the Floquet modes themselves exhibit thermal state-like behavior, \textit{i.e.}, $\hat{H}_{eq}\approx \hat{H}_F$ in eqn~\ref{eq:aeq}. However, in contrast to the isolated systems, the loss of energy conservation allows for the mixing of all Floquet modes in the ensuing dynamics, not just those with quasienergies near $E$. Were this to actually happen in the ensuing dynamics, it can be reconciled with ETH~\cite{alessio} by ensuring that $\beta=0$ in eq~\ref{eq:aeq}. In other words, the nonequilibrium steady state of the system tends to an infinite temperature, maximum entropy density matrix.
+In such systems, the Floquet Eigenstate Thermalization Hypothesis (FETH) posits that, subject to specific conditions and in the context of a system of significant size, the Floquet modes themselves exhibit thermal state-like behavior, \textit{i.e.}, $\hat{H}_{eq}\approx \hat{H}_F$ in eqn~\ref{eq:aeq}. However, in contrast to the isolated systems, the loss of energy conservation allows for the mixing of all Floquet modes in the ensuing dynamics, not just those with quasienergies near $E$. Were this to actually happen in the ensuing dynamics, it can be reconciled with ETH~\cite{alessio} by ensuring that $\beta=0$ in eq~\ref{eq:aeq}. In other words, the nonequilibrium steady state of the system tends to an infinite temperature, maximum entropy density matrix.
 
 However, drive parameters like amplitude, frequency, and duty-cycle strongly affect the structure of the Floquet modes $\ket{\phi}$. Thus, they can be engineered to prevent the kind of full mixing that would lead to infinite temperatures, manifesting suppression of thermalization dynamically. Thus, this type of \textit{Floquet Engineering} can produce \textit{Dynamical Many Body Localization} (DMBL), where the system fails to reach thermal equilibrium and remains localised, possibly  near its initial state, even at large times. This paradigm seems similar to standard Many-Body Localization\cite{yousefjani2023, sierant_2023}, where disorder, locality, and integrability can cause athermality via breakdown in the Srednicki ansatz. However, DMBL is a purely dynamical phenomenon, and thus can occur regardless of disorder, locality of observables, or system integrability, all of which have been studied for MBL onset~\cite{Sougata2023,Fabien2018,garratt_resonant_2022}.
 
@@ -263,12 +263,11 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 		J_{ij} =\frac{J_\alpha}{N^{1-\alpha}}\frac{1}{r_{ij}^{\alpha}},
 	\end{equation}
 	with $r_{ij}$ representing the smallest graph distance between them.
-	Putting  $\alpha = 0$ yields the Lipkin Meshkov Glick (LMG) model with all-to-all interaction, yielding $J_{ij} = J_0/N$. We choose to maintain the extensivity of the interaction energy by enforcing the condition
+	Putting  $\alpha = 0$ yields the Lipkin Meshkov Glick (LMG) model with all-to-all interaction, with $J_{ij} = J_0/N$. We choose to maintain the extensivity of the interaction energy by enforcing the condition
 	\begin{equation*}
 		\frac{J_0}{N} \sum_{i\neq j}1=\frac{J_0}{N}\frac{N(N-1)}{2}=1,
 	\end{equation*}
-	yielding the Kac-norm $J_0=2/(N-1)$. The Hamiltonianin equation \ref{eq:driven:ham} commutes with $P_{ij} \equiv \displaystyle\frac{1}{2}\left(1+ \vec{\sigma}_i\cdot\vec{\sigma}_j\right)$. In addition, the conservation of total angular momentum $S^2 = \abs{\vec{S}}^2$, with $\vec{S}=S^x\hat{x}+S^y\hat{y}+S^z\hat{z}\equiv\frac12 \sum_i \vec{\sigma}_i$ is assured by the identity
-	$\comm{S^2}{H(t)}=0$. We now choose to populate the system in a state with $S^2=\displaystyle\frac{N}{2}\left(\frac{N}{2}+1\right)$. In that case, the dynamics remains invariant in the  $N+1-$dimensional space spanned by the common eigen states of $P_{ij}, \abs{S}^2$ and $S_z$; these are also eigenstates in the so-called TSS subspace ~\cite{mori_prethermalization_2019}. Let the eigenvalues be $s_n$, and the eigen vectors be $\ket{s_n}$, where $s_n=-\frac{1}{2}+\frac{n}{N}$ and the index
+	yielding the Kac-norm $J_0=2/(N-1)$. The Hamiltonian in equation \ref{eq:driven:ham} commutes with $P_{ij} \equiv \displaystyle\frac{1}{2}\left(1+ \vec{\sigma}_i\cdot\vec{\sigma}_j\right)$. In addition, it also commutes with the total angular momentum $S^2 = \abs{\vec{S}}^2$, where $\vec{S}=S^x\hat{x}+S^y\hat{y}+S^z\hat{z}\equiv\frac12 \sum_i \vec{\sigma}_i$. We now choose to populate the system in a state with $S^2=\displaystyle\frac{N}{2}\left(\frac{N}{2}+1\right)$. In that case, the dynamics remains invariant in the  $N+1-$dimensional space spanned by the common eigen states of $P_{ij}, \abs{S}^2$ and $S_z$; the so-called \textit{ Totally Symetric Substace}, or TSS ~\cite{mori_prethermalization_2019}. Let the eigenvalues of $S^z$ in the TSS be $s_n$, and the eigen vectors be $\ket{s_n}$. Here, $s_n=-\frac{1}{2}+\frac{n}{N}$ and the index
 	$n= 0 (1) N$ has $N+1$ values. The dynamics is restricted to this invariant subspace, wherein the matrix elements of the Hamiltonian are given by
 	
 	\begin{align}
@@ -282,7 +281,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	\begin{equation}
 	\hat{U}(t)=\exp [i \frac{h}{\omega} \sin (\omega t) \hat{H}_{1}]
 	\end{equation}
-	Defining $\tau = \displaystyle\frac{h}{\omega}\sin{\omega t}$, we use the fact that $\hat{H}_1 = 2 S^x$, and the following identity obtained using the Baker-Campbell-Hausdorff formula,
+	Defining $\tau = \displaystyle\frac{h}{\omega}\sin{\omega t}$, we use the fact that $\hat{H}_1 = 2 S^x$, as well as the following identity obtained by using the Baker-Campbell-Hausdorff formula,
 	\begin{equation}
 	e^{i 2\tau\hat{S^{x}}} \hat{S^{z}} e^{-i 2\tau \hat{S^{x}}}=\hat{S^{z}} \cos \left(2\tau\right)+\hat{S}^{y} \sin (2\tau),
 	\end{equation}
@@ -301,18 +300,17 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	\begin{equation}
 	\tilde{H}_{\mathrm{RWA}}= \frac{\big(\hat{S}^x\big)^{2}}{N-1} - 2h_0 \hat{S}^x - \frac{J_0(\eta)}{N-1}\bigg[\big(\hat{S}^z\big)^{2} - \big(\hat{S}^y\big)^{2} \bigg]
 	\end{equation}
-	\todo{Proofread from here}
+
 	
 	If the drive amplitude $h$ is adjusted such that $\eta$ lies at a root of $J_0(\eta)$ (the localization point), the RWA Hamiltonian is diagonal in the representation of the transverse field $\hat{S}^x$, yielding an IPR of unity in that representation, similar to the Ising case. Note however, that if the DC transverse field $h_0$ is set to $0$, then, at the localization point, the RWA Hamiltonian $\tilde{H}_{\mathrm{RWA}}\sim
-	\big(\hat{S}^x\big)^2$, each of whose eigenvalues (given by $\big(\frac{N}{2}-m\big)^2$ where $m \in 0(1)N$, and $\big(\frac{N}{2}-m\big)$  are the eigenvalues of $\hat{S}^x$) are two-fold degenerate. This produces infinitely many (Floquet) eigenmodes in the degenerate subspace whose IPRs may not always be unity in the $S^x$ representation. Thus, the absence of the DC field may produce delocalization in the Floquet states even at the localization points, and this necessitated the inclusion of a DC field $h_0$ in order to break the symmetry.
-	Finally, note that not all values of the DC field $h_0$ remove all degeneracies in $\tilde{H}_{\mathrm{RWA}}$. To see this, note that, at the localization point, the eigenvalues of $\tilde{H}_{\mathrm{RWA}}$ are given by
+	\big(\hat{S}^x\big)^2$, each of whose eigenvalues (given by $\big(\frac{N}{2}-m\big)^2$ where $m \in 0(1)N$, and $\big(\frac{N}{2}-m\big)$  are the eigenvalues of $\hat{S}^x$) are two-fold degenerate. This produces infinitely many (Floquet) eigenmodes in the degenerate subspace whose IPRs may not always be unity in the $S^x$ representation. The removal of this degeneracy necessitates the inclusion of the d.c. field $h_0$. However, note that rational values of $h_0$
+	 may add accidental degeneracies in $\tilde{H}_{\mathrm{RWA}}$. To see this, note that, at the localization point, the eigenvalues of $\tilde{H}_{\mathrm{RWA}}$ are given by
 	
 	\begin{equation}
 	\rm{Eigs}\bigg[\tilde{H}_{\mathrm{RWA}}\bigg] = \frac{\big(\frac{N}{2}-m\big)^2}{N-1} - 2h_0 \bigg(\frac{N}{2}-m\bigg)
 	\end{equation}
 	
-	In order to ensure that no degeneracies occur, we have to adjust $h_0$ to ensure that for any two integers $m_1, m_2 \leq N$  the condition following is always met,
-	
+	In order to ensure that no additional degeneracies occur, we have to set $h_0$ in  such a way that no two energies coincide, \textit{i.e.}, $\forall m_1, m_2 \leq N$,
 	\begin{equation}
 	\frac{\big(\frac{N}{2}-m_1\big)^2}{N-1} - 2h_0 \bigg(\frac{N}{2}-m_1\bigg) \neq \frac{\big(\frac{N}{2}-m_2\big)^2}{N-1} - 2h_0 \bigg(\frac{N}{2}-m_2\bigg)
 	\end{equation}
@@ -320,13 +318,13 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	If $N\gg 1$ (substantially large), then this condition can be met by assuring that $(1-2h_0)^{-1}$ is never an integer that is divisible by $N$. To ensure this in our numerical simulations we have kept $h_0$ at a small irrational value.
 	
 	
-	This result is supported by exact numerical results, as can be seen in the plots below in FIG. \ref{lmg_ipr_exact}. There, we show plots of the IPR of the Floquet mode $\ket{\phi^n}$ for all $n$ corresponding to eigenvalues of $S^x$ for a fixed eigenvalue of $S^2 = N/2\big(N/2 + 1\big)$. The IPR is thus
+	The approximate conservation of $S^x$ at resonance for high frequency drives and the ensuing localization of the Floquet states is supported by exact numerical results, as can be seen in the plots below in FIG. \ref{lmg_ipr_exact}. There, we show plots of the IPR of the Floquet modes $\ket{\phi^n}$ for $S^2 = N/2\big(N/2 + 1\big)$. The IPR in $S^x$ representation is thus
 	\begin{equation}
 	\phi_{IPR}(n) = \sum_m \abs{\ip{m}{\phi^n}}^4
 	\label{iprlmg}
 	\end{equation}
-	where $|m\rangle$ is the $m^{th}$ eigenstate of $\hat{S}^x$.
-	
+	where $|m\rangle$ is the $m^{th}$ eigenstate of the symmetry-breaking field $\hat{S}^x$.
+	\todo{Proofread from here.}
 	
 	Now, we focus at numerical simulations for $H(t)$ via the IPR of the Floquet state in the representation of the transverse field i.e. the eigenstates of $S^x$. We kept frequency $\omega = 90$ as a large enough value for RWA to hold, and $N=\mathcal{O}(10^2)$ which our standard computational resources will allow. 
 	
