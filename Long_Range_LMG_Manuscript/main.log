@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  21 JUN 2023 11:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  21 JUN 2023 11:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -990,13 +990,13 @@ Overfull \hbox (10.06956pt too wide) in paragraph at lines 406--407
  [][] 
  []
 
-<hbar_std.jpg, id=245, 650.43pt x 433.62pt>
+<hbar_std.jpg, id=245, 650.43pt x 361.35pt>
 File: hbar_std.jpg Graphic file (type jpg)
 <use hbar_std.jpg>
 Package pdftex.def Info: hbar_std.jpg  used on input line 415.
-(pdftex.def)             Requested size: 256.0748pt x 170.71892pt.
+(pdftex.def)             Requested size: 264.6107pt x 147.0076pt.
 
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 415--416
+Overfull \hbox (18.6107pt too wide) in paragraph at lines 415--416
  [][] 
  []
 
@@ -1076,8 +1076,8 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  24342 strings out of 478287
- 440515 string characters out of 5849289
- 759509 words of memory out of 5000000
+ 440516 string characters out of 5849289
+ 758035 words of memory out of 5000000
  41968 multiletter control sequences out of 15000+600000
  514554 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1102,7 +1102,7 @@ lic/bera/fveb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (12 pages, 9327295 bytes).
+Output written on main.pdf (12 pages, 8326638 bytes).
 PDF statistics:
  476 PDF objects out of 1000 (max. 8388607)
  403 compressed objects within 5 object streams
