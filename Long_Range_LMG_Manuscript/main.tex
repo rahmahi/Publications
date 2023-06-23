@@ -160,6 +160,7 @@ where, in the last step, we utilized the fact that $A_{eq}$ is a smooth function
 
 We now generalize the ETH to non-integrable many body systems that are closed, but not isolated. In that case, it is possible to impart a periodic time-dependence on the Hamiltonian while still ensuring unitary evolution. If the time period of the drive is $T$, and the corresponding drive frequency $\omega\equiv 2\pi/T$, the Floquet theorem states that the solutions to the Schrödinger equation can be written as $\ket{\psi(t)} = e^{-i\epsilon t/\hbar} \ket{\phi(t)}$, where the $\ket{\phi(t)}$ are $T$-periodic states called \textit{Floquet Modes}, the corresponding $\epsilon\in \mathbb{R}$, are called \textit{quasienergies}. Quasienergy values are not unique, and can be made to be bounded within a Floquet photon,\textit{viz.} a range $[-\omega/2, \omega/2]$\cite{holthaus_floquet_2016,vogl_effective_2020}. As a consequence, the unitary evolution operator can be spit into two parts as follows~\cite{Bukov2014}.
 \begin{equation}
+	\label{eq:propagator}
 	U(t) = e^{-i\hat{K}_F(t)}\;e^{-i\hat{H}_Ft}.
 \end{equation}
 Here, the micromotion operator $\hat{K}_F(t)$ is time-periodic in $T$, with $\hat{K}_F(0)=0$, and the Floquet Hamiltonian $\hat{H}_F = \hat{H}(t) - i \displaystyle\frac{\partial}{\partial t}\bigg\vert_{t=T}$. Thus, if the system is strobed at integer multiples of $T$ only, then the unitary evolution matches that of a time independent Hamiltonian $H_F$. This can capture most of the exact dynamics at large frequencies.
@@ -311,31 +312,23 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	\end{equation}
 	
 	In order to ensure that no additional degeneracies occur, we have to set $h_0$ in  such a way that no two energies coincide, \textit{i.e.}, $\forall m_1, m_2 \leq N$,
-	\begin{equation}
+	\begin{equation*}
 	\frac{\big(\frac{N}{2}-m_1\big)^2}{N-1} - 2h_0 \bigg(\frac{N}{2}-m_1\bigg) \neq \frac{\big(\frac{N}{2}-m_2\big)^2}{N-1} - 2h_0 \bigg(\frac{N}{2}-m_2\bigg)
-	\end{equation}
-	
-	If $N\gg 1$ (substantially large), then this condition can be met by assuring that $(1-2h_0)^{-1}$ is never an integer that is divisible by $N$. To ensure this in our numerical simulations we have kept $h_0$ at a small irrational value.
-	
-	
-	The approximate conservation of $S^x$ at resonance for high frequency drives and the ensuing localization of the Floquet states is supported by exact numerical results, as can be seen in the plots below in FIG. \ref{lmg_ipr_exact}. There, we show plots of the IPR of the Floquet modes $\ket{\phi^n}$ for $S^2 = N/2\big(N/2 + 1\big)$. The IPR in $S^x$ representation is thus
-	\begin{equation}
-	\phi_{IPR}(n) = \sum_m \abs{\ip{m}{\phi^n}}^4
-	\label{iprlmg}
-	\end{equation}
-	where $|m\rangle$ is the $m^{th}$ eigenstate of the symmetry-breaking field $\hat{S}^x$.
-	\todo{Proofread from here.}
-	
-	Now, we focus at numerical simulations for $H(t)$ via the IPR of the Floquet state in the representation of the transverse field i.e. the eigenstates of $S^x$. We kept frequency $\omega = 90$ as a large enough value for RWA to hold, and $N=\mathcal{O}(10^2)$ which our standard computational resources will allow. 
-	
-	\begin{figure}[]
+	\end{equation*}
+	\begin{figure}[h!bt]
 		\centering
 		\includegraphics[width = 8.5cm]{ipr_exact_dynm_N50_frq_90_.jpeg}
-		\caption{IPR density plot for all possible flquet modes (top panel ordinate) for different values of $\eta = 4h/\omega$ (top panel abscissa), deduced from equation \ref{iprlmg} for exact LMG Hamiltonian for N = 50. Blue dashed lines are roots of $J_0(\eta)$. At bottom panel cross-section of IPR (ordinate )for four different $\eta$'s plotted for all possible floquet modes(bottom panel, abscissa) at $\omega=90$. IPR founds to be $\sim$ unity for all floquet modes at roots of $J_0$.}
-		\label{lmg_ipr_exact}
+		\caption{IPR density plot for all possible flquet modes (top panel ordinate) for different values of $\eta = 4h/\omega$ (top panel abscissa), deduced from equation \ref{eq:ipr:lmg} for exact LMG Hamiltonian for N = 50. Blue dashed lines are roots of $J_0(\eta)$. At bottom panel cross-section of IPR (ordinate )for four different $\eta$'s plotted for all possible floquet modes(bottom panel, abscissa) at $\omega=90$. IPR founds to be $\sim$ unity for all floquet modes at roots of $J_0$.}
+		\label{fig:lmg_ipr_exact}
 	\end{figure}
-
-	The uppermost section displays a density plot that depicts the Inverse Participation Ratio (IPR) of the Floquet states in FIG\ref{lmg_ipr_exact}. The abscissa represents $\eta=4h/\omega$, while the ordinate represents the spin index \emph{m/(2N+1)}. The vertical lines that are dashed and colored blue correspond to the roots of the Bessel function of the first kind with order zero, denoted as $J_0(\eta)$. Evidently, the Inverse Participation Ratio (IPR) approaches a value of one for high values of the root of the Bessel function $J_0(\eta)$, which suggests a state of full localization of the Many Body system. Nevertheless, a deviation from unity occurs at the smallest root of $J_0(\eta)$. The observed phenomenon can be attributed to the fact that when $\eta$ approaches the smallest root of $J_0(\eta)$, which is approximately equal to $2.405$, the amplitudes of the higher order terms in the RW expansion, denoted by $\mathcal{O}(J_n(\eta))$, become significant enough to contribute to the process of delocalization.  Thus, a greater magnitude of the root is favored for the purpose of investigating the phenomena.
+	If $N\gg 1$ (substantially large), then this condition can be met by assuring that $(1-2h_0)^{-1}$ is never an integer that is divisible by $N$. To ensure this in our numerical simulations we have kept $h_0$ at a small irrational value.
+		
+		The localization of the Floquet states at resonance is supported by exact numerical results, as can be seen in fig~\ref{fig:lmg_ipr_exact}. Here, we show plots of the IPR of the Floquet modes $\ket{\phi^n}$ for $S^2 = \big(N/2\big)\big(N/2 + 1\big)$. The IPR in $S^x$ representation is
+	\begin{equation}
+	\phi_{IPR}(n) = \sum_m \abs{\ip{m}{\phi^n}}^4
+	\label{eq:ipr:lmg}
+	\end{equation}
+	where $|m\rangle$ is the $m^{th}$ eigenstate of the symmetry-breaking field $\hat{S}^x$. These plots were obtained numerically by diagonalizing the propagator $U(t=T)$, where $U(t)$ is defined in equation~\ref{eq:propagator}. This propagator was obtained from QuTiP~\cite{Johansson2013} simulations of the exact quantum dynamics. We kept the frequency at a fairly large value $\omega = 90$ where we expect that RWA would be valid, and $N=\mathcal{O}(10^2)$. The density plot in the upper panel depicts the IPR of the Floquet states; the abscissa  $\eta=4h/\omega$ and the ordinate is $n/(2N+1)$, where $n$ is the spin index from eqn~\ref{eq:ipr:lmg} . The vertical lines that are dashed and colored blue correspond to the roots of the Bessel function of the first kind with order zero, denoted as $J_0(\eta)$. Evidently, the Inverse Participation Ratio (IPR) approaches a value of one for high values of the root of the Bessel function $J_0(\eta)$, which suggests a state of full localization of the Many Body system. Nevertheless, a deviation from unity occurs at the smallest root of $J_0(\eta)$. The observed phenomenon can be attributed to the fact that when $\eta$ approaches the smallest root of $J_0(\eta)$, which is approximately equal to $2.405$, the amplitudes of the higher order terms in the RW expansion, denoted by $\mathcal{O}(J_n(\eta))$, become significant enough to contribute to the process of delocalization.  Thus, a greater magnitude of the root is favored for the purpose of investigating the phenomena.
 	
 	The bottom panel contains cross sections of the full IPR plot for selected values of $\eta$ as indicated in the legend. When the drive amplitude $h$ is adjusted to make $J_0(\eta)\neq 0$, the Floquet States are mixed, but not entirely thermal, since the IPR does not fall to $\mathcal{O}(N^{-1})$, indicating that localization persists to some extent always. So, as long as there is an appropriate DC field, $\hat{S^x}$ is mostly conserved and $\hat{H}_F$ is mostly diagonal in the $\hat{S^x}$ representation at the freezing point. The small deviations from this conservation occur due to the role of higher order terms in the Fourier expansion of the Hamiltonian on the rotating basis that contribute additional time-periodic terms to the RWA Hamiltonian, as can be seen in FIG.\ref{lmg_ipr_rwa11}.
 	
