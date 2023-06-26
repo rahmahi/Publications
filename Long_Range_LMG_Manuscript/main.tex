@@ -49,7 +49,7 @@ showkeys,
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
 \usepackage{physics}
-\usepackage{natbib}
+\usepackage[sort&compress]{natbib}
 \usepackage{epsfig}
 \usepackage{epstopdf}
 %\usepackage{dsfont}
@@ -86,21 +86,10 @@ showkeys,
 	
 	\begin{abstract}
 		The phenomenon of many-body localization occurs in quantum systems under specific resonance conditions, preventing thermalization and allowing the system to maintain its initial state. Quantum dynamical localization has been validated for multi-body spin systems under the influence of transverse field. The validation has been parameterized by the Inverse Participation ratio (IPR) of Floquet modes. Power-law dependence with long-range. The study applied $J_{ij} = 1/|i-j|^{\beta}$ and examined the short-range Transverse Field Ising Model for $\beta = \infty$ and the long-range Lipkin Meshkov-Glick (LMG) model for $\beta = 0$ at varying drive frequencies. The Ising model displays complete localization at high frequencies, while localization persists at low frequencies at the localization point. At the resonance point of system localization, LMG exhibits high-frequency localization in the long-range scenario. However, at lower frequencies, localization deteriorates following an inverse system size law. Chaos and regularity alternate at different frequencies in LMG at the phase-space continuum limit.IPR for LMG is evolved by an adiabatic increase in drive frequencies; the IPR rises gradually uotp unity  thereby manifesting a phase crossover which proposes a future protocol for the MBL engine.
-		
-		%\begin{description}
-		%\item[Usage]
-		%Secondary publications and information retrieval purposes.
-		%\item[Structure]
-		%You may use the \texttt{description} environment to structure your %abstract;
-		%use the optional argument of the \verb+\item+ command to give the %category of each item. 
-		%\end{description}
 	\end{abstract}
 	
-	\keywords{Dynamical localization, Thermalization, Phase Crossover}%Use showkeys class option if keyword
-	%display desired
+	\keywords{Dynamical localization, Thermalization, Phase Crossover}
 	\maketitle
-	
-	%\tableofcontents
 	
 	Periodically driven Quantum Many Body Systems can experience Dynamical Freezing (DMF) when  dynamical hysteresis stops observables from reaching their diagonal averaged values and thermalizing to infinite temperature ~\cite{bordia_periodically_2017, sahoo_periodically_2019, das_exotic_2010}. Under certain resonance conditions in the drive parameters, DMF can cause the response to ‘freeze’ completely to its initial value at all times. This arises as a consequence of additional approximate symmetries that occur at resonance. DMF has been demonstrated via the Rotating Wave Approximation (RWA) in the driven TFIM with nearest neighbour interactions ~\cite{mbeng_quantum_2020} and is shown to be protected when translational invariance is explicitly broken (say, by disorder) ~\cite{yamada_localization_2022, roy_fate_2015}. 
 
@@ -183,12 +172,19 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 		H(t) = \sum_{(k,-k)-\mbox{pairs}} \psi^\dagger_k
 		\Bigg[\ \bigg(f_k - h_z(t)\bigg)\tau_z +  \tau_x \Delta_k\Bigg]\psi_k
 	\end{equation}
-	with $f_k = J\cos{k}$, $\Delta_k = J\sin{k}$, $\tau_{xyz}$ are the three Pauli Matrices, and the sum is over distinct $(k, -k)$ \textit{Cooper Pairs}. A transformation to the rotated frame is achieved by means of the unitary transformation operator $U(t) = \prod_k U_k(t)$, where $U_k(t) = \exp{\Big[\frac{i h}{\omega}\sin{\omega t}\Big]\tau_z}$. The resulting transformed Hamiltonian is 
-	\begin{multline*}
+	with $f_k = J\cos{k}$, $\Delta_k = J\sin{k}$, $\tau_{xyz}$ are the three Pauli Matrices, and the sum is over distinct $(k, -k)$ \textit{Cooper Pairs}. We can transform our system to a frame that rotates with the time-varying symmetry-breaking field. This is achieved by the means of the unitary transformation operator 
+	\begin{align}
+		\label{eq:rotation:tfim}
+	U(t) &= \prod_k U_k(t)\\
+	U_k(t) &= \exp{\Big[\frac{i h}{\omega}\sin{\omega t}\Big]\tau_z}.\nonumber
+	\end{align} 
+	The resulting transformed Hamiltonian $H^\prime(t) = U^\dagger(t)\;H(t)\;U(t)-iU^\dagger(t)\;\partial_tU(t)$ simplifies to
+	\begin{multline}
+		\label{eq:rotated:tfim}
 		H^\prime(t) = \sum_{(k,-k)-\mbox{pairs}} \psi^\dagger_k
 		\bigg[\ \tau_z f_k + \tau_x \cos{\big(\eta\sin{\omega t}\big)}  \\
 		+ \tau_y \cos{\big(\eta\sin{\omega t}\big)}\bigg]\psi_k,
-	\end{multline*}
+	\end{multline}
 	where we defined $\eta=2h/\omega$. Using the Jacobi-Anger formula~\cite{arfkenmath}
 	\begin{equation}
 		\label{eq:jacobi}
@@ -276,77 +272,71 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 		&\hskip 0.7cm +\sqrt{\frac{N}{2}(\frac{N}{2}+1) - Ns_i(Ns_{i- 1})}\delta_{i-1,j}\Bigg]
 		\label{eq:lmg:tssham}
 	\end{align}
-	Now we transform the Hamiltonian to the Rotated frame given by the transformation
+	These allow for a numerical representation of the Hamiltonian in the TSS.
 	
+	Next, we transform the Hamiltonian to the rotated frame given achieved by the operator
 	\begin{equation}
-	\hat{U}(t)=\exp [i \frac{h}{\omega} \sin (\omega t) \hat{H}_{1}]
+	\hat{U}(t)=\exp [i \frac{h}{\omega} \sin (\omega t) \hat{H}_{1}].
 	\end{equation}
-	Defining $\tau = \displaystyle\frac{h}{\omega}\sin{\omega t}$, we use the fact that $\hat{H}_1 = 2 S^x$, as well as the following identity obtained by using the Baker-Campbell-Hausdorff formula,
+	This is analogous to the rotation performed for the TFIM in eqns~\ref{eq:rotation:tfim} and~\ref{eq:rotated:tfim}. Defining $\tau = \displaystyle\frac{h}{\omega}\sin{\omega t}$, we use the fact that $\hat{H}_1 = 2 S^x$, as well as the following identity obtained by using the Baker-Campbell-Hausdorff formula,
 	\begin{equation}
 	e^{i 2\tau\hat{S^{x}}} \hat{S^{z}} e^{-i 2\tau \hat{S^{x}}}=\hat{S^{z}} \cos \left(2\tau\right)+\hat{S}^{y} \sin (2\tau),
 	\end{equation}
-	to simplify the transformed Hamiltonian $\tilde{H} = \hat{U}\hat{H}\hat{U}^\dagger - \hat{U}^\dagger\partial_t\hat{U}$, yielding
-	
+	to simplify the transformed Hamiltonian $\tilde{H}(t) = \hat{U}^\dagger(t)\;\hat{H}(t)\;\hat{U}(t) - \hat{U}^\dagger(t)\;\partial_t\hat{U}(t)$, yielding
 	\begin{align}
+		\label{eq:lmg_rotated}
 		\tilde{H}(t)& = -\frac{1}{N-1}\Big[\big(S^z\big)^2 \big(1+\cos{4\tau}\big)+ \big(S^y\big)^2 \big(1-\cos{4\tau}\big)\nonumber \\  
 		&\hskip 2.5cm + \pb{S^y}{S^z}
-		\sin{4\tau}\Big] - 2 h_0 S^x
+		\sin{4\tau}\Big] - 2 h_0 S^x.
 	\end{align}
-	
-	
-	We define $\eta\equiv 4h/\omega$ and use the Jacobi-Anger formula in eqn~\ref{eq:jacobi}
-	to simplify the expression for $\tilde{H}(t)$, then 
-	assume that $\omega$ is large enough to smooth out the harmonic components present in the Hamiltonian. Ignoring constant terms, this yields
+	Next, we define $\eta\equiv 4h/\omega$ and use the Jacobi-Anger formula in eqn~\ref{eq:jacobi}
+	to expand $\tilde{H}(t)$. Ignoring constant terms, this yields
+		\begin{widetext}
+		\begin{multline}
+			\label{eq:lmg_jacobiexp}
+			\tilde{H}(t)\sim \frac{\big(\hat{S}^x\big)^{2}}{N-1} - 2h_0 \hat{S}^x - \frac{J_0(\eta)}{N-1}\bigg[\big(\hat{S}^z\big)^{2} - \big(\hat{S}^y\big)^{2} \bigg] - \frac{2}{N-1}\sum^\infty_{k=1}\;J_{2k}(\eta)\;\Big[\big( \hat{S}^z\big)^2 - \big( \hat{S}^y\big)^2\Big]\;\cos{\big(2k\omega t\big)}\\
+			- \frac{2}{N-1}\sum^\infty_{k=1}J_{2k-1}(\eta)\;\big\{ \hat{S}^y,  \hat{S}^z \big\}  \;\sin{\Big[\big(2k-1\big)\omega t\Big]}.
+		\end{multline}
+	\end{widetext}
+	If $\omega$ is large enough to smooth out the harmonic components, we obtain the RWA,
 	\begin{equation}
-	\tilde{H}_{\mathrm{RWA}}= \frac{\big(\hat{S}^x\big)^{2}}{N-1} - 2h_0 \hat{S}^x - \frac{J_0(\eta)}{N-1}\bigg[\big(\hat{S}^z\big)^{2} - \big(\hat{S}^y\big)^{2} \bigg]
+		\label{eq:lmg_rwa}
+	\tilde{H}(t)\approx \tilde{H}_{\mathrm{RWA}}\equiv \frac{\big(\hat{S}^x\big)^{2}}{N-1} - 2h_0 \hat{S}^x - \frac{J_0(\eta)}{N-1}\bigg[\big(\hat{S}^z\big)^{2} - \big(\hat{S}^y\big)^{2} \bigg].
 	\end{equation}
 
-	
-	If the drive amplitude $h$ is adjusted such that $\eta$ lies at a root of $J_0(\eta)$ (the localization point), the RWA Hamiltonian is diagonal in the representation of the transverse field $\hat{S}^x$, yielding an IPR of unity in that representation, similar to the Ising case. Note however, that if the DC transverse field $h_0$ is set to $0$, then, at the localization point, the RWA Hamiltonian $\tilde{H}_{\mathrm{RWA}}\sim
-	\big(\hat{S}^x\big)^2$, each of whose eigenvalues (given by $\big(\frac{N}{2}-m\big)^2$ where $m \in 0(1)N$, and $\big(\frac{N}{2}-m\big)$  are the eigenvalues of $\hat{S}^x$) are two-fold degenerate. This produces infinitely many (Floquet) eigenmodes in the degenerate subspace whose IPRs may not always be unity in the $S^x$ representation. The removal of this degeneracy necessitates the inclusion of the d.c. field $h_0$. However, note that rational values of $h_0$
-	 may add accidental degeneracies in $\tilde{H}_{\mathrm{RWA}}$. To see this, note that, at the localization point, the eigenvalues of $\tilde{H}_{\mathrm{RWA}}$ are given by
-	
+	If the drive amplitude $h$ is adjusted such that $\eta$ lies at a root of $J_0(\eta)$ (the localization point), the RWA Hamiltonian is diagonal in the representation of the transverse field $\hat{S}^x$, yielding an IPR of unity in that representation, similar to the TFIM in the previous section. Note however, that if the DC transverse field $h_0$ is set to $0$, then, at the localization point, the RWA Hamiltonian $\tilde{H}_{\mathrm{RWA}}\sim
+	\big(\hat{S}^x\big)^2$. The eigenvalues are two-fold degenerate. This produces infinitely many (Floquet) eigenmodes in the degenerate subspace whose IPRs may not always be unity in the $S^x$ representation. The removal of this degeneracy necessitates the inclusion of the d.c. field $h_0$. However, note that rational values of $h_0$
+	 may add accidental degeneracies in $\tilde{H}_{\mathrm{RWA}}$. To see this, note that, at a localization point, the eigenvalues of $\tilde{H}_{\mathrm{RWA}}$ in the TSS are given by
 	\begin{equation}
-	\rm{Eigs}\bigg[\tilde{H}_{\mathrm{RWA}}\bigg] = \frac{\big(\frac{N}{2}-m\big)^2}{N-1} - 2h_0 \bigg(\frac{N}{2}-m\bigg)
+	\rm{Eigs}\bigg[\tilde{H}_{\mathrm{RWA}}\bigg] = \frac{\big(\frac{N}{2}-m\big)^2}{N-1} - 2h_0 \bigg(\frac{N}{2}-m\bigg),
 	\end{equation}
-	
-	In order to ensure that no additional degeneracies occur, we have to set $h_0$ in  such a way that no two energies coincide, \textit{i.e.}, $\forall m_1, m_2 \leq N$,
-	\begin{equation*}
-	\frac{\big(\frac{N}{2}-m_1\big)^2}{N-1} - 2h_0 \bigg(\frac{N}{2}-m_1\bigg) \neq \frac{\big(\frac{N}{2}-m_2\big)^2}{N-1} - 2h_0 \bigg(\frac{N}{2}-m_2\bigg)
-	\end{equation*}
+	where the half-integer $-N/2\leq m \leq N/2$ is the eigenvalue correspnoding to a particular eigenstate $\ket{m}$ of the symmetry-breaking field $\hat{S}^x$. In order to ensure that no additional degeneracies occur, we have to set $h_0$ in  such a way that no two energies accidentally coincide.
 	\begin{figure}[h!bt]
 		\centering
 		\includegraphics[width = 8.5cm]{ipr_exact_dynm_N50_frq_90_.jpeg}
 		\caption{IPR density plot for all possible flquet modes (top panel ordinate) for different values of $\eta = 4h/\omega$ (top panel abscissa), deduced from equation \ref{eq:ipr:lmg} for exact LMG Hamiltonian for N = 50. Blue dashed lines are roots of $J_0(\eta)$. At bottom panel cross-section of IPR (ordinate )for four different $\eta$'s plotted for all possible floquet modes(bottom panel, abscissa) at $\omega=90$. IPR founds to be $\sim$ unity for all floquet modes at roots of $J_0$.}
 		\label{fig:lmg_ipr_exact}
 	\end{figure}
-	If $N\gg 1$ (substantially large), then this condition can be met by assuring that $(1-2h_0)^{-1}$ is never an integer that is divisible by $N$. To ensure this in our numerical simulations we have kept $h_0$ at a small irrational value.
+	If $N\gg 1$ (substantially large), then this condition can be readily met by assuring that $(1-2h_0)^{-1}$ is never an integer that is divisible by $N$. To ensure this in our numerical simulations, we have kept $h_0$ at a small irrational value.
 		
 		The localization of the Floquet states at resonance is supported by exact numerical results, as can be seen in fig~\ref{fig:lmg_ipr_exact}. Here, we show plots of the IPR of the Floquet modes $\ket{\phi^n}$ for $S^2 = \big(N/2\big)\big(N/2 + 1\big)$. The IPR in $S^x$ representation is
 	\begin{equation}
-	\phi_{IPR}(n) = \sum_m \abs{\ip{m}{\phi^n}}^4
+	\phi_{IPR}(n) = \sum_m \abs{\ip{m}{\phi^n}}^4.
 	\label{eq:ipr:lmg}
 	\end{equation}
-	where $|m\rangle$ is the $m^{th}$ eigenstate of the symmetry-breaking field $\hat{S}^x$. These plots were obtained numerically by diagonalizing the propagator $U(t=T)$, where $U(t)$ is defined in equation~\ref{eq:propagator}. This propagator was obtained from QuTiP~\cite{Johansson2013} simulations of the exact quantum dynamics. We kept the frequency at a fairly large value $\omega = 90$ where we expect that RWA would be valid, and $N=\mathcal{O}(10^2)$. The density plot in the upper panel depicts the IPR of the Floquet states; the abscissa  $\eta=4h/\omega$ and the ordinate is $n/(2N+1)$, where $n$ is the spin index from eqn~\ref{eq:ipr:lmg} . The vertical lines that are dashed and colored blue correspond to the roots of the Bessel function of the first kind with order zero, denoted as $J_0(\eta)$. Evidently, the Inverse Participation Ratio (IPR) approaches a value of one for high values of the root of the Bessel function $J_0(\eta)$, which suggests a state of full localization of the Many Body system. Nevertheless, a deviation from unity occurs at the smallest root of $J_0(\eta)$. The observed phenomenon can be attributed to the fact that when $\eta$ approaches the smallest root of $J_0(\eta)$, which is approximately equal to $2.405$, the amplitudes of the higher order terms in the RW expansion, denoted by $\mathcal{O}(J_n(\eta))$, become significant enough to contribute to the process of delocalization.  Thus, a greater magnitude of the root is favored for the purpose of investigating the phenomena.
+	 These plots were obtained numerically by diagonalizing the propagator $U(t)$ at $t=T$, where $U(t)$ is defined in eqn~\ref{eq:propagator}. This propagator was obtained from simulations of the exact quantum dynamics using QuTiP, the Quantum Toolbox in Python~\cite{qutip}. We kept the frequency at a fairly large value $\omega = 90$ where we expect that RWA would be valid, and $N=\mathcal{O}(10^2)$. The density plot in the upper panel of fig~\ref{fig:lmg_ipr_exact} depicts the IPR of the Floquet states; the abscissa  $\eta=4h/\omega$ and the ordinate is $n/(2N+1)$, where $n\leq 2N$ is a nonnegative integer that indexes the Floquet states in increasing order of $m$. The dashed vertical lines correspond to the roots of $J_0(\eta)$. Comparing with the IPR of the TFIM in fig~\ref{fig:ipr:tfim}, we can see a very similar patterns in the immediate neighbourhood of the roots. Evidently, the IPR approaches a value of one for sufficiently large values of the roots, strongly suggesting full DMBL. Deviations occur at the smallest root of $J_0(\eta)$ (around $\eta = 2.405$) due to the contributions from higher order terms in eq~\ref{eq:lmg_jacobiexp}. Thus, a higher root is favored for DMBL.
 	
-	The bottom panel contains cross sections of the full IPR plot for selected values of $\eta$ as indicated in the legend. When the drive amplitude $h$ is adjusted to make $J_0(\eta)\neq 0$, the Floquet States are mixed, but not entirely thermal, since the IPR does not fall to $\mathcal{O}(N^{-1})$, indicating that localization persists to some extent always. So, as long as there is an appropriate DC field, $\hat{S^x}$ is mostly conserved and $\hat{H}_F$ is mostly diagonal in the $\hat{S^x}$ representation at the freezing point. The small deviations from this conservation occur due to the role of higher order terms in the Fourier expansion of the Hamiltonian on the rotating basis that contribute additional time-periodic terms to the RWA Hamiltonian, as can be seen in FIG.\ref{lmg_ipr_rwa11}.
+	The bottom panel of fig~\ref{fig:lmg_ipr_exact} contains cross sections of the full IPR plot for selected values of $\eta$ as indicated in the legend. When the drive amplitude $h$ is adjusted such that $\eta$ is close to a root of $J_0(\eta)$, the Floquet States are mixed, but not entirely thermal, since the IPR does not fall to $\mathcal{O}(N^{-1})$, indicating that localization persists to some extent. However, the further we are from the roots, the closer the IPR gets to one predicted by thermalization.
 	
-	The full Hamiltonian for the LMG model on the rotated basis is
-	\begin{widetext}
-		\begin{multline}
-			\tilde{H}^{RWA}(t)\sim \frac{\big(\hat{S}^x\big)^{2}}{N-1} - 2h_0 \hat{S}^x - \frac{J_0(\eta)}{N-1}\bigg[\big(\hat{S}^z\big)^{2} - \big(\hat{S}^y\big)^{2} \bigg] - \frac{2}{N-1}\sum^\infty_{n=1}\;J_{2n}(\eta)\;\Big[\big( \hat{S}^z\big)^2 - \big( \hat{S}^y\big)^2\Big]\;\cos{\big(2n\omega t\big)}\\
-			- \frac{2}{N-1}\sum^\infty_{n=1}J_{2n-1}(\eta)\;\big\{ \hat{S}^y,  \hat{S}^z \big\}  \;\sin{\Big[\big(2n-1\big)\omega t\Big]}
-		\end{multline}
-	\end{widetext}
-	
-	\begin{figure}[ht!]
+	\todo{Conservation of Sx.}
+	So, as long as there is an appropriate DC field, $\hat{S^x}$ is mostly conserved at the localization points and $\hat{H}_F$ is mostly diagonal in the $\hat{S^x}$ representation. The small deviations from this conservation occur due to the role of  higher order terms in the rotated Hamiltonian in eq~\ref{eq:lmg_rotated}. This can be demonstrated quantitatively by comparing the IPR obtained from the exact dynamics simulation with that obtained from the dynamics of $\tilde{H}(t)$ in eq~\ref{eq:lmg_rotated} after truncating the series at orders $k\geq 1$. This comparison can be seen in fig~\ref{fig:lmg_ipr_rwa11}.
+	\begin{figure}[t!]
 		\centering
 		\includegraphics[width =9.5cm]{comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg}
 		\label{lmg_ipr_rwa11}
 		\caption{The comparison between IPR for exact dynamics and RWA with corresponding correction orders. IPR is calculated for four different $\eta$'s and corresponding $J_0(\eta)\neq 0$ values for colors, Blue :$\eta = 2.40, J_0(\eta) = 0.0$, dashed orange:$\eta = 18.07, J_0(\eta) = 0.0$, Green:$\eta =13.03, J_0(\eta) = 0.21$, Red:$\eta = 1.62, J_0(\eta)= 0.44$. IPR plots for RWA with zeroth order aren't enough to describe the exact dynamics, but plots for RWA with first-order correction are similar to the exact dynamics.}
 	\end{figure}
-	
-	The IPR plots pertaining to exact dynamics indicate that the freezing point, represented by the initial blue curve corresponding to Bessel's root of zeroth order of first kind, is insufficient for achieving many-body localization, as depicted in the top panel. The reason for this phenomenon is attributed to the greater magnitude of other Bessel roots of higher order, which in turn leads to delocalization. However, it is worth noting that at elevated localization points (as depicted by the dashed orange curve), localization is particularly conspicuous. In terms of system distribution, a range of curves, denoted by both green and red, illustrates the degree of distribution. The zeroth order RWA in the central panel exhibits a consistent pattern at locations distant from the resonance point, as evidenced by the congruent green and red curves. However, the curves for both higher and lower localization points display complete localization, which contradicts the precise findings presented in the top panel. This necessitates the incorporation of higher-order corrections into the Rotating Wave Approximation (RWA). The application of the first-order correction to RWA in the lower panel results in a curve structure that is recognizable and consistent with the exact dynamics.
+The IPR plots from the exact dynamics indicate that the first localization point, represented by the lowest  root of $J_0(\eta)$, does not show complete DMBL. However, it is worth noting that DMBL is particularly conspicuous at large roots. The IPRs of the Floquet states obtained from the RWA dynamics exhibit large deviations from unity when away from the localization point as evidenced by the green and red curves in the middle panel of fig~\ref{fig:lmg_ipr_rwa11}. However, complete localization is seen in the RWA dynamics at any localization point, in contrast to the exact case in the top panel. Thus, it is necessary to incorporate  higher-order corrections into the Rotating Wave Approximation (RWA) at lower localization points. The application of the first-order correction to RWA in the lower panel of fig~\ref{fig:lmg_ipr_rwa11} results in a curve structure that is closer to that from the exact dynamics.
 	
 	\section{\label{sec:level4}Classical Lipkin Dynamics}
 	In the context of the classical (continuum) limit, where $N$ approaches infinity, the disparity between neighboring values of $s_i$ in equation \ref{eq:lmg:tssham} can be disregarded, resulting in a Hamiltonian per particle of $h(t)\equiv \frac{1}{N}$ and the Hamiltonian per particle becomes
@@ -435,7 +425,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	% for the sample file to show the different styles of references, but authors
 	% most likely will not want to use it.
 	%\nocite{*}
-	
+	\bibliographystyle{apsrev4-2}
 	\bibliography{main}% Produces the bibliography via BibTeX.
 	
 \end{document}
