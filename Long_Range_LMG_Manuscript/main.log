@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  26 JUN 2023 13:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  26 JUN 2023 14:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -962,9 +962,13 @@ Overfull \hbox (24.30118pt too wide) in paragraph at lines 342--343
  [][] 
  []
 
-[7 <./ipr_exact_dynm_N50_frq_90_.jpeg>] [8 <./sx_conservation.jpeg> <./comprasi
-on_LMG_50_highFr90_exact_nd_rwa.jpeg>]
-<lmg_poincare.jpeg, id=249, 1084.05pt x 1084.05pt>
+[7 <./ipr_exact_dynm_N50_frq_90_.jpeg>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 347.
+
+[8 <./sx_conservation.jpeg> <./comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg>]
+<lmg_poincare.jpeg, id=250, 1084.05pt x 1084.05pt>
 File: lmg_poincare.jpeg Graphic file (type jpg)
 <use lmg_poincare.jpeg>
 Package pdftex.def Info: lmg_poincare.jpeg  used on input line 384.
@@ -1008,10 +1012,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 1011D8EFFDB9EEDA9F476B4C26CE8173;2100.
  ) 
 Here is how much of TeX's memory you used:
- 24311 strings out of 478287
- 439588 string characters out of 5849289
- 744762 words of memory out of 5000000
- 41945 multiletter control sequences out of 15000+600000
+ 24313 strings out of 478287
+ 439609 string characters out of 5849289
+ 742714 words of memory out of 5000000
+ 41947 multiletter control sequences out of 15000+600000
  514554 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,15n,118p,1963b,954s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1036,7 +1040,7 @@ c/bera/fveb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (12 pages, 6764492 bytes).
+Output written on main.pdf (12 pages, 6764385 bytes).
 PDF statistics:
  481 PDF objects out of 1000 (max. 8388607)
  406 compressed objects within 5 object streams
