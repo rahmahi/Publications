@@ -172,45 +172,45 @@ Warning--empty year in mori_prethermalization_2019
 Warning--empty year in qutip
 Warning--empty year in sciolla_quantum_2010
 Warning--empty year in reimann_symmetry-prohibited_2021
-You've used 45 entries,
+You've used 46 entries,
             6079 wiz_defined-function locations,
-            1979 strings with 25352 characters,
-and the built_in function-call counts, 42850 in all, are:
-= -- 3242
-> -- 969
-< -- 223
-+ -- 328
-- -- 228
-* -- 6198
-:= -- 4138
-add.period$ -- 45
-call.type$ -- 45
-change.case$ -- 187
-chr.to.int$ -- 54
-cite$ -- 77
-duplicate$ -- 3794
-empty$ -- 3058
-format.name$ -- 583
-if$ -- 8778
+            1988 strings with 25569 characters,
+and the built_in function-call counts, 43899 in all, are:
+= -- 3323
+> -- 995
+< -- 228
++ -- 336
+- -- 234
+* -- 6353
+:= -- 4237
+add.period$ -- 46
+call.type$ -- 46
+change.case$ -- 191
+chr.to.int$ -- 55
+cite$ -- 78
+duplicate$ -- 3885
+empty$ -- 3132
+format.name$ -- 598
+if$ -- 8997
 int.to.chr$ -- 1
-int.to.str$ -- 53
-missing$ -- 623
-newline$ -- 187
-num.names$ -- 135
-pop$ -- 1744
+int.to.str$ -- 54
+missing$ -- 638
+newline$ -- 190
+num.names$ -- 138
+pop$ -- 1782
 preamble$ -- 1
-purify$ -- 196
+purify$ -- 201
 quote$ -- 0
-skip$ -- 2018
+skip$ -- 2068
 stack$ -- 0
-substring$ -- 1201
-swap$ -- 3471
-text.length$ -- 114
+substring$ -- 1233
+swap$ -- 3558
+text.length$ -- 117
 text.prefix$ -- 0
 top$ -- 8
-type$ -- 607
+type$ -- 621
 warning$ -- 32
-while$ -- 130
+while$ -- 133
 width$ -- 0
-write$ -- 382
+write$ -- 390
 (There were 39 error messages)

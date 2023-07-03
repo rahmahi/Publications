@@ -21,6 +21,7 @@
 \documentclass[%
 reprint,
 superscriptaddress,
+linenumbers,
 %groupedaddress,
 %unsortedaddress,
 %runinaddress,
@@ -43,7 +44,7 @@ showkeys,
 \usepackage[T1]{fontenc}
 \usepackage{bera}
 \usepackage{soul}
-
+\usepackage{draftwatermark}
 \usepackage{todonotes}
 \usepackage{graphicx}% Include figure files
 \usepackage{dcolumn}% Align table columns on decimal point
@@ -74,8 +75,7 @@ showkeys,
 	
 	\preprint{APS/123-QED}
 	
-	\title{Dynamical Many Body Localization in Periodically Driven Long-Range Spin Systems: An Eccentric\todo{\tiny{A bit worried about this name. 'Eccentric' usually has a specific meaning in physics (like eccentricity of an ellipse)}} Phase Crossover}% Force line breaks with \\
-	%\thanks{A footnote to the article title}%
+	\title{Phase Crossover induced by Dynamical Many Body Localization in Periodically Driven Long-Range Spin Systems}
 	
 	\author{Mahbub Rahaman}
 	\affiliation{Department of Physics, The University of Burdwan, Golapbag, Bardhaman - 713 104, India}
@@ -86,7 +86,7 @@ showkeys,
 	
 	\begin{abstract}
 		Dynamical many-body freezing occurs in periodic transverse field-driven integrable quantum spin systems. Under resonance conditions, quantum dynamics causes practically infinite hysteresis in the drive response, maintaining its starting value. We extended this to non-integrable many body systems by reducing the Hamiltonian symmetries through a power-law dependence in spin exchange energy, $J_{ij} = 1/|i-j|^{\beta}$. The dynamics of the integrable short-range Transverse Field Ising Model (TFIM) and non-integrable long-range Lipkin Meshkov-Glick (LMG) models were investigated. In the LMG, the resonance conditions in the driving field suppresses the heating postulated by the \textit{Eigenstate Thermalization Hypothesis} (ETH)		
-		by inducing \textit{Dynamical Many Body Localization}, or DMBL. This is in contrast to  Many Body Localization (MBL), which requires disorder to suppress ETH. DMBL has been validated by the Inverse Participation Ratio (IPR) of the quasi-stationary Floquet modes. While TFIM has IPR localization for all drive parameters, the LMG exhibits high-frequency localization only at the resonances. IPR localization in the LMG deteriorates with an inverse system size law at lower frequencies, which indicates heating to infinite temperature. Furthermore, adiabatically increasing frequency and amplitude from low values raises the Floquet state IPR in the LMG from nearly zero to unity, indicating a phase crossover. This occurrence enables a future technique to construct an MBL engine in clean systems that can be cycled by adjusting drive parameters only.		\todo{\tiny{I rewrote the abstract}}
+		by inducing \textit{Dynamical Many Body Localization}, or DMBL. This is in contrast to  Many Body Localization (MBL), which requires disorder to suppress ETH. DMBL has been validated by the Inverse Participation Ratio (IPR) of the quasi-stationary Floquet modes. While TFIM has IPR localization for all drive parameters, the LMG exhibits high-frequency localization only at the resonances. IPR localization in the LMG deteriorates with an inverse system size law at lower frequencies, which indicates heating to infinite temperature. Furthermore, adiabatically increasing frequency and amplitude from low values raises the Floquet state IPR in the LMG from nearly zero to unity, indicating a phase crossover. This occurrence enables a future technique to construct an MBL engine in clean systems that can be cycled by adjusting drive parameters only.
 	\end{abstract}
 	
 	\keywords{Dynamical localization, Thermalization, Phase Crossover}
@@ -134,6 +134,11 @@ Plugging these expansions into the expression for the expectation value, we obta
 	\overline{\expval{\hat{A}(t)}} 
 	= \sum_{m,k} \overline{c_m^\ast(t) c_k(t)}
 	\mel{m(0)}{\hat{A}}{k(0)},
+\end{equation}
+where the overline indicates the following operation for any time-dependent quantity $\mathcal{O}(t)$, 
+\begin{equation}
+	\overline{{\mathcal{O}}} \equiv \lim_{T\rightarrow\infty}\frac{1}{T}\int^T_0\;\mathrm{d}t\; {\mathcal{O}(t)} .
+	\label{eq:lt_avg}
 \end{equation}
 Had the system been integrable, the large number of conserved quantities would restrict mixing between the states during unitary evolution. In the non-integrable case,
 the system explores the entire Hilbert space spanned by eigenstates with eigenvalues close to $E$ more-or-less uniformly. In that case, the matrix elements $\mel{m(0)}{\hat{A}}{k(0)}$ are said to satisfy the Srednicki ansatz~\cite{Srednicki1994,Srednicki_1999}:
@@ -184,9 +189,8 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 		\label{eq:rotated:tfim}
 		H^\prime(t) = \sum_{(k,-k)-\mbox{pairs}} \psi^\dagger_k
 		\bigg[\ \tau_z f_k + \tau_x \cos{\big(\eta\sin{\omega t}\big)}  \\
-		+ \tau_y \cos{\big(\eta\sin{\omega t}\big)}\bigg]\psi_k,
+		+ \tau_y \sin{\big(\eta\sin{\omega t}\big)}\bigg]\psi_k,
 	\end{multline}
-\todo{Check eq~\ref{eq:rotated:tfim}, the last term on the RHS might be a sin instead of cosine}
 	where we defined $\eta=2h/\omega$. Using the Jacobi-Anger formula~\cite{arfkenmath}
 	\begin{equation}
 		\label{eq:jacobi}
@@ -242,7 +246,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	\end{figure}
 	
 	Because the dependence of observable expectations on the eigenstates is always fairly strong for integrable systems like the TFIM, such systems will never exhibit any kind of thermal behaviour unless integrability breaking terms (such as strong disorder) are included~\cite{roy_fate_2015}. As a result, it is not physically meaningful to refer to the unit IPR region as "\emph{Many Body Localization}", because the parameter space lacks a thermalized region to contrast with this state. The type of Floquet Engineering described above, on the other hand, can be easily applied to a broad class of nonintegrable systems where FETH is expected to hold in certain regions. Long-range spin systems, in particular, where the exchange energies between far-off spins are taken into account in the model Hamiltonian, are good candidates because they are known to thermalize when driven with low frequencies~\cite{russomanno_thermalization_2015}.
-	\section{\label{sec:level3}Lipkin Meshkov Glick Model: Long range interaction}	
+	\section{\label{sec:level3}Long Range Interactions: The Lipkin Meshkov Glick Model: }	
 	The periodically driven Curie-Weiss model for $N$ long-range spins is described by the Hamiltonian
 
 	\begin{equation}
@@ -261,7 +265,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 		J_{ij} =\frac{J_\alpha}{N^{1-\alpha}}\frac{1}{r_{ij}^{\alpha}},
 	\end{equation}
 	with $r_{ij}$ representing the smallest graph distance between them.
-	Putting  $\alpha = 0$ yields the Lipkin Meshkov Glick (LMG) model with all-to-all interaction, with $J_{ij} = J_0/N$. We choose to maintain the extensivity of the interaction energy by enforcing the condition
+	Putting  $\alpha = 0$ yields the Lipkin Meshkov Glick (LMG) model with all-to-all interactions $J_{ij} = J_0/N\;\forall (i,j), i\neq j$. We choose to maintain the extensivity of the interaction energy by enforcing the condition
 	\begin{equation*}
 		\frac{J_0}{N} \sum_{i\neq j}1=\frac{J_0}{N}\frac{N(N-1)}{2}=1,
 	\end{equation*}
@@ -269,14 +273,14 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	$n= 0 (1) N$ has $N+1$ values. The dynamics is restricted to this invariant subspace, wherein the matrix elements of the Hamiltonian are given by
 	
 	\begin{align}
-		(H_0)_{ij} &= -\frac{4}{N-1} s^2_i \delta_{ij},\nonumber\\
-		(H_1)_{ij} &= \Bigg[\sqrt{\frac{N}{2}\left(\frac{N}{2}+1\right) - Ns_i(Ns_{i + 1})}\delta_{i+1, j} \nonumber\\ 
+		\mel{s_i}{\hat{H_0}}{s_j} &= -\frac{4}{N-1} s^2_i \delta_{ij},\nonumber\\
+		\mel{s_i}{\hat{H_1}}{s_j} &= \Bigg[\sqrt{\frac{N}{2}\left(\frac{N}{2}+1\right) - Ns_i(Ns_{i + 1})}\delta_{i+1, j} \nonumber\\ 
 		&\hskip 0.7cm +\sqrt{\frac{N}{2}(\frac{N}{2}+1) - Ns_i(Ns_{i- 1})}\delta_{i-1,j}\Bigg]
 		\label{eq:lmg:tssham}
 	\end{align}
 	These allow for a numerical representation of the Hamiltonian in the TSS.
 	
-	Next, we transform the Hamiltonian to the rotated frame given achieved by the operator
+	Next, we transform the Hamiltonian to the rotated frame given by the operator
 	\begin{equation}
 	\hat{U}(t)=\exp [i \frac{h}{\omega} \sin (\omega t) \hat{H}_{1}].
 	\end{equation}
@@ -312,11 +316,11 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	\begin{equation}
 	\rm{Eigs}\bigg[\tilde{H}_{\mathrm{RWA}}\bigg] = \frac{\big(\frac{N}{2}-m\big)^2}{N-1} - 2h_0 \bigg(\frac{N}{2}-m\bigg),
 	\end{equation}
-	where the half-integer $-N/2\leq m \leq N/2$ is the eigenvalue correspnoding to a particular eigenstate $\ket{m}$ of the symmetry-breaking field $\hat{S}^x$. In order to ensure that no additional degeneracies occur, we have to set $h_0$ in  such a way that no two energies accidentally coincide.
+	where the half-integer $-N/2\leq m \leq N/2$ is the eigenvalue corresponding to a particular eigenstate $\ket{m}$ of the symmetry-breaking field $\hat{S}^x$. In order to ensure that no additional degeneracies occur, we have to set $h_0$ in  such a way that no two energies accidentally coincide.
 	\begin{figure}[h!bt]
 		\centering
 		\includegraphics[width = 8.5cm]{ipr_exact_dynm_N50_frq_90_.jpeg}
-		\caption{IPR density plot for all possible flquet modes (top panel ordinate) for different values of $\eta = 4h/\omega$ (top panel abscissa), deduced from equation \ref{eq:ipr:lmg} for exact LMG Hamiltonian for N = 50. Blue dashed lines are roots of $J_0(\eta)$. At bottom panel cross-section of IPR (ordinate )for four different $\eta$'s plotted for all possible floquet modes(bottom panel, abscissa) at $\omega=90$. IPR founds to be $\sim$ unity for all floquet modes at roots of $J_0$.}
+		\caption{IPR density plot for all possible Floquet modes (top panel ordinate) for different values of $\eta = 4h/\omega$ (top panel abscissa), deduced from equation \ref{eq:ipr:lmg} for exact LMG Hamiltonian for N = 50. Blue dashed lines are roots of $J_0(\eta)$. At bottom panel cross-section of IPR (ordinate )for four different $\eta$'s plotted for all possible floquet modes(bottom panel, abscissa) at $\omega=90$. IPR founds to be $\sim$ unity for all floquet modes at roots of $J_0$.}
 		\label{fig:lmg_ipr_exact}
 	\end{figure}
 	If $N\gg 1$ (substantially large), then this condition can be readily met by assuring that $(1-2h_0)^{-1}$ is never an integer that is divisible by $N$. To ensure this in our numerical simulations, we have kept $h_0$ at a small irrational value.
@@ -330,66 +334,53 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	
 	The bottom panel of fig~\ref{fig:lmg_ipr_exact} contains cross sections of the full IPR plot for selected values of $\eta$ as indicated in the legend. When the drive amplitude $h$ is adjusted such that $\eta$ is close to a root of $J_0(\eta)$, the Floquet States are mixed, but not entirely thermal, since the IPR does not fall to $\mathcal{O}(N^{-1})$, indicating that localization persists to some extent. However, the further we are from the roots, the closer the IPR gets to one predicted by thermalization.
 	
-	\todo{Conservation of Sx.}
-	For larger time $t\sim 200 T$ at high $\omega \sim 90$ with a small irrational dc component in symmetry breaking field for a large number of drive amplitude $h$ and the long time average of spin magnetization $\expval{\hat{S^x}}$is found to be unity at roots of $J_0(\eta)$ in fig \ref{fig:sx_conserve} and it falls at points away from it. 
+	Figure~\ref{fig:sx_conserve} shows plots of the long-time average (from $t=0-200T$) of the field amplitude $\expval{\hat{S^x}}$ as a function of $\eta$. The system is started from the fully polarized state $s_n=N/2$ in the TSS and the dynamics simulated. The average is plotted for different values of amplitude $h$, keeping the frequency fixed at a high value of $\omega=90$. It is clearly very close to unity at roots of $J_0(\eta)$ and falls at points away from it, indicating that $S^x$ is approximately conserved at the localization points.
+	
 	\begin{figure}[t!]
 		\centering
 		\includegraphics[width =9.5cm]{sx_conservation.jpeg }
 		\caption{Temporal average of $\expval{\hat{S^x}}$ (ordinate) for different $\eta$'s (abscissa) is plotted for $\sim 200$ time periods at higher $\omega$ for different N=10,20,50. $\overline{\langle S^x \rangle}$ is unity at roots of $J_o(\eta)$(inset panel, red vertical solid line). $\overline{\langle S^x \rangle}$ is found to fall below unity at points other than roots of $J_o(\eta)$.}
 		\label{fig:sx_conserve}
 	\end{figure}
-	So, as long as there is an appropriate DC field, $\hat{S^x}$ is mostly conserved at the localization points and $\hat{H}_F$ is mostly diagonal in the $\hat{S^x}$ representation. The small deviations from this conservation occur due to the role of  higher order terms in the rotated Hamiltonian in eq~\ref{eq:lmg_rotated}. This can be demonstrated quantitatively by comparing the IPR obtained from the exact dynamics simulation with that obtained from the dynamics of $\tilde{H}(t)$ in eq~\ref{eq:lmg_rotated} after truncating the series at orders $k\geq 1$. This comparison can be seen in fig~\ref{fig:lmg_ipr_rwa11}.
+	Small deviations do occur due to the role of  higher order terms in the rotated Hamiltonian in eq~\ref{eq:lmg_rotated}. This can be demonstrated quantitatively by comparing the IPR obtained from the exact dynamics simulation with that obtained from the dynamics of $\tilde{H}(t)$ in eq~\ref{eq:lmg_rotated} after truncating the series at orders $k\geq 1$. This comparison can be seen in fig~\ref{fig:lmg_ipr_rwa11}.
 	\begin{figure}[t!]
 		\centering
 		\includegraphics[width =9.5cm]{comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg}
 		\caption{The comparison between IPR for exact dynamics and RWA with corresponding correction orders. IPR is calculated for four different $\eta$'s and corresponding $J_0(\eta)$ values for colors, Blue :$\eta = 2.40, J_0(\eta) = 0.0$, dashed orange:$\eta = 80.9, J_0(\eta) = 0.0$, Green:$\eta =7.0, J_0(\eta) = 0.3$, Red:$\eta = 13, J_0(\eta)= 0.2$. At low root of $J_0(\eta)$ IPR is not unity (Blue curve) where at higher root (orange dashed) it is unity while at points away from roots IPR are less than unity in the exact (top panel) plot. RWA does not matches with the exact plot. At all roots of $J_0(\eta)$ IPR is unity(middle panel). RWA with additional higher order terms exhibit similar system pattern(Bottom panel) with exact dynamics.}
 		\label{fig:lmg_ipr_rwa11}
 	\end{figure}
-The IPR plots from the exact dynamics indicate that the first localization point, represented by the lowest  root of $J_0(\eta)$, does not show complete DMBL. However, it is worth noting that DMBL is particularly conspicuous at large roots. The IPRs of the Floquet states obtained from the RWA dynamics exhibit large deviations from unity when away from the localization point as evidenced by the green and red curves in the middle panel of fig~\ref{fig:lmg_ipr_rwa11}. However, complete localization is seen in the RWA dynamics at any localization point, in contrast to the exact case in the top panel. Thus, it is necessary to incorporate  higher-order corrections into the Rotating Wave Approximation (RWA) at lower localization points. The application of the first-order correction to RWA in the lower panel of fig~\ref{fig:lmg_ipr_rwa11} results in a curve structure that is closer to that from the exact dynamics.
+The IPR plots from the exact dynamics indicate that the first localization point, represented by the lowest  root of $J_0(\eta)$, does not show complete DMBL. However, DMBL is particularly conspicuous at large roots. The IPRs of the Floquet states obtained from the RWA dynamics exhibit large deviations from unity when away from the localization point as evidenced by the green and red curves in the middle panel of fig~\ref{fig:lmg_ipr_rwa11}. However, complete localization is seen in the RWA dynamics at any localization point, in contrast to the exact case in the top panel. Thus, it is necessary to incorporate  higher-order corrections into the Rotating Wave Approximation (RWA) at lower localization points. The application of the first-order correction to RWA in the lower panel of fig~\ref{fig:lmg_ipr_rwa11} results in a curve structure that is closer to that from the exact dynamics.
 	
-	\section{\label{sec:level4}Classical Lipkin Dynamics}
-	In the context of the classical (continuum) limit, where $N$ approaches infinity, the disparity between neighboring values of $s_i$ in equation \ref{eq:lmg:tssham} can be disregarded, resulting in a Hamiltonian per particle of $h(t)\equiv \frac{1}{N}$ and the Hamiltonian per particle becomes
-	
+	\section{\label{sec:level4}Persistence of DMBL in the continuum limit}
+	In the continuum limit, where $N\rightarrow\infty$, the disparity between neighboring values of $s_i$ in equation \ref{eq:lmg:tssham} can be disregarded, and $s_i$ can be mapped to a continuum $q\in \left[-1/2, 1/2\right]$~\cite{mori_prethermalization_2019}. We define	the Hamiltonian per particle $h(t)\equiv \frac{H(t)}{N}$, and a canonically conjugate co-ordinate $p\equiv \expval{-i/N\pdv{}{q}}$. Then, in this limit, the dynamics can be approximated by that of a classical Hamiltonian~\cite{sciolla_quantum_2010}
 	\begin{equation}
-	h(t)\equiv \frac{1}{N}H(t) = h + h_0\cos{(\omega t)}h_1,
-	\end{equation}
-	where,
-	\begin{eqnarray}
-	(h)_{ij} &\approx& - 2s^2_i \delta_{ij},\nonumber\\
-	H_0 &\rightarrow& -2s^2\nonumber\\
-	(h_1)_{ij} &\approx& \sqrt{1 - 4s^2_i}\left[\delta_{i+1, j}  + \delta_{i-1,j}\right]\nonumber\\
-	H_1 &\rightarrow& \sqrt{1 - 4s^2_i}\cos{p},
-	\end{eqnarray}
-	
-	In the continuum limit, the Lipkin system can be described by $p,q$ with corresponding Hamiltonian ~\cite{sciolla_quantum_2010}:
-	\begin{equation}
-	H = -2 q^2 - h(t)\;\sqrt{1-4q^2}\;\cos{p},
+	h(t) = -2 q^2 - \left[h\cos{\omega t} + h_0\right]\;\sqrt{1-4q^2}\;\cos{p},
 	\label{eq:class:ham}
 	\end{equation}
-	which yields the Hamiltonian dynamical system 
+	which yields the dynamical system 
 	\begin{align}
-		\dv{q}{t} &= h(t)\sqrt{1-4q^2}\sin{p}\nonumber \\
-		\dv{p}{t} &= 4q\bigg[1-\frac{h(t)\cos{p}}{\sqrt{1-4q^2}}\bigg]
+		 \dv{q}{t} &= \pdv{h}{p} = h(t)\sqrt{1-4q^2}\sin{p}\nonumber \\
+		  \dv{p}{t} &= -\pdv{h}{q} = 4q\bigg[1-\frac{h(t)\cos{p}}{\sqrt{1-4q^2}}\bigg].
 		\label{eq:class:poinc}
 	\end{align}
-	
-	We recovered Hamiltonian numerically \ref{eq:class:ham} using equations \ref{eq:class:poinc} to obtain position and moemntum coordinates $p,q$ and plotted in the \emph{Poincar$\acute{e}$ surface of section} (PSOS) strobbed at integer multiple of time period. A chaotic Poincare pattern is found for all small drive amplitude $s.t.$  $A/J < 0.5 $ and also a regular pattern emerges at for ratios $A/J$ $\geq$ 0.5 both at small drive frequency $\omega \sim 2.0$ ~\cite{russomanno_thermalization_2015}. 
-	
-	However, under a regime of sufficiently high frequency, the system exhibits distinct behavior. The study involves a comparison of the Poincar$\acute{e}$ sections of the ensuing dynamics under the influence of $h(t)=h\cos{\omega t}$, where two distinct scenarios have been considered. The first scenario pertains to the case where frequency $\omega=2.5$, corresponds to a lower frequency and, consequently, a smaller amplitude. The second scenario pertains to the case where frequency $\omega=90.0$,  corresponds to a higher frequency and, correspondingly, a higher amplitude. Both scenarios have been evaluated at $J_0(4h/\omega)=0$. The Husimi Q-functions of the acquired Floquet States are compared with these. The quantum phase space is characterized by the Spectral Average of the Husimi functions of all the Floquet modes $\ket{\phi^n}$ for a given value of $S^2$. Specifically, for a coherent state $\ket{q,p}$, the corresponding plot is presented in FIG.\ref{fig:classical_lipkin}.
-	\begin{equation*}
+	We have profiled simulations of the ensuing dynamics with the \emph{Poincar$\acute{e}$ surface of section} (PSOS) of the full dynamics. Here, the $\left(q,p\right)-$phase space is strobed at $t=nT$, and plotted for a large number of initial conditions. The results are shown in the upper panels of fig~\ref{fig:classical_lipkin} for a small value of $\omega=2.5$ (left panel) and a large value $\omega=90$ (right panel). In both cases, the value of $h$ is chosen such that $\eta$ lies on the first root of $J_0(\eta)$. The onset of chaos for small drive frequency indicates thermal behaviour for typical initial conditions, with small islands of regularity for others. This is consistent with similar results for small frequencies reported in~\cite{russomanno_thermalization_2015, Kidd2019}. \emph{However,} at high frequency, the regular islands distinctly dominate over the chaos. The trajectories indicate that the conservation of $\expval{S^x}\approx \sqrt{1-4q^2}\;\cos{p}$~\cite{mori_prethermalization_2019} at high $\omega$ persists in the thermodynamic limit.
+	That this is a signature of the underlying quantum dynamics can be readily seen in the quantum phase space representation of the Floquet Eigenstates for a large but finite $N$. These are shown in the corresponding lower panels of fig~\ref{fig:classical_lipkin}. Here, we have plotted the Spectral Average of the Husimi Q-functions of the acquired Floquet States in the TSS. Specifically, for a coherent state $\ket{q,p}$, the corresponding Spectral-Averaged Husimi distribution~\cite{husimi} is obtained by 
+	\begin{equation}
 		H(q,p)\equiv \frac{1}{\big(2N+1\big)\pi}\sum_n \ip{q,p}{\phi^n}\ip{\phi^n}{q,p}
-	\end{equation*}
-	
-	The classical plots are dominated by chaos at low values of $\omega$, as noted in Kidd's work~\cite{Kidd2019}. Conversely, at high values of $\omega$, the Poincar$\acute{e}$ plot exhibits a distinct regular pattern, indicating localization.
+		\label{eq:husimi}
+	\end{equation}
+	The quantum phase space retains signatures of the classical phase space dynamics when $N=500$, indicating the onset of the persistence of $S^x$ conservation that arises from the resonance condition at high frequencies. 
 	\begin{figure}[ht!]
 		\centering
 		\includegraphics[height = 9.0cm, width = 9.0 cm]{lmg_poincare.jpeg}
-		\caption{Phase-space Poincare distribution at $\omega = 2.5$ (left) and $\omega = 90.0$ (right) for $N=500$ with 100 realisation nos. At small $\omega$, the Poincare picture contains chaotic behaviour (top left panel) whereas at the higher $\omega$, it is a normal Poincare picture which represents discrete freezing behaviour(top right panel). The bottom panel is Hushimi Q-function average plot for small $\omega$ (bottom left) and has a uniform distribution with less contrast in colour. This depicts a Q-function distribution in chaotic behaviour. At the right bottom, the Hushimi plot has distinct colour contrast in the Q-function average value which represents a regular dynamics pattern in the system.}
+		\caption{Phase-space distributions at $\omega = 2.5$ (left panels) and $\omega = 90.0$ (right panels) for $100$ initial conditions. At small $\omega$, the classical PSOS, obtained from simulating the dynamics in eqns~\ref{eq:class:poinc} (top left panel),  shows chaotic behaviour, whereas at the higher $\omega$, the onset of regular dynamics can be readily seen (top right panel). The bottom panels plot the corresponding Spectral-Averaged Husimi-Q function, obtained from the Floquet modes $\ket{\phi^n}$ using eqn~\ref{eq:husimi}. The $\omega=2.5-$case (bottom left panel) has a uniform distribution with less contrast in colour. This is consistent with the chaotic behaviour seen in the continuum limit. In the $\omega=90-$case (bottom right panel), the distribution has distinct colour contrasts, which is consistent with the regular dynamics pattern seen in the continuum limit.}
 		\label{fig:classical_lipkin}
 	\end{figure}
-	\section{\label{sec:level5}Thermality to Athermality: A Phase Crossover}
-	The analysis of the Lipkin-Glick-Meshkov model reveals two distinct scenarios at low and high external drive frequencies. As a result, it is hypothesized that a change in phase may occur due to the influence of frequency. IPR of the Floquet modes is computed numerically and plotted in FIG.\ref{fig:phase_transition} for numerous frequencies in ascending order from frequency $\omega = 1.0$ upto $\omega=50.0$ so that the system can vary adiabatically, along with the associated drive amplitude $h$ for the localization resonant point, which is $J_0\big(\frac{4h}{\omega}\big)$ (Top panel). In the low-frequency range spanning from $\omega = 1.0$ to approximately $\omega \approx 9.0$, IPR exhibits values well below unity. Moreover, the IPR gradually diminishes with increasing system size, following a system size inverse proportional trend, which confirms the participation distribution (as shown in the bottom panel). As the limit of $N$ approaches infinity, the inverse participation ratio (IPR) tends towards zero, indicating a fully delocalized state. The study conducted by IPR revealed a gradual increase in the unity of IPR over a certain frequency range, specifically at approximately $\omega = 5.0$. The increase in IPR is not characterized by a sudden surge, but rather a gradual increase that exhibits a phase crossover\cite{sierant_2023, sachdev_quantum_2011}. As the size of the system increases, the crossover region becomes smoother.
+	\section{\label{sec:level5}Phase Crossover from Thermal to DMBL}
+	The analysis of the periodically driven LMG model reveals two distinct scenarios at low and high external drive frequencies. In the former case, thermalization in accordance with FETH is seen, whereas in the latter case, DMBL is induced. As a result, we hypothesize that a macroscopic change in phase occurs due to the influence of frequency. 
 	
+	To demonstrate this, we investigate the IPR of the  Floquet mode with smallest quasienergy
+	for numerous frequencies and system sizes, along with the associated drive amplitude $h$ keeping the system at a localization point. The results are shown in fig~\ref{fig:phase_transition} . In the low-frequency range $\omega \in \left[1.0, 9.0\right]$, the IPR exhibits values well below unity. Moreover, the IPR gradually diminishes with increasing system size, following a system size inverse proportional trend, which confirms the participation distribution (as shown in the bottom panel). As the limit  $N\rightarrow\infty$, the inverse participation ratio (IPR) tends towards zero, indicating a fully delocalized state. The plots reveal a gradual increase in the unity of IPR over a certain frequency range, specifically at $\omega \approx 5.0$. In addition, the rise does not cross with those for different values of $N$, suggesting the onset of a phase crossover~\cite{sierant_2023, sachdev_quantum_2011}. As the size of the system increases, the crossover region becomes smoother, rather than sharper.
 	\begin{figure}[!ht]
 		\centering
 		\includegraphics[width =8.5cm]{phase_crossover_LMG.jpeg}
@@ -397,16 +388,16 @@ The IPR plots from the exact dynamics indicate that the first localization point
 		\label{fig:phase_transition}
 	\end{figure}
 
-	The numerical evolution of the system is carried out using the exact Hamiltonian for a duration of 500 time periods. The average of the Hamiltonian, denoted as $\expval{\hat{H}}$, is then computed to determine the energy spreading through the standard deviation. The thermal conditions necessitate minimal fluctuations in energy distribution, as the spread of states leads to a limited standard deviation\cite{reimann_symmetry-prohibited_2021}. As a result, finite standard deviation arises in athermal regions. A graph depicting the standard deviation of the energy expectation value is presented for a system Hamiltonian adiabatically varied with drive frequency. The standard deviation of the Hamiltonian, denoted as $\expval{H}_{std}$, exhibits a small value for frequencies up to approximately $\omega \sim 5.0$. Subsequently, there is an increase in  that follows a linear pattern as the frequency increases further $\expval{H}_{std}$ in FIG\ref{fig:havg_std}. A thermal region is observed at a lower frequency, while an athermal region is detected at a higher frequency.
-	
+	We can also look at this crossover more clearly in the plots of the heating rate of the system, defined simply by the expectation value of the Hamiltonian, $\expval{\hat{H}(t)}$. We have carried out the numerical evaluation from the simulated dynamics over $t=500 T$. When the system is adequately described by FETH, the temporal fluctuations in the heating rate, defined by $\expval{H}^2_{std}\equiv \overline{\expval{\hat{H}}^2}-\overline{\expval{\hat{H}}}^2$ (see eqn~\ref{eq:lt_avg}), are minimal in the thermodynamic limit, as the spread of states leads to a limited standard deviation\cite{reimann_symmetry-prohibited_2021}. Conversely, the onset of athermality is indicated by nonzero fluctuations in time. If we set the initial state to the fully polarized state in the TSS (given by $\ket{s_N}$), then the 
+	onset of freezing, together with DMBL, will result in nearly infinite hysteresis in the ensuing dynamics, causing $\ket{\psi}(t)\approx \ket{s_N} \forall t$. From eqn~\ref{eq:driven:ham}, we can clearly see that this will lead to a linearly rising dependence on $\omega$ in $\expval{H}_{std}$ as long as we stick to a localization point given by a fixed $h/\omega$. All these observations are corroborated by the heating rate plots in figure~\ref{fig:havg_std}.	
 	\begin{figure}[!ht]
 		\centering
 		\includegraphics[width = 9.cm]{hbar_avg_std.jpg}
-		\caption{The standard deviation of the mean value of H, denoted by $\expval{H}_{std}$, has been calculated over a span of 500 time periods. A singularity has been identified at approximately $\omega = 5.0$. The standard expectation value of the Hamiltonian, denoted as $\expval{H}_{std}$, exhibits a diminutive magnitude below the singularity, while a linear and gradual augmentation is observed at higher frequencies. A small standard deviation indicates the presence of a thermal region, whereas a larger finite standard deviation suggests the existence of a regular athermal region.}
+		\caption{The standard deviation of the heating rate, denoted by $\expval{H}_{std}$, calculated over a span of $t=500 T$ for two system sizes. Here, $h$ is varied to keep $\eta = 4h/\omega$ at the first root of $J_0(\eta)$. A nonsingular rise has been identified at $\omega \approx 4.0$. $\expval{H}_{std}$ exhibits a diminutive magnitude below that value of $\omega$, while a linear rise is observed at higher frequencies, consistent with freezing. A vanishingly small standard deviation for $\omega \ll 4.0$ indicates the presence of a thermal region, whereas a larger finite standard deviation suggests the existence of athermal behaviour. The small peaks observed at $\omega\in [2, 4)$ are finite-size effects that disappear in the thermodynamic limit.}
 		\label{fig:havg_std}
 	\end{figure}
 	
-	
+	\todo{Review from here}
 	\section{\label{sec:level6}Observations and Discussion}
 	
 	The quantum many-body localization in the Ising model is observed at high drive frequency and corresponding high drive amplitude, where the localization points are determined by setting $J_0(2h/{\omega}\big)=0$ for both exact and Rotated wave simulations. The delocalization away from the localization points is relatively weak. The integrability of the Ising model allows for localization to be observed at low values of $\omega$, despite the breakdown of the rotating wave approximation. Analytical methods beyond the adiabatic limit are intricate. The LMG model exhibits distinct localization at localization points, which are determined by the condition $J_0(4h/\omega)=0$, in both the exact and Rotated Wave simulations. However, there is some degree of delocalization observed beyond these points, albeit weak. The non-integrability of the LMG model and the established onset of chaos in the thermodynamic limit at low $\omega$ lead to a near-complete delocalization in the Inverse Participation Ratio (IPR) of the Floquet states at small $\omega$. 
