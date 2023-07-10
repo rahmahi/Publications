@@ -1,40 +1,31 @@
-% ****** Start of file apssamp.tex ******
-%
-%   This file is part of the APS files in the REVTeX 4.2 distribution.
-%   Version 4.2a of REVTeX, December 2014
-%
-%   Copyright (c) 2014 The American Physical Society.
-%
-%   See the REVTeX 4 README file for restrictions and more information.
-%
-% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
-% as well as the rest of the prerequisites for REVTeX 4.2
-%
-% See the REVTeX 4 README file
-% It also requires running BibTeX. The commands are as follows:
-%
-%  1)  latex apssamp.tex
-%  2)  bibtex apssamp
-%  3)  latex apssamp.tex
-%  4)  latex apssamp.tex
-%
+%\documentclass[a4paper,twocolumn,11pt]{quantumarticle}
+%\pdfoutput=1
+%\usepackage[utf8]{inputenc}
+%\usepackage[english]{babel}
+%\usepackage[T1]{fontenc}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{hyperref}
+%\usepackage{draftwatermark}
+%\usepackage{todonotes}
+%\usepackage{graphicx}
+%\usepackage{bm}% bold math
+%\usepackage{physics}
+%\usepackage{dcolumn}
+%\usepackage{hyperref}
+%\usepackage[sort&compress]{natbib}
+%\usepackage{lineno}
+%\linenumbers
+
+
 \documentclass[%
 reprint,
 superscriptaddress,
 linenumbers,
-%groupedaddress,
-%unsortedaddress,
-%runinaddress,
-%frontmatterverbose, 
-%preprint,
-%preprintnumbers,
-%nofootinbib,
-%nobibnotes,
-%bibnotes,
 amsmath,amssymb,
 aps,
-%pra,
-prb,
+pra,
+%prb,
 %rmp,
 %prstab,
 %prstper,
@@ -51,25 +42,8 @@ showkeys,
 \usepackage{bm}% bold math
 \usepackage{physics}
 \usepackage[sort&compress]{natbib}
-\usepackage{epsfig}
-\usepackage{epstopdf}
-%\usepackage{dsfont}
 
 \usepackage{hyperref}
-%\usepackage[usenames,dvipsnames]{xcolor}
-%\hypersetup{colorlinks, linkcolor={red},citecolor={blue}, urlcolor={MidnightBlue}}
-
-%\usepackage{hyperref}% add hypertext capabilities
-%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
-%\linenumbers\relax % Commence numbering lines
-
-%\usepackage[showframe,%Uncomment any one of the following lines to test 
-%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
-%%text={7in,10in},centering,
-%%margin=1.5in,
-%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
-%%height=10in,a5paper,hmargin={3cm,0.8in},
-%]{geometry}
 
 \begin{document}
 	
@@ -226,7 +200,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	\phi^{(n)}_{IPR}(k) = \abs{\ip{0}{\phi^n_k}}^4 + \abs{\ip{ +k, -k }{\phi^n_k}}^4,
 	\end{equation}
 	where $n=0,1$. In the RWA limit and at resonance , this quantity is unity, indicating very low participation and the onset of freezing.
-	\begin{figure}[hbt!]
+	\begin{figure}[t!]
 		\centering
 		%\includegraphics[height = 10cm, width = 9.0cm]{ising_exact_ipr.jpeg}
 		\includegraphics[width = 9.0cm]{ising_exact_ipr.jpeg}
@@ -239,7 +213,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	
 	
 	
-	\begin{figure}[hbt!]
+	\begin{figure}[t!]
 		\centering
 		\includegraphics[width = 8.5cm]{ising_exact_lowfr_ipr.jpeg}
 		\caption{Reduced IPR obtained by adiabatically increasing $\omega$ (top panel abscissa) for one the floquet mode obtained from equation~\ref{eq:ipr:ising} at the root of $J_0(\eta)$ for N = 500. IPR is $\sim 0.5$ (localized yet not fully freezing) upto $\omega \sim 2$, afterthat, smoothly increased to unity (fully localized and freezibg) at higher $\omega \geq 10$ (top panel, ordiante). At bottom panel cros-sections for four chosen amplitudes at $\omega =2$ are plotted for a brillouin zone (abscissa) with corresponding reduced IPRs(ordinate).}
@@ -318,7 +292,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	\rm{Eigs}\bigg[\tilde{H}_{\mathrm{RWA}}\bigg] = \frac{\big(\frac{N}{2}-m\big)^2}{N-1} - 2h_0 \bigg(\frac{N}{2}-m\bigg),
 	\end{equation}
 	where the half-integer $-N/2\leq m \leq N/2$ is the eigenvalue corresponding to a particular eigenstate $\ket{m}$ of the symmetry-breaking field $\hat{S}^x$. In order to ensure that no additional degeneracies occur, we have to set $h_0$ in  such a way that no two energies accidentally coincide.
-	\begin{figure}[h!bt]
+		\begin{figure}[t!]
 		\centering
 		\includegraphics[width = 8.5cm]{ipr_exact_dynm_N50_frq_90_.jpeg}
 		\caption{IPR density plot for all possible Floquet modes (top panel ordinate) for different values of $\eta = 4h/\omega$ (top panel abscissa), deduced from equation \ref{eq:ipr:lmg} for exact LMG Hamiltonian for N = 50. Blue dashed lines are roots of $J_0(\eta)$. At bottom panel cross-section of IPR (ordinate )for four different $\eta$'s plotted for all possible floquet modes(bottom panel, abscissa) at $\omega=90$. IPR founds to be $\sim$ unity for all floquet modes at roots of $J_0$.}
@@ -339,7 +313,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	
 	\begin{figure}[t!]
 		\centering
-		%\includegraphics[width=9.3cm]{sx_conservation.jpeg }
+		\includegraphics[width=9.3cm]{sx_conservation.jpeg }
 		\caption{Temporal average of $\expval{\hat{S^x}}$ (ordinate) for different $\eta$'s (abscissa) is plotted for $\sim 200T$ at higher $\omega$ for different N=10,20,50. $\overline{\langle S^x \rangle}$ is found to be unity at roots of $J_0(\eta)$. At points away from resonance points, $\expval{\hat{S^x}}$ falls below unity. The corresponding standard deviation $\expval{\hat{S^x}}_{std}$ supports the variation of $\overline{\langle S^x \rangle}$ (inset fig.). $\expval{\hat{S^x}}_{std}$ is $\sim 0$ describing a full freezing of the system at roots of $\mathcal{J}_0(\eta)$ (red vertical solid lines).}
 		\label{fig:sx_conserve}
 	\end{figure}
