@@ -1,23 +1,3 @@
-%\documentclass[a4paper,twocolumn,11pt]{quantumarticle}
-%\pdfoutput=1
-%\usepackage[utf8]{inputenc}
-%\usepackage[english]{babel}
-%\usepackage[T1]{fontenc}
-%\usepackage{amsmath}
-%\usepackage{amssymb}
-%\usepackage{hyperref}
-%\usepackage{draftwatermark}
-%\usepackage{todonotes}
-%\usepackage{graphicx}
-%\usepackage{bm}% bold math
-%\usepackage{physics}
-%\usepackage{dcolumn}
-%\usepackage{hyperref}
-%\usepackage[sort&compress]{natbib}
-%\usepackage{lineno}
-%\linenumbers
-
-
 \documentclass[%
 reprint,
 superscriptaddress,
@@ -239,7 +219,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 		J_{ij} =\frac{J_\alpha}{N^{1-\alpha}}\frac{1}{r_{ij}^{\alpha}},
 	\end{equation}
 	with $r_{ij}$ representing the smallest graph distance between them.
-	Putting  $\alpha = 0$ yields the Lipkin Meshkov Glick (LMG) model with all-to-all interactions $J_{ij} = J_0/N\;\forall (i,j), i\neq j$. We choose to maintain the extensivity of the interaction energy by enforcing the condition
+	Putting  $\alpha = 0$ yields the Lipkin Meshkov Glick (LMG) model with all-to-all interactions $J_{ij} = J_0/N\;\forall (i,j), i\neq j$. \todo{Add refs}We choose to maintain the extensivity of the interaction energy by enforcing the condition
 	\begin{equation*}
 		\frac{J_0}{N} \sum_{i\neq j}1=\frac{J_0}{N}\frac{N(N-1)}{2}=1,
 	\end{equation*}
@@ -326,7 +306,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 The IPR plots from the exact dynamics indicate that the first localization point, represented by the lowest  root of $J_0(\eta)$, does not show complete DMBL. However, DMBL is particularly conspicuous at large roots. The IPRs of the Floquet states obtained from the RWA dynamics exhibit large deviations from unity when away from the localization point as evidenced by the green and red curves in the middle panel of fig~\ref{fig:lmg_ipr_rwa11}. However, complete localization is seen in the RWA dynamics at any localization point, in contrast to the exact case in the top panel. Thus, it is necessary to incorporate  higher-order corrections into the Rotating Wave Approximation (RWA) at lower localization points. The application of the first-order correction to RWA in the lower panel of fig~\ref{fig:lmg_ipr_rwa11} results in a curve structure that is closer to that from the exact dynamics.
 	
 	\section{\label{sec:level4}Persistence of DMBL in the continuum limit}
-	In the continuum limit, where $N\rightarrow\infty$, the disparity between neighboring values of $s_i$ in equation \ref{eq:lmg:tssham} can be disregarded, and $s_i$ can be mapped to a continuum $q\in \left[-1/2, 1/2\right]$~\cite{mori_prethermalization_2019}. We define	the Hamiltonian per particle $h(t)\equiv \frac{H(t)}{N}$, and a canonically conjugate co-ordinate $p\equiv \expval{-i/N\pdv{}{q}}$. Then, in this limit, the dynamics can be approximated by that of a classical Hamiltonian~\cite{sciolla_quantum_2010}
+	In the continuum limit, where $N\rightarrow\infty$, the disparity between neighboring values of $s_i$ in equation \ref{eq:lmg:tssham} can be disregarded, and $s_i$ can be mapped to a continuum $q\in \left[-1/2, 1/2\right]$~\cite{mori_prethermalization_2019}. We define	the Hamiltonian per particle $h(t)\equiv \frac{H(t)}{N}$, and a canonically conjugate co-ordinate $Np\equiv \expval{-i\pdv{}{q}}$. Then, in this limit, the dynamics can be approximated by that of a classical Hamiltonian~\cite{sciolla_quantum_2010}
 	\begin{equation}
 	h(t) = -2 q^2 - \left[h\cos{\omega t} + h_0\right]\;\sqrt{1-4q^2}\;\cos{p},
 	\label{eq:class:ham}
@@ -334,10 +314,10 @@ The IPR plots from the exact dynamics indicate that the first localization point
 	which yields the dynamical system 
 	\begin{align}
 		 \dv{q}{t} &= \pdv{h}{p} = h(t)\sqrt{1-4q^2}\sin{p}\nonumber \\
-		  \dv{p}{t} &= -\pdv{h}{q} = 4q\bigg[1-\frac{h(t)\cos{p}}{\sqrt{1-4q^2}}\bigg].
+		  \dv{p}{t} &= -\pdv{h}{q} = 4q\bigg[1-\frac{h(t)\cos{p}}{\sqrt{1-4q^2}}\bigg],
 		\label{eq:class:poinc}
 	\end{align}
-	We have profiled simulations of the ensuing dynamics with the \emph{Poincar$\acute{e}$ surface of section} (PSOS) of the full dynamics. Here, the $\left(q,p\right)-$phase space is strobed at $t=nT$, and plotted for a large number of initial conditions. The results are shown in the upper panels of fig~\ref{fig:classical_lipkin} for a small value of $\omega=2.5$ (left panel) and a large value $\omega=90$ (right panel). In both cases, the value of $h$ is chosen such that $\eta$ lies on the first root of $J_0(\eta)$. The onset of chaos for small drive frequency indicates thermal behaviour for typical initial conditions, with small islands of regularity for others. This is consistent with similar results for small frequencies reported in~\cite{russomanno_thermalization_2015, Kidd2019}. \emph{However,} at high frequency, the regular islands distinctly dominate over the chaos. The trajectories indicate that the conservation of $\expval{S^x}\approx \sqrt{1-4q^2}\;\cos{p}$~\cite{mori_prethermalization_2019} at high $\omega$ persists in the thermodynamic limit.
+  where $h(t) = \left[h\cos{\omega t} + h_0\right]$. We have profiled simulations of the ensuing dynamics with the \emph{Poincar$\acute{e}$ surface of section} (PSOS) of the full dynamics. Here, the $\left(q,p\right)-$phase space is strobed at $t=nT$, and plotted for a large number of initial conditions. The results are shown in the upper panels of fig~\ref{fig:classical_lipkin} for a small value of $\omega=2.5$ (left panel) and a large value $\omega=90$ (right panel). In both cases, the value of $h$ is chosen such that $\eta$ lies on the first root of $J_0(\eta)$. The onset of chaos for small drive frequency indicates thermal behaviour for typical initial conditions, with small islands of regularity for others. This is consistent with similar results for small frequencies reported in~\cite{russomanno_thermalization_2015, Kidd2019}. \emph{However,} at high frequency, the regular islands distinctly dominate over the chaos. The trajectories indicate that the conservation of $\expval{S^x}\approx \sqrt{1-4q^2}\;\cos{p}$~\cite{mori_prethermalization_2019} at high $\omega$ persists in the thermodynamic limit.
 	That this is a signature of the underlying quantum dynamics can be readily seen in the quantum phase space representation of the Floquet Eigenstates for a large but finite $N$. These are shown in the corresponding lower panels of fig~\ref{fig:classical_lipkin}. Here, we have plotted the Spectral Average of the Husimi Q-functions of the acquired Floquet States in the TSS. Specifically, for a coherent state $\ket{q,p}$, the corresponding Spectral-Averaged Husimi distribution~\cite{husimi} is obtained by 
 	\begin{equation}
 		H(q,p)\equiv \frac{1}{\big(2N+1\big)\pi}\sum_n \ip{q,p}{\phi^n}\ip{\phi^n}{q,p}
@@ -380,20 +360,17 @@ The IPR plots from the exact dynamics indicate that the first localization point
 	\section{\label{sec:level7}Conclusion and Outlook}
 	
 	We have delved into the onset of freezing and phase cross-over in 1D spin systems driven by a time-perodic transverse field, contrasting the responses in the Transverse Field Ising Model (TFIM) with that of the long-range Lipkin-Meshkov-Glick Model (LMG). The parametrization of DMBL is based on the Inverse Participation Ratio (IPR) of the Floquet eigenstates. Our investigations compared the IPRs from both models numerically, and found the emergence of thermal behavior at low frequencies and freezing at high frequencies for the LMG model, the latter a direct consequence of the appearance of additional approximately conserved quantities.
+	\subsection{Conclusion:}
+	 Long-range spins exhibit strong localization in spin-coordinate space for the LMG model when the drive frequency is $\omega \gg J$, where $J$ represents the spin exchange energy. The localization of the LMG model occurs at specific resonance points of the drive frequency $\omega$ and amplitude $h$, at $J_0(4h/\omega)=0,\; \omega \gg J$. This is apparently similar to the phenomenon of Dynamical Freezing (DMF) in the Transverse Field Ising Model (TFIM), where comparable localization at resonance points, determined by the roots of $J_0(2h/\omega)$, occurs due to the onset of an additinal approximate conservation in the transverse field itself. However, a key difference is the thermal behaviour of the LMG model at low frequencies. Plots of the IPR for a range of frequencies along the resonance manifold exhibits a smooth increase in IPR yieling a quantum phase-crossover from a thermal phase governed by the Floquet Eigenstate Thermalization Hypothesis (FETH) to a Dynamically Many-Body localized phase (DMBL). This crossover is absent in the TFIM, as   can be readily seen in the significant magnitude of the inverse participation ratio (IPR) even at low frequencies. Thus, the suppression  of thermalization through  Dynamical Many Body Localization in long-range systems can be controlled via Floquet engineering, even in clean systems without any disorder.	Thus, periodically driven long-range spin systems are an excellent tool for investigating disorder-free Many Body Localization, as can be readily seen via the IPR of its Floquet modes. 
 	
-	\emph{Conclusion}: Long-range spins exhibit strong localization in spin-coordinate space for the LMG model when the drive frequency is $\omega \gg J$, where $J$ represents the spin exchange energy. The localization of the LMG model occurs at specific resonance points of the drive frequency $\omega$ and amplitude $h$, at $J_0(4h/\omega)=0,\; \omega \gg J$. This is apparently similar to the phenomenon of Dynamical Freezing (DMF) in the Transverse Field Ising Model (TFIM), where comparable localization at resonance points, determined by the roots of $J_0(2h/\omega)$ occurs due to the onset of an additinal approximate conservation in the transverse field itself. However, a key difference is the thermal behaviour of the LMG model at low frequencies. Plots of the IPR for a range of frequencies along the resonance manifold exhibits a smooth increase in IPR yieling a quantum phase-crossover from a thermal phase governed by the Floquet Eigenstate Thermalization Hypothesis (FETH) to a Dynamically Many-Body localized phase (DMBL). This crossover is absent in the TFIM, as   can be readily seen in the significant magnitude of the inverse participation ratio (IPR) even at low frequencies. Thus, the suppression  of thermalization through  Dynamical Many Body Localization in long-range systems can be controlled via Floquet engineering, even in clean systems without any disorder.	
+	\subsection{Outlook:}
+	There are several unexplored indicators of DMBL, such as entanglement entropy and level statistics~\cite{khemani_phase_2016}, which we defer to future studies. In addition, Halpern in 2019 proposed a quantum engine based on MBL\cite{yunger_halpern_quantum_2019} which works  between strong localized and thermal phases of the system. In our proposed LMG model, tuning the system parameters by bringing them to the resonance points, then adiabatically cycling the frequency from the thermal region to the DMBL region, can acheive a similar engine without going through a phase transition. 
 	
-	\emph{Outlook}: 
-
-	We have demonstrated that periodically driven nonintegrable long-range spin systems are an excellent tool for investigating disorder-free Many Body Localization, as can be readily seen via the IPR of its Floquet modes. We have compared the localization in the periodically driven LMG model with that in similarly driven short-range systems, and have observed a phase crossover from an FETH phase to a DMBL phase that arises due to Floquet Engineering.
-	
-	There are several unexplored indicators of DMBL, such as entanglement entropy and level statistics ratio\cite{khemani_phase_2016}, which we defer to future studies. In addition, Halpern in 2019 proposed a quantum engine based on MBL\cite{yunger_halpern_quantum_2019} which works  between strong localized and thermal phases of the system. In our proposed LMG model, tuning the system parameters by bringing them to the resonance points, then adiabatically cycling the frequency from the thermal region to the DMBL region, can acheive a similar engine without going through a phase transition. 
-	
-	{\it Acknowledgement:}
-	One of the authors, MR would like to acknowledge The University of Burdwan for support via a state-funded fellowship, as well as for providing computational resources. AR acknowledges support from the University Grants Commission (UGC) of India, via BSR Startup Grant No. F.30-425/2018(BSR), as well as from the Science and Engineering Research Board (SERB) Core Research Grant No. CRG/20l8/004002.
+	\subsection {Acknowledgements:}
+	One of the authors, MR acknowledges The University of Burdwan for support via a state-funded fellowship. AR acknowledges support from the University Grants Commission (UGC) of India, via BSR Startup Grant No. F.30-425/2018(BSR), as well as from the Science and Engineering Research Board (SERB) Core Research Grant No. CRG/20l8/004002.
 	
 	\nocite{*}
-	%\bibliographystyle{apsrev4-2}
+	\bibliographystyle{apsrev4-2}
 	\bibliography{main}% Produces the bibliography via BibTeX.
 	
 \end{document}
