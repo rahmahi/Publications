@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.2)  10 JUL 2023 14:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  11 JUL 2023 11:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -71,8 +71,8 @@ File: aps4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for documentatio
 n)
 Class revtex4-2 Info: RevTeX society APS selected on input line 40.
 )
-Class revtex4-2 Info: Selecting journal pra on input line 7660.
-Class revtex4-2 Info: APS journal PRA selected on input line 7661.
+Class revtex4-2 Info: Selecting journal pre on input line 7660.
+Class revtex4-2 Info: APS journal PRE selected on input line 7661.
 
 (/usr/share/texlive/texmf-dist/tex/latex/revtex/aps10pt4-2.rtx
 File: aps10pt4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for document
@@ -746,32 +746,32 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip60
 )
 Class revtex4-2 Info: Unrecognized array package. Please update this document c
-lass! (Proceeding with fingers crossed.) on input line 48.
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 48.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 48.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 48.
+lass! (Proceeding with fingers crossed.) on input line 49.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 49.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 49.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 49.
 
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count316
@@ -798,9 +798,9 @@ e
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 48.
+loading the todonotes package. on input line 49.
 
-Package hyperref Info: Link coloring OFF on input line 48.
+Package hyperref Info: Link coloring OFF on input line 49.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -812,15 +812,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count322
 )
-LaTeX Info: Redefining \ref on input line 48.
-LaTeX Info: Redefining \pageref on input line 48.
-LaTeX Info: Redefining \nameref on input line 48.
+LaTeX Info: Redefining \ref on input line 49.
+LaTeX Info: Redefining \pageref on input line 49.
+LaTeX Info: Redefining \nameref on input line 49.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 48.
+Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 49.
 \openout3 = `mainNotes.bib'.
 
 
@@ -843,252 +843,232 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 LaTeX Info: Redefining \\ on input line 3056.
 )
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 61.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
+(Font)              scaled to size 8.09995pt on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/fve/m/it' in size <9> not available
-(Font)              Font shape `T1/fve/m/sl' tried instead on input line 62.
+(Font)              Font shape `T1/fve/m/sl' tried instead on input line 63.
 LaTeX Font Info:    Font shape `T1/fve/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 62.
+(Font)              scaled to size 8.09995pt on input line 63.
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 67.
+(Font)              scaled to size 10.79993pt on input line 68.
 LaTeX Font Info:    Font shape `T1/fve/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 67.
+(Font)              scaled to size 10.79993pt on input line 68.
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 4.49997pt on input line 67.
-LaTeX Font Info:    Trying to load font information for T1+fvs on input line 67
+(Font)              scaled to size 4.49997pt on input line 68.
+LaTeX Font Info:    Trying to load font information for T1+fvs on input line 68
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvs.fd
 File: t1fvs.fd 2004/09/07 scalable font definitions for T1/fvs.
 )
 LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
-(Font)              scaled to size 4.49997pt on input line 67.
+(Font)              scaled to size 4.49997pt on input line 68.
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 67.
+(Font)              scaled to size 6.29996pt on input line 68.
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 5.39996pt on input line 67.
+(Font)              scaled to size 5.39996pt on input line 68.
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 67.
+(Font)              scaled to size 7.19995pt on input line 68.
 LaTeX Font Info:    Font shape `T1/fve/m/it' in size <10> not available
-(Font)              Font shape `T1/fve/m/sl' tried instead on input line 71.
+(Font)              Font shape `T1/fve/m/sl' tried instead on input line 72.
 LaTeX Font Info:    Font shape `T1/fve/m/sl' will be
-(Font)              scaled to size 8.99994pt on input line 71.
+(Font)              scaled to size 8.99994pt on input line 72.
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 78.
+ine 79.
 
-Overfull \hbox (37.93607pt too wide) in paragraph at lines 78--78
-[][][]\T1/fve/m/n/10 Nonetheless, 
+Overfull \hbox (2.76437pt too wide) in paragraph at lines 79--79
+[][][]\T1/fve/m/n/10 Need 
  []
 
 
-Overfull \hbox (20.09822pt too wide) in paragraph at lines 78--78
-\T1/fve/m/n/10 proaches 
+Overfull \hbox (5.13135pt too wide) in paragraph at lines 79--79
+\T1/fve/m/n/10 check 
  []
 
 
-Overfull \hbox (19.88222pt too wide) in paragraph at lines 78--78
-\T1/fve/m/n/10 disorder- 
+Overfull \hbox (2.76437pt too wide) in paragraph at lines 79--79
+[][][]\T1/fve/m/n/10 Need 
  []
 
 
-Overfull \hbox (0.56837pt too wide) in paragraph at lines 78--78
-\T1/fve/m/n/10 tems 
- []
-
-
-Overfull \hbox (37.93607pt too wide) in paragraph at lines 78--78
-[][][]\T1/fve/m/n/10 Nonetheless, 
- []
-
-
-Overfull \hbox (20.09822pt too wide) in paragraph at lines 78--78
-\T1/fve/m/n/10 proaches 
- []
-
-
-Overfull \hbox (19.88222pt too wide) in paragraph at lines 78--78
-\T1/fve/m/n/10 disorder- 
- []
-
-
-Overfull \hbox (0.56837pt too wide) in paragraph at lines 78--78
-\T1/fve/m/n/10 tems 
+Overfull \hbox (5.13135pt too wide) in paragraph at lines 79--79
+\T1/fve/m/n/10 check 
  []
 
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 138.21542pt on input line 84.
+(Font)              scaled to size 138.21542pt on input line 83.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/fve/b/n' will be
-(Font)              scaled to size 8.09995pt on input line 92.
+(Font)              scaled to size 8.09995pt on input line 91.
  [2]
-Underfull \hbox (badness 1189) in paragraph at lines 140--141
+Underfull \hbox (badness 1189) in paragraph at lines 139--140
 []\T1/fve/m/n/10 However, drive pa-ram-e-ters like am-pli-tude, fre-
  []
 
 [3]
-Underfull \hbox (badness 2932) in paragraph at lines 150--152
+Underfull \hbox (badness 2932) in paragraph at lines 149--151
 \T1/fve/m/n/10 Here, the un-driven Hamil-to-nian $[]$ con-sists of
  []
 
 
-Underfull \hbox (badness 2941) in paragraph at lines 161--163
+Underfull \hbox (badness 2941) in paragraph at lines 160--162
 \T1/fve/m/n/10 The re-sult-ing trans-formed Hamil-to-nian $\OML/cmm/m/it/10 H[]
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--175
+Underfull \hbox (badness 10000) in paragraph at lines 172--174
 
  []
 
 [4]
-<ising_exact_ipr.jpeg, id=166, 433.62pt x 505.89pt>
+<ising_exact_ipr.jpeg, id=170, 433.62pt x 505.89pt>
 File: ising_exact_ipr.jpeg Graphic file (type jpg)
 <use ising_exact_ipr.jpeg>
-Package pdftex.def Info: ising_exact_ipr.jpeg  used on input line 206.
+Package pdftex.def Info: ising_exact_ipr.jpeg  used on input line 205.
 (pdftex.def)             Requested size: 256.0748pt x 298.76584pt.
 
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 206--207
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 205--206
  [][] 
  []
 
-<ising_exact_lowfr_ipr.jpeg, id=173, 433.62pt x 433.62pt>
+<ising_exact_lowfr_ipr.jpeg, id=177, 433.62pt x 433.62pt>
 File: ising_exact_lowfr_ipr.jpeg Graphic file (type jpg)
 <use ising_exact_lowfr_ipr.jpeg>
-Package pdftex.def Info: ising_exact_lowfr_ipr.jpeg  used on input line 218.
+Package pdftex.def Info: ising_exact_lowfr_ipr.jpeg  used on input line 217.
 (pdftex.def)             Requested size: 241.84842pt x 241.85292pt.
 [5 <./ising_exact_ipr.jpeg> <./ising_exact_lowfr_ipr.jpeg>]
-Underfull \hbox (badness 2245) in paragraph at lines 246--249
+Underfull \hbox (badness 2245) in paragraph at lines 245--248
 \T1/fve/m/n/10 yielding the Kac-norm $\OML/cmm/m/it/10 J[] \OT1/cmr/m/n/10 = 2\
 OML/cmm/m/it/10 =\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 N \OMS/cmsy/m/n/10 ^^@ \OT1/
 cmr/m/n/10 1)$\T1/fve/m/n/10 . The
  []
 
 
-Underfull \hbox (badness 1509) in paragraph at lines 265--267
+Underfull \hbox (badness 1509) in paragraph at lines 264--266
 \T1/fve/m/n/10 to sim-plify the trans-formed Hamil-to-nian $[]\OT1/cmr/m/n/10 (
 \OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) =
  []
 
 [6]
-<ipr_exact_dynm_N50_frq_90_.jpeg, id=205, 433.62pt x 578.16pt>
+<ipr_exact_dynm_N50_frq_90_.jpeg, id=209, 433.62pt x 578.16pt>
 File: ipr_exact_dynm_N50_frq_90_.jpeg Graphic file (type jpg)
 <use ipr_exact_dynm_N50_frq_90_.jpeg>
 Package pdftex.def Info: ipr_exact_dynm_N50_frq_90_.jpeg  used on input line 29
-7.
+6.
 (pdftex.def)             Requested size: 241.84842pt x 322.47055pt.
  [7 <./ipr_exact_dynm_N50_frq_90_.jpeg>]
-<sx_conservation.jpeg, id=227, 433.62pt x 303.534pt>
+<sx_conservation.jpeg, id=231, 433.62pt x 303.534pt>
 File: sx_conservation.jpeg Graphic file (type jpg)
 <use sx_conservation.jpeg>
-Package pdftex.def Info: sx_conservation.jpeg  used on input line 316.
+Package pdftex.def Info: sx_conservation.jpeg  used on input line 315.
 (pdftex.def)             Requested size: 264.6107pt x 185.23419pt.
 
-Overfull \hbox (18.6107pt too wide) in paragraph at lines 316--317
+Overfull \hbox (18.6107pt too wide) in paragraph at lines 315--316
  [][] 
  []
 
-<comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg, id=231, 433.62pt x 722.7pt>
+<comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg, id=235, 433.62pt x 722.7pt>
 File: comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg Graphic file (type jpg)
 <use comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg>
 Package pdftex.def Info: comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg  used on 
-input line 323.
+input line 322.
 (pdftex.def)             Requested size: 270.30118pt x 450.51747pt.
 
-Overfull \hbox (24.30118pt too wide) in paragraph at lines 323--324
+Overfull \hbox (24.30118pt too wide) in paragraph at lines 322--323
  [][] 
  []
 
 [8 <./sx_conservation.jpeg>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 343.
+ on input line 342.
 
-<lmg_poincare.jpeg, id=254, 433.62pt x 578.16pt>
+<lmg_poincare.jpeg, id=258, 433.62pt x 578.16pt>
 File: lmg_poincare.jpeg Graphic file (type jpg)
 <use lmg_poincare.jpeg>
-Package pdftex.def Info: lmg_poincare.jpeg  used on input line 350.
+Package pdftex.def Info: lmg_poincare.jpeg  used on input line 349.
 (pdftex.def)             Requested size: 256.0748pt x 341.44667pt.
 
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 350--351
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 349--350
  [][] 
  []
 
-<phase_crossover_LMG.jpeg, id=262, 433.62pt x 433.62pt>
+<phase_crossover_LMG.jpeg, id=266, 433.62pt x 433.62pt>
 File: phase_crossover_LMG.jpeg Graphic file (type jpg)
 <use phase_crossover_LMG.jpeg>
-Package pdftex.def Info: phase_crossover_LMG.jpeg  used on input line 361.
+Package pdftex.def Info: phase_crossover_LMG.jpeg  used on input line 360.
 (pdftex.def)             Requested size: 241.84842pt x 241.85292pt.
-<hbar_avg_std.jpg, id=267, 578.16pt x 325.215pt>
+<hbar_avg_std.jpg, id=271, 578.16pt x 325.215pt>
 File: hbar_avg_std.jpg Graphic file (type jpg)
 <use hbar_avg_std.jpg>
-Package pdftex.def Info: hbar_avg_std.jpg  used on input line 370.
+Package pdftex.def Info: hbar_avg_std.jpg  used on input line 369.
 (pdftex.def)             Requested size: 256.0748pt x 144.03789pt.
 
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 370--371
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 369--370
  [][] 
  []
 
 [9 <./comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 374.
+ on input line 373.
 
 [10 <./lmg_poincare.jpeg> <./phase_crossover_LMG.jpeg>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 386.
+ on input line 385.
 
 (./main.bbl
 Underfull \hbox (badness 3590) in paragraph at lines 85--89
  []\T1/fve/m/n/9 G. B. Mbeng, A. Rus-so-manno, and G. E. San-
  []
 
+
+Underfull \hbox (badness 1122) in paragraph at lines 160--166
+ \T1/fve/m/n/9 driven one-dimensional in-ter-act-ing sys-tems (2023),
+ []
+
 [11 <./hbar_avg_std.jpg>]
 LaTeX Font Info:    Trying to load font information for TS1+fve on input line 2
-69.
+98.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bera/ts1fve.fd
 File: ts1fve.fd 2004/09/07 scalable font definitions for TS1/fve.
 )
 LaTeX Font Info:    Font shape `TS1/fve/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 269.
+(Font)              scaled to size 8.09995pt on input line 298.
 
-Underfull \hbox (badness 1776) in paragraph at lines 528--531
+Underfull \hbox (badness 1776) in paragraph at lines 557--560
  []\T1/fve/m/n/9 A. Hal-dar and A. Das, []An-nalen der Physik \T1/fve/b/n/9 529
 \T1/fve/m/n/9 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--573
+Underfull \hbox (badness 10000) in paragraph at lines 594--604
  []\T1/fve/m/n/9 R. Nand-k-ishore and D. A. Huse, []An-nual Re-
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 565--573
+Underfull \hbox (badness 1715) in paragraph at lines 594--604
  \T1/fve/m/n/9 view of Con-densed Mat-ter Physics \T1/fve/b/n/9 6\T1/fve/m/n/9 
 , 15 (2015)[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--573
+Underfull \hbox (badness 10000) in paragraph at lines 594--604
  []\T1/fve/m/n/9 https://doi.org/10.1146/annurev-conmatphys-031214-
- []
-
-
-Underfull \hbox (badness 1122) in paragraph at lines 599--606
- \T1/fve/m/n/9 driven one-dimensional in-ter-act-ing sys-tems (2023),
  []
 
 ) [12] (./main.aux)
@@ -1096,13 +1076,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 8DA75EBDC5F8C41ED4CF97DB62C865DE;1987.
  ) 
 Here is how much of TeX's memory you used:
- 24649 strings out of 479621
- 445995 string characters out of 5882881
- 773321 words of memory out of 5000000
- 42169 multiletter control sequences out of 15000+600000
+ 24654 strings out of 478354
+ 446045 string characters out of 5852126
+ 778693 words of memory out of 5000000
+ 42246 multiletter control sequences out of 15000+600000
  522682 words of font info for 90 fonts, out of 8000000 for 9000
- 331 hyphenation exceptions out of 8191
- 99i,15n,94p,1417b,959s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 1131 hyphenation exceptions out of 8191
+ 99i,15n,94p,1417b,955s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
@@ -1125,10 +1105,10 @@ c/bera/fveb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a
 are/texlive/texmf-dist/fonts/type1/public/bera/fvsr8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (12 pages, 7278811 bytes).
+Output written on main.pdf (12 pages, 7279342 bytes).
 PDF statistics:
- 589 PDF objects out of 1000 (max. 8388607)
- 509 compressed objects within 6 object streams
- 119 named destinations out of 1000 (max. 500000)
+ 594 PDF objects out of 1000 (max. 8388607)
+ 514 compressed objects within 6 object streams
+ 120 named destinations out of 1000 (max. 500000)
  117 words of extra memory for PDF output out of 10000 (max. 10000000)
 
