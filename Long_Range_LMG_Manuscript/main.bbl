@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{60}%
+\begin{thebibliography}{61}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -152,6 +152,35 @@
   {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume}
   {99}},\ \bibinfo {pages} {024203} (\bibinfo {year} {2019})}\BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {Aditya}\ and\ \citenamefont
+  {Sen}(2023)}]{aditya2023dynamical}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Aditya}}\ and\ \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Sen}},\
+  }\href@noop {} {\bibinfo {title} {Dynamical localization and slow
+  thermalization in a class of disorder-free periodically driven
+  one-dimensional interacting systems}} (\bibinfo {year} {2023}),\ \Eprint
+  {https://arxiv.org/abs/2305.06056} {arXiv:2305.06056 [cond-mat.stat-mech]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {D’Alessio}\ and\ \citenamefont
+  {Polkovnikov}()}]{Alessio2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {D’Alessio}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Polkovnikov}},\ }\href
+  {https://doi.org/https://doi.org/10.1016/j.aop.2013.02.011} {\ \textbf
+  {\bibinfo {volume} {333}},\ \bibinfo {pages} {19}}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Papić}\ \emph {et~al.}(2015)\citenamefont {Papić},
+  \citenamefont {Stoudenmire},\ and\ \citenamefont {Abanin}}]{miles2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
+  {Papić}}, \bibinfo {author} {\bibfnamefont {E.~M.}\ \bibnamefont
+  {Stoudenmire}},\ and\ \bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
+  {Abanin}},\ }\href
+  {https://doi.org/https://doi.org/10.1016/j.aop.2015.08.024} {\bibfield
+  {journal} {\bibinfo  {journal} {Annals of Physics}\ }\textbf {\bibinfo
+  {volume} {362}},\ \bibinfo {pages} {714} (\bibinfo {year}
+  {2015})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Campa}\ \emph {et~al.}(2009)\citenamefont {Campa},
   \citenamefont {Dauxois},\ and\ \citenamefont
   {Ruffo}}]{campa_statistical_2009}%
@@ -569,14 +598,6 @@
   {https://arxiv.org/abs/https://doi.org/10.1146/annurev-conmatphys-031214-014726}
   {https://doi.org/10.1146/annurev-conmatphys-031214-014726} \BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {D’Alessio}\ and\ \citenamefont
-  {Polkovnikov}()}]{D’Alessio2013}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
-  {D’Alessio}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
-  {Polkovnikov}},\ }\href
-  {https://doi.org/https://doi.org/10.1016/j.aop.2013.02.011} {\ \textbf
-  {\bibinfo {volume} {333}},\ \bibinfo {pages} {19}}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Notarnicola}\ \emph {et~al.}(2018)\citenamefont
   {Notarnicola}, \citenamefont {Iemini}, \citenamefont {Rossini}, \citenamefont
   {Fazio}, \citenamefont {Silva},\ and\ \citenamefont
@@ -591,16 +612,6 @@
   {https://doi.org/10.1103/PhysRevE.97.022202} {\bibfield  {journal} {\bibinfo
   {journal} {Phys. Rev. E}\ }\textbf {\bibinfo {volume} {97}},\ \bibinfo
   {pages} {022202} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Aditya}\ and\ \citenamefont
-  {Sen}(2023)}]{aditya2023dynamical}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Aditya}}\ and\ \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Sen}},\
-  }\href@noop {} {\bibinfo {title} {Dynamical localization and slow
-  thermalization in a class of disorder-free periodically driven
-  one-dimensional interacting systems}} (\bibinfo {year} {2023}),\ \Eprint
-  {https://arxiv.org/abs/2305.06056} {arXiv:2305.06056 [cond-mat.stat-mech]}
-  \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Lazarides}\ \emph {et~al.}(2015)\citenamefont
   {Lazarides}, \citenamefont {Das},\ and\ \citenamefont
   {Moessner}}]{lazaridesmbl}%
