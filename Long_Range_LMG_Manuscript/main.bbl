@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{67}%
+\begin{thebibliography}{73}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -260,6 +260,66 @@
   {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
   {volume} {126}},\ \bibinfo {pages} {227202} (\bibinfo {year}
   {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lipkin}\ \emph {et~al.}(1965)\citenamefont {Lipkin},
+  \citenamefont {Meshkov},\ and\ \citenamefont {Glick}}]{lmg1965_1}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Lipkin}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Meshkov}},\
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Glick}},\ }\bibfield
+   {title} {\bibinfo {title} {Validity of many-body approximation methods for a
+  solvable model: (i). exact solutions and perturbation theory},\ }\href
+  {https://doi.org/https://doi.org/10.1016/0029-5582(65)90862-X} {\bibfield
+  {journal} {\bibinfo  {journal} {Nuclear Physics}\ }\textbf {\bibinfo {volume}
+  {62}},\ \bibinfo {pages} {188} (\bibinfo {year} {1965})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Meshkov}\ \emph {et~al.}(1965)\citenamefont
+  {Meshkov}, \citenamefont {Glick},\ and\ \citenamefont {Lipkin}}]{lmg1965_2}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Meshkov}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Glick}},\
+  and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Lipkin}},\
+  }\bibfield  {title} {\bibinfo {title} {Validity of many-body approximation
+  methods for a solvable model: (ii). linearization procedures},\ }\href
+  {https://doi.org/https://doi.org/10.1016/0029-5582(65)90863-1} {\bibfield
+  {journal} {\bibinfo  {journal} {Nuclear Physics}\ }\textbf {\bibinfo {volume}
+  {62}},\ \bibinfo {pages} {199} (\bibinfo {year} {1965})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Glick}\ \emph {et~al.}(1965)\citenamefont {Glick},
+  \citenamefont {Lipkin},\ and\ \citenamefont {Meshkov}}]{lmg1965_3}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Glick}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Lipkin}},\ and\
+  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Meshkov}},\ }\bibfield
+  {title} {\bibinfo {title} {Validity of many-body approximation methods for a
+  solvable model: (iii). diagram summations},\ }\href
+  {https://doi.org/https://doi.org/10.1016/0029-5582(65)90864-3} {\bibfield
+  {journal} {\bibinfo  {journal} {Nuclear Physics}\ }\textbf {\bibinfo {volume}
+  {62}},\ \bibinfo {pages} {211} (\bibinfo {year} {1965})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Ribeiro}\ \emph {et~al.}(2008)\citenamefont
+  {Ribeiro}, \citenamefont {Vidal},\ and\ \citenamefont
+  {Mosseri}}]{ribeiro2008}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Ribeiro}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Vidal}},\
+  and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Mosseri}},\
+  }\bibfield  {title} {\bibinfo {title} {Exact spectrum of the
+  lipkin-meshkov-glick model in the thermodynamic limit and finite-size
+  corrections},\ }\href {https://doi.org/10.1103/PhysRevE.78.021106} {\bibfield
+   {journal} {\bibinfo  {journal} {Phys. Rev. E}\ }\textbf {\bibinfo {volume}
+  {78}},\ \bibinfo {pages} {021106} (\bibinfo {year} {2008})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Debergh}\ and\ \citenamefont
+  {Stancu}(2001)}]{debergh_2001}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Debergh}}\ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Stancu}},\ }\bibfield  {title} {\bibinfo {title} {On the exact solutions of
+  the lipkin-meshkov-glick model},\ }\href
+  {https://doi.org/10.1088/0305-4470/34/15/305} {\bibfield  {journal} {\bibinfo
+   {journal} {Journal of Physics A: Mathematical and General}\ }\textbf
+  {\bibinfo {volume} {34}},\ \bibinfo {pages} {3265} (\bibinfo {year}
+  {2001})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Campa}\ \emph {et~al.}(2009)\citenamefont {Campa},
   \citenamefont {Dauxois},\ and\ \citenamefont
   {Ruffo}}]{campa_statistical_2009}%
@@ -580,6 +640,19 @@
   {https://doi.org/10.1209/0295-5075/110/37005} {\bibfield  {journal} {\bibinfo
    {journal} {Europhysics Letters}\ }\textbf {\bibinfo {volume} {110}},\
   \bibinfo {pages} {37005} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Defenu}\ \emph {et~al.}(2018)\citenamefont {Defenu},
+  \citenamefont {Enss}, \citenamefont {Kastner},\ and\ \citenamefont
+  {Morigi}}]{defenu2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Defenu}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Enss}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Kastner}},\ and\ \bibinfo
+  {author} {\bibfnamefont {G.}~\bibnamefont {Morigi}},\ }\bibfield  {title}
+  {\bibinfo {title} {Dynamical critical scaling of long-range interacting
+  quantum magnets},\ }\href {https://doi.org/10.1103/PhysRevLett.121.240403}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
+  {\bibinfo {volume} {121}},\ \bibinfo {pages} {240403} (\bibinfo {year}
+  {2018})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Mori}(2019)}]{mori_prethermalization_2019}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
