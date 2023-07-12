@@ -15,18 +15,62 @@ Database file #1: mainNotes.bib
 Database file #2: main.bib
 Warning--entry type for "noauthor_quantum_nodate" isn't style-file defined
 --line 143 of file main.bib
+control{REVTEX42Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
+control{apsrev42Control}, control.key{N/A}, control.author{08}, control.editor{1}, control.title{0}, control.pages{0}, control.year{1}, control.eprint{N/A}, 
+Warning--jnrlst (dependency: not reversed) set 1
 Too many commas in name 1 of "Eisele, Theodor, Ellis, Richard S." for entry eisele_multiple_1988
 while executing---line 3309 of file apsrev4-2.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
 Control: key (0) 
-Control: author (72) initials jnrlst
+Control: author (8) initials jnrlst
 Control: editor formatted (1) identically to author
-Control: production of article title (-1) disabled
+Control: production of article title (0) allowed
 Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
+"J. High Energy Phys." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry Grover2014
+while executing---line 3515 of file apsrev4-2.bst
+"J. High Energ. Phys." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry Grover2014
+while executing---line 3515 of file apsrev4-2.bst
+"JHEP" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry Grover2014
+while executing---line 3515 of file apsrev4-2.bst
+"Journal of Cosmology and Astroparticle Physics" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry Grover2014
+while executing---line 3515 of file apsrev4-2.bst
+"J. Cosmol. Astropart. Phys." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry Grover2014
+while executing---line 3515 of file apsrev4-2.bst
+"JCAP" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry Grover2014
+while executing---line 3515 of file apsrev4-2.bst
+"Journal of Instrumentation" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry Grover2014
+while executing---line 3515 of file apsrev4-2.bst
+"J. Instrum." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry Grover2014
+while executing---line 3515 of file apsrev4-2.bst
+"JINST" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry Grover2014
+while executing---line 3515 of file apsrev4-2.bst
+"Journal of Statistical Mechanics" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry Grover2014
+while executing---line 3515 of file apsrev4-2.bst
+"J. of Stat. Mech." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry Grover2014
+while executing---line 3515 of file apsrev4-2.bst
+"J. Stat. Mech.: Theory Exp." is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry Grover2014
+while executing---line 3515 of file apsrev4-2.bst
+"JSTAT" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry Grover2014
+while executing---line 3515 of file apsrev4-2.bst
+Warning--missing journal in Grover2014
+Warning--empty year in Grover2014
 Too many commas in name 1 of "Eisele, Theodor, Ellis, Richard S." for entry eisele_multiple_1988
 while executing---line 3515 of file apsrev4-2.bst
 Too many commas in name 1 of "Eisele, Theodor, Ellis, Richard S." for entry eisele_multiple_1988
@@ -43,85 +87,85 @@ Warning--empty year in noauthor_quantum_nodate
 Warning--empty year in marcos_relaxation_2012
 Warning--empty year in haldar_dynamical_2017
 "J. High Energy Phys." is a string literal, `journal' is a missing field
----they aren't the same literal types for entry D’Alessio2013
+---they aren't the same literal types for entry Alessio2013
 while executing---line 3515 of file apsrev4-2.bst
 "J. High Energ. Phys." is a string literal, `journal' is a missing field
----they aren't the same literal types for entry D’Alessio2013
+---they aren't the same literal types for entry Alessio2013
 while executing---line 3515 of file apsrev4-2.bst
 "JHEP" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry D’Alessio2013
+---they aren't the same literal types for entry Alessio2013
 while executing---line 3515 of file apsrev4-2.bst
 "Journal of Cosmology and Astroparticle Physics" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry D’Alessio2013
+---they aren't the same literal types for entry Alessio2013
 while executing---line 3515 of file apsrev4-2.bst
 "J. Cosmol. Astropart. Phys." is a string literal, `journal' is a missing field
----they aren't the same literal types for entry D’Alessio2013
+---they aren't the same literal types for entry Alessio2013
 while executing---line 3515 of file apsrev4-2.bst
 "JCAP" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry D’Alessio2013
+---they aren't the same literal types for entry Alessio2013
 while executing---line 3515 of file apsrev4-2.bst
 "Journal of Instrumentation" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry D’Alessio2013
+---they aren't the same literal types for entry Alessio2013
 while executing---line 3515 of file apsrev4-2.bst
 "J. Instrum." is a string literal, `journal' is a missing field
----they aren't the same literal types for entry D’Alessio2013
+---they aren't the same literal types for entry Alessio2013
 while executing---line 3515 of file apsrev4-2.bst
 "JINST" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry D’Alessio2013
+---they aren't the same literal types for entry Alessio2013
 while executing---line 3515 of file apsrev4-2.bst
 "Journal of Statistical Mechanics" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry D’Alessio2013
+---they aren't the same literal types for entry Alessio2013
 while executing---line 3515 of file apsrev4-2.bst
 "J. of Stat. Mech." is a string literal, `journal' is a missing field
----they aren't the same literal types for entry D’Alessio2013
+---they aren't the same literal types for entry Alessio2013
 while executing---line 3515 of file apsrev4-2.bst
 "J. Stat. Mech.: Theory Exp." is a string literal, `journal' is a missing field
----they aren't the same literal types for entry D’Alessio2013
+---they aren't the same literal types for entry Alessio2013
 while executing---line 3515 of file apsrev4-2.bst
 "JSTAT" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry D’Alessio2013
+---they aren't the same literal types for entry Alessio2013
 while executing---line 3515 of file apsrev4-2.bst
-Warning--missing journal in D’Alessio2013
-Warning--empty year in D’Alessio2013
-You've used 60 entries,
+Warning--missing journal in Alessio2013
+Warning--empty year in Alessio2013
+You've used 69 entries,
             6079 wiz_defined-function locations,
-            2075 strings with 27996 characters,
-and the built_in function-call counts, 57012 in all, are:
-= -- 4465
-> -- 1261
-< -- 287
-+ -- 423
-- -- 288
-* -- 8200
-:= -- 5578
-add.period$ -- 60
-call.type$ -- 60
-change.case$ -- 251
-chr.to.int$ -- 66
-cite$ -- 71
-duplicate$ -- 5056
-empty$ -- 4073
-format.name$ -- 747
-if$ -- 11726
+            2132 strings with 29635 characters,
+and the built_in function-call counts, 69050 in all, are:
+= -- 5263
+> -- 1528
+< -- 355
++ -- 489
+- -- 354
+* -- 10144
+:= -- 6666
+add.period$ -- 67
+call.type$ -- 69
+change.case$ -- 338
+chr.to.int$ -- 85
+cite$ -- 82
+duplicate$ -- 6352
+empty$ -- 5022
+format.name$ -- 862
+if$ -- 14132
 int.to.chr$ -- 4
-int.to.str$ -- 68
-missing$ -- 805
-newline$ -- 232
-num.names$ -- 177
-pop$ -- 2192
+int.to.str$ -- 76
+missing$ -- 999
+newline$ -- 253
+num.names$ -- 198
+pop$ -- 2530
 preamble$ -- 1
-purify$ -- 290
+purify$ -- 324
 quote$ -- 0
-skip$ -- 2695
+skip$ -- 3182
 stack$ -- 0
-substring$ -- 1601
-swap$ -- 4678
-text.length$ -- 145
+substring$ -- 1818
+swap$ -- 5915
+text.length$ -- 168
 text.prefix$ -- 0
-top$ -- 8
-type$ -- 801
-warning$ -- 9
-while$ -- 171
+top$ -- 10
+type$ -- 913
+warning$ -- 12
+while$ -- 203
 width$ -- 0
-write$ -- 523
-(There were 18 error messages)
+write$ -- 636
+(There were 31 error messages)

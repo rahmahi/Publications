@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{62}%
+\begin{thebibliography}{67}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -167,28 +167,6 @@
   {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo
   {volume} {99}},\ \bibinfo {pages} {024203} (\bibinfo {year}
   {2019})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Aditya}\ and\ \citenamefont
-  {Sen}(2023)}]{aditya2023dynamical}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Aditya}}\ and\ \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Sen}},\
-  }\href@noop {} {\bibinfo {title} {Dynamical localization and slow
-  thermalization in a class of disorder-free periodically driven
-  one-dimensional interacting systems}} (\bibinfo {year} {2023}),\ \Eprint
-  {https://arxiv.org/abs/2305.06056} {arXiv:2305.06056 [cond-mat.stat-mech]}
-  \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Papić}\ \emph {et~al.}(2015)\citenamefont {Papić},
-  \citenamefont {Stoudenmire},\ and\ \citenamefont {Abanin}}]{miles2015}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
-  {Papić}}, \bibinfo {author} {\bibfnamefont {E.~M.}\ \bibnamefont
-  {Stoudenmire}},\ and\ \bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
-  {Abanin}},\ }\bibfield  {title} {\bibinfo {title} {Many-body localization in
-  disorder-free systems: The importance of finite-size constraints},\ }\href
-  {https://doi.org/https://doi.org/10.1016/j.aop.2015.08.024} {\bibfield
-  {journal} {\bibinfo  {journal} {Annals of Physics}\ }\textbf {\bibinfo
-  {volume} {362}},\ \bibinfo {pages} {714} (\bibinfo {year}
-  {2015})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Nag}\ \emph {et~al.}(2014)\citenamefont {Nag},
   \citenamefont {Roy}, \citenamefont {Dutta},\ and\ \citenamefont
   {Sen}}]{diptiman2014}%
@@ -202,6 +180,86 @@
   {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume}
   {89}},\ \bibinfo {pages} {165425} (\bibinfo {year} {2014})}\BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {Carleo}\ \emph {et~al.}(2012)\citenamefont {Carleo},
+  \citenamefont {Becca}, \citenamefont {Schir{\'o}},\ and\ \citenamefont
+  {Fabrizio}}]{Carleo2012}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Carleo}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Becca}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Schir{\'o}}},\ and\
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Fabrizio}},\ }\bibfield
+  {title} {\bibinfo {title} {Localization and glassy dynamics of many-body
+  quantum systems},\ }\href {https://doi.org/10.1038/srep00243} {\bibfield
+  {journal} {\bibinfo  {journal} {Scientific Reports}\ }\textbf {\bibinfo
+  {volume} {2}},\ \bibinfo {pages} {243} (\bibinfo {year} {2012})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Aditya}\ and\ \citenamefont
+  {Sen}(2023)}]{aditya2023dynamical}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Aditya}}\ and\ \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Sen}},\
+  }\href@noop {} {\bibinfo {title} {Dynamical localization and slow
+  thermalization in a class of disorder-free periodically driven
+  one-dimensional interacting systems}} (\bibinfo {year} {2023}),\ \Eprint
+  {https://arxiv.org/abs/2305.06056} {arXiv:2305.06056 [cond-mat.stat-mech]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Schiulaz}\ \emph {et~al.}(2015)\citenamefont
+  {Schiulaz}, \citenamefont {Silva},\ and\ \citenamefont
+  {M\"uller}}]{alessandro_markus}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Schiulaz}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Silva}},\
+  and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {M\"uller}},\
+  }\bibfield  {title} {\bibinfo {title} {Dynamics in many-body localized
+  quantum systems without disorder},\ }\href
+  {https://doi.org/10.1103/PhysRevB.91.184202} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {91}},\ \bibinfo
+  {pages} {184202} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Grover}\ and\ \citenamefont {Fisher}()}]{Grover2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Grover}}\ and\ \bibinfo {author} {\bibfnamefont {M.~P.~A.}\ \bibnamefont
+  {Fisher}},\ }\bibfield  {title} {\bibinfo {title} {Quantum disentangled
+  liquids},\ }\href {https://doi.org/10.1088/1742-5468/2014/10/P10010} {\
+  \textbf {\bibinfo {volume} {2014}},\ \bibinfo {pages} {P10010}}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Papić}\ \emph {et~al.}(2015)\citenamefont {Papić},
+  \citenamefont {Stoudenmire},\ and\ \citenamefont {Abanin}}]{miles2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
+  {Papić}}, \bibinfo {author} {\bibfnamefont {E.~M.}\ \bibnamefont
+  {Stoudenmire}},\ and\ \bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
+  {Abanin}},\ }\bibfield  {title} {\bibinfo {title} {Many-body localization in
+  disorder-free systems: The importance of finite-size constraints},\ }\href
+  {https://doi.org/https://doi.org/10.1016/j.aop.2015.08.024} {\bibfield
+  {journal} {\bibinfo  {journal} {Annals of Physics}\ }\textbf {\bibinfo
+  {volume} {362}},\ \bibinfo {pages} {714} (\bibinfo {year}
+  {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Smith}\ \emph {et~al.}(2017)\citenamefont {Smith},
+  \citenamefont {Knolle}, \citenamefont {Kovrizhin},\ and\ \citenamefont
+  {Moessner}}]{Smith2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Smith}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Knolle}},
+  \bibinfo {author} {\bibfnamefont {D.~L.}\ \bibnamefont {Kovrizhin}},\ and\
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Moessner}},\ }\bibfield
+  {title} {\bibinfo {title} {Disorder-free localization},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.118.266601} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {118}},\
+  \bibinfo {pages} {266601} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hart}\ \emph {et~al.}(2021)\citenamefont {Hart},
+  \citenamefont {Gopalakrishnan},\ and\ \citenamefont
+  {Castelnovo}}]{MBL_emergent_disorder}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.}~\bibnamefont
+  {Hart}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Gopalakrishnan}},\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Castelnovo}},\ }\bibfield  {title} {\bibinfo {title} {Logarithmic
+  entanglement growth from disorder-free localization in the two-leg compass
+  ladder},\ }\href {https://doi.org/10.1103/PhysRevLett.126.227202} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
+  {volume} {126}},\ \bibinfo {pages} {227202} (\bibinfo {year}
+  {2021})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Campa}\ \emph {et~al.}(2009)\citenamefont {Campa},
   \citenamefont {Dauxois},\ and\ \citenamefont
   {Ruffo}}]{campa_statistical_2009}%

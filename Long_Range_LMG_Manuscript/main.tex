@@ -4,9 +4,9 @@ superscriptaddress,
 linenumbers,
 amsmath,amssymb,
 aps,
-pre,
+prb,
 %pra,
-%prb,
+%pre,
 %rmp,
 %prstab,
 %prstper,
@@ -56,13 +56,13 @@ a time-independent effective Hamiltonian, provided the system is strobed at inte
 	Any sufficiently complex non-integrable Many Body System is expected to thermalize according to the Eigenstate Thermalization Hypothesis (ETH) despite the fact that closed quantum dynamics preserves the memory of the initial state of the system. This arises due to the properties of the matrix elements of observables 
 	in typical states\cite{zhang_floquet_2016}. The ETH can be readily adapted to time-periodic systems using Floquet theory (the Floquet-ETH, or FETH). Nonetheless, the conditions for ETH to hold are not particularly strong, and the density matrix of the system can fail to approach one that is described by a thermal expression. In such cases, the system is said to undergo \textit{Many Body Localization} (MBL)\cite{khemani_phase_2016}. This phenomenon is stable against local perturbations, and constitutes an exotic state of matter with far-reaching implications in theoretical physics, as well as in practical applications\cite{yunger_halpern_quantum_2019}.
 	
-	The addition of disorder has been identified as a crucial component in the onset of MBL. In that case, thermalization is prevented by disorder-induced localization. Nonetheless, alternative approaches to MBL in disorder-free systems can be acheived by time-periodic driving. For instance, MBL has been detected in systems like periodically driven spinless fermions at nearest neighbour hopping~\cite{aditya2023dynamical} or engineered by employing heavy particles to generate dynamically an effective disorder~\cite{miles2015} or in a periodically driven disorder-free hard core many body superfluid bosons, drop in current and saturation at work done ascertains localization\cite{diptiman2014}\todo{Need to check refs 20-31, as well as citing articles, of the papic ref}. An alternative approach to realizing MBL in disorder-free many-body system involves \textit{Floquet Engineering}, where a time-periodic drive is introduced, and the drive parameters tuned so as to introduce a clustering of quasistationary energies in a manner similar to localization\cite{zhang_floquet_2016}.
+	The addition of disorder has been identified as a crucial component in the onset of MBL. In that case, thermalization is prevented by disorder-induced localization. Nonetheless, alternative approaches to MBL in strongly interacting disorder-free systems~\cite{diptiman2014, Carleo2012,aditya2023dynamical}, inhomogeneous systems~\cite{alessandro_markus, Grover2014,miles2015,Smith2017}, and by inducing disorder in the emergent physics~\cite{MBL_emergent_disorder} and by other effective means ~\cite{miles2015} (albeit with strong finite-size effects), have been reported. An alternative approach to realizing MBL in disorder-free \emph{homogeneous} many-body systems involve \textit{Floquet Engineering}, where a time-periodic drive is introduced, and the drive parameters tuned so as to introduce a clustering of quasistationary energies in a manner similar to localization\cite{zhang_floquet_2016}.
 
 	
 	In this article, we propose that additional approximate symmetries can be Floquet-engineered in quantum many body systems with lower symmetry than the TFIM, such as those with long-range interactions. This results in both DMF and MBL occurring simultaneously at resonant values of the drive parameters, and complete thermal behaviour at other values. This phenomenon is distinct from DMF in the TFIM, since clean TFIM systems, being integrable, never thermalize.
 	
 	
-	To demonstrate the onset of MBL, we investigate the driven Lipkin-Meshkov-Glick (LMG) model, a long-range system that is a special case of the more general Curie-Weiss model, wherein the nearest-neighbour exchange in the TFIM is extended to longer ranges with a power law dependence, $J_{ij}\sim 1/|i-j|^\beta$  ~\cite{campa_statistical_2009, eisele_multiple_1988, canning_class_1992}. Setting $\beta=\infty$ recovers the TFIM, and setting $\beta=0$ yields the LMG model. We have recovered the onset of DMF in this system and have supported our result with numerical simulations.
+	To demonstrate the onset of MBL, we investigate the driven Lipkin-Meshkov-Glick (LMG) model\todo{insert LMG refs, incl seminal}, a long-range system that is a special case of the more general Curie-Weiss model, wherein the nearest-neighbour exchange in the TFIM is extended to longer ranges with a power law dependence, $J_{ij}\sim 1/|i-j|^\beta$  ~\cite{campa_statistical_2009, eisele_multiple_1988, canning_class_1992}. Setting $\beta=\infty$ recovers the TFIM, and setting $\beta=0$ yields the LMG model. We have recovered the onset of DMF in this system and have supported our result with numerical simulations.
 	
 	In addition, we compare the degree of localization of the quasi-stationary Floquet modes in both limits of $\beta$. In order to do so, we look at the Inverse Participation Ratio (IPR) of the Floquet modes in the representation given by the eigenstates of the symmetry-breaking field. The IPR, closely related to the concept of quantum purity, is defined as the formal sum of the square of the density in some physically meaningful space or representation. A high IPR of a stationary state denotes low participation in most of the representation, and a low IPR distributes participation uniformly across the representation, leading to ergodic dynamics\cite{vu_fermionic_2022}. Thus, IPR~\cite{Misguich2016} is a useful tool for witnessing MBL of a quantum system. For an MBL system, the IPR is unity, and it scales inversely with the system size when it is thermally distributed~\cite{calixto_inverse_2015}.
 	
@@ -219,7 +219,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 		J_{ij} =\frac{J_\alpha}{N^{1-\alpha}}\frac{1}{r_{ij}^{\alpha}},
 	\end{equation}
 	with $r_{ij}$ representing the smallest graph distance between them.
-	Putting  $\alpha = 0$ yields the Lipkin Meshkov Glick (LMG) model with all-to-all interactions $J_{ij} = J_0/N\;\forall (i,j), i\neq j$. \todo{Add refs}We choose to maintain the extensivity of the interaction energy by enforcing the condition
+	Putting  $\alpha = 0$ yields the Lipkin Meshkov Glick (LMG) model with all-to-all interactions $J_{ij} = J_0/N\;\forall (i,j), i\neq j$. \todo{Add seminal ref again} We choose to maintain the extensivity of the interaction energy by enforcing the condition
 	\begin{equation*}
 		\frac{J_0}{N} \sum_{i\neq j}1=\frac{J_0}{N}\frac{N(N-1)}{2}=1,
 	\end{equation*}
@@ -327,7 +327,7 @@ The IPR plots from the exact dynamics indicate that the first localization point
 	\begin{figure}[ht!]
 		\centering
 		\includegraphics[width = 9.0 cm]{lmg_poincare.jpeg}
-		\caption{Phase-space distributions at $\omega = 2.5$ (left panels) and $\omega = 90.0$ (right panels) for $100$ initial conditions. At small $\omega$, the classical PSOS, obtained from simulating the dynamics in eqns~\ref{eq:class:poinc} (top left panel),  shows chaotic behaviour, whereas at the higher $\omega$, the onset of regular dynamics can be readily seen (top right panel). The bottom panels plot the corresponding Spectral-Averaged Husimi-Q function, obtained from the Floquet modes $\ket{\phi^n}$ using eqn~\ref{eq:husimi}. The $\omega=2.5-$case (bottom left panel) has a uniform distribution with less contrast in colour. This is consistent with the chaotic behaviour seen in the continuum limit. In the $\omega=90-$case (bottom right panel), the distribution has distinct colour contrasts, which is consistent with the regular dynamics pattern seen in the continuum limit.}
+		\caption{Phase-space distributions at $\omega = 2.5$ (left panels) and $\omega = 90.0$ (right panels) for $100$ initial conditions. At small $\omega$, the classical PSOS, obtained from simulating the dynamics in eqns~\ref{eq:class:poinc} (top left panel),  shows chaotic behaviour, whereas at the higher $\omega$, the onset of regular dynamics can be readily seen (top right panel). The bottom panels plot the corresponding Spectral-Averaged Husimi-Q function, obtained from the Floquet modes $\ket{\phi^n}$ using eqn~\ref{eq:husimi}, and setting $N=500$. The $\omega=2.5-$case (bottom left panel) has a uniform distribution with less contrast in colour. This is consistent with the chaotic behaviour seen in the continuum limit. In the $\omega=90-$case (bottom right panel), the distribution has distinct colour contrasts, which is consistent with the regular dynamics pattern seen in the continuum limit.}
 		\label{fig:classical_lipkin}
 	\end{figure}
 	\section{\label{sec:level5}Phase Crossover from Thermal to DMBL}
@@ -370,7 +370,7 @@ The IPR plots from the exact dynamics indicate that the first localization point
 	One of the authors, MR acknowledges The University of Burdwan for support via a state-funded fellowship. AR acknowledges support from the University Grants Commission (UGC) of India, via BSR Startup Grant No. F.30-425/2018(BSR), as well as from the Science and Engineering Research Board (SERB) Core Research Grant No. CRG/20l8/004002.
 	
 	\nocite{*}
-	\bibliographystyle{apsrev4-2}
+	%\bibliographystyle{apsrev4-2}
 	\bibliography{main}% Produces the bibliography via BibTeX.
 	
 \end{document}
