@@ -1,8 +1,8 @@
 %apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
 %Control: key (0)
-%Control: author (8) initials jnrlst
+%Control: author (72) initials jnrlst
 %Control: editor formatted (1) identically to author
-%Control: production of article title (0) allowed
+%Control: production of article title (-1) disabled
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
@@ -53,12 +53,10 @@
 \bibitem [{\citenamefont {Bordia~Pranjal}(2017)}]{bordia_periodically_2017}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Bordia~Pranjal}, \bibfnamefont {L{\"u}schen~Henrik}},\ }\bibfield  {title}
-  {\bibinfo {title} {Periodically driving a many-body localized quantum
-  system},\ }\href {https://doi.org/https://doi.org/10.1038/nphys4020}
-  {\bibfield  {journal} {\bibinfo  {journal} {Nature Physics}\ }\textbf
-  {\bibinfo {volume} {13}},\ \bibinfo {pages} {460} (\bibinfo {year}
-  {2017})}\BibitemShut {NoStop}%
+  {Bordia~Pranjal}, \bibfnamefont {L{\"u}schen~Henrik}},\ }\href
+  {https://doi.org/https://doi.org/10.1038/nphys4020} {\bibfield  {journal}
+  {\bibinfo  {journal} {Nature Physics}\ }\textbf {\bibinfo {volume} {13}},\
+  \bibinfo {pages} {460} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Sahoo}\ \emph {et~al.}(2019)\citenamefont {Sahoo},
   \citenamefont {Schneider},\ and\ \citenamefont
   {Eggert}}]{sahoo_periodically_2019}%
@@ -73,11 +71,10 @@
 \bibitem [{\citenamefont {Das}(2010)}]{das_exotic_2010}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
-  {Das}},\ }\bibfield  {title} {\bibinfo {title} {Exotic freezing of response
-  in a quantum many-body system},\ }\href
-  {https://doi.org/10.1103/PhysRevB.82.172402} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {82}},\ \bibinfo
-  {pages} {172402} (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
+  {Das}},\ }\href {https://doi.org/10.1103/PhysRevB.82.172402} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume}
+  {82}},\ \bibinfo {pages} {172402} (\bibinfo {year} {2010})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Mbeng}\ \emph {et~al.}(2020)\citenamefont {Mbeng},
   \citenamefont {Russomanno},\ and\ \citenamefont
   {Santoro}}]{mbeng_quantum_2020}%
@@ -93,30 +90,24 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~S.}\ \bibnamefont
   {Yamada}}\ and\ \bibinfo {author} {\bibfnamefont {K.~S.}\ \bibnamefont
-  {Ikeda}},\ }\bibfield  {title} {\bibinfo {title} {Localization and
-  delocalization properties in quasi-periodically-driven one-dimensional
-  disordered systems},\ }\href {https://doi.org/10.1103/PhysRevE.105.054201}
-  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. E}\ }\textbf {\bibinfo
-  {volume} {105}},\ \bibinfo {pages} {054201} (\bibinfo {year}
-  {2022})}\BibitemShut {NoStop}%
+  {Ikeda}},\ }\href {https://doi.org/10.1103/PhysRevE.105.054201} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. E}\ }\textbf {\bibinfo {volume}
+  {105}},\ \bibinfo {pages} {054201} (\bibinfo {year} {2022})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Roy}\ and\ \citenamefont
   {Das}(2015)}]{roy_fate_2015}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
   {Roy}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Das}},\
-  }\bibfield  {title} {\bibinfo {title} {Fate of dynamical many-body
-  localization in the presence of disorder},\ }\href
-  {https://doi.org/10.1103/PhysRevB.91.121106} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {91}},\ \bibinfo
-  {pages} {121106} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+  }\href {https://doi.org/10.1103/PhysRevB.91.121106} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {91}},\
+  \bibinfo {pages} {121106} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Li}\ \emph {et~al.}(2018)\citenamefont {Li},
   \citenamefont {Shapiro},\ and\ \citenamefont {Kottos}}]{li_floquet_2018}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
   {Li}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Shapiro}},\ and\
-  \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Kottos}},\ }\bibfield
-  {title} {\bibinfo {title} {Floquet scattering theory based on effective
-  hamiltonians of driven systems},\ }\href
+  \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Kottos}},\ }\href
   {https://doi.org/10.1103/PhysRevB.98.121101} {\bibfield  {journal} {\bibinfo
   {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {98}},\ \bibinfo
   {pages} {121101} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
@@ -125,9 +116,7 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
   {Eckardt}}\ and\ \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
-  {Anisimovas}},\ }\bibfield  {title} {\bibinfo {title} {High-frequency
-  approximation for periodically driven quantum systems from a floquet-space
-  perspective},\ }\href {https://doi.org/10.1088/1367-2630/17/9/093039}
+  {Anisimovas}},\ }\href {https://doi.org/10.1088/1367-2630/17/9/093039}
   {\bibfield  {journal} {\bibinfo  {journal} {New Journal of Physics}\ }\textbf
   {\bibinfo {volume} {17}},\ \bibinfo {pages} {093039} (\bibinfo {year}
   {2015})}\BibitemShut {NoStop}%
@@ -136,9 +125,7 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
   {Zhang}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Khemani}},\
-  and\ \bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont {Huse}},\
-  }\bibfield  {title} {\bibinfo {title} {A floquet model for the many-body
-  localization transition},\ }\href
+  and\ \bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont {Huse}},\ }\href
   {https://doi.org/10.1103/PhysRevB.94.224202} {\bibfield  {journal} {\bibinfo
   {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {94}},\ \bibinfo
   {pages} {224202} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
@@ -149,9 +136,8 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
   {Khemani}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Lazarides}},
   \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Moessner}},\ and\
-  \bibinfo {author} {\bibfnamefont {S.~L.}\ \bibnamefont {Sondhi}},\ }\bibfield
-   {title} {\bibinfo {title} {Phase structure of driven quantum systems},\
-  }\href {https://doi.org/10.1103/PhysRevLett.116.250401} {\bibfield  {journal}
+  \bibinfo {author} {\bibfnamefont {S.~L.}\ \bibnamefont {Sondhi}},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.116.250401} {\bibfield  {journal}
   {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {116}},\
   \bibinfo {pages} {250401} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Yunger~Halpern}\ \emph {et~al.}(2019)\citenamefont
@@ -162,11 +148,10 @@
   {Yunger~Halpern}}, \bibinfo {author} {\bibfnamefont {C.~D.}\ \bibnamefont
   {White}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
   {Gopalakrishnan}},\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {Refael}},\ }\bibfield  {title} {\bibinfo {title} {Quantum engine based on
-  many-body localization},\ }\href {https://doi.org/10.1103/PhysRevB.99.024203}
-  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo
-  {volume} {99}},\ \bibinfo {pages} {024203} (\bibinfo {year}
-  {2019})}\BibitemShut {NoStop}%
+  {Refael}},\ }\href {https://doi.org/10.1103/PhysRevB.99.024203} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume}
+  {99}},\ \bibinfo {pages} {024203} (\bibinfo {year} {2019})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Nag}\ \emph {et~al.}(2014)\citenamefont {Nag},
   \citenamefont {Roy}, \citenamefont {Dutta},\ and\ \citenamefont
   {Sen}}]{diptiman2014}%
@@ -174,12 +159,10 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
   {Nag}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Roy}}, \bibinfo
   {author} {\bibfnamefont {A.}~\bibnamefont {Dutta}},\ and\ \bibinfo {author}
-  {\bibfnamefont {D.}~\bibnamefont {Sen}},\ }\bibfield  {title} {\bibinfo
-  {title} {Dynamical localization in a chain of hard core bosons under periodic
-  driving},\ }\href {https://doi.org/10.1103/PhysRevB.89.165425} {\bibfield
-  {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume}
-  {89}},\ \bibinfo {pages} {165425} (\bibinfo {year} {2014})}\BibitemShut
-  {NoStop}%
+  {\bibfnamefont {D.}~\bibnamefont {Sen}},\ }\href
+  {https://doi.org/10.1103/PhysRevB.89.165425} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {89}},\ \bibinfo
+  {pages} {165425} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Carleo}\ \emph {et~al.}(2012)\citenamefont {Carleo},
   \citenamefont {Becca}, \citenamefont {Schir{\'o}},\ and\ \citenamefont
   {Fabrizio}}]{Carleo2012}%
@@ -187,12 +170,10 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
   {Carleo}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Becca}},
   \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Schir{\'o}}},\ and\
-  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Fabrizio}},\ }\bibfield
-  {title} {\bibinfo {title} {Localization and glassy dynamics of many-body
-  quantum systems},\ }\href {https://doi.org/10.1038/srep00243} {\bibfield
-  {journal} {\bibinfo  {journal} {Scientific Reports}\ }\textbf {\bibinfo
-  {volume} {2}},\ \bibinfo {pages} {243} (\bibinfo {year} {2012})}\BibitemShut
-  {NoStop}%
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Fabrizio}},\ }\href
+  {https://doi.org/10.1038/srep00243} {\bibfield  {journal} {\bibinfo
+  {journal} {Scientific Reports}\ }\textbf {\bibinfo {volume} {2}},\ \bibinfo
+  {pages} {243} (\bibinfo {year} {2012})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Aditya}\ and\ \citenamefont
   {Sen}(2023)}]{aditya2023dynamical}%
   \BibitemOpen
@@ -209,9 +190,7 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
   {Schiulaz}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Silva}},\
-  and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {M\"uller}},\
-  }\bibfield  {title} {\bibinfo {title} {Dynamics in many-body localized
-  quantum systems without disorder},\ }\href
+  and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {M\"uller}},\ }\href
   {https://doi.org/10.1103/PhysRevB.91.184202} {\bibfield  {journal} {\bibinfo
   {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {91}},\ \bibinfo
   {pages} {184202} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
@@ -219,8 +198,7 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
   {Grover}}\ and\ \bibinfo {author} {\bibfnamefont {M.~P.~A.}\ \bibnamefont
-  {Fisher}},\ }\bibfield  {title} {\bibinfo {title} {Quantum disentangled
-  liquids},\ }\href {https://doi.org/10.1088/1742-5468/2014/10/P10010} {\
+  {Fisher}},\ }\href {https://doi.org/10.1088/1742-5468/2014/10/P10010} {\
   \textbf {\bibinfo {volume} {2014}},\ \bibinfo {pages} {P10010}}\BibitemShut
   {NoStop}%
 \bibitem [{\citenamefont {Papić}\ \emph {et~al.}(2015)\citenamefont {Papić},
@@ -229,8 +207,7 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
   {Papić}}, \bibinfo {author} {\bibfnamefont {E.~M.}\ \bibnamefont
   {Stoudenmire}},\ and\ \bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
-  {Abanin}},\ }\bibfield  {title} {\bibinfo {title} {Many-body localization in
-  disorder-free systems: The importance of finite-size constraints},\ }\href
+  {Abanin}},\ }\href
   {https://doi.org/https://doi.org/10.1016/j.aop.2015.08.024} {\bibfield
   {journal} {\bibinfo  {journal} {Annals of Physics}\ }\textbf {\bibinfo
   {volume} {362}},\ \bibinfo {pages} {714} (\bibinfo {year}
@@ -242,8 +219,7 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
   {Smith}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Knolle}},
   \bibinfo {author} {\bibfnamefont {D.~L.}\ \bibnamefont {Kovrizhin}},\ and\
-  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Moessner}},\ }\bibfield
-  {title} {\bibinfo {title} {Disorder-free localization},\ }\href
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Moessner}},\ }\href
   {https://doi.org/10.1103/PhysRevLett.118.266601} {\bibfield  {journal}
   {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {118}},\
   \bibinfo {pages} {266601} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
@@ -254,20 +230,16 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.}~\bibnamefont
   {Hart}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
   {Gopalakrishnan}},\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
-  {Castelnovo}},\ }\bibfield  {title} {\bibinfo {title} {Logarithmic
-  entanglement growth from disorder-free localization in the two-leg compass
-  ladder},\ }\href {https://doi.org/10.1103/PhysRevLett.126.227202} {\bibfield
-  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
-  {volume} {126}},\ \bibinfo {pages} {227202} (\bibinfo {year}
+  {Castelnovo}},\ }\href {https://doi.org/10.1103/PhysRevLett.126.227202}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
+  {\bibinfo {volume} {126}},\ \bibinfo {pages} {227202} (\bibinfo {year}
   {2021})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Lipkin}\ \emph {et~al.}(1965)\citenamefont {Lipkin},
   \citenamefont {Meshkov},\ and\ \citenamefont {Glick}}]{lmg1965_1}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
   {Lipkin}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Meshkov}},\
-  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Glick}},\ }\bibfield
-   {title} {\bibinfo {title} {Validity of many-body approximation methods for a
-  solvable model: (i). exact solutions and perturbation theory},\ }\href
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Glick}},\ }\href
   {https://doi.org/https://doi.org/10.1016/0029-5582(65)90862-X} {\bibfield
   {journal} {\bibinfo  {journal} {Nuclear Physics}\ }\textbf {\bibinfo {volume}
   {62}},\ \bibinfo {pages} {188} (\bibinfo {year} {1965})}\BibitemShut
@@ -277,9 +249,7 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
   {Meshkov}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Glick}},\
-  and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Lipkin}},\
-  }\bibfield  {title} {\bibinfo {title} {Validity of many-body approximation
-  methods for a solvable model: (ii). linearization procedures},\ }\href
+  and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Lipkin}},\ }\href
   {https://doi.org/https://doi.org/10.1016/0029-5582(65)90863-1} {\bibfield
   {journal} {\bibinfo  {journal} {Nuclear Physics}\ }\textbf {\bibinfo {volume}
   {62}},\ \bibinfo {pages} {199} (\bibinfo {year} {1965})}\BibitemShut
@@ -289,9 +259,7 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
   {Glick}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Lipkin}},\ and\
-  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Meshkov}},\ }\bibfield
-  {title} {\bibinfo {title} {Validity of many-body approximation methods for a
-  solvable model: (iii). diagram summations},\ }\href
+  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Meshkov}},\ }\href
   {https://doi.org/https://doi.org/10.1016/0029-5582(65)90864-3} {\bibfield
   {journal} {\bibinfo  {journal} {Nuclear Physics}\ }\textbf {\bibinfo {volume}
   {62}},\ \bibinfo {pages} {211} (\bibinfo {year} {1965})}\BibitemShut
@@ -302,43 +270,35 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
   {Ribeiro}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Vidal}},\
-  and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Mosseri}},\
-  }\bibfield  {title} {\bibinfo {title} {Exact spectrum of the
-  lipkin-meshkov-glick model in the thermodynamic limit and finite-size
-  corrections},\ }\href {https://doi.org/10.1103/PhysRevE.78.021106} {\bibfield
-   {journal} {\bibinfo  {journal} {Phys. Rev. E}\ }\textbf {\bibinfo {volume}
-  {78}},\ \bibinfo {pages} {021106} (\bibinfo {year} {2008})}\BibitemShut
-  {NoStop}%
+  and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Mosseri}},\ }\href
+  {https://doi.org/10.1103/PhysRevE.78.021106} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. E}\ }\textbf {\bibinfo {volume} {78}},\ \bibinfo
+  {pages} {021106} (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Debergh}\ and\ \citenamefont
   {Stancu}(2001)}]{debergh_2001}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
   {Debergh}}\ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
-  {Stancu}},\ }\bibfield  {title} {\bibinfo {title} {On the exact solutions of
-  the lipkin-meshkov-glick model},\ }\href
-  {https://doi.org/10.1088/0305-4470/34/15/305} {\bibfield  {journal} {\bibinfo
-   {journal} {Journal of Physics A: Mathematical and General}\ }\textbf
-  {\bibinfo {volume} {34}},\ \bibinfo {pages} {3265} (\bibinfo {year}
-  {2001})}\BibitemShut {NoStop}%
+  {Stancu}},\ }\href {https://doi.org/10.1088/0305-4470/34/15/305} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Physics A: Mathematical and
+  General}\ }\textbf {\bibinfo {volume} {34}},\ \bibinfo {pages} {3265}
+  (\bibinfo {year} {2001})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Titum}\ and\ \citenamefont
   {Maghrebi}(2020)}]{titum2020}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
   {Titum}}\ and\ \bibinfo {author} {\bibfnamefont {M.~F.}\ \bibnamefont
-  {Maghrebi}},\ }\bibfield  {title} {\bibinfo {title} {Nonequilibrium
-  criticality in quench dynamics of long-range spin models},\ }\href
-  {https://doi.org/10.1103/PhysRevLett.125.040602} {\bibfield  {journal}
-  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {125}},\
-  \bibinfo {pages} {040602} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+  {Maghrebi}},\ }\href {https://doi.org/10.1103/PhysRevLett.125.040602}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
+  {\bibinfo {volume} {125}},\ \bibinfo {pages} {040602} (\bibinfo {year}
+  {2020})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Campa}\ \emph {et~al.}(2009)\citenamefont {Campa},
   \citenamefont {Dauxois},\ and\ \citenamefont
   {Ruffo}}]{campa_statistical_2009}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
   {Campa}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Dauxois}},\
-  and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Ruffo}},\ }\bibfield
-   {title} {\bibinfo {title} {Statistical mechanics and dynamics of solvable
-  models with long-range interactions},\ }\href
+  and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Ruffo}},\ }\href
   {https://doi.org/https://doi.org/10.1016/j.physrep.2009.07.001} {\bibfield
   {journal} {\bibinfo  {journal} {Physics Reports}\ }\textbf {\bibinfo {volume}
   {480}},\ \bibinfo {pages} {57} (\bibinfo {year} {2009})}\BibitemShut
@@ -346,16 +306,14 @@
 \bibitem [{\citenamefont {Eisele}(1988)}]{eisele_multiple_1988}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~R.~S.}\
-  \bibnamefont {Eisele}, \bibfnamefont {Theodor}},\ }\bibfield  {title}
-  {\bibinfo {title} {Multiple phase transitions in the generalized curie-weiss
-  model},\ }\href {https://doi.org/10.1007/BF01016409} {\bibfield  {journal}
-  {\bibinfo  {journal} {Journal of Statistical Physics}\ ,\ \bibinfo {pages}
-  {161}} (\bibinfo {year} {1988})}\BibitemShut {NoStop}%
+  \bibnamefont {Eisele}, \bibfnamefont {Theodor}},\ }\href
+  {https://doi.org/10.1007/BF01016409} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of Statistical Physics}\ ,\ \bibinfo {pages} {161}}
+  (\bibinfo {year} {1988})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Canning}(1992)}]{canning_class_1992}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
-  {Canning}},\ }\bibfield  {title} {\bibinfo {title} {A class of long range
-  ising spin models described by curie-weiss mean field theory},\ }\href
+  {Canning}},\ }\href
   {https://doi.org/https://doi.org/10.1016/0378-4371(92)90464-2} {\bibfield
   {journal} {\bibinfo  {journal} {Physica A: Statistical Mechanics and its
   Applications}\ }\textbf {\bibinfo {volume} {185}},\ \bibinfo {pages} {254}
@@ -367,9 +325,7 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
   {Vu}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Huang}}, \bibinfo
   {author} {\bibfnamefont {X.}~\bibnamefont {Li}},\ and\ \bibinfo {author}
-  {\bibfnamefont {S.}~\bibnamefont {Das~Sarma}},\ }\bibfield  {title} {\bibinfo
-  {title} {Fermionic many-body localization for random and quasiperiodic
-  systems in the presence of short- and long-range interactions},\ }\href
+  {\bibfnamefont {S.}~\bibnamefont {Das~Sarma}},\ }\href
   {https://doi.org/10.1103/PhysRevLett.128.146601} {\bibfield  {journal}
   {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {128}},\
   \bibinfo {pages} {146601} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
@@ -379,31 +335,27 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
   {Misguich}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Pasquier}},\
-  and\ \bibinfo {author} {\bibfnamefont {J.-M.}\ \bibnamefont {Luck}},\
-  }\bibfield  {title} {\bibinfo {title} {Inverse participation ratios in the
-  xxz spin chain},\ }\href {https://doi.org/10.1103/PhysRevB.94.155110}
-  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo
-  {volume} {94}},\ \bibinfo {pages} {155110} (\bibinfo {year}
-  {2016}{\natexlab{a}})}\BibitemShut {NoStop}%
+  and\ \bibinfo {author} {\bibfnamefont {J.-M.}\ \bibnamefont {Luck}},\ }\href
+  {https://doi.org/10.1103/PhysRevB.94.155110} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {94}},\ \bibinfo
+  {pages} {155110} (\bibinfo {year} {2016}{\natexlab{a}})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Calixto}\ and\ \citenamefont
   {Romera}(2015)}]{calixto_inverse_2015}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
   {Calixto}}\ and\ \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
-  {Romera}},\ }\bibfield  {title} {\bibinfo {title} {Inverse participation
-  ratio and localization in topological insulator phase transitions},\ }\href
-  {https://doi.org/10.1088/1742-5468/2015/06/P06029} {\bibfield  {journal}
-  {\bibinfo  {journal} {Journal of Statistical Mechanics: Theory and
-  Experiment}\ }\textbf {\bibinfo {volume} {2015}},\ \bibinfo {pages} {P06029}
-  (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+  {Romera}},\ }\href {https://doi.org/10.1088/1742-5468/2015/06/P06029}
+  {\bibfield  {journal} {\bibinfo  {journal} {Journal of Statistical Mechanics:
+  Theory and Experiment}\ }\textbf {\bibinfo {volume} {2015}},\ \bibinfo
+  {pages} {P06029} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Fujii}(2017)}]{fujii_introduction_2017}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
-  {Fujii}},\ }\bibfield  {title} {\bibinfo {title} {Introduction to the
-  rotating wave approximation (rwa): Two coherent oscillations},\ }\href
-  {https://doi.org/10.4236/jmp.2017.812124} {\bibfield  {journal} {\bibinfo
-  {journal} {Journal of Modern Physics}\ }\textbf {\bibinfo {volume} {8}},\
-  \bibinfo {pages} {2042} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+  {Fujii}},\ }\href {https://doi.org/10.4236/jmp.2017.812124} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Modern Physics}\ }\textbf
+  {\bibinfo {volume} {8}},\ \bibinfo {pages} {2042} (\bibinfo {year}
+  {2017})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Abanin}\ \emph {et~al.}(2019)\citenamefont {Abanin},
   \citenamefont {Altman}, \citenamefont {Bloch},\ and\ \citenamefont
   {Serbyn}}]{abanin_colloquium_2019}%
@@ -411,38 +363,31 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
   {Abanin}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Altman}},
   \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Bloch}},\ and\ \bibinfo
-  {author} {\bibfnamefont {M.}~\bibnamefont {Serbyn}},\ }\bibfield  {title}
-  {\bibinfo {title} {Colloquium: Many-body localization, thermalization, and
-  entanglement},\ }\href {https://doi.org/10.1103/RevModPhys.91.021001}
-  {\bibfield  {journal} {\bibinfo  {journal} {Rev. Mod. Phys.}\ }\textbf
-  {\bibinfo {volume} {91}},\ \bibinfo {pages} {021001} (\bibinfo {year}
-  {2019})}\BibitemShut {NoStop}%
+  {author} {\bibfnamefont {M.}~\bibnamefont {Serbyn}},\ }\href
+  {https://doi.org/10.1103/RevModPhys.91.021001} {\bibfield  {journal}
+  {\bibinfo  {journal} {Rev. Mod. Phys.}\ }\textbf {\bibinfo {volume} {91}},\
+  \bibinfo {pages} {021001} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Srednicki}(1994)}]{Srednicki1994}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Srednicki}},\ }\bibfield  {title} {\bibinfo {title} {Chaos and quantum
-  thermalization},\ }\href {https://doi.org/10.1103/PhysRevE.50.888} {\bibfield
-   {journal} {\bibinfo  {journal} {Phys. Rev. E}\ }\textbf {\bibinfo {volume}
+  {Srednicki}},\ }\href {https://doi.org/10.1103/PhysRevE.50.888} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. E}\ }\textbf {\bibinfo {volume}
   {50}},\ \bibinfo {pages} {888} (\bibinfo {year} {1994})}\BibitemShut
   {NoStop}%
 \bibitem [{\citenamefont {Srednicki}(1999)}]{Srednicki_1999}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Srednicki}},\ }\bibfield  {title} {\bibinfo {title} {The approach to thermal
-  equilibrium in quantized chaotic systems},\ }\href
-  {https://doi.org/10.1088/0305-4470/32/7/007} {\bibfield  {journal} {\bibinfo
-  {journal} {Journal of Physics A: Mathematical and General}\ }\textbf
-  {\bibinfo {volume} {32}},\ \bibinfo {pages} {1163} (\bibinfo {year}
-  {1999})}\BibitemShut {NoStop}%
+  {Srednicki}},\ }\href {https://doi.org/10.1088/0305-4470/32/7/007} {\bibfield
+   {journal} {\bibinfo  {journal} {Journal of Physics A: Mathematical and
+  General}\ }\textbf {\bibinfo {volume} {32}},\ \bibinfo {pages} {1163}
+  (\bibinfo {year} {1999})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Holthaus}(2015)}]{holthaus_floquet_2016}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Holthaus}},\ }\bibfield  {title} {\bibinfo {title} {Floquet engineering with
-  quasienergy bands of periodically driven optical lattices},\ }\href
-  {https://doi.org/10.1088/0953-4075/49/1/013001} {\bibfield  {journal}
-  {\bibinfo  {journal} {Journal of Physics B: Atomic, Molecular and Optical
-  Physics}\ }\textbf {\bibinfo {volume} {49}},\ \bibinfo {pages} {013001}
-  (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+  {Holthaus}},\ }\href {https://doi.org/10.1088/0953-4075/49/1/013001}
+  {\bibfield  {journal} {\bibinfo  {journal} {Journal of Physics B: Atomic,
+  Molecular and Optical Physics}\ }\textbf {\bibinfo {volume} {49}},\ \bibinfo
+  {pages} {013001} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Vogl}\ \emph {et~al.}(2020)\citenamefont {Vogl},
   \citenamefont {Rodriguez-Vega},\ and\ \citenamefont
   {Fiete}}]{vogl_effective_2020}%
@@ -450,11 +395,10 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
   {Vogl}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
   {Rodriguez-Vega}},\ and\ \bibinfo {author} {\bibfnamefont {G.~A.}\
-  \bibnamefont {Fiete}},\ }\bibfield  {title} {\bibinfo {title} {Effective
-  floquet hamiltonian in the low-frequency regime},\ }\href
-  {https://doi.org/10.1103/PhysRevB.101.024303} {\bibfield  {journal} {\bibinfo
-   {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {101}},\ \bibinfo
-  {pages} {024303} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+  \bibnamefont {Fiete}},\ }\href {https://doi.org/10.1103/PhysRevB.101.024303}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo
+  {volume} {101}},\ \bibinfo {pages} {024303} (\bibinfo {year}
+  {2020})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Bukov}\ \emph {et~al.}(2015)\citenamefont {Bukov},
   \citenamefont {D{\textquotesingle}Alessio},\ and\ \citenamefont
   {Polkovnikov}}]{Bukov2014}%
@@ -462,9 +406,7 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
   {Bukov}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
   {D{\textquotesingle}Alessio}},\ and\ \bibinfo {author} {\bibfnamefont
-  {A.}~\bibnamefont {Polkovnikov}},\ }\bibfield  {title} {\bibinfo {title}
-  {Universal high-frequency behavior of periodically driven systems: from
-  dynamical stabilization to floquet engineering},\ }\href
+  {A.}~\bibnamefont {Polkovnikov}},\ }\href
   {https://doi.org/10.1080/00018732.2015.1055918} {\bibfield  {journal}
   {\bibinfo  {journal} {Advances in Physics}\ }\textbf {\bibinfo {volume}
   {64}},\ \bibinfo {pages} {139} (\bibinfo {year} {2015})}\BibitemShut
@@ -474,20 +416,17 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
   {D'Alessio}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Rigol}},\ }\bibfield  {title} {\bibinfo {title} {Long-time behavior of
-  isolated periodically driven interacting lattice systems},\ }\href
-  {https://doi.org/10.1103/PhysRevX.4.041048} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys. Rev. X}\ }\textbf {\bibinfo {volume} {4}},\ \bibinfo {pages}
-  {041048} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
+  {Rigol}},\ }\href {https://doi.org/10.1103/PhysRevX.4.041048} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. X}\ }\textbf {\bibinfo {volume}
+  {4}},\ \bibinfo {pages} {041048} (\bibinfo {year} {2014})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Yousefjani}\ \emph
   {et~al.}(2023{\natexlab{a}})\citenamefont {Yousefjani}, \citenamefont
   {Bose},\ and\ \citenamefont {Bayat}}]{yousefjani2023}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
   {Yousefjani}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Bose}},\
-  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Bayat}},\ }\bibfield
-   {title} {\bibinfo {title} {Floquet-induced localization in long-range
-  many-body systems},\ }\href
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Bayat}},\ }\href
   {https://doi.org/10.1103/PhysRevResearch.5.013094} {\bibfield  {journal}
   {\bibinfo  {journal} {Phys. Rev. Res.}\ }\textbf {\bibinfo {volume} {5}},\
   \bibinfo {pages} {013094} (\bibinfo {year} {2023}{\natexlab{a}})}\BibitemShut
@@ -499,21 +438,17 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
   {Sierant}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Lewenstein}},
   \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Scardicchio}},\ and\
-  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Zakrzewski}},\ }\bibfield
-   {title} {\bibinfo {title} {Stability of many-body localization in floquet
-  systems},\ }\href {https://doi.org/10.1103/PhysRevB.107.115132} {\bibfield
-  {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume}
-  {107}},\ \bibinfo {pages} {115132} (\bibinfo {year} {2023})}\BibitemShut
-  {NoStop}%
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Zakrzewski}},\ }\href
+  {https://doi.org/10.1103/PhysRevB.107.115132} {\bibfield  {journal} {\bibinfo
+   {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {107}},\ \bibinfo
+  {pages} {115132} (\bibinfo {year} {2023})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Yousefjani}\ \emph
   {et~al.}(2023{\natexlab{b}})\citenamefont {Yousefjani}, \citenamefont
   {Bose},\ and\ \citenamefont {Bayat}}]{Sougata2023}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
   {Yousefjani}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Bose}},\
-  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Bayat}},\ }\bibfield
-   {title} {\bibinfo {title} {Floquet-induced localization in long-range
-  many-body systems},\ }\href
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Bayat}},\ }\href
   {https://doi.org/10.1103/PhysRevResearch.5.013094} {\bibfield  {journal}
   {\bibinfo  {journal} {Phys. Rev. Res.}\ }\textbf {\bibinfo {volume} {5}},\
   \bibinfo {pages} {013094} (\bibinfo {year} {2023}{\natexlab{b}})}\BibitemShut
@@ -523,8 +458,7 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
   {Alet}}\ and\ \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
-  {Laflorencie}},\ }\bibfield  {title} {\bibinfo {title} {Many-body
-  localization: An introduction and selected topics},\ }\href
+  {Laflorencie}},\ }\href
   {https://doi.org/https://doi.org/10.1016/j.crhy.2018.03.003} {\bibfield
   {journal} {\bibinfo  {journal} {Comptes Rendus Physique}\ }\textbf {\bibinfo
   {volume} {19}},\ \bibinfo {pages} {498} (\bibinfo {year} {2018})}\BibitemShut
@@ -534,20 +468,16 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~J.}\ \bibnamefont
   {Garratt}}\ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Roy}},\
-  }\bibfield  {title} {\bibinfo {title} {Resonant energy scales and local
-  observables in the many-body localized phase},\ }\href
-  {https://doi.org/10.1103/PhysRevB.106.054309} {\bibfield  {journal} {\bibinfo
-   {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {106}},\ \bibinfo
-  {pages} {054309} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
+  }\href {https://doi.org/10.1103/PhysRevB.106.054309} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {106}},\
+  \bibinfo {pages} {054309} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Stinchcombe}(1973)}]{stinchcombe_ising_1973}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~B.}\ \bibnamefont
-  {Stinchcombe}},\ }\bibfield  {title} {\bibinfo {title} {Ising model in a
-  transverse field. i. basic theory},\ }\href
-  {https://doi.org/10.1088/0022-3719/6/15/009} {\bibfield  {journal} {\bibinfo
-  {journal} {Journal of Physics C: Solid State Physics}\ }\textbf {\bibinfo
-  {volume} {6}},\ \bibinfo {pages} {2459} (\bibinfo {year} {1973})}\BibitemShut
-  {NoStop}%
+  {Stinchcombe}},\ }\href {https://doi.org/10.1088/0022-3719/6/15/009}
+  {\bibfield  {journal} {\bibinfo  {journal} {Journal of Physics C: Solid State
+  Physics}\ }\textbf {\bibinfo {volume} {6}},\ \bibinfo {pages} {2459}
+  (\bibinfo {year} {1973})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {George~Arfken}()}]{arfkenmath}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.~E.~H.}\
@@ -567,9 +497,7 @@
   {Choudhury}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Goldman}},
   \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Öhberg}}, \bibinfo
   {author} {\bibfnamefont {E.}~\bibnamefont {Andersson}},\ and\ \bibinfo
-  {author} {\bibfnamefont {R.~R.}\ \bibnamefont {Thomson}},\ }\bibfield
-  {title} {\bibinfo {title} {Modulation-assisted tunneling in laser-fabricated
-  photonic wannier–stark ladders},\ }\href
+  {author} {\bibfnamefont {R.~R.}\ \bibnamefont {Thomson}},\ }\href
   {https://doi.org/10.1088/1367-2630/17/11/115002} {\bibfield  {journal}
   {\bibinfo  {journal} {New Journal of Physics}\ }\textbf {\bibinfo {volume}
   {17}},\ \bibinfo {pages} {115002} (\bibinfo {year} {2015})}\BibitemShut
@@ -582,9 +510,7 @@
   {Lin}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Sbierski}},
   \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Dorfner}}, \bibinfo
   {author} {\bibfnamefont {C.}~\bibnamefont {Karrasch}},\ and\ \bibinfo
-  {author} {\bibfnamefont {F.}~\bibnamefont {Heidrich-Meisner}},\ }\bibfield
-  {title} {\bibinfo {title} {{Many-body localization of spinless fermions with
-  attractive interactions in one dimension}},\ }\href
+  {author} {\bibfnamefont {F.}~\bibnamefont {Heidrich-Meisner}},\ }\href
   {https://doi.org/10.21468/SciPostPhys.4.1.002} {\bibfield  {journal}
   {\bibinfo  {journal} {SciPost Phys.}\ }\textbf {\bibinfo {volume} {4}},\
   \bibinfo {pages} {002} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
@@ -595,11 +521,9 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~C.}\ \bibnamefont
   {Murphy}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Wortis}},\
   and\ \bibinfo {author} {\bibfnamefont {W.~A.}\ \bibnamefont {Atkinson}},\
-  }\bibfield  {title} {\bibinfo {title} {Generalized inverse participation
-  ratio as a possible measure of localization for interacting systems},\ }\href
-  {https://doi.org/10.1103/PhysRevB.83.184206} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {83}},\ \bibinfo
-  {pages} {184206} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
+  }\href {https://doi.org/10.1103/PhysRevB.83.184206} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {83}},\
+  \bibinfo {pages} {184206} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Torres-Herrera}\ \emph {et~al.}(2020)\citenamefont
   {Torres-Herrera}, \citenamefont {Vallejo-Fabila}, \citenamefont
   {Mart\'{\i}nez-Mendoza},\ and\ \citenamefont
@@ -609,22 +533,18 @@
   {Torres-Herrera}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
   {Vallejo-Fabila}}, \bibinfo {author} {\bibfnamefont {A.~J.}\ \bibnamefont
   {Mart\'{\i}nez-Mendoza}},\ and\ \bibinfo {author} {\bibfnamefont {L.~F.}\
-  \bibnamefont {Santos}},\ }\bibfield  {title} {\bibinfo {title}
-  {Self-averaging in many-body quantum systems out of equilibrium: Time
-  dependence of distributions},\ }\href
-  {https://doi.org/10.1103/PhysRevE.102.062126} {\bibfield  {journal} {\bibinfo
-   {journal} {Phys. Rev. E}\ }\textbf {\bibinfo {volume} {102}},\ \bibinfo
-  {pages} {062126} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+  \bibnamefont {Santos}},\ }\href {https://doi.org/10.1103/PhysRevE.102.062126}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. E}\ }\textbf {\bibinfo
+  {volume} {102}},\ \bibinfo {pages} {062126} (\bibinfo {year}
+  {2020})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Trivedi}\ and\ \citenamefont
   {Heidarian}(2005)}]{trivedi_can_2005}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
   {Trivedi}}\ and\ \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
-  {Heidarian}},\ }\bibfield  {title} {\bibinfo {title} {Can disorder drive a
-  mott insulator into a metal in 2d?},\ }\href
-  {https://doi.org/10.1143/PTPS.160.296} {\bibfield  {journal} {\bibinfo
-  {journal} {Progress of Theoretical Physics Supplement}\ }\textbf {\bibinfo
-  {volume} {160}},\ \bibinfo {pages} {296} (\bibinfo {year}
+  {Heidarian}},\ }\href {https://doi.org/10.1143/PTPS.160.296} {\bibfield
+  {journal} {\bibinfo  {journal} {Progress of Theoretical Physics Supplement}\
+  }\textbf {\bibinfo {volume} {160}},\ \bibinfo {pages} {296} (\bibinfo {year}
   {2005})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Misguich}\ \emph
   {et~al.}(2016{\natexlab{b}})\citenamefont {Misguich}, \citenamefont
@@ -632,12 +552,11 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
   {Misguich}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Pasquier}},\
-  and\ \bibinfo {author} {\bibfnamefont {J.-M.}\ \bibnamefont {Luck}},\
-  }\bibfield  {title} {\bibinfo {title} {Inverse participation ratios in the
-  xxz spin chain},\ }\href {https://doi.org/10.1103/PhysRevB.94.155110}
-  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo
-  {volume} {94}},\ \bibinfo {pages} {155110} (\bibinfo {year}
-  {2016}{\natexlab{b}})}\BibitemShut {NoStop}%
+  and\ \bibinfo {author} {\bibfnamefont {J.-M.}\ \bibnamefont {Luck}},\ }\href
+  {https://doi.org/10.1103/PhysRevB.94.155110} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {94}},\ \bibinfo
+  {pages} {155110} (\bibinfo {year} {2016}{\natexlab{b}})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Russomanno}\ \emph {et~al.}(2015)\citenamefont
   {Russomanno}, \citenamefont {Fazio},\ and\ \citenamefont
   {Santoro}}]{russomanno_thermalization_2015}%
@@ -645,11 +564,10 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
   {Russomanno}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Fazio}},\
   and\ \bibinfo {author} {\bibfnamefont {G.~E.}\ \bibnamefont {Santoro}},\
-  }\bibfield  {title} {\bibinfo {title} {Thermalization in a periodically
-  driven fully connected quantum ising ferromagnet},\ }\href
-  {https://doi.org/10.1209/0295-5075/110/37005} {\bibfield  {journal} {\bibinfo
-   {journal} {Europhysics Letters}\ }\textbf {\bibinfo {volume} {110}},\
-  \bibinfo {pages} {37005} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+  }\href {https://doi.org/10.1209/0295-5075/110/37005} {\bibfield  {journal}
+  {\bibinfo  {journal} {Europhysics Letters}\ }\textbf {\bibinfo {volume}
+  {110}},\ \bibinfo {pages} {37005} (\bibinfo {year} {2015})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Defenu}\ \emph {et~al.}(2018)\citenamefont {Defenu},
   \citenamefont {Enss}, \citenamefont {Kastner},\ and\ \citenamefont
   {Morigi}}]{defenu2018}%
@@ -657,29 +575,23 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
   {Defenu}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Enss}},
   \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Kastner}},\ and\ \bibinfo
-  {author} {\bibfnamefont {G.}~\bibnamefont {Morigi}},\ }\bibfield  {title}
-  {\bibinfo {title} {Dynamical critical scaling of long-range interacting
-  quantum magnets},\ }\href {https://doi.org/10.1103/PhysRevLett.121.240403}
-  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
-  {\bibinfo {volume} {121}},\ \bibinfo {pages} {240403} (\bibinfo {year}
-  {2018})}\BibitemShut {NoStop}%
+  {author} {\bibfnamefont {G.}~\bibnamefont {Morigi}},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.121.240403} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {121}},\
+  \bibinfo {pages} {240403} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Mori}(2019)}]{mori_prethermalization_2019}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
-  {Mori}},\ }\bibfield  {title} {\bibinfo {title} {Prethermalization in the
-  transverse-field ising chain with long-range interactions},\ }\href
-  {https://doi.org/10.1088/1751-8121/aaf9db} {\bibfield  {journal} {\bibinfo
-  {journal} {Journal of Physics A: Mathematical and Theoretical}\ }\textbf
-  {\bibinfo {volume} {52}},\ \bibinfo {pages} {054001} (\bibinfo {year}
-  {2019})}\BibitemShut {NoStop}%
+  {Mori}},\ }\href {https://doi.org/10.1088/1751-8121/aaf9db} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Physics A: Mathematical and
+  Theoretical}\ }\textbf {\bibinfo {volume} {52}},\ \bibinfo {pages} {054001}
+  (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Johansson}\ \emph {et~al.}()\citenamefont
   {Johansson}, \citenamefont {Nation},\ and\ \citenamefont {Nori}}]{qutip}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
   {Johansson}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Nation}},\
-  and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Nori}},\ }\bibfield
-  {title} {\bibinfo {title} {Qutip 2: A python framework for the dynamics of
-  open quantum systems},\ }\href
+  and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Nori}},\ }\href
   {https://doi.org/https://doi.org/10.1016/j.cpc.2012.11.019} {\bibfield
   {journal} {\bibinfo  {journal} {Computer Physics Communications}\ }\textbf
   {\bibinfo {volume} {184}},\ \bibinfo {pages} {1234}}\BibitemShut {NoStop}%
@@ -688,11 +600,9 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
   {Sciolla}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {Biroli}},\ }\bibfield  {title} {\bibinfo {title} {Quantum quenches and
-  off-equilibrium dynamical transition in the infinite-dimensional bose-hubbard
-  model},\ }\href {https://doi.org/10.1103/PhysRevLett.105.220401} {\bibfield
-  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
-  {volume} {105}},\ \bibinfo {pages} {220401} (\bibinfo {year}
+  {Biroli}},\ }\href {https://doi.org/10.1103/PhysRevLett.105.220401}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
+  {\bibinfo {volume} {105}},\ \bibinfo {pages} {220401} (\bibinfo {year}
   {2010})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Kidd}\ \emph {et~al.}(2019)\citenamefont {Kidd},
   \citenamefont {Olsen},\ and\ \citenamefont {Corney}}]{Kidd2019}%
@@ -700,11 +610,9 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~A.}\ \bibnamefont
   {Kidd}}, \bibinfo {author} {\bibfnamefont {M.~K.}\ \bibnamefont {Olsen}},\
   and\ \bibinfo {author} {\bibfnamefont {J.~F.}\ \bibnamefont {Corney}},\
-  }\bibfield  {title} {\bibinfo {title} {Quantum chaos in a bose-hubbard dimer
-  with modulated tunneling},\ }\href
-  {https://doi.org/10.1103/PhysRevA.100.013625} {\bibfield  {journal} {\bibinfo
-   {journal} {Phys. Rev. A}\ }\textbf {\bibinfo {volume} {100}},\ \bibinfo
-  {pages} {013625} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+  }\href {https://doi.org/10.1103/PhysRevA.100.013625} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. A}\ }\textbf {\bibinfo {volume} {100}},\
+  \bibinfo {pages} {013625} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {B\"acker}\ \emph {et~al.}(2004)\citenamefont
   {B\"acker}, \citenamefont {F\"urstberger},\ and\ \citenamefont
   {Schubert}}]{husimi}%
@@ -712,11 +620,10 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
   {B\"acker}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
   {F\"urstberger}},\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
-  {Schubert}},\ }\bibfield  {title} {\bibinfo {title} {Poincar\'e husimi
-  representation of eigenstates in quantum billiards},\ }\href
-  {https://doi.org/10.1103/PhysRevE.70.036204} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys. Rev. E}\ }\textbf {\bibinfo {volume} {70}},\ \bibinfo
-  {pages} {036204} (\bibinfo {year} {2004})}\BibitemShut {NoStop}%
+  {Schubert}},\ }\href {https://doi.org/10.1103/PhysRevE.70.036204} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. E}\ }\textbf {\bibinfo {volume}
+  {70}},\ \bibinfo {pages} {036204} (\bibinfo {year} {2004})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Sachdev}(2011)}]{sachdev_quantum_2011}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
@@ -727,12 +634,10 @@
 \bibitem [{\citenamefont {Reimann}(2021)}]{reimann_symmetry-prohibited_2021}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
-  {Reimann}},\ }\bibfield  {title} {\bibinfo {title} {Symmetry-prohibited
-  thermalization after a quantum quench},\ }\href
-  {https://doi.org/10.1088/1742-5468/ac2a9c} {\bibfield  {journal} {\bibinfo
-  {journal} {Journal of Statistical Mechanics: Theory and Experiment}\ }\textbf
-  {\bibinfo {volume} {2021}},\ \bibinfo {pages} {103106} (\bibinfo {year}
-  {2021})}\BibitemShut {NoStop}%
+  {Reimann}},\ }\href {https://doi.org/10.1088/1742-5468/ac2a9c} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Statistical Mechanics: Theory and
+  Experiment}\ }\textbf {\bibinfo {volume} {2021}},\ \bibinfo {pages} {103106}
+  (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Reichl}()}]{reichl_transition_2021}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
@@ -748,10 +653,9 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
   {Srivatsa}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Moessner}},\
   and\ \bibinfo {author} {\bibfnamefont {A.~E.}\ \bibnamefont {Nielsen}},\
-  }\bibfield  {title} {\bibinfo {title} {Many-body delocalization via emergent
-  symmetry},\ }\href {https://doi.org/10.1103/PhysRevLett.125.240401}
-  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
-  {\bibinfo {volume} {125}},\ \bibinfo {pages} {240401}}\BibitemShut {NoStop}%
+  }\href {https://doi.org/10.1103/PhysRevLett.125.240401} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {125}},\
+  \bibinfo {pages} {240401}}\BibitemShut {NoStop}%
 \bibitem [{noa()}]{noauthor_quantum_nodate}%
   \BibitemOpen
   \href
@@ -763,29 +667,24 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
   {Marcos}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Gabrielli}},\
-  and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Joyce}},\ }\bibfield
-   {title} {\bibinfo {title} {Relaxation of quasi-stationary states in long
-  range interacting systems and a classification of the range of pair
-  interactions},\ }\href {https://doi.org/10.2478/s11534-012-0032-0} {\bibfield
-   {journal} {\bibinfo  {journal} {Open Physics}\ }\textbf {\bibinfo {volume}
-  {10}},\ \bibinfo {pages} {676}}\BibitemShut {NoStop}%
+  and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Joyce}},\ }\href
+  {https://doi.org/10.2478/s11534-012-0032-0} {\bibfield  {journal} {\bibinfo
+  {journal} {Open Physics}\ }\textbf {\bibinfo {volume} {10}},\ \bibinfo
+  {pages} {676}}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Haldar}\ and\ \citenamefont
   {Das}()}]{haldar_dynamical_2017}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
   {Haldar}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Das}},\
-  }\bibfield  {title} {\bibinfo {title} {Dynamical many-body localization and
-  delocalization in periodically driven closed quantum systems},\ }\href
-  {https://doi.org/10.1002/andp.201600333} {\bibfield  {journal} {\bibinfo
-  {journal} {Annalen der Physik}\ }\textbf {\bibinfo {volume} {529}},\ \bibinfo
-  {pages} {1600333}}\BibitemShut {NoStop}%
+  }\href {https://doi.org/10.1002/andp.201600333} {\bibfield  {journal}
+  {\bibinfo  {journal} {Annalen der Physik}\ }\textbf {\bibinfo {volume}
+  {529}},\ \bibinfo {pages} {1600333}}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Deutsch}({\natexlab{a}})}]{Deutsch1991}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
-  {Deutsch}},\ }\bibfield  {title} {\bibinfo {title} {Quantum statistical
-  mechanics in a closed system},\ }\href@noop {} {\bibfield  {journal}
-  {\bibinfo  {journal} {Phys. Rev. A}\ }\textbf {\bibinfo {volume} {43}},\
-  \bibinfo {pages} {2046} ({\natexlab{a}})}\BibitemShut {NoStop}%
+  {Deutsch}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
+  Rev. A}\ }\textbf {\bibinfo {volume} {43}},\ \bibinfo {pages} {2046}
+  ({\natexlab{a}})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Hobson}(1909)}]{hobson_e_w_1909_1447800}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~W.}\ \bibnamefont
@@ -797,17 +696,15 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
   {Rigol}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Srednicki}},\ }\bibfield  {title} {\bibinfo {title} {Alternatives to
-  eigenstate thermalization},\ }\bibfield  {journal} {\bibinfo  {journal}
-  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {108}},\ \href
+  {Srednicki}},\ }\bibfield  {journal} {\bibinfo  {journal} {Physical Review
+  Letters}\ }\textbf {\bibinfo {volume} {108}},\ \href
   {https://doi.org/10.1103/physrevlett.108.110601}
   {10.1103/physrevlett.108.110601} (\bibinfo {year} {2012})\BibitemShut
   {NoStop}%
 \bibitem [{\citenamefont {Deutsch}({\natexlab{b}})}]{Joshua_2018}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
-  {Deutsch}},\ }\bibfield  {title} {\bibinfo {title} {Eigenstate thermalization
-  hypothesis},\ }\href {https://doi.org/10.1088/1361-6633/aac9f1} {\bibfield
+  {Deutsch}},\ }\href {https://doi.org/10.1088/1361-6633/aac9f1} {\bibfield
   {journal} {\bibinfo  {journal} {IOP Publishing Ltd}\ }\textbf {\bibinfo
   {volume} {81}},\ \bibinfo {pages} {296} ({\natexlab{b}})}\BibitemShut
   {NoStop}%
@@ -816,12 +713,10 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
   {Nandkishore}}\ and\ \bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
-  {Huse}},\ }\bibfield  {title} {\bibinfo {title} {Many-body localization and
-  thermalization in quantum statistical mechanics},\ }\href
-  {https://doi.org/10.1146/annurev-conmatphys-031214-014726} {\bibfield
-  {journal} {\bibinfo  {journal} {Annual Review of Condensed Matter Physics}\
-  }\textbf {\bibinfo {volume} {6}},\ \bibinfo {pages} {15} (\bibinfo {year}
-  {2015})},\ \Eprint
+  {Huse}},\ }\href {https://doi.org/10.1146/annurev-conmatphys-031214-014726}
+  {\bibfield  {journal} {\bibinfo  {journal} {Annual Review of Condensed Matter
+  Physics}\ }\textbf {\bibinfo {volume} {6}},\ \bibinfo {pages} {15} (\bibinfo
+  {year} {2015})},\ \Eprint
   {https://arxiv.org/abs/https://doi.org/10.1146/annurev-conmatphys-031214-014726}
   {https://doi.org/10.1146/annurev-conmatphys-031214-014726} \BibitemShut
   {NoStop}%
@@ -830,8 +725,7 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
   {D’Alessio}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
-  {Polkovnikov}},\ }\bibfield  {title} {\bibinfo {title} {Many-body energy
-  localization transition in periodically driven systems},\ }\href
+  {Polkovnikov}},\ }\href
   {https://doi.org/https://doi.org/10.1016/j.aop.2013.02.011} {\ \textbf
   {\bibinfo {volume} {333}},\ \bibinfo {pages} {19}}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Notarnicola}\ \emph {et~al.}(2018)\citenamefont
@@ -844,9 +738,7 @@
   \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Rossini}}, \bibinfo
   {author} {\bibfnamefont {R.}~\bibnamefont {Fazio}}, \bibinfo {author}
   {\bibfnamefont {A.}~\bibnamefont {Silva}},\ and\ \bibinfo {author}
-  {\bibfnamefont {A.}~\bibnamefont {Russomanno}},\ }\bibfield  {title}
-  {\bibinfo {title} {From localization to anomalous diffusion in the dynamics
-  of coupled kicked rotors},\ }\href
+  {\bibfnamefont {A.}~\bibnamefont {Russomanno}},\ }\href
   {https://doi.org/10.1103/PhysRevE.97.022202} {\bibfield  {journal} {\bibinfo
   {journal} {Phys. Rev. E}\ }\textbf {\bibinfo {volume} {97}},\ \bibinfo
   {pages} {022202} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
@@ -856,10 +748,8 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
   {Lazarides}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Das}},\
-  and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Moessner}},\
-  }\bibfield  {title} {\bibinfo {title} {Fate of many-body localization under
-  periodic driving},\ }\href {https://doi.org/10.1103/PhysRevLett.115.030402}
-  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
-  {\bibinfo {volume} {115}},\ \bibinfo {pages} {030402} (\bibinfo {year}
-  {2015})}\BibitemShut {NoStop}%
+  and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Moessner}},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.115.030402} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {115}},\
+  \bibinfo {pages} {030402} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
 \end{thebibliography}%

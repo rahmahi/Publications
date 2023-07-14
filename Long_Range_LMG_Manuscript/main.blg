@@ -15,18 +15,15 @@ Database file #1: mainNotes.bib
 Database file #2: main.bib
 Warning--entry type for "noauthor_quantum_nodate" isn't style-file defined
 --line 143 of file main.bib
-control{REVTEX42Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
-control{apsrev42Control}, control.key{N/A}, control.author{08}, control.editor{1}, control.title{0}, control.pages{0}, control.year{1}, control.eprint{N/A}, 
-Warning--jnrlst (dependency: not reversed) set 1
 Too many commas in name 1 of "Eisele, Theodor, Ellis, Richard S." for entry eisele_multiple_1988
 while executing---line 3309 of file apsrev4-2.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
 Control: key (0) 
-Control: author (8) initials jnrlst
+Control: author (72) initials jnrlst
 Control: editor formatted (1) identically to author
-Control: production of article title (0) allowed
+Control: production of article title (-1) disabled
 Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
@@ -127,45 +124,45 @@ while executing---line 3515 of file apsrev4-2.bst
 while executing---line 3515 of file apsrev4-2.bst
 Warning--missing journal in Alessio2013
 Warning--empty year in Alessio2013
-You've used 69 entries,
+You've used 74 entries,
             6079 wiz_defined-function locations,
-            2132 strings with 29635 characters,
-and the built_in function-call counts, 69050 in all, are:
-= -- 5263
-> -- 1528
-< -- 355
-+ -- 489
-- -- 354
-* -- 10144
-:= -- 6666
-add.period$ -- 67
-call.type$ -- 69
-change.case$ -- 338
-chr.to.int$ -- 85
-cite$ -- 82
-duplicate$ -- 6352
-empty$ -- 5022
-format.name$ -- 862
-if$ -- 14132
+            2173 strings with 30982 characters,
+and the built_in function-call counts, 71560 in all, are:
+= -- 5572
+> -- 1631
+< -- 361
++ -- 537
+- -- 374
+* -- 10361
+:= -- 6945
+add.period$ -- 74
+call.type$ -- 74
+change.case$ -- 307
+chr.to.int$ -- 80
+cite$ -- 87
+duplicate$ -- 6332
+empty$ -- 5094
+format.name$ -- 967
+if$ -- 14748
 int.to.chr$ -- 4
-int.to.str$ -- 76
-missing$ -- 999
-newline$ -- 253
-num.names$ -- 198
-pop$ -- 2530
+int.to.str$ -- 82
+missing$ -- 1016
+newline$ -- 274
+num.names$ -- 219
+pop$ -- 2735
 preamble$ -- 1
-purify$ -- 324
+purify$ -- 359
 quote$ -- 0
-skip$ -- 3182
+skip$ -- 3377
 stack$ -- 0
-substring$ -- 1818
-swap$ -- 5915
-text.length$ -- 168
+substring$ -- 1997
+swap$ -- 5901
+text.length$ -- 188
 text.prefix$ -- 0
-top$ -- 10
-type$ -- 913
-warning$ -- 12
-while$ -- 203
+top$ -- 8
+type$ -- 998
+warning$ -- 11
+while$ -- 213
 width$ -- 0
-write$ -- 636
+write$ -- 633
 (There were 31 error messages)
