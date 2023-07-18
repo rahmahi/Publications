@@ -259,9 +259,15 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	\end{widetext}
 	If $\omega$ is large enough to smooth out the harmonic components, we obtain the RWA,
 	\begin{equation}
-		\label{eq:lmg_rwa}
 	\tilde{H}(t)\approx \tilde{H}_{\mathrm{RWA}}\equiv \frac{\big(\hat{S}^x\big)^{2}}{N-1} - 2h_0 \hat{S}^x - \frac{J_0(\eta)}{N-1}\bigg[\big(\hat{S}^z\big)^{2} - \big(\hat{S}^y\big)^{2} \bigg].
+			\label{eq:lmg_rwa}
 	\end{equation}
+		\begin{figure}[t!]
+	\centering
+	\includegraphics[width=9.3cm]{wh_phasespace.jpeg }
+	\caption{Plot of the numerically averaged IPR (IPR computed using eqn~\ref{eq:ipr:lmg}) in the TSS plotted in the $h-\omega$ plane for $N=100$ spins. In order to display the thermalized region more clearly, $\omega$ is plotted on a logarithmic scale on the abscissa.Note that, since the IPR is clearly non-negative, an average IPR of zero means that all Floquet states have zero IPR. Furthermore, the boundedness of IPR in $\phi_{IPR}(n) \leq 1$ ensures that if he average IPR is unity, then all Floquet states have unit IPR.}
+	\label{fig:lmg_phasediag}
+	\end{figure}
 	If the drive amplitude $h$ is adjusted such that $\eta$ lies at a root of $J_0(\eta)$ (the localization point), the RWA Hamiltonian is diagonal in the representation of the transverse field $\hat{S}^x$, yielding an IPR of unity in that representation, similar to the TFIM in the previous section. Note however, that if the DC transverse field $h_0$ is set to $0$, then, at the localization point, the RWA Hamiltonian $\tilde{H}_{\mathrm{RWA}}\sim
 	\big(\hat{S}^x\big)^2$. The eigenvalues are two-fold degenerate. This produces infinitely many (Floquet) eigenmodes in the degenerate subspace whose IPRs may not always be unity in the $S^x$ representation. The removal of this degeneracy necessitates the inclusion of the d.c. field $h_0$. However, note that rational values of $h_0$
 	 may add accidental degeneracies in $\tilde{H}_{\mathrm{RWA}}$. To see this, note that, at a localization point, the eigenvalues of $\tilde{H}_{\mathrm{RWA}}$ in the TSS are given by
@@ -276,12 +282,15 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 		\label{fig:lmg_ipr_exact}
 	\end{figure}
 	If $N\gg 1$ (substantially large), then this condition can be readily met by assuring that $(1-2h_0)^{-1}$ is never an integer that is divisible by $N$. To ensure this in our numerical simulations, we have kept $h_0$ at a small irrational value.
+		The localization of the Floquet states at resonance is supported by exact numerical results, as can be seen in the phase diagram fig~\ref{fig:lmg_phasediag}. Here, we have plotted the arithmetic mean over all Floquet states of the IPR 
+		in the TSS for each point in the $h-\omega$ plane for $N=100$ spins.  The IPR in $S^x$ representation is
+		\begin{equation}
+			\phi_{IPR}(n) = \sum_m \abs{\ip{m}{\phi^n}}^4.
+			\label{eq:ipr:lmg}
+		\end{equation}
+		As can be readily seen in the figure, the IPR is essentially zero when  $\omega \lesssim 1$. There is considerable structure in the phase diagram for larger drive frequencies, and along the lines given by the roots of $J_0(\eta)$, the IPR is essentially unity, in agreement with eqn.~\ref{eq:lmg_rwa}.
 		
-		The localization of the Floquet states at resonance is supported by exact numerical results, as can be seen in fig~\ref{fig:lmg_ipr_exact}. Here, we show plots of the IPR of the Floquet modes $\ket{\phi^n}$ for $S^2 = \big(N/2\big)\big(N/2 + 1\big)$. The IPR in $S^x$ representation is
-	\begin{equation}
-	\phi_{IPR}(n) = \sum_m \abs{\ip{m}{\phi^n}}^4.
-	\label{eq:ipr:lmg}
-	\end{equation}
+		In figure~\ref{fig:lmg_ipr_exact}, we show plots of the IPR of the Floquet modes $\ket{\phi^n}$ for $S^2 = \big(N/2\big)\big(N/2 + 1\big)$.
 	 These plots were obtained numerically by diagonalizing the propagator $U(t)$ at $t=T$, where $U(t)$ is defined in eqn~\ref{eq:propagator}. This propagator was obtained from simulations of the exact quantum dynamics using QuTiP, the Quantum Toolbox in Python~\cite{qutip}. We kept the frequency at a fairly large value $\omega = 90$ where we expect that RWA would be valid, and $N=\mathcal{O}(10^2)$. The density plot in the upper panel of fig~\ref{fig:lmg_ipr_exact} depicts the IPR of the Floquet states; the abscissa  $\eta=4h/\omega$ and the ordinate is $n/(2N+1)$, where $n\leq 2N$ is a non-negative integer that indexes the Floquet states in increasing order of $m$. The dashed vertical lines correspond to the roots of $J_0(\eta)$. Comparing with the IPR of the TFIM in fig~\ref{fig:ipr:tfim}, we can see a very similar patterns in the immediate neighbourhood of the roots. Evidently, the IPR approaches a value of one for sufficiently large values of the roots, strongly suggesting full DMBL. Deviations occur at the smallest root of $J_0(\eta)$ (around $\eta = 2.405$) due to the contributions from higher order terms in eq~\ref{eq:lmg_jacobiexp}. Thus, a higher root is favored for DMBL.
 	
 	The bottom panel of fig~\ref{fig:lmg_ipr_exact} contains cross sections of the full IPR plot for selected values of $\eta$ as indicated in the legend. When the drive amplitude $h$ is adjusted such that $\eta$ is close to a root of $J_0(\eta)$, the Floquet States are mixed, but not entirely thermal, since the IPR does not fall to $\mathcal{O}(N^{-1})$, indicating that localization persists to some extent. However, the further we are from the roots, the closer the IPR gets to one predicted by thermalization.
