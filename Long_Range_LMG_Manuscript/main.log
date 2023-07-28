@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  25 JUL 2023 20:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.2)  28 JUL 2023 15:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -894,17 +894,7 @@ LaTeX Font Info:    Font shape `T1/fve/m/n' will be
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/fve/b/n' will be
 (Font)              scaled to size 8.09995pt on input line 74.
-
-Overfull \hbox (6.35078pt too wide) in paragraph at lines 76--76
-[][][]\T1/fve/m/n/5 Suggestions 
- []
-
-
-Overfull \hbox (6.35078pt too wide) in paragraph at lines 76--76
-[][][]\T1/fve/m/n/5 Suggestions 
- []
-
-[2]
+ [2]
 Underfull \hbox (badness 10000) in paragraph at lines 116--118
 \T1/fve/m/n/10 Here, the mi-cro-mo-tion op-er-a-tor $[]\OT1/cmr/m/n/10 (\OML/cm
 m/m/it/10 t\OT1/cmr/m/n/10 )$ \T1/fve/m/n/10 is
@@ -948,7 +938,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--157
  []
 
 [4]
-<ising_exact_ipr.jpeg, id=185, 433.62pt x 505.89pt>
+<ising_exact_ipr.jpeg, id=186, 433.62pt x 505.89pt>
 File: ising_exact_ipr.jpeg Graphic file (type jpg)
 <use ising_exact_ipr.jpeg>
 Package pdftex.def Info: ising_exact_ipr.jpeg  used on input line 188.
@@ -958,7 +948,7 @@ Overfull \hbox (10.0748pt too wide) in paragraph at lines 188--189
  [][] 
  []
 
-<ising_exact_lowfr_ipr.jpeg, id=192, 433.62pt x 433.62pt>
+<ising_exact_lowfr_ipr.jpeg, id=193, 433.62pt x 433.62pt>
 File: ising_exact_lowfr_ipr.jpeg Graphic file (type jpg)
 <use ising_exact_lowfr_ipr.jpeg>
 Package pdftex.def Info: ising_exact_lowfr_ipr.jpeg  used on input line 200.
@@ -966,7 +956,7 @@ Package pdftex.def Info: ising_exact_lowfr_ipr.jpeg  used on input line 200.
 [5 <./ising_exact_ipr.jpeg>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 208.
+ on input line 206.
 
 
 Underfull \hbox (badness 1509) in paragraph at lines 253--255
@@ -975,7 +965,7 @@ Underfull \hbox (badness 1509) in paragraph at lines 253--255
  []
 
 [6 <./ising_exact_lowfr_ipr.jpeg>]
-<wh_phasespace.jpeg, id=233, 462.528pt x 346.896pt>
+<wh_phasespace.jpeg, id=234, 462.528pt x 346.896pt>
 File: wh_phasespace.jpeg Graphic file (type jpg)
 <use wh_phasespace.jpeg>
 Package pdftex.def Info: wh_phasespace.jpeg  used on input line 278.
@@ -985,7 +975,7 @@ Overfull \hbox (18.6107pt too wide) in paragraph at lines 278--279
  [][] 
  []
 
-<ipr_exact_dynm_N50_frq_90_.jpeg, id=236, 433.62pt x 578.16pt>
+<ipr_exact_dynm_N50_frq_90_.jpeg, id=237, 433.62pt x 578.16pt>
 File: ipr_exact_dynm_N50_frq_90_.jpeg Graphic file (type jpg)
 <use ipr_exact_dynm_N50_frq_90_.jpeg>
 Package pdftex.def Info: ipr_exact_dynm_N50_frq_90_.jpeg  used on input line 29
@@ -996,7 +986,7 @@ Package pdftex.def Info: ipr_exact_dynm_N50_frq_90_.jpeg  used on input line 29
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
  on input line 306.
 
-<sx_conservation.jpeg, id=262, 433.62pt x 303.534pt>
+<sx_conservation.jpeg, id=263, 433.62pt x 303.534pt>
 File: sx_conservation.jpeg Graphic file (type jpg)
 <use sx_conservation.jpeg>
 Package pdftex.def Info: sx_conservation.jpeg  used on input line 313.
@@ -1006,7 +996,7 @@ Overfull \hbox (18.6107pt too wide) in paragraph at lines 313--314
  [][] 
  []
 
-<comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg, id=266, 433.62pt x 722.7pt>
+<comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg, id=267, 433.62pt x 722.7pt>
 File: comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg Graphic file (type jpg)
 <use comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg>
 Package pdftex.def Info: comprasion_LMG_50_highFr90_exact_nd_rwa.jpeg  used on 
@@ -1022,7 +1012,7 @@ Overfull \hbox (24.30118pt too wide) in paragraph at lines 320--321
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
  on input line 325.
 
-<lmg_poincare011.jpeg, id=285, 433.62pt x 433.62pt>
+<lmg_poincare011.jpeg, id=286, 433.62pt x 433.62pt>
 File: lmg_poincare011.jpeg Graphic file (type jpg)
 <use lmg_poincare011.jpeg>
 Package pdftex.def Info: lmg_poincare011.jpeg  used on input line 347.
@@ -1049,7 +1039,7 @@ Overfull \hbox (0.5368pt too wide) in paragraph at lines 355--355
 \T1/fve/m/n/5 crossover 
  []
 
-<phase_crossover_LMG.jpeg, id=308, 433.62pt x 433.62pt>
+<phase_crossover_LMG.jpeg, id=309, 433.62pt x 433.62pt>
 File: phase_crossover_LMG.jpeg Graphic file (type jpg)
 <use phase_crossover_LMG.jpeg>
 Package pdftex.def Info: phase_crossover_LMG.jpeg  used on input line 358.
@@ -1057,7 +1047,7 @@ Package pdftex.def Info: phase_crossover_LMG.jpeg  used on input line 358.
 
 LaTeX Warning: Marginpar on page 10 moved.
 
-<hbar_avg_std.jpg, id=314, 578.16pt x 325.215pt>
+<hbar_avg_std.jpg, id=315, 578.16pt x 325.215pt>
 File: hbar_avg_std.jpg Graphic file (type jpg)
 <use hbar_avg_std.jpg>
 Package pdftex.def Info: hbar_avg_std.jpg  used on input line 367.
@@ -1083,45 +1073,45 @@ Underfull \hbox (badness 1122) in paragraph at lines 182--189
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+fve on input line 4
-09.
+15.
 (/usr/share/texlive/texmf-dist/tex/latex/bera/ts1fve.fd
 File: ts1fve.fd 2004/09/07 scalable font definitions for TS1/fve.
 )
 LaTeX Font Info:    Font shape `TS1/fve/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 409.
+(Font)              scaled to size 8.09995pt on input line 415.
  [12]
-Underfull \hbox (badness 1776) in paragraph at lines 688--691
+Underfull \hbox (badness 1776) in paragraph at lines 694--697
  []\T1/fve/m/n/9 A. Hal-dar and A. Das, []An-nalen der Physik \T1/fve/b/n/9 529
 \T1/fve/m/n/9 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--733
+Underfull \hbox (badness 10000) in paragraph at lines 731--739
  []\T1/fve/m/n/9 R. Nand-k-ishore and D. A. Huse, []An-nual Re-
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 725--733
+Underfull \hbox (badness 1715) in paragraph at lines 731--739
  \T1/fve/m/n/9 view of Con-densed Mat-ter Physics \T1/fve/b/n/9 6\T1/fve/m/n/9 
 , 15 (2015)[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--733
+Underfull \hbox (badness 10000) in paragraph at lines 731--739
  []\T1/fve/m/n/9 https://doi.org/10.1146/annurev-conmatphys-031214-
  []
 
 ) [13] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E61CF36D20F7B86365224F0513548FE0;2131.
+(rerunfilecheck)             Checksum: 44826CB874B62CB5DB9303FD68591657;2130.
  ) 
 Here is how much of TeX's memory you used:
- 24821 strings out of 478354
- 449394 string characters out of 5852126
- 785297 words of memory out of 5000000
- 42384 multiletter control sequences out of 15000+600000
+ 24816 strings out of 479621
+ 449290 string characters out of 5882881
+ 806116 words of memory out of 5000000
+ 42306 multiletter control sequences out of 15000+600000
  527419 words of font info for 93 fonts, out of 8000000 for 9000
- 1131 hyphenation exceptions out of 8191
+ 331 hyphenation exceptions out of 8191
  99i,17n,94p,1586b,956s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
@@ -1147,10 +1137,10 @@ exmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (13 pages, 7514573 bytes).
+Output written on main.pdf (13 pages, 7517934 bytes).
 PDF statistics:
- 694 PDF objects out of 1000 (max. 8388607)
- 604 compressed objects within 7 object streams
+ 696 PDF objects out of 1000 (max. 8388607)
+ 606 compressed objects within 7 object streams
  142 named destinations out of 1000 (max. 500000)
  130 words of extra memory for PDF output out of 10000 (max. 10000000)
 

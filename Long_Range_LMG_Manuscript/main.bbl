@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{75}%
+\begin{thebibliography}{76}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -356,6 +356,12 @@
   {journal} {\bibinfo  {journal} {Journal of Modern Physics}\ }\textbf
   {\bibinfo {volume} {8}},\ \bibinfo {pages} {2042} (\bibinfo {year}
   {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sutherland}(2004)}]{Sutherland2004}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Sutherland}},\ }\href {https://doi.org/10.1142/5552} {\emph {\bibinfo
+  {title} {Beautiful Models}}}\ (\bibinfo  {publisher} {WORLD SCIENTIFIC},\
+  \bibinfo {year} {2004})\ Chap.~\bibinfo {chapter} {2}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Abanin}\ \emph {et~al.}(2019)\citenamefont {Abanin},
   \citenamefont {Altman}, \citenamefont {Bloch},\ and\ \citenamefont
   {Serbyn}}]{abanin_colloquium_2019}%

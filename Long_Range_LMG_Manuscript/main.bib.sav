@@ -909,4 +909,124 @@ The definition of the QDL phase for heavy/light particles can be readily general
   year      = {2021},
 }
 
+@Article{alessandro_markus,
+  author    = {Schiulaz, Mauro and Silva, Alessandro and M\"uller, Markus},
+  title     = {Dynamics in many-body localized quantum systems without disorder},
+  doi       = {10.1103/PhysRevB.91.184202},
+  issue     = {18},
+  pages     = {184202},
+  url       = {https://link.aps.org/doi/10.1103/PhysRevB.91.184202},
+  volume    = {91},
+  journal   = {Phys. Rev. B},
+  month     = {May},
+  numpages  = {9},
+  publisher = {American Physical Society},
+  year      = {2015},
+}
+
+@article{lmg1965_1,
+	title = {Validity of many-body approximation methods for a solvable model: (I). Exact solutions and perturbation theory},
+	author = {H.J. Lipkin and N. Meshkov and A.J. Glick},
+	journal = {Nuclear Physics},
+	volume = {62},
+	number = {2},
+	pages = {188-198},
+	year = {1965},
+	doi = {https://doi.org/10.1016/0029-5582(65)90862-X},
+}
+
+@article{lmg1965_2,
+	title = {Validity of many-body approximation methods for a solvable model: (II). Linearization procedures},
+	author = {N. Meshkov and A.J. Glick and H.J. Lipkin},
+	journal = {Nuclear Physics},
+	volume = {62},
+	number = {2},
+	pages = {199-210},
+	year = {1965},
+	issn = {0029-5582},
+	doi = {https://doi.org/10.1016/0029-5582(65)90863-1},
+}
+
+@article{lmg1965_3,
+	title = {Validity of many-body approximation methods for a solvable model: (III). Diagram summations},
+	author = {A.J. Glick and H.J. Lipkin and N. Meshkov},
+	journal = {Nuclear Physics},
+	volume = {62},
+	number = {2},
+	pages = {211-224},
+	year = {1965},
+	issn = {0029-5582},
+	doi = {https://doi.org/10.1016/0029-5582(65)90864-3},
+}
+
+
+@article{ribeiro2008,
+	title = {Exact spectrum of the Lipkin-Meshkov-Glick model in the thermodynamic limit and finite-size corrections},
+	author = {Ribeiro, Pedro and Vidal, Julien and Mosseri, R\'emy},
+	journal = {Phys. Rev. E},
+	volume = {78},
+	issue = {2},
+	pages = {021106},
+	numpages = {13},
+	year = {2008},
+	publisher = {American Physical Society},
+	doi = {10.1103/PhysRevE.78.021106},
+}
+
+@article{debergh_2001,
+	title = {On the exact solutions of the Lipkin-Meshkov-Glick model},
+	author = {N Debergh and  Fl Stancu},
+	journal = {Journal of Physics A: Mathematical and General},
+	url = {https://dx.doi.org/10.1088/0305-4470/34/15/305},
+	volume = {34},
+	number = {15},
+	pages = {3265},
+	year = {2001},
+	doi = {10.1088/0305-4470/34/15/305},
+}
+
+@article{defenu2018,
+	title = {Dynamical Critical Scaling of Long-Range Interacting Quantum Magnets},
+	author = {Defenu, Nicol\`o and Enss, Tilman and Kastner, Michael and Morigi, Giovanna},
+	journal = {Phys. Rev. Lett.},
+	volume = {121},
+	issue = {24},
+	pages = {240403},
+	numpages = {6},
+	year = {2018},
+	month = {Dec},
+	publisher = {American Physical Society},
+	doi = {10.1103/PhysRevLett.121.240403},
+	url = {https://link.aps.org/doi/10.1103/PhysRevLett.121.240403}
+}
+
+@article{titum2020,
+	title = {Nonequilibrium Criticality in Quench Dynamics of Long-Range Spin Models},
+	author = {Titum, Paraj and Maghrebi, Mohammad F.},
+	journal = {Phys. Rev. Lett.},
+	volume = {125},
+	issue = {4},
+	pages = {040602},
+	numpages = {6},
+	year = {2020},
+	month = {Jul},
+	publisher = {American Physical Society},
+	doi = {10.1103/PhysRevLett.125.040602},
+}
+
+
+
+
+
+
+@Book{Sutherland2004,
+  author    = {Sutherland, Bill},
+  date      = {2004},
+  title     = {Beautiful Models},
+  chapter   = {2},
+  doi       = {10.1142/5552},
+  isbn      = {9789812388971},
+  publisher = {WORLD SCIENTIFIC},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
