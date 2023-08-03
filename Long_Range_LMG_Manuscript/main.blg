@@ -13,8 +13,6 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: mainNotes.bib
 Database file #2: main.bib
-Warning--entry type for "noauthor_quantum_nodate" isn't style-file defined
---line 143 of file main.bib
 Too many commas in name 1 of "Eisele, Theodor, Ellis, Richard S." for entry eisele_multiple_1988
 while executing---line 3309 of file apsrev4-2.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -76,93 +74,48 @@ Too many commas in name 1 of "Eisele, Theodor, Ellis, Richard S." for entry eise
 while executing---line 3515 of file apsrev4-2.bst
 Too many commas in name 1 of "Eisele, Theodor, Ellis, Richard S." for entry eisele_multiple_1988
 while executing---line 3515 of file apsrev4-2.bst
+Warning--empty year in Sutherland2004
 Warning--empty year in arfkenmath
 Warning--empty year in qutip
-Warning--empty year in reichl_transition_2021
-Warning--empty year in srivatsa_many-body_2020
-Warning--empty year in noauthor_quantum_nodate
-Warning--empty year in marcos_relaxation_2012
-Warning--empty year in haldar_dynamical_2017
-"J. High Energy Phys." is a string literal, `journal' is a missing field
----they aren't the same literal types for entry Alessio2013
-while executing---line 3515 of file apsrev4-2.bst
-"J. High Energ. Phys." is a string literal, `journal' is a missing field
----they aren't the same literal types for entry Alessio2013
-while executing---line 3515 of file apsrev4-2.bst
-"JHEP" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry Alessio2013
-while executing---line 3515 of file apsrev4-2.bst
-"Journal of Cosmology and Astroparticle Physics" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry Alessio2013
-while executing---line 3515 of file apsrev4-2.bst
-"J. Cosmol. Astropart. Phys." is a string literal, `journal' is a missing field
----they aren't the same literal types for entry Alessio2013
-while executing---line 3515 of file apsrev4-2.bst
-"JCAP" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry Alessio2013
-while executing---line 3515 of file apsrev4-2.bst
-"Journal of Instrumentation" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry Alessio2013
-while executing---line 3515 of file apsrev4-2.bst
-"J. Instrum." is a string literal, `journal' is a missing field
----they aren't the same literal types for entry Alessio2013
-while executing---line 3515 of file apsrev4-2.bst
-"JINST" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry Alessio2013
-while executing---line 3515 of file apsrev4-2.bst
-"Journal of Statistical Mechanics" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry Alessio2013
-while executing---line 3515 of file apsrev4-2.bst
-"J. of Stat. Mech." is a string literal, `journal' is a missing field
----they aren't the same literal types for entry Alessio2013
-while executing---line 3515 of file apsrev4-2.bst
-"J. Stat. Mech.: Theory Exp." is a string literal, `journal' is a missing field
----they aren't the same literal types for entry Alessio2013
-while executing---line 3515 of file apsrev4-2.bst
-"JSTAT" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry Alessio2013
-while executing---line 3515 of file apsrev4-2.bst
-Warning--missing journal in Alessio2013
-Warning--empty year in Alessio2013
-You've used 76 entries,
+You've used 63 entries,
             6079 wiz_defined-function locations,
-            2183 strings with 31514 characters,
-and the built_in function-call counts, 72523 in all, are:
-= -- 5653
-> -- 1641
-< -- 364
-+ -- 543
-- -- 376
-* -- 10488
-:= -- 7059
-add.period$ -- 76
-call.type$ -- 76
-change.case$ -- 318
-chr.to.int$ -- 82
-cite$ -- 89
-duplicate$ -- 6423
-empty$ -- 5175
-format.name$ -- 972
-if$ -- 14933
-int.to.chr$ -- 4
-int.to.str$ -- 84
-missing$ -- 1025
-newline$ -- 280
-num.names$ -- 222
-pop$ -- 2776
+            2084 strings with 28334 characters,
+and the built_in function-call counts, 61146 in all, are:
+= -- 4750
+> -- 1408
+< -- 309
++ -- 458
+- -- 322
+* -- 8881
+:= -- 5926
+add.period$ -- 63
+call.type$ -- 63
+change.case$ -- 259
+chr.to.int$ -- 70
+cite$ -- 68
+duplicate$ -- 5390
+empty$ -- 4343
+format.name$ -- 828
+if$ -- 12608
+int.to.chr$ -- 3
+int.to.str$ -- 71
+missing$ -- 864
+newline$ -- 241
+num.names$ -- 186
+pop$ -- 2312
 preamble$ -- 1
-purify$ -- 368
+purify$ -- 310
 quote$ -- 0
-skip$ -- 3414
+skip$ -- 2883
 stack$ -- 0
-substring$ -- 2024
-swap$ -- 5968
-text.length$ -- 190
+substring$ -- 1730
+swap$ -- 5046
+text.length$ -- 162
 text.prefix$ -- 0
 top$ -- 8
-type$ -- 1020
-warning$ -- 11
-while$ -- 215
+type$ -- 851
+warning$ -- 5
+while$ -- 182
 width$ -- 0
-write$ -- 645
-(There were 31 error messages)
+write$ -- 545
+(There were 18 error messages)

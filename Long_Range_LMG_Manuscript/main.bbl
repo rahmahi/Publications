@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{76}%
+\begin{thebibliography}{63}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -64,10 +64,9 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
   {Sahoo}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Schneider}},\
   and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Eggert}},\
-  }\href@noop {} {\bibinfo {title} {Periodically driven many-body systems: A
-  floquet density matrix renormalization group study}} (\bibinfo {year}
-  {2019}),\ \Eprint {https://arxiv.org/abs/1906.00004} {arXiv:1906.00004
-  [cond-mat.str-el]} \BibitemShut {NoStop}%
+  }\href@noop {} {} (\bibinfo {year} {2019}),\ \Eprint
+  {https://arxiv.org/abs/1906.00004} {arXiv:1906.00004 [cond-mat.str-el]}
+  \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Das}(2010)}]{das_exotic_2010}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
@@ -82,9 +81,9 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~B.}\ \bibnamefont
   {Mbeng}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Russomanno}},\
   and\ \bibinfo {author} {\bibfnamefont {G.~E.}\ \bibnamefont {Santoro}},\
-  }\href@noop {} {\bibinfo {title} {The quantum ising chain for beginners}}
-  (\bibinfo {year} {2020}),\ \Eprint {https://arxiv.org/abs/2009.09208}
-  {arXiv:2009.09208 [quant-ph]} \BibitemShut {NoStop}%
+  }\href@noop {} {} (\bibinfo {year} {2020}),\ \Eprint
+  {https://arxiv.org/abs/2009.09208} {arXiv:2009.09208 [quant-ph]} \BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Yamada}\ and\ \citenamefont
   {Ikeda}(2022)}]{yamada_localization_2022}%
   \BibitemOpen
@@ -179,9 +178,7 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
   {Aditya}}\ and\ \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Sen}},\
-  }\href@noop {} {\bibinfo {title} {Dynamical localization and slow
-  thermalization in a class of disorder-free periodically driven
-  one-dimensional interacting systems}} (\bibinfo {year} {2023}),\ \Eprint
+  }\href@noop {} {} (\bibinfo {year} {2023}),\ \Eprint
   {https://arxiv.org/abs/2305.06056} {arXiv:2305.06056 [cond-mat.stat-mech]}
   \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Schiulaz}\ \emph {et~al.}(2015)\citenamefont
@@ -356,12 +353,12 @@
   {journal} {\bibinfo  {journal} {Journal of Modern Physics}\ }\textbf
   {\bibinfo {volume} {8}},\ \bibinfo {pages} {2042} (\bibinfo {year}
   {2017})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Sutherland}(2004)}]{Sutherland2004}%
+\bibitem [{\citenamefont {Sutherland}()}]{Sutherland2004}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
   {Sutherland}},\ }\href {https://doi.org/10.1142/5552} {\emph {\bibinfo
-  {title} {Beautiful Models}}}\ (\bibinfo  {publisher} {WORLD SCIENTIFIC},\
-  \bibinfo {year} {2004})\ Chap.~\bibinfo {chapter} {2}\BibitemShut {NoStop}%
+  {title} {Beautiful Models}}}\ (\bibinfo  {publisher} {WORLD SCIENTIFIC})\
+  Chap.~\bibinfo {chapter} {2}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Abanin}\ \emph {et~al.}(2019)\citenamefont {Abanin},
   \citenamefont {Altman}, \citenamefont {Bloch},\ and\ \citenamefont
   {Serbyn}}]{abanin_colloquium_2019}%
@@ -653,118 +650,4 @@
   \delta $, where $\delta \sim h_0\ll 1$. Thus, the standard deviation in time
   will go as $\sim h\sim \omega $, since $\eta =4h/\omega $ is kept
   fixed.}\BibitemShut {Stop}%
-\bibitem [{\citenamefont {Reichl}()}]{reichl_transition_2021}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
-  {Reichl}},\ }\href {https://doi.org/10.1007/978-3-030-63534-3} {\emph
-  {\bibinfo {title} {The Transition to Chaos: Conservative Classical and
-  Quantum Systems}}},\ \bibinfo {series} {Fundamental Theories of Physics},
-  Vol.\ \bibinfo {volume} {200}\ (\bibinfo  {publisher} {Springer International
-  Publishing})\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Srivatsa}\ \emph {et~al.}()\citenamefont {Srivatsa},
-  \citenamefont {Moessner},\ and\ \citenamefont
-  {Nielsen}}]{srivatsa_many-body_2020}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
-  {Srivatsa}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Moessner}},\
-  and\ \bibinfo {author} {\bibfnamefont {A.~E.}\ \bibnamefont {Nielsen}},\
-  }\href {https://doi.org/10.1103/PhysRevLett.125.240401} {\bibfield  {journal}
-  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {125}},\
-  \bibinfo {pages} {240401}}\BibitemShut {NoStop}%
-\bibitem [{noa()}]{noauthor_quantum_nodate}%
-  \BibitemOpen
-  \href
-  {https://juliaphysics.github.io/PhysicsTutorials.jl/tutorials/general/quantum_ising/quantum_ising.html}
-  {\bibinfo {title} {Quantum ising phase transition}}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Marcos}\ \emph {et~al.}()\citenamefont {Marcos},
-  \citenamefont {Gabrielli},\ and\ \citenamefont
-  {Joyce}}]{marcos_relaxation_2012}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
-  {Marcos}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Gabrielli}},\
-  and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Joyce}},\ }\href
-  {https://doi.org/10.2478/s11534-012-0032-0} {\bibfield  {journal} {\bibinfo
-  {journal} {Open Physics}\ }\textbf {\bibinfo {volume} {10}},\ \bibinfo
-  {pages} {676}}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Haldar}\ and\ \citenamefont
-  {Das}()}]{haldar_dynamical_2017}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
-  {Haldar}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Das}},\
-  }\href {https://doi.org/10.1002/andp.201600333} {\bibfield  {journal}
-  {\bibinfo  {journal} {Annalen der Physik}\ }\textbf {\bibinfo {volume}
-  {529}},\ \bibinfo {pages} {1600333}}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Deutsch}({\natexlab{a}})}]{Deutsch1991}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
-  {Deutsch}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
-  Rev. A}\ }\textbf {\bibinfo {volume} {43}},\ \bibinfo {pages} {2046}
-  ({\natexlab{a}})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Hobson}(1909)}]{hobson_e_w_1909_1447800}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~W.}\ \bibnamefont
-  {Hobson}},\ }\href {https://doi.org/10.1112/plms/s2-7.1.14} {\bibinfo {title}
-  {{On the Second Mean-Value Theorem of the Integral Calculus}}} (\bibinfo
-  {year} {1909})\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Rigol}\ and\ \citenamefont
-  {Srednicki}(2012)}]{Rigol_2012}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Rigol}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Srednicki}},\ }\bibfield  {journal} {\bibinfo  {journal} {Physical Review
-  Letters}\ }\textbf {\bibinfo {volume} {108}},\ \href
-  {https://doi.org/10.1103/physrevlett.108.110601}
-  {10.1103/physrevlett.108.110601} (\bibinfo {year} {2012})\BibitemShut
-  {NoStop}%
-\bibitem [{\citenamefont {Deutsch}({\natexlab{b}})}]{Joshua_2018}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
-  {Deutsch}},\ }\href {https://doi.org/10.1088/1361-6633/aac9f1} {\bibfield
-  {journal} {\bibinfo  {journal} {IOP Publishing Ltd}\ }\textbf {\bibinfo
-  {volume} {81}},\ \bibinfo {pages} {296} ({\natexlab{b}})}\BibitemShut
-  {NoStop}%
-\bibitem [{\citenamefont {Nandkishore}\ and\ \citenamefont
-  {Huse}(2015)}]{Nandkishore_2015}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
-  {Nandkishore}}\ and\ \bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
-  {Huse}},\ }\href {https://doi.org/10.1146/annurev-conmatphys-031214-014726}
-  {\bibfield  {journal} {\bibinfo  {journal} {Annual Review of Condensed Matter
-  Physics}\ }\textbf {\bibinfo {volume} {6}},\ \bibinfo {pages} {15} (\bibinfo
-  {year} {2015})},\ \Eprint
-  {https://arxiv.org/abs/https://doi.org/10.1146/annurev-conmatphys-031214-014726}
-  {https://doi.org/10.1146/annurev-conmatphys-031214-014726} \BibitemShut
-  {NoStop}%
-\bibitem [{\citenamefont {D’Alessio}\ and\ \citenamefont
-  {Polkovnikov}()}]{Alessio2013}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
-  {D’Alessio}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
-  {Polkovnikov}},\ }\href
-  {https://doi.org/https://doi.org/10.1016/j.aop.2013.02.011} {\ \textbf
-  {\bibinfo {volume} {333}},\ \bibinfo {pages} {19}}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Notarnicola}\ \emph {et~al.}(2018)\citenamefont
-  {Notarnicola}, \citenamefont {Iemini}, \citenamefont {Rossini}, \citenamefont
-  {Fazio}, \citenamefont {Silva},\ and\ \citenamefont
-  {Russomanno}}]{periodicmbl2}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Notarnicola}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Iemini}},
-  \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Rossini}}, \bibinfo
-  {author} {\bibfnamefont {R.}~\bibnamefont {Fazio}}, \bibinfo {author}
-  {\bibfnamefont {A.}~\bibnamefont {Silva}},\ and\ \bibinfo {author}
-  {\bibfnamefont {A.}~\bibnamefont {Russomanno}},\ }\href
-  {https://doi.org/10.1103/PhysRevE.97.022202} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys. Rev. E}\ }\textbf {\bibinfo {volume} {97}},\ \bibinfo
-  {pages} {022202} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Lazarides}\ \emph {et~al.}(2015)\citenamefont
-  {Lazarides}, \citenamefont {Das},\ and\ \citenamefont
-  {Moessner}}]{lazaridesmbl}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
-  {Lazarides}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Das}},\
-  and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Moessner}},\ }\href
-  {https://doi.org/10.1103/PhysRevLett.115.030402} {\bibfield  {journal}
-  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {115}},\
-  \bibinfo {pages} {030402} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
 \end{thebibliography}%
