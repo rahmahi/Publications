@@ -14,22 +14,20 @@ prb,
 showkeys,
 ]{revtex4-2}
 \usepackage[T1]{fontenc}
-\usepackage{beramono}
+\usepackage{bera}
 \usepackage{color}
 \usepackage{soul}
+\usepackage{draftwatermark}
 \usepackage{graphicx}% Include figure files
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
 \usepackage{physics}
 \usepackage{amssymb}
 \usepackage[sort&compress]{natbib}
-
 \usepackage{hyperref}
 
 
-\usepackage{cancel}
-\usepackage{draftwatermark}
-\usepackage{todonotes}
+
 
 \begin{document}
 	
@@ -54,12 +52,11 @@ showkeys,
 	
 {Under certain resonance conditions in the drive parameters, periodically driven quantum many-body systems can experience dynamical many-body freezing (DMF), which causes the response to freeze completely to its initial value at all times}~\cite{bordia_periodically_2017, sahoo_periodically_2019, das_exotic_2010}. This arises as a consequence of additional approximate symmetries that occur at resonance. DMF has been demonstrated via the Rotating Wave Approximation (RWA) in the driven TFIM with nearest-neighbour interactions ~\cite{mbeng_quantum_2020} and is shown to be protected when translational invariance is explicitly broken (say, by disorder) ~\cite{yamada_localization_2022, roy_fate_2015}. 
 
-	The utilization of Floquet theory simplifies the analysis of time-periodic systems. For closed quantum systems governed by the time-dependent Schr\"odinger equation, the \textit{Floquet Hamiltonian} allows for a mapping 
-of the time-dependent dynamics into the dynamics of 	
+The utilization of Floquet theory simplifies the analysis of time-periodic systems. For closed quantum systems governed by the time-dependent Schr\"odinger equation, the \textit{Floquet Hamiltonian} allows for a mapping of the time-dependent dynamics into the dynamics of 	
 a time-independent effective Hamiltonian, provided the system is strobed at integer multiples of the time period of the drive. The time independent eigenstates of the effective Hamiltonian correspond to quasi-stationary \textit{Floquet Modes} of the original Hamiltonian. The temporal progression of the system comes from  phase coefficients that capture the dynamics \cite{li_floquet_2018,eckardt_high_frequency_2015}.	
 	
 	Any sufficiently complex non-integrable Many Body System is expected to thermalize according to the Eigenstate Thermalization Hypothesis (ETH) despite the fact that closed quantum dynamics preserves the memory of the initial state of the system. This arises due to the properties of the matrix elements of observables 
-	in typical states\cite{zhang_floquet_2016}. The ETH can be readily adapted to time-periodic systems using Floquet theory (the Floquet-ETH, or FETH). Nonetheless, the conditions for ETH to hold are not particularly strong, and the density matrix of the system can fail to approach one that is described by a thermal expression.  {Thermal systems must conduct because they exchange energy and particles internally during thermalization. Thus, insulating systems can be naturally athermal;  Many Body Localization (MBL) is a well-studied case}~\cite{khemani_phase_2016}. This phenomenon is stable against local perturbations, and constitutes an exotic state of matter with far-reaching implications in theoretical physics, as well as in practical applications\cite{yunger_halpern_quantum_2019}.
+	in typical states\cite{zhang_floquet_2016}. The ETH can be readily adapted to time-periodic systems using Floquet theory (the Floquet-ETH, or FETH). Nonetheless, the conditions for ETH to hold are not particularly strong, and the density matrix of the system can fail to approach one that is described by a thermal expression.  Thermal systems must conduct because they exchange energy and particles internally during thermalization. Thus, insulating systems can be naturally athermal;  Many Body Localization (MBL) is a well-studied case~\cite{khemani_phase_2016}. This phenomenon is stable against local perturbations, and constitutes an exotic state of matter with far-reaching implications in theoretical physics, as well as in practical applications\cite{yunger_halpern_quantum_2019}.
 	
 	The addition of disorder has been identified as a crucial component in the onset of MBL. In that case, thermalization is prevented by disorder-induced localization. Nonetheless, alternative approaches to MBL in strongly interacting disorder-free systems~\cite{diptiman2014, Carleo2012,aditya2023dynamical}, inhomogeneous systems~\cite{alessandro_markus, Grover2014,miles2015,Smith2017}, and by inducing disorder in the emergent physics~\cite{MBL_emergent_disorder} and by other effective means ~\cite{miles2015} (albeit with strong finite-size effects), have been reported. An alternative approach to realizing MBL in disorder-free \emph{homogeneous} many-body systems involve \textit{Floquet Engineering}, where a time-periodic drive is introduced, and the drive parameters tuned to introduce a clustering of quasistationary energies in a manner similar to localization\cite{zhang_floquet_2016}.
 
@@ -117,7 +114,7 @@ We now generalize the ETH to non-integrable many body systems that are closed, b
 \end{equation}
 Here, the micromotion operator $\hat{K}_F(t)$ is time-periodic in $T$, with $\hat{K}_F(0)=0$, and the Floquet Hamiltonian  {$\hat{H}_F = e^{i\hat{K}_F(t)} \left[\hat{H}(t)-i\partial_t\right] e^{-i \hat{K}_F(t)}$}. Thus, if the system is strobed at integer multiples of $T$ only, then the unitary evolution matches that of a time independent Hamiltonian $H_F$. This can capture most of the exact dynamics at large frequencies. In such systems, the \textit{Floquet Eigenstate Thermalization Hypothesis} (FETH) posits that, subject to specific conditions and in the context of a system of significant size, the Floquet modes themselves exhibit thermal state-like behavior, \textit{i.e.}, $\hat{H}\approx \hat{H}_F$ in eqn~\ref{eq:aeq}. However, in contrast to the isolated systems, the loss of energy conservation allows for the mixing of all Floquet modes in the ensuing dynamics, not just those with quasienergies near $E$. Were this to actually happen in the ensuing dynamics,  {it can be reconciled with ETH by ensuring that the RHS of eqn}~\ref{eq:aeq} {is independent of} $\beta$, \textit{i.e.}{, an infinite temperature ensemble}~\cite{alessio}. In other words, the nonequilibrium steady state of the system tends to an infinite temperature, maximum entropy density matrix.
 
-However, drive parameters like amplitude, frequency, and duty-cycle strongly affect the structure of the Floquet modes $\ket{\phi}$. Thus, they can be engineered to prevent the kind of full mixing that would lead to infinite temperatures, manifesting suppression of thermalization dynamically. Thus, this type of \textit{Floquet Engineering} can produce \textit{Dynamical Many Body Localization} (DMBL), where the system fails to reach thermal equilibrium and remains localized, possibly  near its initial state, even at large times. This paradigm seems similar to standard Many-Body Localization\cite{yousefjani2023, sierant_2023}, where disorder, locality, and integrability can cause athermality via breakdown in the Srednicki ansatz. However, DMBL {stems from periodic driving}, and thus can occur regardless of disorder, locality of observables, or system integrability, all of which have been studied for MBL onset~\cite{Sougata2023,Fabien2018,garratt_resonant_2022}.
+However, drive parameters like amplitude, frequency, and duty-cycle strongly affect the structure of the Floquet modes $\ket{\phi}$. Thus, they can be engineered to prevent the kind of full mixing that would lead to infinite temperatures, manifesting suppression of thermalization dynamically. Thus, this type of \textit{Floquet Engineering} can produce \textit{Dynamical Many Body Localization} (DMBL), where the system fails to reach thermal equilibrium and remains localized, possibly  near its initial state, even at large times. This paradigm seems similar to standard Many-Body Localization\cite{Sougata2023, sierant_2023}, where disorder, locality, and integrability can cause athermality via breakdown in the Srednicki ansatz. However, DMBL {stems from periodic driving}, and thus can occur regardless of disorder, locality of observables, or system integrability, all of which have been studied for MBL onset~\cite{Sougata2023,Fabien2018,garratt_resonant_2022}.
 
 Integrable Many Body systems do not exhibit thermalization. When subjected to time-periodic drives, Floquet engineering allows for the introduction of additional approximate conserved quantities that dynamically suppress the evolution of certain observables by hysteresis. This type of \textit{freezing} of response
 has been shown in integrable systems~\cite{roy_fate_2015}.
@@ -175,7 +172,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	\label{eq:ipr:defn}
 	\phi_{{_{IPR}}} \equiv \sum_m\vert\ip{m}{\psi}\vert^4.
 	\end{equation}
-	The smallest value of the IPR corresponds to a fully de-localized state, $\psi(x)=1/\sqrt{N}$ for a system of size $N$ \cite{torres-herrera_self-averaging_2020,trivedi_can_2005}. Values of the IPR close to unity correspond to localized states \cite{misguich_inverse_2016}. For a periodically driven system, we look at the IPR of the quasi-stationary Floquet modes at $t=T$, where $t=2\pi/\omega$ for drive frequency $\omega$. In the TFIM model, equation~\ref{eq:hrwa:tfim} indicates that, at resonance, when $J_0(\eta)=0$, the Floquet modes are approximately given by the fermionic Fock states, which have a trivially unit IPR in the representation of the eigenmodes of the transverse field $\hat{H}_1$ in equation~\ref{eq:tfim:hamilt}. Here, a particular Floquet mode can be decomposed into a direct product of cooper-pair states as $|\phi\rangle = \prod_{k,-k}|\phi^n_k\rangle$. In the RWA limit and at resonance, $|\phi^n_k\rangle$ has values of $|0\rangle, |k,-k\rangle$ for two values of $n=0,1$ respectively. We define the reduced IPR of $|\phi^n_k\rangle\; \forall k$ to be
+	The smallest value of the IPR corresponds to a fully de-localized state, $\psi(x)=1/\sqrt{N}$ for a system of size $N$ \cite{torres-herrera_self-averaging_2020,trivedi_can_2005}. Values of the IPR close to unity correspond to localized states \cite{Misguich2016}. For a periodically driven system, we look at the IPR of the quasi-stationary Floquet modes at $t=T$, where $t=2\pi/\omega$ for drive frequency $\omega$. In the TFIM model, equation~\ref{eq:hrwa:tfim} indicates that, at resonance, when $J_0(\eta)=0$, the Floquet modes are approximately given by the fermionic Fock states, which have a trivially unit IPR in the representation of the eigenmodes of the transverse field $\hat{H}_1$ in equation~\ref{eq:tfim:hamilt}. Here, a particular Floquet mode can be decomposed into a direct product of cooper-pair states as $|\phi\rangle = \prod_{k,-k}|\phi^n_k\rangle$. In the RWA limit and at resonance, $|\phi^n_k\rangle$ has values of $|0\rangle, |k,-k\rangle$ for two values of $n=0,1$ respectively. We define the reduced IPR of $|\phi^n_k\rangle\; \forall k$ to be
 	\begin{equation}
 	\label{eq:ipr:ising}
 	\phi^{(n)}_{IPR}(k) = \abs{\ip{0}{\phi^n_k}}^4 + \abs{\ip{ +k, -k }{\phi^n_k}}^4,
@@ -188,9 +185,8 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 	In the RWA limit and at resonance , this quantity is unity, indicating very low participation and the onset of freezing.
 	\begin{figure}[t!]
 		\centering
-		%\includegraphics[height = 10cm, width = 9.0cm]{ising_exact_ipr.jpeg}
-		\includegraphics[width = 8.5cm]{ising_exact_ipr_3panel.pdf}
-		\caption{Reduced IPR (defined in equation~\ref{eq:ipr:ising}) for one of the two Floquet modes obtained from the exact dynamics of the TFIM for size $N = 100$ and $\omega=90$ for the entire Brillouin zone (top panel, ordinate) and a few drive amplitudes (top panel, abscissa). The dashed lines (top panel) indicate the roots of $J_0(\eta)$. The middle panel shows cross-sections of the reduced IPR in $k-$space for four chosen amplitudes. Finally, the bottom panels show semi-log plots of the scaling with $N$ of the full many body IPR as defined in eqn~\ref{eq:ipr:manybody}, with the left panel for a small $\omega=0.4$, amplitude $h$ chosen to lie both in and out of the root of $J_0(\eta)$ as indicated in the legend, with similar plots on the right panel for a large $\omega=90$. }
+		\includegraphics[width = 8.5cm]{ising_exact_ipr_3panel.jpeg}
+		\caption{\hl{Reduced IPR (defined in equation}~\ref{eq:ipr:ising}) \hl{for one of the two Floquet modes obtained from the exact dynamics of the TFIM for size} $N = 100, \omega=90$ \hl{for the entire Brillouin zone (top panel, ordinate) and a few drive amplitudes (top panel, abscissa). The dashed lines (top panel) indicate the roots of} $J_0(\eta)$\hl{. The middle panel shows cross-sections of the reduced IPR in} $k-$\hl{space for four chosen amplitudes. Finally, the bottom panels show semi-log plots of the scaling with} $N$ \hl{of the full many body IPR as defined in eqn}~\ref{eq:ipr:manybody}\hl{, with the left panel for a small} $\omega=0.4$\hl{, amplitude} $h$ \hl{chosen to lie both in and out of the root of} $J_0(\eta)$ \hl{as indicated in the legend, with similar plots on the right panel for a large} $\omega=90$. }
 		\label{fig:ipr:tfim}
 	\end{figure}
 	Figure~\ref{fig:ipr:tfim} shows results from numerically simulating the TFIM dynamics. The reduced IPR for a particular Floquet mode recovered by simulating the exact Schr\"odinger dynamics over a single time period of the drive, and plotted as a function of momentum $k$ for different $\eta$'s. At resonance, when $\eta$ lies at the root of the Bessel function $J_0(\eta)$,  the {Reduced} IPR is {nearly} unity for all momenta. {Consequently, so is} $\phi_{IPR}$.  Outside this resonance, the IPR is unity only for some momenta because the effective Hamiltonian is perfectly diagonal at $k \in{\{-\pi, 0, \pi\}}$ as can be seen in the cross-sectional plots of figure~\ref{fig:ipr:tfim}. {As we move away from the resonance point,
@@ -337,12 +333,12 @@ The IPR plots from the exact dynamics indicate that the first localization point
 	\begin{figure}[!ht]
 		\centering
 		\includegraphics[width =8.5cm]{phase_crossover_LMG.jpeg}
-		\caption{IPR is plotted (top panel, ordinate) for a range of $\omega \in[1,100]$(top panel, abscissa) for four different $N=10,30,50, 100$ at root of $J_0(\eta)$. At small $\omega$ upto $\omega \sim 10$ IPR founds to be very small and rises slowly upto unity (fully localized) at higher frequencies. At bottom panel IPR (ordinate) is plotted for different $N=10,30,50, 100$(bottom panel, abscissa) for a \st{random} small $\omega \sim 1$ at root of $J_0(\eta)$ from the values from top panel. IPR falls as inversely proportional to $N$, indicating an approach to a fully distributed (thermal) state. The smooth rise in IPR defines a phase crossover (top panel) between a fully thermal phase to a fully localized phase.}
+		\caption{\hl{In the top panel, the IPR of the lowest quasienergy Floquet state is plotted as a function of} $\omega$ \hl{for different} $N$s,\hl{ with amplitude $h$ adjusted to ensure that} $J_0(\eta)=0$ \hl{always. The smooth rise in IPR defines a phase crossover (top panel) between a fully thermal phase to a fully localized phase. The bottom panel plots the IPR versus} $N$ \hl{for small} $\omega$s, \hl{also with} $h$ \hl{adjusted. The curves asymptotically approach the dependency} $\phi_{IPR}\sim 1/N$\hl{, indicating thermalization at low-}$\omega$.}
 		\label{fig:phase_crossover}
-	\end{figure}\todo{\tiny{update bottom panel, fig 8 with addl plots.}}
+	\end{figure}
 	\begin{figure}[!ht]
 	\centering
-	\includegraphics[width = 9.cm]{hbar_avg_std.jpg}
+	\includegraphics[width = 9.cm]{hbar_avg_std.jpeg}
 	\caption{The standard deviation of the heating rate, denoted by $\expval{H}_{std}$, calculated over a span of $t=500 T$ for two system sizes. Here, $h$ is varied to keep $\eta = 4h/\omega$ at the first root of $J_0(\eta)$. A nonsingular rise has been identified at $\omega \approx 4.0$. $\expval{H}_{std}$ exhibits a diminutive magnitude below that value of $\omega$, while a linear rise is observed at higher frequencies, consistent with freezing. A vanishingly small standard deviation for $\omega \ll 4.0$ indicates the presence of a thermal region, whereas a larger finite standard deviation suggests the existence of athermal behaviour. The small peaks observed at $\omega\in [2, 4)$ are finite-size effects that disappear in the thermodynamic limit.}
 	\label{fig:havg_std}
 	\end{figure}

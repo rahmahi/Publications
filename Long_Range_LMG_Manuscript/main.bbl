@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{63}%
+\begin{thebibliography}{61}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -50,13 +50,18 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
-\bibitem [{\citenamefont {Bordia~Pranjal}(2017)}]{bordia_periodically_2017}%
+\bibitem [{\citenamefont {Bordia}\ \emph {et~al.}(2017)\citenamefont {Bordia},
+  \citenamefont {L{\"u}schen}, \citenamefont {Schneider}, \citenamefont
+  {Knap},\ and\ \citenamefont {Bloch}}]{bordia_periodically_2017}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Bordia~Pranjal}, \bibfnamefont {L{\"u}schen~Henrik}},\ }\href
-  {https://doi.org/https://doi.org/10.1038/nphys4020} {\bibfield  {journal}
-  {\bibinfo  {journal} {Nature Physics}\ }\textbf {\bibinfo {volume} {13}},\
-  \bibinfo {pages} {460} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Bordia}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {L{\"u}schen}},
+  \bibinfo {author} {\bibfnamefont {U.}~\bibnamefont {Schneider}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Knap}},\ and\ \bibinfo {author}
+  {\bibfnamefont {I.}~\bibnamefont {Bloch}},\ }\href
+  {https://doi.org/10.1038/nphys4020} {\bibfield  {journal} {\bibinfo
+  {journal} {Nature Physics}\ }\textbf {\bibinfo {volume} {13}},\ \bibinfo
+  {pages} {460} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Sahoo}\ \emph {et~al.}(2019)\citenamefont {Sahoo},
   \citenamefont {Schneider},\ and\ \citenamefont
   {Eggert}}]{sahoo_periodically_2019}%
@@ -191,13 +196,15 @@
   {https://doi.org/10.1103/PhysRevB.91.184202} {\bibfield  {journal} {\bibinfo
   {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {91}},\ \bibinfo
   {pages} {184202} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Grover}\ and\ \citenamefont {Fisher}()}]{Grover2014}%
+\bibitem [{\citenamefont {Grover}\ and\ \citenamefont
+  {Fisher}(2014)}]{Grover2014}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
   {Grover}}\ and\ \bibinfo {author} {\bibfnamefont {M.~P.~A.}\ \bibnamefont
-  {Fisher}},\ }\href {https://doi.org/10.1088/1742-5468/2014/10/P10010} {\
-  \textbf {\bibinfo {volume} {2014}},\ \bibinfo {pages} {P10010}}\BibitemShut
-  {NoStop}%
+  {Fisher}},\ }\href {https://doi.org/10.1088/1742-5468/2014/10/P10010}
+  {\bibfield  {journal} {\bibinfo  {journal} {Journal of Statistical Mechanics:
+  Theory and Experiment}\ }\textbf {\bibinfo {volume} {2014}},\ \bibinfo
+  {pages} {P10010} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Papić}\ \emph {et~al.}(2015)\citenamefont {Papić},
   \citenamefont {Stoudenmire},\ and\ \citenamefont {Abanin}}]{miles2015}%
   \BibitemOpen
@@ -300,13 +307,15 @@
   {journal} {\bibinfo  {journal} {Physics Reports}\ }\textbf {\bibinfo {volume}
   {480}},\ \bibinfo {pages} {57} (\bibinfo {year} {2009})}\BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {Eisele}(1988)}]{eisele_multiple_1988}%
+\bibitem [{\citenamefont {Eisele}\ and\ \citenamefont
+  {Ellis}(1988)}]{eisele_multiple_1988}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~R.~S.}\
-  \bibnamefont {Eisele}, \bibfnamefont {Theodor}},\ }\href
-  {https://doi.org/10.1007/BF01016409} {\bibfield  {journal} {\bibinfo
-  {journal} {Journal of Statistical Physics}\ ,\ \bibinfo {pages} {161}}
-  (\bibinfo {year} {1988})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Eisele}}\ and\ \bibinfo {author} {\bibfnamefont {R.~S.}\ \bibnamefont
+  {Ellis}},\ }\href {https://doi.org/10.1007/BF01016409} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of Statistical Physics}\ }\textbf {\bibinfo
+  {volume} {52}},\ \bibinfo {pages} {161} (\bibinfo {year} {1988})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Canning}(1992)}]{canning_class_1992}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
@@ -326,17 +335,16 @@
   {https://doi.org/10.1103/PhysRevLett.128.146601} {\bibfield  {journal}
   {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {128}},\
   \bibinfo {pages} {146601} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Misguich}\ \emph
-  {et~al.}(2016{\natexlab{a}})\citenamefont {Misguich}, \citenamefont
-  {Pasquier},\ and\ \citenamefont {Luck}}]{Misguich2016}%
+\bibitem [{\citenamefont {Misguich}\ \emph {et~al.}(2016)\citenamefont
+  {Misguich}, \citenamefont {Pasquier},\ and\ \citenamefont
+  {Luck}}]{Misguich2016}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
   {Misguich}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Pasquier}},\
   and\ \bibinfo {author} {\bibfnamefont {J.-M.}\ \bibnamefont {Luck}},\ }\href
   {https://doi.org/10.1103/PhysRevB.94.155110} {\bibfield  {journal} {\bibinfo
   {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {94}},\ \bibinfo
-  {pages} {155110} (\bibinfo {year} {2016}{\natexlab{a}})}\BibitemShut
-  {NoStop}%
+  {pages} {155110} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Calixto}\ and\ \citenamefont
   {Romera}(2015)}]{calixto_inverse_2015}%
   \BibitemOpen
@@ -353,12 +361,12 @@
   {journal} {\bibinfo  {journal} {Journal of Modern Physics}\ }\textbf
   {\bibinfo {volume} {8}},\ \bibinfo {pages} {2042} (\bibinfo {year}
   {2017})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Sutherland}()}]{Sutherland2004}%
+\bibitem [{\citenamefont {Sutherland}(2004)}]{Sutherland2004}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
   {Sutherland}},\ }\href {https://doi.org/10.1142/5552} {\emph {\bibinfo
-  {title} {Beautiful Models}}}\ (\bibinfo  {publisher} {WORLD SCIENTIFIC})\
-  Chap.~\bibinfo {chapter} {2}\BibitemShut {NoStop}%
+  {title} {Beautiful Models}}}\ (\bibinfo  {publisher} {WORLD SCIENTIFIC},\
+  \bibinfo {year} {2004})\ Chap.~\bibinfo {chapter} {2}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Abanin}\ \emph {et~al.}(2019)\citenamefont {Abanin},
   \citenamefont {Altman}, \citenamefont {Bloch},\ and\ \citenamefont
   {Serbyn}}]{abanin_colloquium_2019}%
@@ -423,17 +431,16 @@
   {journal} {\bibinfo  {journal} {Phys. Rev. X}\ }\textbf {\bibinfo {volume}
   {4}},\ \bibinfo {pages} {041048} (\bibinfo {year} {2014})}\BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {Yousefjani}\ \emph
-  {et~al.}(2023{\natexlab{a}})\citenamefont {Yousefjani}, \citenamefont
-  {Bose},\ and\ \citenamefont {Bayat}}]{yousefjani2023}%
+\bibitem [{\citenamefont {Yousefjani}\ \emph {et~al.}(2023)\citenamefont
+  {Yousefjani}, \citenamefont {Bose},\ and\ \citenamefont
+  {Bayat}}]{Sougata2023}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
   {Yousefjani}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Bose}},\
   and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Bayat}},\ }\href
   {https://doi.org/10.1103/PhysRevResearch.5.013094} {\bibfield  {journal}
   {\bibinfo  {journal} {Phys. Rev. Res.}\ }\textbf {\bibinfo {volume} {5}},\
-  \bibinfo {pages} {013094} (\bibinfo {year} {2023}{\natexlab{a}})}\BibitemShut
-  {NoStop}%
+  \bibinfo {pages} {013094} (\bibinfo {year} {2023})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Sierant}\ \emph {et~al.}(2023)\citenamefont
   {Sierant}, \citenamefont {Lewenstein}, \citenamefont {Scardicchio},\ and\
   \citenamefont {Zakrzewski}}]{sierant_2023}%
@@ -445,17 +452,6 @@
   {https://doi.org/10.1103/PhysRevB.107.115132} {\bibfield  {journal} {\bibinfo
    {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {107}},\ \bibinfo
   {pages} {115132} (\bibinfo {year} {2023})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Yousefjani}\ \emph
-  {et~al.}(2023{\natexlab{b}})\citenamefont {Yousefjani}, \citenamefont
-  {Bose},\ and\ \citenamefont {Bayat}}]{Sougata2023}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
-  {Yousefjani}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Bose}},\
-  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Bayat}},\ }\href
-  {https://doi.org/10.1103/PhysRevResearch.5.013094} {\bibfield  {journal}
-  {\bibinfo  {journal} {Phys. Rev. Res.}\ }\textbf {\bibinfo {volume} {5}},\
-  \bibinfo {pages} {013094} (\bibinfo {year} {2023}{\natexlab{b}})}\BibitemShut
-  {NoStop}%
 \bibitem [{\citenamefont {Alet}\ and\ \citenamefont
   {Laflorencie}(2018)}]{Fabien2018}%
   \BibitemOpen
@@ -481,14 +477,14 @@
   {\bibfield  {journal} {\bibinfo  {journal} {Journal of Physics C: Solid State
   Physics}\ }\textbf {\bibinfo {volume} {6}},\ \bibinfo {pages} {2459}
   (\bibinfo {year} {1973})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {George~Arfken}()}]{arfkenmath}%
+\bibitem [{\citenamefont {George~Arfken}(2011)}]{arfkenmath}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.~E.~H.}\
   \bibnamefont {George~Arfken}, \bibfnamefont {Hans~Weber}},\ }\href
-  {https://www.elsevier.com/books/mathematical-methods-for-physicists/arfken/978-0-12-384654-9}
-  {\emph {\bibinfo {title} {Mathematical Methods for Physicists}}},\ \bibinfo
-  {edition} {7th}\ ed.\ (\bibinfo  {publisher} {Academic Press})\BibitemShut
-  {NoStop}%
+  {https://www.elsevier.com/books/mathematical-methods-for-
+  physicists/arfken/978-0-12-384654-9} {\emph {\bibinfo {title} {Mathematical
+  Methods for Physicists}}},\ \bibinfo {edition} {7th}\ ed.\ (\bibinfo
+  {publisher} {Academic Press},\ \bibinfo {year} {2011})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Mukherjee}\ \emph {et~al.}(2015)\citenamefont
   {Mukherjee}, \citenamefont {Spracklen}, \citenamefont {Choudhury},
   \citenamefont {Goldman}, \citenamefont {Öhberg}, \citenamefont {Andersson},\
@@ -549,17 +545,6 @@
   {journal} {\bibinfo  {journal} {Progress of Theoretical Physics Supplement}\
   }\textbf {\bibinfo {volume} {160}},\ \bibinfo {pages} {296} (\bibinfo {year}
   {2005})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Misguich}\ \emph
-  {et~al.}(2016{\natexlab{b}})\citenamefont {Misguich}, \citenamefont
-  {Pasquier},\ and\ \citenamefont {Luck}}]{misguich_inverse_2016}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {Misguich}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Pasquier}},\
-  and\ \bibinfo {author} {\bibfnamefont {J.-M.}\ \bibnamefont {Luck}},\ }\href
-  {https://doi.org/10.1103/PhysRevB.94.155110} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {94}},\ \bibinfo
-  {pages} {155110} (\bibinfo {year} {2016}{\natexlab{b}})}\BibitemShut
-  {NoStop}%
 \bibitem [{\citenamefont {Russomanno}\ \emph {et~al.}(2015)\citenamefont
   {Russomanno}, \citenamefont {Fazio},\ and\ \citenamefont
   {Santoro}}]{russomanno_thermalization_2015}%
@@ -589,7 +574,7 @@
   {journal} {\bibinfo  {journal} {Journal of Physics A: Mathematical and
   Theoretical}\ }\textbf {\bibinfo {volume} {52}},\ \bibinfo {pages} {054001}
   (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Johansson}\ \emph {et~al.}()\citenamefont
+\bibitem [{\citenamefont {Johansson}\ \emph {et~al.}(2013)\citenamefont
   {Johansson}, \citenamefont {Nation},\ and\ \citenamefont {Nori}}]{qutip}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
@@ -597,7 +582,8 @@
   and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Nori}},\ }\href
   {https://doi.org/https://doi.org/10.1016/j.cpc.2012.11.019} {\bibfield
   {journal} {\bibinfo  {journal} {Computer Physics Communications}\ }\textbf
-  {\bibinfo {volume} {184}},\ \bibinfo {pages} {1234}}\BibitemShut {NoStop}%
+  {\bibinfo {volume} {184}},\ \bibinfo {pages} {1234} (\bibinfo {year}
+  {2013})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Sciolla}\ and\ \citenamefont
   {Biroli}(2010)}]{sciolla_quantum_2010}%
   \BibitemOpen
