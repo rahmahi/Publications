@@ -1,7 +1,7 @@
 \documentclass[%
 reprint,
 superscriptaddress,
-linenumbers,
+%linenumbers,
 amsmath,amssymb,
 aps,
 prb,
@@ -17,7 +17,7 @@ showkeys,
 \usepackage{bera}
 \usepackage{color}
 \usepackage{soul}
-\usepackage{draftwatermark}
+%\usepackage{draftwatermark}
 \usepackage{graphicx}% Include figure files
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
@@ -79,7 +79,7 @@ The Eigenstate Thermalization Hypothesis (ETH) is a series of conjectures that a
 	\label{eq:aeq}
  A_{eq}(E)\equiv \frac{\Tr \left(\hat{A}e^{-\beta \hat{H}}\right)}{\Tr(e^{-\beta \hat{H}})},
 \end{equation}
-where $E=\expval{\hat{H}}{\psi(t)}$ is the conserved energy of the system, and $\beta = 1/(k_B T)$ is the inverse temperature, $H_{eq}$ is an effective Hamiltonian that captures the long-time average dynamics of the system, and $k_B$ is the Boltzmann constant.
+where $E=\expval{\hat{H}}{\psi(t)}$ is the conserved energy of the system, and $\beta = 1/(k_B T)$ is the inverse temperature, and $k_B$ is the Boltzmann constant.
 
 To put it simply, ETH proposes that this many-body Hamiltonian undergoes thermalization as seen in the \textit{long-time averages} of observables, with the eigenstates bearing resemblance to thermal states. The aforementioned hypothesis serves as a valuable instrument for comprehending the conduct of stimulated quantum systems and their correlation with thermal equilibrium. This assertion can be justified by examining the expectation value of an observable $\hat{A}$ as it evolves under the Schr\"odinger equation. To see this, we first expand the state of the system $\ket{\psi(t)}$ as:
 \begin{equation*}
