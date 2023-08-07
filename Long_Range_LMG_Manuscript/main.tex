@@ -14,7 +14,7 @@ prb,
 showkeys,
 ]{revtex4-2}
 \usepackage[T1]{fontenc}
-\usepackage{bera}
+%\usepackage{bera}
 \usepackage{color}
 \usepackage{soul}
 %\usepackage{draftwatermark}
@@ -63,10 +63,9 @@ a time-independent effective Hamiltonian, provided the system is strobed at inte
 	The addition of disorder has been identified as a crucial component in the onset of MBL. In that case, thermalization is prevented by disorder-induced localization. Nonetheless, alternative approaches to MBL in strongly interacting disorder-free systems~\cite{diptiman2014, Carleo2012,aditya2023dynamical}, inhomogeneous systems~\cite{alessandro_markus, Grover2014,miles2015,Smith2017}, and by inducing disorder in the emergent physics~\cite{MBL_emergent_disorder} and by other effective means ~\cite{miles2015} (albeit with strong finite-size effects), have been reported. An alternative approach to realizing MBL in disorder-free \emph{homogeneous} many-body systems involve \textit{Floquet Engineering}, where a time-periodic drive is introduced, and the drive parameters tuned to introduce a clustering of quasistationary energies in a manner similar to localization\cite{zhang_floquet_2016}.
 
 	
-	In this article, {we use the fact that emergent approximate symmetries can be engineered in Floquet systems and apply it to long-range interactions This results in \textit{Dynamical Many Body Localization} (DMBL) at resonant values of the drive parameters}, and complete thermal behaviour at other values. This phenomenon is distinct from DMF in the TFIM, since clean TFIM systems, being integrable, never thermalize.
+	In this article, {we use the fact that emergent approximate symmetries can be engineered in Floquet systems~\cite{Engelhardt2013,asmi:scars} and apply it to long-range interactions This results in \textit{Dynamical Many Body Localization} (DMBL) at resonant values of the drive parameters}, and complete thermal behaviour at other values. This phenomenon is distinct from DMF in the TFIM, since clean TFIM systems, being integrable, never thermalize.
 	
-	
-	To demonstrate the onset of MBL, we investigate the driven Lipkin-Meshkov-Glick (LMG) model\cite{lmg1965_1,lmg1965_2, lmg1965_3, ribeiro2008, debergh_2001,titum2020}, a long-range system {that extends the nearest-neighbour interactions in the TFIM to  all-to-all interactions.}~\cite{campa_statistical_2009, eisele_multiple_1988, canning_class_1992} We have recovered the onset of DMF in this system and have supported our result with numerical simulations.
+	To demonstrate the onset of MBL, we investigate the driven Lipkin-Meshkov-Glick (LMG) model\cite{lmg1965_1,lmg1965_2, lmg1965_3, debergh_2001, ribeiro2008,Engelhardt2013,titum2020}, a long-range system {that extends the nearest-neighbour interactions in the TFIM to  all-to-all interactions.}~\cite{campa_statistical_2009, eisele_multiple_1988, canning_class_1992} We have recovered the onset of DMF in this system and have supported our result with numerical simulations.
 	
 	In addition, we compare the degree of localization of the quasi-stationary Floquet modes {in the LMG model with the TFIM}. In order to do so, we look at the Inverse Participation Ratio (IPR) of the Floquet modes in the representation given by the eigenstates of the symmetry-breaking field. The IPR, closely related to the concept of quantum purity, is defined as the formal sum of the square of the density in some physically meaningful space or representation. A high IPR of a stationary state denotes low participation in most of the representation, and a low IPR distributes participation uniformly across the representation, leading to ergodic dynamics\cite{vu_fermionic_2022}. Thus, IPR~\cite{Misguich2016} is a useful tool for witnessing MBL of a quantum system. For an MBL system, the IPR is unity, and it scales inversely with the {number of spins} when it is thermally distributed~\cite{calixto_inverse_2015}.
 	
@@ -133,7 +132,7 @@ Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbour interac
 		H(t) = \sum_{(k,-k)-\mbox{pairs}} \psi^\dagger_k
 		\Bigg[\ \bigg(f_k - h_z(t)\bigg)\tau_z +  \tau_x \Delta_k\Bigg]\psi_k ,
 	\end{equation}
-	where $f_k = \cos{k}$, $\Delta_k = \sin{k}$, $\tau_{xyz}$ are the three Pauli Matrices, and the sum is over distinct $(k, -k)$ \textit{Cooper Pairs}. We can transform our system to a frame that rotates with the time-varying symmetry-breaking field. This is achieved by the means of the unitary transformation operator 
+	where $f_k = \cos{k}$, $\Delta_k = \sin{k}$, $\tau_{xyz}$ are the three Pauli Matrices, and the sum is over distinct $(k, -k)$ \textit{Cooper Pairs}. We can transform our system to a frame that rotates with the time-varying symmetry-breaking field. This is achieved by the means of the unitary transformation operator~\cite{Engelhardt2013}
 	\begin{align}
 		\label{eq:rotation:tfim}
 	U(t) &= \prod_k U_k(t)\\
