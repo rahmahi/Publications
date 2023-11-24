@@ -1,3 +1,0 @@
-sx_avg_ws_N10.hdf5
-sx_avg_ws_N20.hdf5
-sx_avg_ws_N50.hdf5
