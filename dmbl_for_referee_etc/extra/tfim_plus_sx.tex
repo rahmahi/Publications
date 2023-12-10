@@ -1,0 +1,177 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[left=1cm, right=1cm, top=1cm, bottom=1.5cm]{geometry} 
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[sort&compress]{natbib}
+\usepackage{ulem}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{bbm}
+\usepackage{dcolumn}
+
+\usepackage[dvipsnames]{xcolor}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\usepackage{cancel}
+
+\title{Ising Model}
+
+\author{}
+\date{}
+
+
+\begin{document}
+\maketitle
+\section{Transverse Field Ising Model (TFIM)}
+The nearest neighbour Ising model corresponds to Hamiltonian,
+
+\begin{align}
+\hat{\mathcal{H}}(t) & =\frac{1}{2}\left[\sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}+h \cos (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right] \\
+H_{0} & =\frac{1}{2} \sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x} \\
+H_{1} & =\frac{1}{2} h \cos (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}
+\end{align}
+
+The unitary evolution operator $\hat{U}(t)$ is,
+
+
+\begin{align}
+\hat{U}(t) & =\exp \left(-i \int_{0}^{t} \frac{h}{2} \cos (\omega t) \sum_{i} \hat{\sigma}_{i}^{z} d t\right) \nonumber\\
+& =\exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right) \\
+& =\prod_{i} \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right) .
+\end{align}
+
+
+The generic moving frame effective Hamiltonian for $\hat{\mathcal{H}}(t)$,
+
+\begin{equation}
+\tilde{H}(t)=\hat{U}^{\dagger}(t) \hat{\mathcal{H}}(t) \hat{U}(t)-i \hat{U}^{\dagger}(t) \partial_{t} \hat{U}(t)
+\label{eq:ht}
+\end{equation}
+
+Lets find out first the partial derivative of unitary transform operator,
+
+\begin{equation}
+-i \partial_{t} \hat{U}(t)=\prod_{i}\left(-\frac{h}{2} \cos (\omega t) \hat{\sigma}_{i}^{z}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right)
+\end{equation}
+
+Then,
+
+\begin{align}
+-i \hat{U}^{\dagger}(t) \partial_{t} \hat{U}(t)= & \prod_{k}\left\{\exp \left(i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{k}^{z}\right)\right\} \prod_{i}\left\{\left(-\frac{h}{2} \cos (\omega t) \hat{\sigma}_{i}^{z}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right)\right\} ; i=k
+\label{eq:eqpartial}
+\end{align}
+
+Using Eq.\eqref{eq:eqpartial}, Eq.\eqref{eq:ht} becomes,
+
+
+\begin{align*}
+\hat{\mathcal{H}}(t) & =\hat{U}^{\dagger}(t) \frac{1}{2}\left(\sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}+h \cos (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right) \hat{U}(t)-\sum_{i}\left(\frac{h}{2} \cos (\omega t) \hat{\sigma}_{i}^{z}\right) \nonumber\\
+& =\frac{1}{2} \hat{U}^{\dagger}(t)\left(\sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}\right) \hat{U}(t)+\sum_{i}\left(\frac{h}{2} \cos (\omega t) \hat{\sigma}_{i}^{z}\right)-\sum_{i}\left(\frac{h}{2} \cos (\omega t) \hat{\sigma}_{i}^{z}\right) \nonumber\\
+& =\frac{1}{2} \hat{U}^{\dagger}(t)\left(\sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}\right) \hat{U}(t) \nonumber\\
+& =\frac{1}{2} \exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right)\nonumber
+\end{align*}
+
+We utilize $\eta=\frac{h}{2 \omega} \sin (\omega t)$, also considering $J=1$.
+
+
+\begin{align}
+\hat{\mathcal{H}}(t) & =\frac{1}{2} \exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right) \nonumber\\
+& \simeq \prod_i \exp\left(i\eta\hat{\sigma}^z_i\right)\left(\sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}\right)\exp\left(-i\eta\hat{\sigma}^z_i\right)\nonumber\\
+&= \sum_i J \exp(i\eta\hat{\sigma}^z_i)\exp(i\eta\hat{\sigma}^z_{i+1})\left( \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}\right)\exp(-i\eta\hat{\sigma}^z_i)\exp(-i\eta\hat{\sigma}^z_{i+1})\nonumber\\
+&= J\sum_{i} \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}\exp(-2i\eta\hat{\sigma}^z_i)\exp(-2i\eta\hat{\sigma}^z_{i+1})
+\label{eq:hmov}
+\end{align}
+
+Using, $\displaystyle e^{ia(\hat{n}\cdot \vec{\sigma})} = \mathbbm{1} \cos(a) + i (\hat{n}\cdot \vec{\sigma})\sin(a)$, 
+\begin{align}
+\exp\left(-2i\eta\hat{\sigma}^z_i\right)\exp\left(-2i\eta\hat{\sigma}^z_i\right)
+=& \Big[\mathbbm{1} \cos(2\eta) - i \hat{\sigma}^z_i\sin(2\eta)\Big]\Big[\mathbbm{1} \cos(2\eta) - i \hat{\sigma}^z_{i+1}\sin(2\eta)\Big]\nonumber\\
+=& \cos^2(2\eta) - \hat{\sigma}^z_i\hat{\sigma}^z_{i+1}\sin^2(2\eta) -\frac{i}{2} \left(\hat{\sigma}^z_i+ \hat{\sigma}^z_{i+1}\right)\sin(4\eta)
+\label{eq:op}
+\end{align}
+
+\begin{align}
+\cos^2(2\eta) =& \frac12\big[1+\cos(4\eta)\big]=\frac12\big[\cos^2(4\eta)+ \sin^2(4\eta)+\cos(4\eta)\big]\nonumber\\
+\sin^2(2\eta) =& \frac12\big[1-\cos(4\eta)\big]=\frac12\big[\cos^2(4\eta)+ \sin^2(4\eta)-\cos(4\eta)\big]
+\label{eq:cossin}
+\end{align}
+
+Now, we recall Jacobi Anger expansion,
+
+
+\begin{align}
+\cos (4 \eta)&=\cos \left(\frac{2 h}{\omega} \sin (\omega t)\right)=\mathcal{J}_{0}\left(\frac{2 h}{\omega}\right)+2 \sum_{n=1}^{\infty}(-1)^{n} \mathcal{J}_{2 n}\left(\frac{2 h}{\omega}\right) \cos (2 n \omega t), \\
+\sin (4 \eta)&=\sin \left(\frac{2 h}{\omega} \sin (\omega t)\right)=-2 \sum_{n=1}^{\infty}(-1)^{n} \mathcal{J}_{2 n-1}\left(\frac{2 h}{\omega}\right) \cos [(2 n-1) \omega t]
+\label{eq:jacang}
+\end{align}
+
+
+here $\mathcal{J}_{n}$ is the Bessel function of n'th order. Using Rotating Wave Approximation(RWA) we can neglect the highrer order terms in Jacobi Anger expansion in Eq.\eqref{eq:jacang}. Thus considering $n=0, \cos (4 \eta) \simeq$ $\mathcal{J}_{0}\left(\frac{2 h}{\omega}\right)$, and $\sin (4 \eta) \simeq 0$, Eq.\eqref{eq:op}
+
+\begin{align}
+\cos^2(2\eta) \simeq& \frac12\Bigg[\left\{\mathcal{J}_0\left(\frac{2h}{\omega}\right)\right\}^2 + \mathcal{J}_0\left(\frac{2h}{\omega}\right)\Bigg]=\frac12 \mathcal{J}_0\left(\frac{2h}{\omega}\right)\Bigg[1+ \mathcal{J}_0\left(\frac{2h}{\omega}\right)\Bigg]\nonumber\\
+\sin^2(2\eta) =& \frac12\Bigg[\left\{\mathcal{J}_0\left(\frac{2h}{\omega}\right)\right\}^2 - \mathcal{J}_0\left(\frac{2h}{\omega}\right)\Bigg]=\frac12 \mathcal{J}_0\left(\frac{2h}{\omega}\right)\Bigg[1- \mathcal{J}_0\left(\frac{2h}{\omega}\right)\Bigg]
+\label{eq:cossin}
+\end{align}
+Thus,
+\begin{equation}
+\exp\left(-2i\eta\hat{\sigma}^z_i\right)\exp\left(-2i\eta\hat{\sigma}^z_i\right) = \frac12 \mathcal{J}_0\left(\frac{2h}{\omega}\right)\Bigg[\left\{1+ \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right\} - \hat{\sigma}^z_i\hat{\sigma}^z_{i+1}\left\{1- \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right\} \Bigg]
+\end{equation}
+\begin{equation}
+\hat{\mathcal{H}}_{_{TFIM}}^{R W A}=\frac{J}{2} \mathcal{J}_0\left(\frac{2h}{\omega}\right)\Bigg[\left\{1+ \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right\} - \hat{\sigma}^z_i\hat{\sigma}^z_{i+1}\left\{1- \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right\} \Bigg]\sum_{i} \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x} 
+\end{equation}
+
+When drive parameter $\frac{2 h}{\omega}$ is one of the roots of Bessels function, the moving frame Hamiltonian (Eq. (10) becomes zero. This manifests in localization in the TFIM model.
+
+\section*{2 Transverse Field Ising Model: TFIM $+\sigma_{x}$}
+The nearest neighbour Ising model corresponds to Hamiltonian,
+
+\begin{align}
+\hat{\mathcal{H}}(t) & =\frac{1}{2}\left[\sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}+\sum_{i} \hat{\sigma}_{i}^{x}+h \cos (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right]\\
+H_{0} & =\frac{1}{2} \sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}+\sum_{i} \hat{\sigma}_{i}^{x} \nonumber\\
+H_{1} & =\frac{1}{2} h \cos (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\nonumber
+\end{align}
+
+The unitary evolution operator $\hat{U}(t)$ is, $\hat{U}(t)=\prod_{i} \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right)$. Now the Hamiltonian in rotating frame,
+
+\begin{align}
+\tilde{\mathcal{H}}(t)= & \frac{1}{2} \exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}+\sum_{i} \hat{\sigma}_{i}^{x}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right) \nonumber\\
+= & \underbrace{\frac{1}{2} \exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right)}_{\mathrm{A}} \nonumber\\
+& +\underbrace{\frac{1}{2} \exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} \hat{\sigma}_{i}^{x}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right)}_{\mathrm{B}}
+\end{align}
+
+Let us find $A$ and $B$ separately. We already have solved $A$ in previous section in Eq. $(10)$, so we need to solve only $B$ part,
+
+
+\begin{align*}
+B & =\frac{1}{2} \exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} \hat{\sigma}_{i}^{x}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right) \\
+& =\left(e^{i 2 \eta S^{z}} S^{x} e^{-i 2 \eta S^{z}}\right)
+\end{align*}
+
+Again applying Jacobi Anger expansion
+
+\begin{align*}
+& \cos (2 \eta)=\cos \left(\frac{h}{\omega} \sin (\omega t)\right)=\mathcal{J}_{0}\left(\frac{h}{\omega}\right)+2 \sum_{n=1}^{\infty}(-1)^{n} \mathcal{J}_{2 n}\left(\frac{h}{\omega}\right) \cos (2 n \omega t), \\
+& \sin (2 \eta)=\sin \left(\frac{h}{\omega} \sin (\omega t)\right)=-2 \sum_{n=1}^{\infty}(-1)^{n} \mathcal{J}_{2 n-1}\left(\frac{h}{\omega}\right) \cos [(2 n-1) \omega t],
+\end{align*}
+
+and considering RWA which keeps only $n=0$ 'th term,
+
+\begin{align}
+B & =\left(e^{i 2 \eta S^{z}} S^{x} e^{-i 2 \eta S^{z}}\right) \nonumber\\
+& \simeq\left(S^{x} \cos (2 \eta)-S^{y} \sin (2 \eta)\right) \simeq \mathcal{J}_{0}\left(\frac{h}{\omega}\right) S^{x}
+\label{eq:B}
+\end{align}
+
+Thus we get,
+
+\begin{equation}
+\hat{\mathcal{H}}_{_{TFIM+S_{x}}}^{R W A}=\frac{J}{2} \mathcal{J}_0\left(\frac{2h}{\omega}\right)\Bigg[\left\{1+ \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right\} - \hat{\sigma}^z_i\hat{\sigma}^z_{i+1}\left\{1- \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right\} \Bigg]\sum_{i} \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x} +\mathcal{J}_{0}\left(\frac{h}{\omega}\right) S^{x}
+\label{eq:tfimpsx}
+\end{equation}
+
+Now in the above Eq.\eqref{eq:tfimpsx} to find out the drive parameter which can make it zero, is difficult to find, because it consists of two different Bessel function. So, introducing an additional integrability breaking term `` $\sigma_{x}$ " in TFIM equation is not general practice in process to obtain localization.
+
+
+\end{document}
