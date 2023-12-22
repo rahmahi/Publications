@@ -8,7 +8,7 @@
 \usepackage{url}
 \usepackage{hyperref}
 \usepackage{bbm}
-\usepackage{dcolumn}
+\usepackage{dcolumn, physics}
 
 \usepackage[dvipsnames]{xcolor}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
@@ -186,4 +186,27 @@ We concentrate on XXZ model,
 \end{equation}
 here $\Delta$ is the anisotropy term. The third term of the above equation commutes with the `z' component of the Pauli matrices and it preserves the eigenstates. 
 Although for the first and second terms we will need to apply the unitary transformation and RWA to get the effective Hamiltonian. We can apply the RWA method in previous sections. Which will eventually results in `Localization' at $4h/\omega$ resonance points. Albeit the contribution from third term breaks our proposed methodology to exhibit phase crossover at resonance point by virtue of adiabatic increase in drive frequency.
+
+\section{$\expval{\bar{H_0}}$ : Thermodynamic limit}
+In the full Hilbert space, the time average of the Hamiltonian is ,
+\begin{equation*}
+\bar{H}_0 = \frac{J}{2(N-1)}\sum_{i\neq j}\hat{\sigma}^z_i \hat{\sigma}^z_j.
+\end{equation*}
+Thus,
+\begin{equation}
+	\left(\bar{H_0}\right)^2 = \frac{J^2}{4(N-1)^2}\sum_{i\neq j, k \neq l} \hat{\sigma}^z_i \hat{\sigma}^z_j \hat{\sigma}^z_k \hat{\sigma}^z_l
+\end{equation}
+
+The thermal variance at $T= \infty$ is given by $\displaystyle \sigma^2_{\infty} = \frac{\Tr[H^2_0]}{2^N}$. 
+
+Since $\bar{H_0}$ is traceless, and the trace part of $\left(\bar{H_0}^2\right)$, when $i,j$ and $l,k$ terms are equal, we get ,
+\begin{align*}
+\sigma_\infty^2 =& \frac{J^2}{4(N-1)^2 2^N}\Tr[\sum_{i\neq j, k \neq l} \hat{\sigma}^z_i \dots\otimes \mathbbm{1} \otimes \dots \hat{\sigma}^z_j \dots\otimes \mathbbm{1} \otimes \dots \hat{\sigma}^z_k\dots\otimes \mathbbm{1} \otimes \dots \hat{\sigma}^z_l ]\\
+=& \frac{J^2}{4(N-1)^2 2^N} 2^N \sum_{i\neq j} 1\\
+=& \frac{J^2}{4(N-1)^2} \frac{N(N+1)}{2}\\
+=& \frac{J^2}{8} \frac{N^2+N}{N^2-2N+1}
+\end{align*}
+when $N\rightarrow \infty$, we get $\displaystyle \sigma_\infty^2 \simeq \frac{J^2}{8}$. 
+
+For convenience we consider, $J=1$, then, $\sigma_\infty^2 = 0.125$ 
 \end{document}
