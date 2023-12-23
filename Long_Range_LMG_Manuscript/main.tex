@@ -26,7 +26,9 @@ showkeys,
 \usepackage[sort&compress]{natbib}
 \usepackage{hyperref}
 
-
+\usepackage{color}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\usepackage{soul}
 
 
 \begin{document}
@@ -164,7 +166,19 @@ In the frequency regime  $\omega \gg f_k$, the long-time average $H^{RWA}\equiv\
 \end{equation}
 It is evident that by manipulating the drive parameters, specifically the amplitude denoted by $h$ and the frequency denoted by $\omega$, in a manner such that $\eta$ is positioned on a root of $J_0(\eta)$, the fermion number can be conserved to a significant extent at this particular resonance. Consequently, it is feasible to exercise direct control over $H^{RWA}$, resulting in a comprehensive suppression of the dynamics of otherwise responsive observables. 
 
-This phenomenon is highly general in nature, and can be readily adapted to non-integrable systems. In such cases, freezing has the additional effect of inducing DMBL, suppressing thermalization to infinite temperatures. Numerical quantification of localization of a specific (quasi) stationary state in a physically significant representation can be achieved through the computation of the \emph{Inverse Participation Ratio} (IPR).  {The IPR is generally defined as the formal sum over the square of the local density in a physically meaningful space.}~\cite{mukherjee_modulation-assisted_2015,lin_many-body_2018,murphy_generalized_2011, torres-herrera_self-averaging_2020} {In the single particle case,  the IPR, } for a state $\ket{\psi}$ can be written as
+This phenomenon is \blue{fairly} general in nature, and can be readily adapted to \blue{some} non-integrable systems \blue{particularly after addition of integrability fields or in the presence of long range interactions. For instance, if we apply integrability field,} 
+\begin{equation}
+\hat{\mathcal{H}}(t) =\frac{1}{2}\left[\sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}+h \cos (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}+\sum_{i} \hat{\sigma}_{i}^{x}\right]
+\label{eq:tfim_sx}
+\end{equation}	
+RWA reduces Eq.\eqref{eq:tfim_sx} to,
+\begin{multline}
+	\hat{\mathcal{H}}_{_{TFIM+S_{x}}}^{R W A}=\frac{J}{2} \mathcal{J}_0\left(\frac{2h}{\omega}\right)\sum_{i}\Bigg[\left\{1+ \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right\} \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}\\ + \hat{\sigma}^y_i\hat{\sigma}^y_{i+1}\left\{1- \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right\} \Bigg]\\ +\mathcal{J}_{0}\left(\frac{h}{\omega}\right) \frac12\sum_i\hat{\sigma}^x_i
+	\label{eq:tfim_sx1}
+\end{multline}
+\blue{If drive parameters $h$ and $\omega$ are controlled such a way that $\left(\frac{2h}{\omega}\right)$ lies at one of the roots of Bessel function, then the first part of Eq.\eqref{eq:tfim_sx1} vanishes yet the second term survives. The second term consists of non interacting spins for which FETH-IPR can be localized along set of  basis vector corresponding to spin-spin interaction. However if we add additional spin-spin interactions, then this phenomenon can not be replicated, as an example in XXZ model.} 
+
+In such \blue{non integrable} cases, freezing has the additional effect of inducing DMBL, suppressing thermalization to infinite temperatures. Numerical quantification of localization of a specific (quasi) stationary state in a physically significant representation can be achieved through the computation of the \emph{Inverse Participation Ratio} (IPR).  {The IPR is generally defined as the formal sum over the square of the local density in a physically meaningful space.}~\cite{mukherjee_modulation-assisted_2015,lin_many-body_2018,murphy_generalized_2011, torres-herrera_self-averaging_2020} {In the single particle case,  the IPR, } for a state $\ket{\psi}$ can be written as
 \begin{equation*}
 	\phi_{IPR}\equiv \int \mathrm{d}\mathbf{x}\;\vert\ip{\mathbf{x}}{\psi}\vert^4.
 \end{equation*}
@@ -333,14 +347,14 @@ To demonstrate this, we investigate the IPR of the  Floquet mode with smallest q
 for numerous frequencies and system sizes, along with the associated drive amplitude $h$ keeping the system at a localization point. The results are shown in fig~\ref{fig:phase_crossover}. In the low-frequency range $\omega \in \left[1.0, 9.0\right]$, the IPR exhibits values well below unity.   {Moreover, as can be seen in the bottom panel of the same figure, when the dynamics is simulated for smaller} $\omega$s, {the fall of} $\phi_{IPR}(N)$ {asymptotically approaches one that characterizes a fully thermal state, where} $\phi_{IPR}(N)\sim 1/N$ {in the TSS. } In the limit  $N\rightarrow\infty$, the inverse participation ratio (IPR) tends towards zero, indicating a fully de-localized state.  {Contrast this with the IPR plots shown in the bottom left panel of fig}~\ref{fig:ipr:isinglowfrk} {for the integrable TFIM}.  {The top panel of fig.}~\ref{fig:phase_crossover} {also reveals} a gradual increase {in the unity} {towards unity} of IPR over a certain frequency range, specifically at $\omega \approx 5$. In addition, the rise does not cross with those for different values of $N$, suggesting the onset of a phase crossover~\cite{sierant_2023, sachdev_quantum_2011}. As the size of the system increases, the crossover region becomes smoother, rather than sharper.
 \begin{figure}[t!]
 	\centering
-	\includegraphics[width =8.5cm]{phase_crossover_LMG.jpeg}
+	\includegraphics[width =8.5cm]{phase_crossover_LMG1.jpeg}
 	\caption{{In the top panel, the IPR of the lowest quasienergy Floquet state is plotted as a function of} $\omega$ {for different} $N$s,{ with amplitude $h$ adjusted to ensure that} $J_0(\eta)=0$ {always. The smooth rise in IPR defines a phase crossover (top panel) between a fully thermal phase to a fully localized phase. The bottom panel plots the IPR versus} $N$ {for small} $\omega$s, {also with} $h$ {adjusted. The curves asymptotically approach the dependency} $\phi_{IPR}\sim 1/N${, indicating thermalization at low-}$\omega$.}
 	\label{fig:phase_crossover}
 \end{figure}
 \begin{figure}[!ht]
 \centering
 \includegraphics[width = 9.cm]{hbar_avg_std.jpeg}
-\caption{The standard deviation of the heating rate, denoted by $\expval{H}_{std}$, calculated over a span of $t=500 T$ for two system sizes. Here, $h$ is varied to keep $\eta = 4h/\omega$ at the first root of $J_0(\eta)$. A nonsingular rise has been identified at $\omega \approx 4.0$. $\expval{H}_{std}$ exhibits a diminutive magnitude below that value of $\omega$, while a linear rise is observed at higher frequencies, consistent with freezing. A vanishingly small standard deviation for $\omega \ll 4.0$ indicates the presence of a thermal region, whereas a larger finite standard deviation suggests the existence of athermal behaviour. The small peaks observed at $\omega\in [2, 4)$ are finite-size effects that disappear in the thermodynamic limit.}
+\caption{The standard deviation of the heating rate, denoted by $\expval{H}_{std}$, calculated over a span of $t=500 T$ for two system sizes. Here, $h$ is varied to keep $\eta = 4h/\omega$ at the first root of $J_0(\eta)$. A nonsingular rise has been identified at $\omega \approx 4.0$. $\expval{H}_{std}$ exhibits a diminutive magnitude below that value of $\omega$, while a linear rise is observed at higher frequencies, consistent with freezing. A small standard deviation \blue{(= 0.125)} for $\omega \ll 4.0$ indicates the presence of a thermal region, whereas a larger finite standard deviation suggests the existence of athermal behaviour. The small peaks observed at $\omega\in [2, 4)$ are finite-size effects that disappear in the thermodynamic limit. \blue{In the inset, $\expval{H}_{std}$ is studied at low frequency ($\omega=0.7$) for a set of system sizes and at the thermodynamic limit, $\expval{H}_{std} = 0.125$ is found to corroborate}.}
 \label{fig:havg_std}
 \end{figure}
 
