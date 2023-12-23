@@ -17,6 +17,8 @@
 \usepackage{physics}
 \usepackage{bbm}
 
+\usepackage[absolute,overlay]{textpos}
+
 %Macros for mathematical notations
 
 \newcommand{\V}[1]{\boldsymbol{#1}} %# vector
@@ -198,7 +200,7 @@ The thermal variance at $T= \infty$ is given by $\displaystyle \sigma^2_{\infty}
 Since $\bar{H_0}$ is traceless, and the trace part of $\left(\bar{H_0}^2\right)$, when $i,j$ and $l,k$ terms are equal, we get ,
 \begin{align*}
 	\sigma_\infty^2 =& \frac{J^2}{4(N-1)^2 2^N}\Tr[\sum_{i\neq j, k \neq l} \hat{\sigma}^z_i \dots\otimes \mathbbm{1} \otimes \dots \hat{\sigma}^z_j \dots\otimes \mathbbm{1} \otimes \dots \hat{\sigma}^z_k\dots\otimes \mathbbm{1} \otimes \dots \hat{\sigma}^z_l ]\\
-	=& \frac{J^2}{4(N-1)^2 2^N} 2^N \sum_{i\neq j} 1\\
+	=& \frac{J^2}{4(N-1)^2 2^N}   2^N \sum_{i\neq j} 1\\
 	=& \frac{J^2}{4(N-1)^2} \frac{N(N+1)}{2}\\
 	=& \frac{J^2}{8} \frac{N^2+N}{N^2-2N+1}
 \end{align*}
@@ -206,10 +208,16 @@ when $N\rightarrow \infty$, we get $\displaystyle \sigma_\infty^2 \simeq \frac{J
 
 For convenience we consider, $J=1$, then, $\sigma_\infty^2 = 0.125$.
 
-In the revised manuscript we 
-
+The numerical result in Fig. support 
+\begin{textblock*}{7cm}(13cm,14cm) % Adjust the position (2cm,2cm) as needed
+	\includegraphics[width=7cm]{hbar_avg_std_w0.7.jpg}
+	\caption{Variation of $\expval{H(t)}_{std}$ with system size(N) at small frequency $\omega=0.7$. $\expval{H(t)}_{std}$ is found to decrease as N increases and at thermodynamic limit it reaches 0.125.}
+	\label{fig:std_N}
+\end{textblock*}
 }
 
+
+\vskip 1.5cm
 \item The referee says,``\textit{In the conclusion, it is useful to comment on whether this method could be adapted (related to my point 2) to other generic models (say
 	XXZ models). }"\\
 
