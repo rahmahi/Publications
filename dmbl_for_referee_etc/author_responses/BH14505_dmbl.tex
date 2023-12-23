@@ -234,15 +234,21 @@ The unitary evolution operator $\displaystyle \hat{U}(t)$ is, $\hat{U}(t)=\prod_
 \begin{align}
 	\tilde{\mathcal{H}}(t)_{_{XXZ}}= & \frac{1}{2} \exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} 2J^x \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + \Delta  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \sum_i\hat{\sigma}_{i}^{z}\right) \nonumber\\
 	= & \underbrace{\exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \sum_i\hat{\sigma}_{i}^{z}\right)}_{\mathrm{A}} \nonumber\\
-	& +\underbrace{\frac{\Delta}{2} \exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \sum_i\hat{\sigma}_{i}^{z}\right)}_{\mathrm{B}}
+	& +\underbrace{\frac{\Delta}{2} \exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \sum_i\hat{\sigma}_{i}^{z}\right)}_{\mathrm{C}}
+\label{eq:xxz1}
 \end{align}
+The RWA on `A' part of Eq.\eqref{eq:xxz1} recovers the expression Eq.\eqref{eq:hrwa1}, which suggests a localization for $\left(\frac{2h}{\omega}\right)$ which lies at one of the roots of Bessel function. Nevertheless, the `B' part doesn't transform via unitary transformation operator. The spin-spin interaction terms in `B' grows information exchange in between the spins, thereby it attains thermalization at long time. So, our proposed FETH-IPR method fails in spin systems like XXZ model.
 }
 \vskip 1cm 
 \noindent \textbf{Summary of important changes to the  manuscript}
 
 
 \begin{enumerate}
-\item 
+\item We have improved the discussion on how FETH can be applied at some of the non-integrable system in page(4), and discussed it with an example where a integrable breaking term such as $\hat{\sigma^x}$ is augmented to TFIM.
+
+\item We have improved Fig. 8 $\&$ 9.
+\item We have discussed the standard deviation of heating rate at very small drive frequency at thermodynamic limit where the numerical result corroborates the analytical result.
+\item We have briefly discussed in conclusion sention, if our method of achieving a phase cross over is not possible like XXZ model. 
 \end{enumerate}
 
 \bibliography{dmbl_refs}
