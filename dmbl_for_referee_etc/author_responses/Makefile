@@ -1,7 +1,7 @@
-NAME=BH14505_chimera letter_to_editor
+NAME=BH14505_dmbl
 VIEWPDF=evince
-BIBTEXSRCS=chimera_refs.bib
+BIBTEXSRCS=dmbl_refs.bib
 USE_PDFLATEX=1
-CLEAN_FILES+=*.synctex.gz B14505_chimeraNotes.bib BH14505_chimera.tar.gz *.bak *.tmp
+CLEAN_FILES+=*.synctex.gz BH14505_dmblNotes.bib BH14505_dmbl.tar.gz *.bak *.tmp
 
 include /usr/share/latex-mk/latex.gmk
