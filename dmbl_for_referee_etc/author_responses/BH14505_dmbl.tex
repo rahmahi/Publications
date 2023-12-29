@@ -61,11 +61,14 @@
 		
 		\response{
 			We thank the referee for this suggestion. In earlier work on periodically driven LMG models,
-			the focus has been on determining the onset of DMBL by looking at expectation values of local
-			observable(s) . Standard quantities that have been observed include magnetization, heating rate, and fidelity susceptibility. The observables were computed by running simulations over an extended duration, and localization was inferred from their dynamics over long but ultimately finite times.
+			the focus was on determining the onset of DMBL by looking at expectation values of local
+			observable(s) . Standard quantities that have been observed include magnetization, heating rate, and fidelity susceptibility. The observables were calculated by running simulations over an long duration, and localization was inferred from their dynamics over long but ultimately finite times.
 			
-			The novelty in our paper lies in looking for DMBL in the Floquet qusaistationary states themselves, rather than the observable dynamics. Localization in the Floquet modes can be inferred from their Inverse Participation Ratio, which distinguishes between a fully localized state and a thermal state of the system. IPR ranges from scaling inversely with the Hilbert space dimension (a fully distributed or thermal state) to unity (a fully localized state). Our perspective is that this is a better indicator of localization, as it is valid for infinite times, as opposed to observable dynamics, where very long time effects are onconclusive. We have updated our introduction to elaboate on this.
-		}
+			The novelty of our paper lies in the search for DMBL in the Floquet qusaistationary states of the LMG model themselves, rather than in the observable dynamics. Localization in the Floquet modes can be deduced from the values of their Inverse Participation Ratio, which distinguishes between a fully localized state and a thermal state of the system. IPR ranges from scaling inversely with the Hilbert space dimension (a fully distributed or thermal state) to unity (a fully localized state). Our view is that this is a better indicator of localization, as it is valid for infinite times, as opposed to observable dynamics, where very long time effects are inconclusive. We have updated our introduction to elaborate on this.
+		
+
+
+}
 		\item The referee says, ``\textit{On page 3, the Floquet eigenstate Thermalization hypothesis is stated without references. }".\\
 		
 		\response{
@@ -73,7 +76,7 @@
 		}
 		
 		\item The referee says, "\textit{On page 4, after illustrating the resonances in the analytically solvable TFIM model, the authors claim, “This phenomenon is highly general and can be readily adapted to non-integrable systems”. I disagree with the statement, and clear references, if any, need to be cited to back up this statement. The manipulations made for TFIM are fine-tuned to this integrable system, and they break down the moment any integrability-breaking term is introduced. For example, if I add a longitudinal field sigma-x to the TFIM, I do not see how to adapt the procedure. }"\\
-		
+		\textbf{Math needs correcting}
 		\response{ We would like to thank the referee for this comment. We acknowledge that there may have been a lack of clarity regarding this matter in the manuscript. We have revised some of the content in the manuscript to elaborate on this. A short summary follows:
 			
 			We utilized the RWA on the Hamiltonian following the unitary transformation to investigate localization in TFIM. Adding a longitudinal field $\sigma^x$ to the original TFIM Hamiltonian destroys the integrability of the model. However, it does not cause the math to break down completely.  Adding a symmetry-breaking field $\sigma^x$ to the driven TFIM yields 
@@ -148,10 +151,10 @@
 			get a localization in the thermodynamic limit. Is this the case? }".
 		
 		\response{    	
-			We thank the referee for the comment. We agree with the referee on this point. The model and methodology inherits drive frequency extensiveness. We have investigated for larger system size and the critical frequency for phase crossover is found to rise with system size. We have updated the corresponding Fig.8 with a revised improved version.
+			We thank the referee for the comment. We have extended or simulations for larger system sizes and have verified that this is, indeed, the case. Increasing $N$ pushes the crossover point further to larger values of $\omega$, thus requiring infinite frequency at infinite size. We have updated the corresponding Fig.8 with a revised version, and have reported this in section 4 par 2.
 		}
 		\item The referee says,``\textit{Is the heating suppressed at points where the frequency meets the resonance condition? }".
-		
+		\todo{rewrite}
 		\response{
 			We thank the referee for this comment. We agree with understanding of the referee. The resonance condition derived from the Rotating Wave Approximation(RWA) over the Hamiltonian of system. At resonance condition(s), it is possible to nullify the effective Hamiltonian. This results in total localization of the system. This is true for infinite times. Thus the system at resonance condition never undergo the heating.
 		}
@@ -195,7 +198,7 @@
 				\label{eq:std_inf}
 			\end{equation} 
 			
-			For convenience we consider, $J=1$, then, $\sigma_\infty^2 = 0.125$. The numerical result in Fig.\ref{fig:std_Ns} supports analytical results in Eq. \eqref{eq:std_inf}. Thus at low frequency $\expval{H(t)}_{std}$ goes thermal value 
+			For convenience we consider, $J=1$, then, $\sigma_\infty^2 = 0.125$. The numerical result in Fig.\ref{fig:std_Ns} supports analytical results in Eq. \eqref{eq:std_inf}. Thus at low frequency $\expval{H(t)}_{std}$ goes thermal value. We have updated the manuscript with sa brief footnote summarizing this point, and added fig~\ref{fig:std_Ns} as an inset.
 		}
 		
 		
