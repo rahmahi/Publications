@@ -169,19 +169,21 @@
 			The unitary evolution operator $\displaystyle \hat{U}(t)$ is, $\hat{U}(t)=\prod_{i} \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right)$. Now the Hamiltonian in rotating frame,
 			
 			\begin{align}
-				\tilde{\mathcal{H}}(t)_{_{XXZ}}= & \frac{1}{2} \exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} 2J^x \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + \Delta  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \sum_i\hat{\sigma}_{i}^{z}\right) \nonumber\\
-				= & \underbrace{\exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \sum_i\hat{\sigma}_{i}^{z}\right)}_{\mathrm{A}} \nonumber\\
-				& +\underbrace{\frac{\Delta}{2} \exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \sum_i\hat{\sigma}_{i}^{z}\right)}_{\mathrm{C}}
+				\tilde{H}(t)_{_{XXZ}}= & \frac{1}{2} \exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} J \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + J \hat{\sigma}^y_i \hat{\sigma}^y_{i+1}+ \Delta  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t)\right)\nonumber\\
+				= \frac12 \Bigg[& \underbrace{\exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \sum_i\hat{\sigma}_{i}^{z}\right)}_{\mathrm{A}} \nonumber\\
+				& +\underbrace{\exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} J \hat{\sigma}_{i}^{y} \hat{\sigma}_{i+1}^{y}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \sum_i\hat{\sigma}_{i}^{z}\right)}_{\mathrm{B}} \nonumber\\
+				& +\underbrace{\Delta \left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)}_{\mathrm{C}}\Bigg]
 				\label{eq:xxz1}
 			\end{align}
-			The RWA on `A' part of Eq.\eqref{eq:xxz1} recovers similar expression like  Eq.\eqref{eq:A},
-			\begin{multline}
-				A^{R W A}=\frac{J}{4}\mathcal{J}_0\left(\frac{2h}{\omega}\right)\sum_i \hat{\sigma^x_i} \hat{\sigma^x_{i+1}} \Bigg\{\left[1+\mathcal{J}_0\left(\frac{2h}{\omega}\right) + 2\mathcal{J}_0\left(\frac{4h}{\omega}\right)\right]\\ +\hat{\sigma}^z_i\hat{\sigma}^z_{i+1}\left[1+\mathcal{J}_0\left(\frac{2h}{\omega}\right)-2\mathcal{J}_0\left(\frac{4h}{\omega}\right)\right] -\left(\hat{\sigma}^z_i+\hat{\sigma}^z_{i+1}\right)\left[1-\mathcal{J}_0\left(\frac{4h}{\omega}\right)\right]\Bigg\},
-			\end{multline}
-			
-			which suggests a localization for $\left(\frac{2h}{\omega}\right)$ which lies at one of the roots of Bessel function. 
-			
-			Nevertheless, the `C' part doesn't transform via unitary transformation operator. The spin-spin interaction terms in `C' grows as information exchanges in between the spins, thereby it attains thermalization at large time. So, our proposed FETH induced IPR method fails in spin systems like XXZ model.
+		
+		Utilizing angular momenta $\displaystyle S^{\mu(=x,y,z)} = \frac12\sum_i \hat{\sigma}^\mu_i$, 
+		\begin{align}
+		\tilde{H}_{_{XXZ}} &= 2\Bigg[\Big(S^x_i S^x_{i+1}\cos^2(2\eta) + S^y_i S^y_{i+1}\sin^2(2\eta)\Big) + \Big(S^y_i S^y_{i+1}\cos^2(2\eta) + S^x_i S^x_{i+1}\sin^2(2\eta)\Big) + \frac{\Delta}{4}\hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\Bigg] \nonumber\\
+		&= 2\Bigg[\Big(S^x_i S^x_{i+1} + + S^y_i S^y_{i+1}\Big)\cos^2(2\eta) + \Big(S^x_i S^x_{i+1} + + S^y_i S^y_{i+1}\Big)\sin^2(2\eta) + \frac{\Delta}{4}\hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\Bigg]\nonumber\\
+		&= 2\Bigg[\Big(S^x_i S^x_{i+1} + S^y_i S^y_{i+1}\Big)\big(1+\cos(4\eta)\big) + \Big(S^x_i S^x_{i+1} + S^y_i S^y_{i+1}\Big)\big(1-\cos(4\eta)\big) + \frac{\Delta}{4}\hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\Bigg]\nonumber\\
+		&= 4\Big(S^x_i S^x_{i+1} + S^y_i S^y_{i+1}\Big) + \frac{\Delta}{2}\hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}
+		\end{align}
+		
 		}
 	\end{enumerate}
 	\vskip 1cm 
