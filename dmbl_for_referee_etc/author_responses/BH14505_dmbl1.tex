@@ -96,7 +96,16 @@
 			\hat{H}_{_{TFIM+S_{x}}}^{R W A}= H^{RWA}+\frac12 \mathcal{J}_{0}\left(\frac{h}{\omega}\right) \sum_i\hat{\sigma}^x_i,
 			\label{eq:tfim_sx1}
 		\end{equation}
-		where $H^{RWA}$ is the Rotated wave approximation of the regular TFIM. If drive parameters $h$ and $\omega$ are adjusted to the root of $\mathcal{J}_0\left(\frac{2h}{\omega}\right)$, then the longitudinal field survives. However, note that the Bessel function has asymptotic form $\mathcal{J}_0(x)\sim x^{-1/2}\cos(x-\pi/4)$, a good approximation for sufficiently  large $x$. In that limit, if $x$ is chosen to lie at a root, then $x\approx (2n+1/2)\pi/2$, in which case $\mathcal{J}_0(2x) \sim -x^{-1/2}/2$, which is small for sufficiently large $x$. Thus, the $\tau_x-$term in $H^{RWA}$ is very small if $h\gg\omega$, $\mathcal{J}_0\left(\frac{h}{\omega}\right)=0$, partially recovering dynamical freezing for short times at a different point.}
+		where $H^{RWA}$ is the Rotated wave approximation of the regular TFIM. If drive parameters $h$ and $\omega$ are adjusted to the root of $\mathcal{J}_0\left(\frac{2h}{\omega}\right)$, then the longitudinal field survives. However, note that the Bessel function has asymptotic form $\mathcal{J}_0(x)\sim x^{-1/2}\cos(x-\pi/4)$, a good approximation for sufficiently  large $x$. In that limit, if $x$ is chosen to lie at a root, then $x\approx (2n+1/2)\pi/2$, in which case $\mathcal{J}_0(2x) \sim -x^{-1/2}/2$, which is small for sufficiently large $x$. Thus, the $\tau_x-$term in $H^{RWA}$ is very small if $h\gg\omega$, $\mathcal{J}_0\left(\frac{h}{\omega}\right)=0$, partially recovering dynamical freezing for short times at a different point.
+
+		\begin{figure}[h!]
+			\includegraphics[width=8.5cm]{corrN8sz0sz3avg_onlynn_tfim_sx.jpeg}
+			\caption{Temporal average of Spin-Spin correlation ($\expval{S^z_i S^z_j}$) for different $(2h/\omega)$, between two spins of a 1D spin-1/2 chain. The  vertical dashed lines are the roots of Bessel function($\mathcal{J}_0$). The spin correlation is suppressed at lower ($2h/\omega$) ratio, however it tends to attain unity at higher roots of $\mathcal{J}_0$.}
+			\label{fig:TFIM_sx}
+		\end{figure}
+
+		We have plotted the long time averaged spin-spin correlation $\expval{S^z_i S^z_{i+1}}$ between two spins of a 1D spin chain (considering periodic boundary condition) for different values of drive parameter ratio $(2h/\omega)$. At lower $(2h/\omega)$ values,$\expval{S^z_i S^z_{i+1}}$ is found to be suppressed. As the ratio is found to rise gradually, the $\expval{S^z_i S^z_{i+1}}$ is also found to rise to unity for all peaks. This corroborates the approximation to recover the dynamical localization at points corresponding to higher roots of $\mathcal{J}_0$.
+		}
 
 		\item The referee says,``\textit{In the discussion of phase crossover from thermal to DMBL, increasing N in Fig 8 appears to push the regime of the local phase to a larger drive frequency. This seems to raise the same concerns associated with the stability of disorder-induced localization, as in whether one needs infinite disorder or infinite driving frequency to
 			get a localization in the thermodynamic limit. Is this the case? }".
@@ -148,7 +157,7 @@
 				\label{eq:std_inf}
 			\end{equation} 
 			
-			For convenience, we had set $J=1$ in the manuscript. Thus, $\sigma_\infty^2 = 0.125$. The numerical result in Fig.\ref{fig:std_Ns} supports analytical results in Eq. \eqref{eq:std_inf}. Thus at low frequency $\expval{H(t)}_{std}$ goes thermal value. We have updated the manuscript with sa brief footnote summarizing this point, and added fig~\ref{fig:std_Ns} as an inset.
+			For convenience, we had set $J=1$ in the manuscript. Thus, $\sigma_\infty^2 = 0.125$. The numerical result in Fig.\ref{fig:std_Ns} supports analytical results in Eq. \eqref{eq:std_inf}. Thus at low frequency $\expval{H(t)}_{std}$ goes thermal value. We have updated the manuscript with a brief footnote summarizing this point, and added fig~\ref{fig:std_Ns} as an inset.
 		}
 		
 		
@@ -161,40 +170,61 @@
 		We would like to discuss on this matter below, 
 
 		The generic Heisenberg model
-			\begin{equation*}
-				H = \frac12 \left( \sum_{i=1} J^x \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} +J^y  \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} + J^z  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1} + h  \hat{\sigma}^z_i\right).
-			\end{equation*}
-			If $J^x= J^y \neq J^z=\Delta$, then it is called a XXZ model.
-			
-			The unitary evolution operator $\displaystyle \hat{U}(t)$ is, $\hat{U}(t)=\prod_{i} \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right)$. Now the Hamiltonian in rotating frame,
-			
-			\begin{align}
-				\tilde{H}(t)_{_{XXZ}}= & \frac{1}{2} \exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} J \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + J \hat{\sigma}^y_i \hat{\sigma}^y_{i+1}+ \Delta  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t)\right)\nonumber\\
-				= \frac12 \Bigg[& \underbrace{\exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \sum_i\hat{\sigma}_{i}^{z}\right)}_{\mathrm{A}} \nonumber\\
-				& +\underbrace{\exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} J \hat{\sigma}_{i}^{y} \hat{\sigma}_{i+1}^{y}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \sum_i\hat{\sigma}_{i}^{z}\right)}_{\mathrm{B}} \nonumber\\
-				& +\underbrace{\Delta \left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)}_{\mathrm{C}}\Bigg]
-				\label{eq:xxz1}
-			\end{align}
+		\begin{equation*}
+			H = \frac12 \left( \sum_{i=1} J^x \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} +J^y  \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} + J^z  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1} + h  \hat{\sigma}^z_i\right).
+		\end{equation*}
+		If $J^x= J^y \neq J^z=\Delta$, then it is called a XXZ model.
 		
-		Utilizing angular momenta $\displaystyle S^{\mu(=x,y,z)} = \frac12\sum_i \hat{\sigma}^\mu_i$, 
+		The unitary evolution operator $\displaystyle \hat{U}(t)$ is, $\hat{U}(t)=\prod_{i} \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right)$. Now the Hamiltonian in rotating frame,
+		
 		\begin{align}
-		\tilde{H}_{_{XXZ}} &= 2\Bigg[J\Big(S^x_i S^x_{i+1}\cos^2(2\eta) + S^y_i S^y_{i+1}\sin^2(2\eta)\Big) + J\Big(S^y_i S^y_{i+1}\cos^2(2\eta) + S^x_i S^x_{i+1}\sin^2(2\eta)\Big) + \frac{\Delta}{4}\hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\Bigg] \nonumber\\
-		&= 2\Bigg[J\Big(S^x_i S^x_{i+1} + S^y_i S^y_{i+1}\Big)\cos^2(2\eta) + J\Big(S^x_i S^x_{i+1} + S^y_i S^y_{i+1}\Big)\sin^2(2\eta) + \frac{\Delta}{4}\hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\Bigg]\nonumber\\
-		&= 4J\Big(S^x_i S^x_{i+1} + S^y_i S^y_{i+1}\Big) + \frac{\Delta}{2}\hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}
-		\label{eq:hxxz}
+			\tilde{H}(t)_{_{XXZ}}= & \frac{1}{2} \exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} J \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + J \hat{\sigma}^y_i \hat{\sigma}^y_{i+1}+ \Delta  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t)\right)\nonumber\\
+			= \frac12 \Bigg[& \underbrace{\exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \sum_i\hat{\sigma}_{i}^{z}\right)}_{\mathrm{A}} \nonumber\\
+			& +\underbrace{\exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} J \hat{\sigma}_{i}^{y} \hat{\sigma}_{i+1}^{y}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \sum_i\hat{\sigma}_{i}^{z}\right)}_{\mathrm{B}} \nonumber\\
+			& +\underbrace{\Delta \left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)}_{\mathrm{C}}\Bigg]
+			\label{eq:xxz1}
 		\end{align}
-		It is evident from Eq.\eqref{eq:hxxz} that reduced rotating frame $H_{xxz}$ consists of finite spin-spin interaction term which eventually leads to thermalization, thereby it makes it not suitable for our method.
-		}
+	
+		Applying moving frame method and utilizing  expression, $\displaystyle \exp[ia(\hat{n}\cdot\vec{\sigma})] = \mathbbm{1} \cos(a) + i (\hat{n}\cdot\vec{\sigma})\sin(a)$ we get,
+
+	\begin{algin}
+		A^{mov} &= \sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}  \Big[\mathbbm{1}\cos^2(2\zeta) -\hat{\sigma}^z_i\hat{\sigma}^z_{i+1} \sin^2(2\zeta) + i (\hat{\sigma}^z_i +\hat{\sigma}^z_{i+1})\cos(2\zeta)\sin(2\zeta)\Big].
+	\end{algin}
+
+	We apply Rotating Wave Approximation (RWA) which allows to neglect the faster oscillating terms over the moving frame Hamiltonian. Additionally we consider the asymptotic form of Bessel function for drive parameter corresponding to ratio ($2h/\omega$) which lies at higher roots of Bessel function. Thus we further neglect $\mathcal{J}_1$ terms; thereby considering only $\mathcal{J}_0$ terms,
+	\begin{align}
+	A^{_{RWA}} &\simeq \sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}\mathcal{J}_0\left(\frac{2h}{\omega}\right) \left[\mathbbm{1}\left\{\mathcal{J}_0\left(\frac{2h}{\omega}\right)+1\right\}-\hat{\sigma}^z_i\hat{\sigma}^z_{i+1}\left\{\mathcal{J}_0\left(\frac{2h}{\omega}\right)-1\right\}\right].
+	\label{eq:xxz_a}
+	\end{align}
+	Similarly, 
+	\begin{align}
+		B^{_{RWA}} &\simeq \sum_{i} J \hat{\sigma}_{i}^{y} \hat{\sigma}_{i+1}^{y}\mathcal{J}_0\left(\frac{2h}{\omega}\right) \left[\mathbbm{1}\left\{\mathcal{J}_0\left(\frac{2h}{\omega}\right)+1\right\}-\hat{\sigma}^z_i\hat{\sigma}^z_{i+1}\left\{\mathcal{J}_0\left(\frac{2h}{\omega}\right)-1\right\}\right].
+		\label{eq:xxz_b}
+	\end{align}
+	Both $A^{_{RWA}}$ and $B^{_{RWA}}$ vanishes when $(2h/\omega)$ is one of the roots of $\mathcal{J}_0$. The third term (C) of the Eq.\eqref{eq:xxz1} represents spin-spin interaction along z-axis which coincides with the spin-axis of the external drive field $(\sum_i\hat{\sigma}^z_i)$. This makes it impunitive to grow thermalization. 
+	\begin{figure}[h!]
+		\includegraphics[height=5cm]{xxz_d.png}
+		\caption{Long time average of spin-spin correlation $\expval{S^z_i S^z_{i+1}}$ at different ($2h/\omega$) for XXZ model. Two different anisotropy $\Delta = 0.5$ (left panel,$P$), $1.5$ (right panel, $Q)$ applied. The spin-spin correlation found to be unity at each of the roots (vertical gray dashed lines) of the Bessel function in both of the panels.}
+		\label{fig:std_Ns}
+	\end{figure}
+
+	Thus XXZ model is a good candidate to imply the proposed method of diagnostic dynamical localization, however one be careful to set the drive parameters.
+	
+	}
 	\end{enumerate}
+
 	\vskip 1cm 
 	\noindent \textbf{Summary of important changes to the  manuscript}
 	
 	
 	\begin{enumerate}
+		\item We have discussed the novelty of our work in page 1, last para.
 		\item We have improved the discussion on how FETH can be applied at some of the non-integrable system in page(4), and discussed it with an example where a integrable breaking term such as $\hat{\sigma^x}$ is augmented to TFIM.
-		\item We have improved Fig. 8 $\&$ 9.
+		\item We have discussed the size scaling of crossover at page 9 Sec. IV para 2.
+		\item We have improved Fig. 8 by adding inset fig describing the crossover frequency frequency dependency over system size.
+		\item We have improved Fig. 9.
 		\item We have discussed the standard deviation of heating rate at very small drive frequency at thermodynamic limit where the numerical result corroborates the analytical result.
-		\item We have briefly discussed in conclusion section, if our method of achieving a phase cross over is not possible like XXZ model. 
+		\item We have briefly mentioned in conclusion section, if our method of achieving a phase cross over is possible like XXZ model. 
 	\end{enumerate}
 	
 	\bibliography{dmbl_refs}
