@@ -100,11 +100,11 @@
 
 		\begin{figure}[h!]
 			\includegraphics[width=8.5cm]{corrN8sz0sz3avg_onlynn_tfim_sx.jpeg}
-			\caption{Temporal average of Spin-Spin correlation ($\expval{S^z_i S^z_j}$) for different $(2h/\omega)$, between two spins of a 1D spin-1/2 chain. The  vertical dashed lines are the roots of Bessel function($\mathcal{J}_0$). The spin correlation is suppressed at lower ($2h/\omega$) ratio, however it tends to attain unity at higher roots of $\mathcal{J}_0$.}
+			\caption{Temporal average of Spin-Spin correlation ($\expval{S^z_i S^z_j}$) for different $(2h/\omega)$, between two spins(i=0, j=3) of a 1D spin-1/2 chain consisting of eight spins denoting a TFIM with an additional longitudianl field($\sum_i\hat{\sigma}^x_i$).  The  vertical dashed lines are the roots of Bessel function($\mathcal{J}_0$). The spin correlation is suppressed at lower ($2h/\omega$) ratio, however it tends to attain unity at higher roots of $\mathcal{J}_0$.}
 			\label{fig:TFIM_sx}
 		\end{figure}
 
-		We have plotted the long time averaged spin-spin correlation $\expval{S^z_i S^z_{i+1}}$ between two spins of a 1D spin chain (considering periodic boundary condition) for different values of drive parameter ratio $(2h/\omega)$. At lower $(2h/\omega)$ values,$\expval{S^z_i S^z_{i+1}}$ is found to be suppressed. As the ratio is found to rise gradually, the $\expval{S^z_i S^z_{i+1}}$ is also found to rise to unity for all peaks. This corroborates the approximation to recover the dynamical localization at points corresponding to higher roots of $\mathcal{J}_0$.
+		We have numerically evolved the Hamiltonian $\hat{H}_{TFIM+S_x}(t)$ of Eq. \eqref{eq:tfim_sx1} to investigate the long time averaged spin-spin correlation $\expval{S^z_i S^z_{j}}$ between two spins (site(i)=0, and site(j)=3) of a 1D spin chain consisting of eight spins(considering periodic boundary condition).  $\expval{S^z_i S^z_{j}}$ is plotted for different values of drive parameter ratio $(2h/\omega)$ corresponding to constant drive frequency $\omega=90$. At lower $(2h/\omega)$ values,$\expval{S^z_i S^z_{j}}$ is found to be suppressed even at resonance point(root of $\mathcal{J}_0$). As the ratio is found to rise gradually, the $\expval{S^z_i S^z_{j}}$ is also found to rise to unity for all peaks. This corroborates the approximation to recover the dynamical localization at points corresponding to higher roots of $\mathcal{J}_0$.
 		}
 
 		\item The referee says,``\textit{In the discussion of phase crossover from thermal to DMBL, increasing N in Fig 8 appears to push the regime of the local phase to a larger drive frequency. This seems to raise the same concerns associated with the stability of disorder-induced localization, as in whether one needs infinite disorder or infinite driving frequency to
@@ -171,9 +171,9 @@
 
 		The generic Heisenberg model
 		\begin{equation*}
-			H = \frac12 \left( \sum_{i=1} J^x \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} +J^y  \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} + J^z  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1} + h  \hat{\sigma}^z_i\right).
+			H = \frac12 \left( \sum_{i=1} J^x \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} +J^y  \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} + J^z  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1} + h(t)  \hat{\sigma}^z_i\right).
 		\end{equation*}
-		If $J^x= J^y \neq J^z=\Delta$, then it is called a XXZ model.
+		If $J^x= J^y \neq J^z=\Delta$, then it is called a XXZ model. We consider the drive, $h(t) = h \cos(\omega t)$
 		
 		The unitary evolution operator $\displaystyle \hat{U}(t)$ is, $\hat{U}(t)=\prod_{i} \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right)$. Now the Hamiltonian in rotating frame,
 		
@@ -204,11 +204,11 @@
 	Both $A^{_{RWA}}$ and $B^{_{RWA}}$ vanishes when $(2h/\omega)$ is one of the roots of $\mathcal{J}_0$. The third term (C) of the Eq.\eqref{eq:xxz1} represents spin-spin interaction along z-axis which coincides with the spin-axis of the external drive field $(\sum_i\hat{\sigma}^z_i)$. This makes it impunitive to grow thermalization. 
 	\begin{figure}[h!]
 		\includegraphics[height=5cm]{xxz_d.png}
-		\caption{Long time average of spin-spin correlation $\expval{S^z_i S^z_{i+1}}$ at different ($2h/\omega$) for XXZ model. Two different anisotropy $\Delta = 0.5$ (left panel,$P$), $1.5$ (right panel, $Q)$ applied. The spin-spin correlation found to be unity at each of the roots (vertical gray dashed lines) of the Bessel function in both of the panels.}
+		\caption{Long time average of spin-spin correlation $\expval{S^z_i S^z_{j}}$ between $i=0$ and $i=3$ at different ($2h/\omega$) for XXZ model consisting of eight spins. The drive frequency is kept constant at $\omega = 90$. Two different anisotropy $\Delta = 0.5$ (left panel,$P$), $1.5$ (right panel, $Q)$ applied. The spin-spin correlation found to be unity at each of the roots (vertical gray dashed lines) of the Bessel function in both of the panels.}
 		\label{fig:std_Ns}
 	\end{figure}
 
-	Thus XXZ model is a good candidate to imply the proposed method of diagnostic dynamical localization, however one be careful to set the drive parameters.
+	Thus XXZ model is a possible good candidate to imply the proposed method of diagnostic dynamical localization, however one be careful to set the drive parameters.
 	
 	}
 	\end{enumerate}
