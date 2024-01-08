@@ -185,12 +185,47 @@
 			\label{eq:xxz1}
 		\end{align}
 	
-		Applying moving frame method and utilizing  expression, $\displaystyle \exp[ia(\hat{n}\cdot\vec{\sigma})] = \mathbbm{1} \cos(a) + i (\hat{n}\cdot\vec{\sigma})\sin(a)$ we get,
+		Applying moving frame method and utilizing  expression, $\displaystyle \exp[ia(\hat{n}\cdot\vec{\sigma})] = \mathbbm{1} \cos(a) + i (\hat{n}\cdot\vec{\sigma})\sin(a)$ and considering $\zeta = \frac{h}{2\omega}\sin(\omega t)$ we get,
 
-	\begin{algin}
-		A^{mov} &= \sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}  \Big[\mathbbm{1}\cos^2(2\zeta) -\hat{\sigma}^z_i\hat{\sigma}^z_{i+1} \sin^2(2\zeta) + i (\hat{\sigma}^z_i +\hat{\sigma}^z_{i+1})\cos(2\zeta)\sin(2\zeta)\Big].
-	\end{algin}
+	\begin{align}
+		A^{mov} &= \sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}  \Big[\mathbbm{1}\cos^2(2\zeta) -\hat{\sigma}^z_i\hat{\sigma}^z_{i+1} \sin^2(2\zeta) + i (\hat{\sigma}^z_i +\hat{\sigma}^z_{i+1})\cos(2\zeta)\sin(2\zeta)\Big],
+		\label{eq:amov}
+	\end{align}
+	
+	We expand each of the terms in Eq.\eqref{eq:amov},
+	\begin{align}
+	\cos[2](2\zeta) =& \frac12\left[1+ \cos(\frac{2h}{\omega}\sin(\omega t))\right]=\frac12\left[\cos[2](\frac{2h}{\omega}\sin(\omega t))+\sin[2](\frac{2h}{\omega}\sin(\omega t)) +\cos(\frac{2h}{\omega}\sin(\omega t))\right]\\
+	\sin[2](2\zeta) =& \frac12\left[1- \cos(\frac{2h}{\omega}\sin(\omega t))\right]=\frac12\left[\cos[2](\frac{2h}{\omega}\sin(\omega t))+\sin[2](\frac{2h}{\omega}\sin(\omega t)) -\cos(\frac{2h}{\omega}\sin(\omega t))\right]\\
+	\cos(2\zeta)\sin(2\zeta) =& \frac12 \sin(\frac{2h}{\omega}\sin(\omega t))
+	\end{align}
+	We invoke Jacobi-Anger expansion,
+	\begin{align*}
+	\cos(\frac{2h}{\omega}\sin(\omega t)) &= \mathcal{J}_0\Big(\frac{2h}{\omega}\Big) + 2 \sum_{n=1}^\infty \mathcal{J}_{2n}\Big(\frac{2h}{\omega}\Big)\cos(2n\omega t),\\
+	\sin(\frac{2h}{\omega}\sin(\omega t)) &=-2 \sum_{n=1}^\infty \mathcal{J}_{2n-1}\Big(\frac{2h}{\omega}\Big)\sin[(2n-1)\omega t],
+	\end{align*}
+	where $\mathcal{J}_n(z)$ is the Bessel function of the first kind of $n^{th}$ order. Utilizing Jacobi-Anger expansion yields,
+	\begin{align}
+	2\cos[2](2\zeta)=& \mathcal{J}^2_0\Big(\frac{2h}{\omega}\Big) + 4\mathcal{J}_0\Big(\frac{2h}{\omega}\Big)\sum_{n=1}^\infty (-1)^n \mathcal{J}_{2n}\Big(\frac{2h}{\omega}\Big)\cos(2n\omega t)\nonumber\\
+	&\hspace{0.5cm}+4\sum_{n,m=1}^\infty(-1)^{n+m}\mathcal{J}_{2n}\Big(\frac{2h}{\omega}\Big)\mathcal{J}_{2m}\Big(\frac{2h}{\omega}\Big) \cos(2n\omega t)\cos(2m\omega t)\nonumber\\
+	&\hspace{0.5cm}+4 \sum_{n,m=1}^\infty \mathcal{J}_{2n-1}\Big(\frac{2h}{\omega}\Big)\mathcal{J}_{2m-1}\Big(\frac{2h}{\omega}\Big)\cos[(2n-1)\omega t]\cos[(2m-1)\omega t]\nonumber\\
+	&\hspace{0.5cm}+\mathcal{J}_0\Big(\frac{2h}{\omega}\Big) + 2 \sum_{n=1}^\infty \mathcal{J}_{2n}\Big(\frac{2h}{\omega}\Big)\cos(2n\omega t).
+	\end{align}
+	Similarly,
+	\begin{align}
+	2\sin[2](2\zeta)=& \mathcal{J}^2_0\Big(\frac{2h}{\omega}\Big) + 4\mathcal{J}_0\Big(\frac{2h}{\omega}\Big)\sum_{n=1}^\infty (-1)^n \mathcal{J}_{2n}\Big(\frac{2h}{\omega}\Big)\cos(2n\omega t)\nonumber\\
+	&\hspace{0.5cm}+4\sum_{n,m=1}^\infty(-1)^{n+m}\mathcal{J}_{2n}\Big(\frac{2h}{\omega}\Big)\mathcal{J}_{2m}\Big(\frac{2h}{\omega}\Big) \cos(2n\omega t)\cos(2m\omega t)\nonumber\\
+	&\hspace{0.5cm}+4 \sum_{n,m=1}^\infty \mathcal{J}_{2n-1}\Big(\frac{2h}{\omega}\Big)\mathcal{J}_{2m-1}\Big(\frac{2h}{\omega}\Big)\cos[(2n-1)\omega t]\cos[(2m-1)\omega t]\nonumber\\
+	&\hspace{0.5cm}-\mathcal{J}_0\Big(\frac{2h}{\omega}\Big) + 2 \sum_{n=1}^\infty \mathcal{J}_{2n}\Big(\frac{2h}{\omega}\Big)\cos(2n\omega t),
+	\end{align}
+	and,
+	\begin{align}
+	2\cos(2\zeta)\sin(2\zeta)=& -2 \sum_{n=1}^\infty \mathcal{J}_{2n-1}\Big(\frac{2h}{\omega}\Big)\sin[(2n-1)\omega t],
+	\end{align}
 
+	Putting these values in Eq.\eqref{eq:amov},
+	\begin{align}
+	A^{mov} &= \frac12\sum_i J \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}\left[ \mathbb{1}\left\{\right\}
+	\end{align}
 	We apply Rotating Wave Approximation (RWA) which allows to neglect the faster oscillating terms over the moving frame Hamiltonian. Additionally we consider the asymptotic form of Bessel function for drive parameter corresponding to ratio ($2h/\omega$) which lies at higher roots of Bessel function. Thus we further neglect $\mathcal{J}_1$ terms; thereby considering only $\mathcal{J}_0$ terms,
 	\begin{align}
 	A^{_{RWA}} &\simeq \sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}\mathcal{J}_0\left(\frac{2h}{\omega}\right) \left[\mathbbm{1}\left\{\mathcal{J}_0\left(\frac{2h}{\omega}\right)+1\right\}-\hat{\sigma}^z_i\hat{\sigma}^z_{i+1}\left\{\mathcal{J}_0\left(\frac{2h}{\omega}\right)-1\right\}\right].
@@ -209,7 +244,6 @@
 	\end{figure}
 
 	Thus XXZ model is a possible good candidate to imply the proposed method of diagnostic dynamical localization, however one be careful to set the drive parameters.
-	
 	}
 	\end{enumerate}
 
