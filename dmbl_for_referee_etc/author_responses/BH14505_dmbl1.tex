@@ -40,7 +40,8 @@
 \newcommand{\spe}[1]{\mathscr{#1}}  %important quantities in mathscr font
 \newcommand{\eps}{\epsilon}
 
-\newcommand{\response}[1]{{\color{blue}#1}} % for authors' response
+\newcommand{\response}[1]{{\color{black}#1}} % for authors' response
+\newcommand{\comment}[1]{{\color{blue}#1}} % for referee's comment
 
 
 \begin{document}
@@ -57,7 +58,7 @@
 	\noindent \textbf{Response to First Referee}
 	
 	\begin{enumerate}
-		\item The referee says, ``\textit{A brief comparison of this work to other works on periodically driven LMG models and DMBL is needed somewhere in the introductory sections to state what is the significance and novelty of this work. }"\\
+		\item The referee says, \comment{``\textit{A brief comparison of this work to other works on periodically driven LMG models and DMBL is needed somewhere in the introductory sections to state what is the significance and novelty of this work. }"}\\
 		
 		\response{
 			We thank the referee for this suggestion. In earlier work on periodically driven LMG models,
@@ -69,13 +70,14 @@
 
 
 }
-		\item The referee says, ``\textit{On page 3, the Floquet eigenstate Thermalization hypothesis is stated without references. }".\\
+		\item The referee says, \comment{``\textit{On page 3, the Floquet eigenstate Thermalization hypothesis is stated without references}".}\\
 		
 		\response{
 			We thank the referee for pointing out this mistake. In the manuscript, we have provided proper references to FETH in Page 3.
 		}
 		
-		\item The referee says, "\textit{On page 4, after illustrating the resonances in the analytically solvable TFIM model, the authors claim, “This phenomenon is highly general and can be readily adapted to non-integrable systems”. I disagree with the statement, and clear references, if any, need to be cited to back up this statement. The manipulations made for TFIM are fine-tuned to this integrable system, and they break down the moment any integrability-breaking term is introduced. For example, if I add a longitudinal field sigma-x to the TFIM, I do not see how to adapt the procedure. }"\\
+		\item The referee says, \comment{``\textit{On page 4, after illustrating the resonances in the analytically solvable TFIM model, the authors claim, “This phenomenon is highly general and can be readily adapted to non-integrable systems”. I disagree with the statement, and clear references, if any, need to be cited to back up this statement. The manipulations made for TFIM are fine-tuned to this integrable system, and they break down the moment any integrability-breaking term is introduced. For example, if I add a longitudinal field sigma-x to the TFIM, I do not see how to adapt the procedure}"}.\\
+
 		\response{ We would like to thank the referee for this comment. We acknowledge that there may have been a lack of clarity regarding this matter in the manuscript. We have included additional content in the manuscript (one para in section 1 page 4) to elaborate on this. A detailed explanation follows:
 			
 		In the manuscript, we applied the RWA on the Hamiltonian following the unitary transformation to investigate localization in TFIM. Now, an additional longitudinal field $\sigma^x$ to the original TFIM Hamiltonian destroys the integrability of the model. However, this does kill the suppression of the fermion number dynamics, but not completely.  Adding a symmetry-breaking field $\sigma^x$ to the driven TFIM yields 
@@ -107,18 +109,17 @@
 		We have numerically evolved the Hamiltonian $\hat{H}_{TFIM+S_x}(t)$ of Eq. \eqref{eq:tfim_sx1} to investigate the long time averaged spin-spin correlation $\expval{S^z_i S^z_{j}}$ between two spins (site(i)=0, and site(j)=3) of a 1D spin chain consisting of eight spins(considering periodic boundary condition).  $\expval{S^z_i S^z_{j}}$ is plotted for different values of drive parameter ratio $(2h/\omega)$ corresponding to constant drive frequency $\omega=90$. At lower $(2h/\omega)$ values,$\expval{S^z_i S^z_{j}}$ is found to be suppressed even at resonance point(root of $\mathcal{J}_0$). As the ratio is found to rise gradually, the $\expval{S^z_i S^z_{j}}$ is also found to rise to unity for all peaks. This corroborates the approximation to recover the dynamical localization at points corresponding to higher roots of $\mathcal{J}_0$.
 		}
 
-		\item The referee says,``\textit{In the discussion of phase crossover from thermal to DMBL, increasing N in Fig 8 appears to push the regime of the local phase to a larger drive frequency. This seems to raise the same concerns associated with the stability of disorder-induced localization, as in whether one needs infinite disorder or infinite driving frequency to
-			get a localization in the thermodynamic limit. Is this the case? }".
+		\item The referee says, \comment{``\textit{In the discussion of phase crossover from thermal to DMBL, increasing N in Fig 8 appears to push the regime of the local phase to a larger drive frequency. This seems to raise the same concerns associated with the stability of disorder-induced localization, as in whether one needs infinite disorder or infinite driving frequency to get a localization in the thermodynamic limit. Is this the case?}"}.
 		
 		\response{    	
 			We thank the referee for the comment. We have extended our simulations for larger system sizes and have verified that this is, indeed, the case. Increasing $N$ pushes the crossover point further to larger values of $\omega$, thus requiring infinite frequency at infinite size. We have updated the corresponding Fig.8 with a revised version, and have reported this in section 4 par 2.
 		}
-		\item The referee says,``\textit{Is the heating suppressed at points where the frequency meets the resonance condition? }".
+		\item The referee says, \comment{``\textit{Is the heating suppressed at points where the frequency meets the resonance condition? }"}.
 		
 		\response{
 		We thank the referee for the comment. While the concept of `heating' is inapplicable in the integrable TFIM case (as the system never thermalizes), the heating is, indeed, suppressed at the resonance condition for the long-range LMG model, provided the frequency is large enough to take the system out of the low-frequency regime. This can be seen in the plots of standard deviation of the heating rate in figure 9 of the manuscript. There, the system is always kept at the resonance condition, but the deviation corresponds to the infinite temperature value for small frequencies, but increases as we traverse the crossover to the DMBL phase. The higher values arise due to integrable dynamics, and heating is suppressed since the IPR of the Floquet states is unity in that regime.}
 		
-		\item The referee says, ``\textit{The discussion related to Fig. 9 could be improved, and it is not clear to me why the standard deviation of temporal fluctuations should vanish for thermalizing systems. }"\\
+		\item The referee says, \comment{``\textit{The discussion related to Fig. 9 could be improved, and it is not clear to me why the standard deviation of temporal fluctuations should vanish for thermalizing systems}"}.\\
 		
 		\response{ We thank the referee to point out the issue. We agree to improve the discussion and rectify our results. We have revised the discussion in Section IV, 3 para, as well as improved the corresponding Fig.(9) also.
 			
@@ -162,8 +163,7 @@
 		
 		
 		\vskip 2cm
-		\item The referee says,``\textit{In the conclusion, it is useful to comment on whether this method could be adapted (related to my point 2) to other generic models (say
-			XXZ models). }"\\
+		\item The referee says, \comment{``\textit{In the conclusion, it is useful to comment on whether this method could be adapted (related to my point 2) to other generic models (say XXZ models)}"}.\\
 		
 		\response{
 		We thank the referee for the comment. We have discussed on this issue in Conclusion Sectino as well as in the Background section also.
@@ -173,9 +173,7 @@
 		\begin{equation*}
 			H = \frac12 \left( \sum_{i=1} J^x \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} +J^y  \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} + J^z  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1} + h(t)  \hat{\sigma}^z_i\right).
 		\end{equation*}
-		If $J^x= J^y \neq J^z=\Delta$, then it is called a XXZ model. We consider the drive, $h(t) = h \cos(\omega t)$
-		
-		The unitary evolution operator $\displaystyle \hat{U}(t)$ is, $\hat{U}(t)=\prod_{i} \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right)$. Now the Hamiltonian in rotating frame,
+		If $J^x= J^y \neq J^z=\Delta$, then it is called a XXZ model. We consider the drive, $h(t) = h \cos(\omega t)$. The unitary evolution operator $\displaystyle \hat{U}(t)$ is, $\hat{U}(t)=\prod_{i} \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right)$. Now the Hamiltonian in rotating frame,
 		
 		\begin{align}
 			\tilde{H}(t)_{_{XXZ}}= & \frac{1}{2} \exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} J \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + J \hat{\sigma}^y_i \hat{\sigma}^y_{i+1}+ \Delta  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t)\right)\nonumber\\
@@ -184,79 +182,82 @@
 			& +\underbrace{\Delta \left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)}_{\mathrm{C}}\Bigg]
 			\label{eq:xxz1}
 		\end{align}
-	
-		Applying moving frame method and utilizing  expression, $\displaystyle \exp[ia(\hat{n}\cdot\vec{\sigma})] = \mathbbm{1} \cos(a) + i (\hat{n}\cdot\vec{\sigma})\sin(a)$ and considering $\zeta = \frac{h}{2\omega}\sin(\omega t)$ we get,
+	Considering $\zeta = \frac{h}{\omega}\sin(\omega t)$ we get,
 
 	\begin{align}
-		A^{mov} &= \sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}  \Big[\mathbbm{1}\cos^2(2\zeta) -\hat{\sigma}^z_i\hat{\sigma}^z_{i+1} \sin^2(2\zeta) + i (\hat{\sigma}^z_i +\hat{\sigma}^z_{i+1})\cos(2\zeta)\sin(2\zeta)\Big],
+		A^{mov} &= \sum_{i} J \left[ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} \cos[2](\zeta) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \sin[2](\zeta)+ \frac12\left(\hat{\sigma}^x_i \hat{\sigma}^y_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^x_{i+1}\right)\sin(2\zeta)\right],
 		\label{eq:amov}
 	\end{align}
-	
-	We expand each of the terms in Eq.\eqref{eq:amov},
+	Similarly,
 	\begin{align}
-	\cos[2](2\zeta) =& \frac12\left[1+ \cos(\frac{2h}{\omega}\sin(\omega t))\right]=\frac12\left[\cos[2](\frac{2h}{\omega}\sin(\omega t))+\sin[2](\frac{2h}{\omega}\sin(\omega t)) +\cos(\frac{2h}{\omega}\sin(\omega t))\right]\\
-	\sin[2](2\zeta) =& \frac12\left[1- \cos(\frac{2h}{\omega}\sin(\omega t))\right]=\frac12\left[\cos[2](\frac{2h}{\omega}\sin(\omega t))+\sin[2](\frac{2h}{\omega}\sin(\omega t)) -\cos(\frac{2h}{\omega}\sin(\omega t))\right]\\
-	\cos(2\zeta)\sin(2\zeta) =& \frac12 \sin(\frac{2h}{\omega}\sin(\omega t))
+		B^{mov} &= \sum_{i} J \left[ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} \sin[2](\zeta) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \cos[2](\zeta)- \frac12\left(\hat{\sigma}^x_i \hat{\sigma}^y_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^x_{i+1}\right)\sin(2\zeta)\right],
+		\label{eq:bmov}
 	\end{align}
 	We invoke Jacobi-Anger expansion,
 	\begin{align*}
 	\cos(\frac{2h}{\omega}\sin(\omega t)) &= \mathcal{J}_0\Big(\frac{2h}{\omega}\Big) + 2 \sum_{n=1}^\infty \mathcal{J}_{2n}\Big(\frac{2h}{\omega}\Big)\cos(2n\omega t),\\
 	\sin(\frac{2h}{\omega}\sin(\omega t)) &=-2 \sum_{n=1}^\infty \mathcal{J}_{2n-1}\Big(\frac{2h}{\omega}\Big)\sin[(2n-1)\omega t],
 	\end{align*}
-	where $\mathcal{J}_n(z)$ is the Bessel function of the first kind of $n^{th}$ order. Utilizing Jacobi-Anger expansion yields,
+	
+	Now,
 	\begin{align}
-	2\cos[2](2\zeta)=& \mathcal{J}^2_0\Big(\frac{2h}{\omega}\Big) + 4\mathcal{J}_0\Big(\frac{2h}{\omega}\Big)\sum_{n=1}^\infty (-1)^n \mathcal{J}_{2n}\Big(\frac{2h}{\omega}\Big)\cos(2n\omega t)\nonumber\\
-	&\hspace{0.5cm}+4\sum_{n,m=1}^\infty(-1)^{n+m}\mathcal{J}_{2n}\Big(\frac{2h}{\omega}\Big)\mathcal{J}_{2m}\Big(\frac{2h}{\omega}\Big) \cos(2n\omega t)\cos(2m\omega t)\nonumber\\
-	&\hspace{0.5cm}+4 \sum_{n,m=1}^\infty \mathcal{J}_{2n-1}\Big(\frac{2h}{\omega}\Big)\mathcal{J}_{2m-1}\Big(\frac{2h}{\omega}\Big)\cos[(2n-1)\omega t]\cos[(2m-1)\omega t]\nonumber\\
-	&\hspace{0.5cm}+\mathcal{J}_0\Big(\frac{2h}{\omega}\Big) + 2 \sum_{n=1}^\infty \mathcal{J}_{2n}\Big(\frac{2h}{\omega}\Big)\cos(2n\omega t).
+	\cos[2](\zeta) &=\frac12\left[1+\cos(2\zeta)\right]=\frac12\left[1+\left\{\mathcal{J}_0\left(\frac{2h}{\omega}\right) + 2 \sum_{n=1}^\infty \mathcal{J}_{2n}\Big(\frac{2h}{\omega}\Big)\cos(2n\omega t)\right\}\right]\\
+	\sin[2](\zeta) &=\frac12\left[1-\cos(2\zeta)\right]=\frac12\left[1-\left\{\mathcal{J}_0\left(\frac{2h}{\omega}\right) + 2 \sum_{n=1}^\infty \mathcal{J}_{2n}\Big(\frac{2h}{\omega}\Big)\cos(2n\omega t)\right\}\right]\\
+	\sin(2\zeta) &= -2 \sum_{n=1}^\infty \mathcal{J}_{2n-1}\Big(\frac{2h}{\omega}\Big)\sin[(2n-1)\omega t]
 	\end{align}
-	Similarly,
+	We introduce the Rotating Wave Approximation, which neglects the faster oscillating terms in moving frame Hamiltonian. Thus,
 	\begin{align}
-	2\sin[2](2\zeta)=& \mathcal{J}^2_0\Big(\frac{2h}{\omega}\Big) + 4\mathcal{J}_0\Big(\frac{2h}{\omega}\Big)\sum_{n=1}^\infty (-1)^n \mathcal{J}_{2n}\Big(\frac{2h}{\omega}\Big)\cos(2n\omega t)\nonumber\\
-	&\hspace{0.5cm}+4\sum_{n,m=1}^\infty(-1)^{n+m}\mathcal{J}_{2n}\Big(\frac{2h}{\omega}\Big)\mathcal{J}_{2m}\Big(\frac{2h}{\omega}\Big) \cos(2n\omega t)\cos(2m\omega t)\nonumber\\
-	&\hspace{0.5cm}+4 \sum_{n,m=1}^\infty \mathcal{J}_{2n-1}\Big(\frac{2h}{\omega}\Big)\mathcal{J}_{2m-1}\Big(\frac{2h}{\omega}\Big)\cos[(2n-1)\omega t]\cos[(2m-1)\omega t]\nonumber\\
-	&\hspace{0.5cm}-\mathcal{J}_0\Big(\frac{2h}{\omega}\Big) + 2 \sum_{n=1}^\infty \mathcal{J}_{2n}\Big(\frac{2h}{\omega}\Big)\cos(2n\omega t),
+	\cos[2](\zeta) &\simeq\frac12\left[1+\mathcal{J}_0\left(\frac{2h}{\omega}\right)\right]\nonumber\\
+	\sin[2](\zeta) &\simeq\frac12\left[1-\mathcal{J}_0\left(\frac{2h}{\omega}\right)\right]\nonumber\\
+	\sin(2\zeta) &\simeq 0	
+	\label{eq:rwa-ed}
 	\end{align}
-	and,
+	Putting values from Eq.~\eqref{eq:rwa-ed} and Eqs.~\eqref{eq:amov} and ~\eqref{eq:bmov} into Eq.~\eqref{eq:xxz1},
 	\begin{align}
-	2\cos(2\zeta)\sin(2\zeta)=& -2 \sum_{n=1}^\infty \mathcal{J}_{2n-1}\Big(\frac{2h}{\omega}\Big)\sin[(2n-1)\omega t],
+	\tilde{H}(t)^{RWA}_{_{XXZ}}= & \frac14\Bigg[\sum_i J\left\{ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1}\left(1+ \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \left(1- \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\right\}\nonumber\\
+	& \hskip1cm + \sum_j J\left\{ \hat{\sigma}^x_j \hat{\sigma}^x_{j+1}\left(1- \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\ + \hat{\sigma}^y_j \hat{\sigma}^y_{j+1} \left(1+ \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\right\} + 2\Delta \left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)\Bigg].
+	\label{eq:rwa3}
 	\end{align}
-
-	Putting these values in Eq.\eqref{eq:amov},
+	When the drive parameters are tuned in such as way that the ratio $2h/\omega$ is at one of the roots of Bessel function $\mathcal{J}_0$, then $\tilde{H}(t)^{RWA}_{_{XXZ}}$ becomes,
+	\begin{equation}
+	\tilde{H}(t)^{RWA}_{_{XXZ}}= & \frac14\Bigg[\sum_i J\left( \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \right) + \sum_j J\left( \hat{\sigma}^x_j \hat{\sigma}^x_{j+1} + \hat{\sigma}^y_j \hat{\sigma}^y_{j+1}\right)+ 2\Delta \left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)\Bigg].
+	\label{eq:finalrwa}
+	\end{equation}
+	Now we apply Jordon Wigner transformation on the first two terms in Eq.~\eqref{eq:finalrwa} which reduces to tight binding Hamiltonian, 
+	\begin{equation}
+	H^{RWA}_{XXZ} = J/4\big[ \sum_i\hat{c}^\dagger\hat{c}_{i+1}  + \sum_j\hat{c}^\dagger\hat{c}_{j+1}\big] + \frac{\Delta}{2}\left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)
+	\label{eq:jwa}
+	\end{equation}
+	The third term of Eq. \eqref{eq:jwa} commutes with the transverse field component, which keeps the its contribution to dynamics invariant. The first two terms represent localization due to presence of N local (approximate) Noether charges, given by $\hat{n}_m= \hat{d}^{\dagger}_m\hat{d}^{\;}_m$, where
+	\begin{equation}
+	\hat{d}_m = \frac{1}{\sqrt{N}}\sum_{n=0}^{N-1}e^{-\frac{2nm\pi i}{N}}\hat{c}_n.
+	\end{equation}
+	When the spin-spin interaction is beyond nearest-neighbor limit, Jordon Wigner transformation is invalid. The Eq. \eqref{eq:rwa3} bocomes,
 	\begin{align}
-	A^{mov} &= \frac12\sum_i J \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}\left[ \mathbb{1}\left\{\right\}
+	\tilde{H}(t)^{RWA}_{_{XXZ}}= & \frac14\Bigg[\sum_{ij} J_{ij}\left\{ \hat{\sigma}^x_i \hat{\sigma}^x_{j}\left(1+ \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right) + \hat{\sigma}^y_i \hat{\sigma}^y_{j} \left(1- \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\right\}\nonumber\\
+	& \hskip1cm + \sum_{mn} J_{mn}\left\{ \hat{\sigma}^x_m \hat{\sigma}^x_{n}\left(1- \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\ + \hat{\sigma}^y_m \hat{\sigma}^y_{n} \left(1+ \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\right\}+ 2\Delta \left(\sum_{kl}  \hat{\sigma}_{k}^{z} \hat{\sigma}_{l}^{z}\right)\Bigg].
+	\label{eq:rwalong}
 	\end{align}
-	We apply Rotating Wave Approximation (RWA) which allows to neglect the faster oscillating terms over the moving frame Hamiltonian. Additionally we consider the asymptotic form of Bessel function for drive parameter corresponding to ratio ($2h/\omega$) which lies at higher roots of Bessel function. Thus we further neglect $\mathcal{J}_1$ terms; thereby considering only $\mathcal{J}_0$ terms,
-	\begin{align}
-	A^{_{RWA}} &\simeq \sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}\mathcal{J}_0\left(\frac{2h}{\omega}\right) \left[\mathbbm{1}\left\{\mathcal{J}_0\left(\frac{2h}{\omega}\right)+1\right\}-\hat{\sigma}^z_i\hat{\sigma}^z_{i+1}\left\{\mathcal{J}_0\left(\frac{2h}{\omega}\right)-1\right\}\right].
-	\label{eq:xxz_a}
-	\end{align}
-	Similarly, 
-	\begin{align}
-		B^{_{RWA}} &\simeq \sum_{i} J \hat{\sigma}_{i}^{y} \hat{\sigma}_{i+1}^{y}\mathcal{J}_0\left(\frac{2h}{\omega}\right) \left[\mathbbm{1}\left\{\mathcal{J}_0\left(\frac{2h}{\omega}\right)+1\right\}-\hat{\sigma}^z_i\hat{\sigma}^z_{i+1}\left\{\mathcal{J}_0\left(\frac{2h}{\omega}\right)-1\right\}\right].
-		\label{eq:xxz_b}
-	\end{align}
-	Both $A^{_{RWA}}$ and $B^{_{RWA}}$ vanishes when $(2h/\omega)$ is one of the roots of $\mathcal{J}_0$. The third term (C) of the Eq.\eqref{eq:xxz1} represents spin-spin interaction along z-axis which coincides with the spin-axis of the external drive field $(\sum_i\hat{\sigma}^z_i)$. This makes it impunitive to grow thermalization. 
-	\begin{figure}[h!]
+	However, for each term in Eq. \eqref{eq:rwalong} the transverse field dynamics is frozen when $2h/\omega$ at one the roots of $\mathcal{J}_0$, since, $\displaystyle \comm{	\tilde{H}(t)^{RWA}_{_{XXZ}}}{\displaystyle\sum_m\sigma^z_m}=0$. 
+	\begin{figure}[t]
 		\includegraphics[height=5cm]{xxz_d.png}
-		\caption{Long time average of spin-spin correlation $\expval{S^z_i S^z_{j}}$ between $i=0$ and $i=3$ at different ($2h/\omega$) for XXZ model consisting of eight spins. The drive frequency is kept constant at $\omega = 90$. Two different anisotropy $\Delta = 0.5$ (left panel,$P$), $1.5$ (right panel, $Q)$ applied. The spin-spin correlation found to be unity at each of the roots (vertical gray dashed lines) of the Bessel function in both of the panels.}
+		\caption{Long time average of spin-spin correlation $\expval{S^z_i S^z_{j}}$ between $i=0$ and $i=3$ at different ($2h/\omega$) for XXZ model consisting of eight spins. The drive frequency is kept constant at $\omega = 90$. Two different anisotropy $\Delta = 0.5$ (left panel,$P$), $1.5$ (right panel, $Q$) applied. The spin-spin correlation found to be unity at each of the roots (vertical gray dashed lines) of the Bessel function in both of the panels.}
 		\label{fig:std_Ns}
 	\end{figure}
-
-	Thus XXZ model is a possible good candidate to imply the proposed method of diagnostic dynamical localization, however one be careful to set the drive parameters.
+	We have numerically simulated the spin-spin correlation $\expval{S^z_i S^z_j}$ $(i=0,j=3)$ for a spin-1/2 XXZ spin model comprising of eight spins. The system is driven by a transverse sinusoidal drive with high frequency $\omega =90$ and amplitude corresponding to ratio $2h/\omega$. We found in Fig.\ref{fig:std_Ns} that $\expval{S^z_i S^z_j}$ is unity when $2h/\omega$ lies at roots of $\mathcal{J}_0$. This suggest  and supports the application of our method of localization in XXZ model.
 	}
 	\end{enumerate}
 
 	\vskip 1cm 
 	\noindent \textbf{Summary of important changes to the  manuscript}
 	
-	
 	\begin{enumerate}
 		\item We have discussed the novelty of our work in page 1, last para.
-		\item We have improved the discussion on how FETH can be applied at some of the non-integrable system in page(4), and discussed it with an example where a integrable breaking term such as $\hat{\sigma^x}$ is augmented to TFIM.
-		\item We have discussed the size scaling of crossover at page 9 Sec. IV para 2.
-		\item We have improved Fig. 8 by adding inset fig describing the crossover frequency frequency dependency over system size.
-		\item We have improved Fig. 9.
+		\item We have improved the discussion on how FETH can be applied at some of the non-integrable system in page(4), and discussed it with an example where a integrable breaking term such as $\hat{\sigma^x}$ is augmented to TFIM. Additionally, we have added a Fig (1) in supports of it.
+		\item We have improved the labeling of Fig 2 and Fig 8 and as well as updated the respective captions.
+		\item We have discussed the size scaling of crossover at page 10 Sec. IV para 2.
+		\item We have improved Fig. 9 by adding inset fig describing the crossover frequency frequency dependency over system size.
+		\item We have improved Fig. 10.
 		\item We have discussed the standard deviation of heating rate at very small drive frequency at thermodynamic limit where the numerical result corroborates the analytical result.
 		\item We have briefly mentioned in conclusion section, if our method of achieving a phase cross over is possible like XXZ model. 
 	\end{enumerate}
