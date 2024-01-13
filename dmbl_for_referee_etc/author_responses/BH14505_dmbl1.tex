@@ -169,6 +169,7 @@ We thank the referee for the comment. We have discussed on this issue in Conclus
 The generic Heisenberg model
 \begin{equation*}
 	H = \frac12 \left( \sum_{i=1} J^x \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} +J^y  \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} + J^z  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1} + h(t)  \hat{\sigma}^z_i\right).
+	\label{eq:heisenberg_model}
 \end{equation*}
 If $J^x= J^y \neq J^z=\Delta$, then it is called a XXZ model. We consider the drive, $h(t) = h \cos(\omega t)$. The unitary evolution operator $\displaystyle \hat{U}(t)$ is, $\hat{U}(t)=\prod_{i} \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right)$. Now the Hamiltonian in rotating frame,
 	
@@ -222,7 +223,7 @@ When the drive parameters are tuned in such as way that the ratio $2h/\omega$ is
 \end{equation}
 Now we apply Jordon Wigner transformation on the first two terms in Eq.~\eqref{eq:finalrwa} which reduces to tight binding Hamiltonian, 
 \begin{equation}
-	H^{RWA}_{XXZ} = J/4\big[ \sum_i\hat{c}^\dagger\hat{c}_{i+1}  + \sum_j\hat{c}^\dagger\hat{c}_{j+1}\big] + \frac{\Delta}{2}\left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)
+	\tilde{H}^{RWA}_{XXZ} = J/4\big[ \sum_i\hat{c}^\dagger\hat{c}_{i+1}  + \sum_j\hat{c}^\dagger\hat{c}_{j+1}\big] + \frac{\Delta}{2}\left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)
 	\label{eq:jwa}
 \end{equation}
 The third term of Eq. \eqref{eq:jwa} commutes with the transverse field component, which keeps the its contribution to dynamics invariant. The first two terms represent localization due to presence of N local (approximate) Noether charges, given by $\hat{n}_m= \hat{d}^{\dagger}_m\hat{d}^{\;}_m$, where
@@ -241,7 +242,28 @@ However, for each term in Eq. \eqref{eq:rwalong} the transverse field dynamics i
 	\caption{Long time average of spin-spin correlation $\expval{S^z_i S^z_{j}}$ between $i=0$ and $i=3$ at different ($2h/\omega$) for XXZ model consisting of eight spins. The drive frequency is kept constant at $\omega = 90$. Two different anisotropy $\Delta = 0.5$ (left panel,$P$), $1.5$ (right panel, $Q$) applied. The spin-spin correlation found to be unity at each of the roots (vertical gray dashed lines) of the Bessel function in both of the panels.}
 	\label{fig:std_Ns}
 \end{figure}
-We have numerically simulated the spin-spin correlation $\expval{S^z_i S^z_j}$ $(i=0,j=3)$ for a spin-1/2 XXZ spin model comprising of eight spins. The system is driven by a transverse sinusoidal drive with high frequency $\omega =90$ and amplitude corresponding to ratio $2h/\omega$. We found in Fig.\ref{fig:std_Ns} that $\expval{S^z_i S^z_j}$ is unity when $2h/\omega$ lies at roots of $\mathcal{J}_0$. This suggest  and supports the application of our method of localization in XXZ model.
+We have numerically simulated the spin-spin correlation $\expval{S^z_i S^z_j}$ $(i=0,j=3)$ for a spin-1/2 nearest-neighbour XXZ spin model comprising of eight spins driven at high frequency $\omega=90$. The system is driven by a transverse sinusoidal drive with high frequency $\omega =90$ and amplitude corresponding to ratio $2h/\omega$. We found in Fig.\ref{fig:std_Ns} that $\expval{S^z_i S^z_j}$ is unity when $2h/\omega$ lies at roots of $\mathcal{J}_0$. This suggest  and supports the application of our method of localization in XXZ model.
+
+However, if an additional integrability-breaking term such as $\sum_i\hat{\sigma}^x_i$ is added to the XXZ Hamiltonian in Eq.~\eqref{eq:heisenberg_model} it bocomes,
+\begin{equation}
+	H_{XXZ+S_{X}} = \frac12 \left[ \sum_{i=1} J^x \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} +J^y  \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} + J^z  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1} + h(t)  \hat{\sigma}^z_i + \sum_i\hat{\sigma}^x_i\right].
+	\label{eq:xxz2}
+\end{equation}
+Applying moving frame method and RWA keeping the drive parameter such that the ratio $2h/\omega$ is at roots of $\mathcal{J}_0$ on Eq.~\eqref{eq:xxz2} one gets,
+\begin{equation}
+	\tilde{H}^{RWA}_{XXZ+S_{x}} = J/4\big[ \sum_i\hat{c}^\dagger\hat{c}_{i+1}  + \sum_j\hat{c}^\dagger\hat{c}_{j+1}\big] + \frac{\Delta}{2}\left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right) +\frac12 \mathcal{J}_{0}\left(\frac{h}{\omega}\right) \sum_i\hat{\sigma}^x_i
+	\label{eq:jwaxxzsx}
+\end{equation}
+The first two terms of the above equation represents localization in the system, though the third term does not. Now if we consider the asymptotic form of Bessel function we can put the discussion in a similar manner in Comment no. 3, then at higher root of $\mathcal{J}_0$, the term $\displaystyle \frac12 \mathcal{J}_{0}\left(\frac{h}{\omega}\right) \sum_i\hat{\sigma}^x_i$ reduces to zero. 
+\begin{figure}[t]
+	\includegraphics[height=5cm]{xxzsx.png}
+	\caption{Long time average of spin-spin correlation $\expval{S^z_i S^z_{j}}$ between $i=0$ and $i=3$ at different ($2h/\omega$) for XXZ model along with additional integrability breaking term $\sum_i \hat{\sigma}^x_i$. It consists of eight spins. The drive frequency is kept constant at $\omega = 90$. Two different anisotropy $\Delta = 0.5$ (left panel,$A$), $1.5$ (right panel, $B$) applied. The spin-spin correlation found to be unity at each of the roots (vertical gray dashed lines) of the Bessel function in both of the panels.}
+	\label{fig:xxzsx}
+\end{figure}
+
+We have simulated the Hamiltonian in Eq.~\eqref{eq:xxz2} to numerically calculate the average of spin-spin correlation $\expval{S^z_i S^z_j}$. The system is taken $N=8$, drive frequency $\omega=90$ and correlation sites $i=0$ and $j=3$. The spin correlation $\expval{S^z_i S^z_j}$ is found to be suppressed at lower roots of $\mathcal{J}_0$, however at the higher roots it found to be unity. This method can be applicable to observe localization in XXZ model for spin-ranges beyond nearest neighbor interaction. Therefore it a possible to achieve a localization in XXZ model even in presence of a longitudinal integrability term, although we have to choose the drive parameters such that $2h/\omega$ lies at higher roots of $\mathcal{J}_0$. 
+
+
 }
 \end{enumerate}
 
