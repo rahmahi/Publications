@@ -181,12 +181,30 @@ Performing the unitary transformation and taking the RWA yields a new RWA Hamilt
 At the root of $\mathcal{J}_0\left(\frac{2h}{\omega}\right)$, the longitudinal field survives. However, note that the Bessel function has asymptotic form $\mathcal{J}_0\left(\frac{h}{\omega}\right)\sim \left(\frac{h}{\omega}\right)^{-1/2}\cos\left(\frac{h}{\omega}-\frac{\pi}{4}\right)$, a good approximation for sufficiently  large $h/\omega$. In that limit, if $h/\omega$ is chosen to lie at a root, then $\mathcal{J}_0\left(\frac{2h}{\omega}\right) \sim -h^{-1/2}$, which is small for sufficiently large $h$. Thus, the $\tau_x-$term in $H^{RWA}$ is very small if $h\gg\omega\gg1$, $\mathcal{J}_0\left(\frac{h}{\omega}\right)=0$, partially recovering dynamical freezing for short times at a different point.\todo[inline]{Complete this with figs.}
 \begin{figure}[t!]
 	\centering
-	\includegraphics[width = 8.0cm]{corrN8sz0sz3avg_onlynn_tfim_sx.jpeg}
+	\includegraphics[width = 7.5cm]{corrN8sz0sz3avg_onlynn_tfim_sx.jpeg}
 	\caption{\red{Temporal average of spin-spin correlation $\expval{S^z_i S^z_j}$ for different drive parameter ratios $(2h/\omega)$, between two spins(i=0, j=3) of a 1D spin-1/2 chain consisting of eight spins denoting a TFIM with an additional longitudianl field($\sum_i\hat{\sigma}^x_i$).  The  vertical dashed lines are the roots of $\mathcal{J}_0$. The spin-spin correlation is suppressed at lower ($2h/\omega$) ratio, however it tends to attain unity at higher roots of $\mathcal{J}_0$.}}
 	\label{fig:ipr:tfimsx}
 \end{figure}
 \blue{This analysis can be supported by dynamical simulations for small-size systems\sout{, etc.etc.}}. \red{We have numerically investigated spin-spin correlation $\expval{S^z_i S^z_j}$; considering $i=0$ and $j=3$ of a 1-dimensional spin chain comprising of eight spins. The variation of $\expval{S^z_i S^z_j}$ \textit{w.r.t} drive parameter ratio ($2h/\omega$) illustrates that at at lower roots of $\mathcal{J}_0$, the $\expval{S^z_i S^z_j}$ is suppressed, however $\expval{S^z_i S^z_j}$ gradually increases towards unity when the drive parameters are adjusted at the higher roots of $\mathcal{J}_0$.}
 
+\red{This can be extended in XXZ type model. When an additional longitudinal integrability breaking field $\sum_i\hat{\sigma}^x_i$ is introduced to a generic XXZ model, the corresponding Hamiltonian,
+\begin{multline}
+H_{_{XXZ+S_{X}}} = \frac12 \sum_{i=1} \bigg[ J \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} +J  \hat{\sigma}^y_i \hat{\sigma}^y_{i+1}\\ + \Delta  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1} + h(t)  \hat{\sigma}^z_i + \hat{\sigma}^x_i\bigg],
+\label{eq:xxzsx}
+\end{multline}
+here $h(t)$ is the periodic drive and $\Delta$ is the anisotropic term. By applying RWA the Eq.~\eqref{eq:xxzsx} reduced to,
+\begin{multline}
+	H^{RWA}_{_{XXZ+S_{X}}} = 2 H^{RWA} + \frac{\Delta}{2}  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1} +  \frac12 \mathcal{J}_0\left(\frac{h}{\omega}\right)\sum_i\hat{\sigma}^x_i.
+	\label{eq:xxzsx}
+\end{multline} 
+Now, the observable commutes with the second term of Eq.~\eqref{eq:xxzsx}, thereby system dynamics is invariant under it. Although, the asymptotic form of Bessel function reduces the last term in Eq.~\eqref{eq:xxzsx} at its higher root. This approximation reduces the $\tau_x$-term in $H^{RWA}$, again recovering freezing at higher roots of $\mathcal{J}_0$. The numerical result in Fig.\ref{fig:xxzsx} supports analytics.}
+
+\begin{figure}[t!]
+	\centering
+	\includegraphics[width = 7.5cm]{corrN8sz0sz3avg_xxz_sxan0p5.jpeg}
+	\caption{\red{Temporal average of spin-spin correlation $\expval{S^z_i S^z_j}$ for different drive parameter ratios $2h/\omega$, between two spins(i=0, j=3) of a XXZ model along  with an additional longitudinal field $\sum_i\hat{\sigma}^x_i$. The anisotropy $\Delta=0.5$, transverse periodic field frequency $\omega=90$. The  vertical dashed lines are the roots of $\mathcal{J}_0$. The spin-spin correlation is suppressed at lower $2h/\omega$ ratio, however it tends to attain unity at higher roots of $\mathcal{J}_0$.}}
+	\label{fig:xxzsx}
+\end{figure}
 \blue{Similarly, if integrability is broken by extending the range of $x-$spin interactions in the TFIM beyond nearest-neighbor, freezing can be recovered through the emergence of additional approximate conserved quantities at the freezing point~\cite{rahaman2024time}. The case of all-to-all interactions is particularly interesting, as complete freezing can be achieved in that limit, as demonstrated in the next section}. In such cases, freezing has the additional effect of inducing DMBL, suppressing Floquet-thermalization to infinite temperatures. Numerical quantification of localization of a specific (quasi) stationary state in a physically significant representation can be achieved through the computation of the \emph{Inverse Participation Ratio} (IPR).  {The IPR is generally defined as the formal sum over the square of the local density in a physically meaningful space.}~\cite{mukherjee_modulation-assisted_2015,lin_many-body_2018,murphy_generalized_2011, torres-herrera_self-averaging_2020} {In the single particle case,  the IPR, } for a state $\ket{\psi}$ can be written as
 \begin{equation*}
 	\phi_{IPR}\equiv \int \mathrm{d}\mathbf{x}\;\vert\ip{\mathbf{x}}{\psi}\vert^4.
