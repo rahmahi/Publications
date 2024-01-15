@@ -183,8 +183,8 @@
 			\end{align}
 			Note that $C$ doesn't change.  Next, we invoke the Jacobi-Anger expansion,
 			\begin{align*}
-				\cos(\frac{2h}{\omega}\sin(\omega t)) &= \mathcal{J}_0\Big(\frac{2h}{\omega}\Big) + 2 \sum_{n=1}^\infty \mathcal{J}_{2n}\Big(\frac{2h}{\omega}\Big)\cos(2n\omega t),\\
-				\sin(\frac{2h}{\omega}\sin(\omega t)) &=-2 \sum_{n=1}^\infty \mathcal{J}_{2n-1}\Big(\frac{2h}{\omega}\Big)\sin[(2n-1)\omega t],
+				\cos(\frac{2h}{\omega}\sin(\omega t)) &= \mathcal{J}_0\left(\frac{2h}{\omega}\right) + 2 \sum_{n=1}^\infty \mathcal{J}_{2n}\left(\frac{2h}{\omega}\right)\cos(2n\omega t),\\
+				\sin(\frac{2h}{\omega}\sin(\omega t)) &=-2 \sum_{n=1}^\infty \mathcal{J}_{2n-1}\left(\frac{2h}{\omega}\right)\sin[(2n-1)\omega t],
 			\end{align*}
 			Now,
 			\begin{align}
@@ -202,17 +202,17 @@
 			Putting values from Eq.~\eqref{eq:rwa-ed} and Eqs.~\eqref{eq:abmov} into Eq.~\eqref{eq:xxz1},
 			\begin{align}
 				\tilde{H}(t)^{RWA}_{_{XXZ}}= & \frac14\Bigg[\sum_i J\left\{ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1}\left(1+ \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \left(1- \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\right\}\nonumber\\
-				& \hskip1cm + \sum_j J\left\{ \hat{\sigma}^x_j \hat{\sigma}^x_{j+1}\left(1- \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\ + \hat{\sigma}^y_j \hat{\sigma}^y_{j+1} \left(1+ \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\right\} + 2\Delta \left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)\Bigg].
+				& \hskip1cm + \sum_i J\left\{ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1}\left(1- \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\ + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \left(1+ \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\right\} + 2\Delta \left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)\Bigg].
 				\label{eq:rwa3}
 			\end{align}
 			When the drive parameters are tuned in such as way that the ratio $2h/\omega$ is at one of the roots of Bessel function $\mathcal{J}_0$, then $\tilde{H}(t)^{RWA}_{_{XXZ}}$ becomes,
 			\begin{equation}
-				\tilde{H}(t)^{RWA}_{_{XXZ}}= \frac14\Bigg[\sum_i J\left( \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \right) + \sum_j J\left( \hat{\sigma}^x_j \hat{\sigma}^x_{j+1} + \hat{\sigma}^y_j \hat{\sigma}^y_{j+1}\right)+ 2\Delta \left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)\Bigg].
+				\tilde{H}(t)^{RWA}_{_{XXZ}}= \frac12\Bigg[\sum_i J\left( \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \right) + \Delta \left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)\Bigg].
 				\label{eq:finalrwa}
 			\end{equation}
 			Now we apply Jordan Wigner transformation on the first two terms in Eq.~\eqref{eq:finalrwa}, which reduces the RWA Hamiltonian to the tight-binding Hamiltonian, 
 			\begin{equation}
-				\tilde{H}^{RWA}_{XXZ} = J/4\big[ \sum_i\hat{c}^\dagger\hat{c}_{i+1}  + \sum_j\hat{c}^\dagger\hat{c}_{j+1}\big] + \frac{\Delta}{2}\left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)
+				\tilde{H}^{RWA}_{XXZ} = J\Big[ \sum_i\hat{c}^\dagger_i\hat{c}_{i+1}  + H.C.\Big] + \frac{\Delta}{2}\sum_{i}  (2\hat{c}^\dagger_i\hat{c}_i-1) (2\hat{c}^\dagger_{i+1} \hat{c}_{i+1}-1).
 				\label{eq:jwa}
 			\end{equation}
 		\todo[inline]{This is incomplete. YOU HAVE TO DO TRANSFORMATION ON THE $\sigma^z_i\sigma^z_{i+1}$ in eq~\ref{eq:jwa}.}
