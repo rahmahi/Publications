@@ -202,61 +202,31 @@
 			Putting values from Eq.~\eqref{eq:rwa-ed} and Eqs.~\eqref{eq:abmov} into Eq.~\eqref{eq:xxz1},
 			\begin{align}
 				\tilde{H}(t)^{RWA}_{_{XXZ}}= & \frac14\Bigg[\sum_i J\left\{ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1}\left(1+ \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \left(1- \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\right\}\nonumber\\
-				& \hskip1cm + \sum_i J\left\{ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1}\left(1- \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\ + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \left(1+ \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\right\} + 2\Delta \left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)\Bigg].
+				& \hskip1cm + \sum_i J\left\{ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1}\left(1- \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\ + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \left(1+ \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\right\} + 2\Delta \left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)\Bigg]\nonumber\\
+				= & \frac12\Bigg[\sum_i J\left( \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \right) + \Delta \left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)\Bigg]
 				\label{eq:rwa3}
 			\end{align}
-			When the drive parameters are tuned in such as way that the ratio $2h/\omega$ is at one of the roots of Bessel function $\mathcal{J}_0$, then $\tilde{H}(t)^{RWA}_{_{XXZ}}$ becomes,
-			\begin{equation}
-				\tilde{H}(t)^{RWA}_{_{XXZ}}= \frac12\Bigg[\sum_i J\left( \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \right) + \Delta \left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)\Bigg].
-				\label{eq:finalrwa}
-			\end{equation}
-			Now we apply Jordan Wigner transformation on the first two terms in Eq.~\eqref{eq:finalrwa}, which reduces the RWA Hamiltonian to the tight-binding Hamiltonian, 
-			\begin{equation}
-				\tilde{H}^{RWA}_{XXZ} = J\Big[ \sum_i\hat{c}^\dagger_i\hat{c}_{i+1}  + H.C.\Big] + \frac{\Delta}{2}\sum_{i}  (2\hat{c}^\dagger_i\hat{c}_i-1) (2\hat{c}^\dagger_{i+1} \hat{c}_{i+1}-1).
-				\label{eq:jwa}
-			\end{equation}
-		\todo[inline]{This is incomplete. YOU HAVE TO DO TRANSFORMATION ON THE $\sigma^z_i\sigma^z_{i+1}$ in eq~\ref{eq:jwa}.}
-			The third term of Eq. \eqref{eq:jwa} commutes with the transverse field component, which keeps its contribution to dynamics invariant. The first two terms represent localization due to the presence of N local (approximate) Noether charges, given by $\hat{n}_m= \hat{d}^{\dagger}_m\hat{d}^{\;}_m$, where
-			\begin{equation}
-				\hat{d}_m = \frac{1}{\sqrt{N}}\sum_{n=0}^{N-1}e^{-\frac{2nm\pi i}{N}}\hat{c}_n.
-			\end{equation}
-			When the spin-spin interaction is beyond the nearest-neighbor limit, the Jordan-Wigner transformation is invalid. The Eq. \eqref{eq:rwa3} becomes,
+			Now we apply Jordan Wigner transformation on the first two terms in Eq.~\eqref{eq:rwa3}, which reduces the RWA Hamiltonian to the tight-binding Hamiltonian, 
 			\begin{align}
-				\tilde{H}(t)^{RWA}_{_{XXZ}}= & \frac14\Bigg[\sum_{ij} J_{ij}\left\{ \hat{\sigma}^x_i \hat{\sigma}^x_{j}\left(1+ \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right) + \hat{\sigma}^y_i \hat{\sigma}^y_{j} \left(1- \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\right\}\nonumber\\
-				& \hskip1cm + \sum_{mn} J_{mn}\left\{ \hat{\sigma}^x_m \hat{\sigma}^x_{n}\left(1- \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\ + \hat{\sigma}^y_m \hat{\sigma}^y_{n} \left(1+ \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\right\}+ 2\Delta \left(\sum_{kl}  \hat{\sigma}_{k}^{z} \hat{\sigma}_{l}^{z}\right)\Bigg].
-				\label{eq:rwalong}
+			\tilde{H}^{RWA}_{XXZ} &= J\Big[ \sum_i\hat{c}^\dagger_i\hat{c}_{i+1}  + H.C.\Big] + \frac{\Delta}{2}\sum_{i}  (2\hat{c}^\dagger_i\hat{c}_i-1) (2\hat{c}^\dagger_{i+1} \hat{c}_{i+1}-1)\nonumber\\
+			&= J\Big[ \sum_i\hat{c}^\dagger_i\hat{c}_{i+1}  + H.C.\Big] + \frac{\Delta}{2}\sum_{i}  (4\hat{c}^\dagger_i\hat{c}_i \hat{c}^\dagger_{i+1} \hat{c}_{i+1} -2\hat{c}^\dagger_i\hat{c}_i-2\hat{c}^\dagger_{i+1}\hat{c}_{i+1}+1)
+			\label{eq:jwa0}
 			\end{align}
-			However, for each term in Eq.~\eqref{eq:rwalong} the transverse field dynamics is frozen when $2h/\omega$ at one of the roots of $\mathcal{J}_0$, since, $\displaystyle \comm{\tilde{H}(t)^{RWA}_{_{XXZ}}}{\displaystyle\sum_m\sigma^z_m}=0$. 
-			\begin{figure}[t]
-				\includegraphics[height=5cm]{xxz_d.png}
-				\caption{Long time average of spin-spin correlation $\expval{S^z_i S^z_{j}}$ between $i=0$ and $i=3$ at different ($2h/\omega$) for XXZ model consisting of eight spins. The drive frequency is kept constant at $\omega = 90$. Two different anisotropy $\Delta = 0.5$ (left panel,$P$), $1.5$ (right panel, $Q$) applied. The spin-spin correlation found to be unity at each of the roots (vertical gray dashed lines) of the Bessel function in both of the panels.}
-				\label{fig:std_Ns}
-			\end{figure}
-			We have numerically simulated the spin-spin correlation $\expval{S^z_i S^z_j}$ $(i=0,j=3)$ for a spin-1/2 nearest-neighbour XXZ spin model comprising of eight spins driven at high frequency $\omega=90$. The system is driven by a transverse sinusoidal drive with high frequency $\omega =90$ and amplitude corresponding to the ratio $2h/\omega$. We found in Fig.\ref{fig:std_Ns} that $\expval{S^z_i S^z_j}$ is unity when $2h/\omega$ lies at the roots of $\mathcal{J}_0$. This supports the application of our localization method in the XXZ model.
-			
-			However, if an additional integrability-breaking term such as $\sum_i\hat{\sigma}^x_i$ is added to the XXZ Hamiltonian in Eq.~\eqref{eq:heisenberg_model} it becomes,
-			\begin{equation}
-				H_{XXZ+S_{X}} = \frac12 \left[ \sum_{i=1} J^x \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} +J^y  \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} + J^z  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1} + h(t)  \hat{\sigma}^z_i + \sum_i\hat{\sigma}^x_i\right].
-				\label{eq:xxz2}
-			\end{equation}
-				\todo[inline]{This is incomplete. YOU HAVE TO DO TRANSFORMATION ON THE $\sigma^z_i\sigma^z_{i+1}$ in eq~\ref{eq:jwa}.}
-			Applying moving frame method and RWA keeping the drive parameter such that the ratio $2h/\omega$ is at roots of $\mathcal{J}_0$ on Eq.~\eqref{eq:xxz2} one gets,
-			\begin{equation}
-				\tilde{H}^{RWA}_{XXZ+S_{x}} = J/4\big[ \sum_i\hat{c}^\dagger\hat{c}_{i+1}  + \sum_j\hat{c}^\dagger\hat{c}_{j+1}\big] + \frac{\Delta}{2}\left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right) +\frac12 \mathcal{J}_{0}\left(\frac{h}{\omega}\right) \sum_i\hat{\sigma}^x_i
-				\label{eq:jwaxxzsx}
-			\end{equation}
-			The first two terms of the above equation represents localization in the system, though the third term does not. Now if we consider the asymptotic form of the Bessel function, we can put the discussion in a similar manner in Comment no. 3, then, at the higher root of $\mathcal{J}_0$, the term $\displaystyle \frac12 \mathcal{J}_{0}\left(\frac{h}{\omega}\right) \sum_i\hat{\sigma}^x_i$ contributes very little. 
-			\begin{figure}[t]
-				\includegraphics[height=5cm]{xxzsx.png}
-				\caption{Long time average of spin-spin correlation $\expval{S^z_i S^z_{j}}$ between $i=0$ and $i=3$ at different ($2h/\omega$) for XXZ model along with additional integrability breaking term $\sum_i \hat{\sigma}^x_i$. It consists of eight spins. The drive frequency is kept constant at $\omega = 90$. Two different anisotropies $\Delta = 0.5$ (left panel,$A$), $1.5$ (right panel, $B$) applied. The spin-spin correlation was found to be in unity at each of the roots (vertical gray dashed lines) of the Bessel function in both of the panels.}
-				\label{fig:xxzsx}
-			\end{figure}
-			
-			We have simulated the Hamiltonian in Eq.~\eqref{eq:xxz2} to numerically calculate the time-averaged spin-spin correlation $\expval{S^z_i S^z_j}$. The system is taken $N=8$, drive frequency $\omega=90$ and correlation sites $i=0$ and $j=3$. The spin correlation $\expval{S^z_i S^z_j}$ is found to be suppressed at the lower roots of $\mathcal{J}_0$, however, at the higher roots it is found to be unity. This method can be applicable to observe localization in the XXZ model for spin ranges beyond nearest-neighbor interaction. Therefore, it is possible to achieve a localization in the XXZ model even in presence of a longitudinal integrability term, although we have to choose the drive parameters such that $2h/\omega$ lies at higher roots of $\mathcal{J}_0$. 
-			
-			\todo[inline]{Detail the changes to figure panels etc. suggested by the referee.}
-			
-		}
+		
+		We introduce the fermion operators $\hat{c}_k$ and $\hat{c}^\dagger_k$ in $k$-space, and then evaluate the $\tilde{H}^{RWA}_{XXZ}$ in $k$-space,
+	\begin{align}
+		\tilde{H}^{RWA}_{XXZ_k} &= J\Big[ \sum_k 2\cos(k)\hat{c}^\dagger_k\hat{c}_k  + H.C.\Big] + \frac{\Delta}{2}\sum_{i}  (16\sin[2](k) \hat{c}^\dagger_k\hat{c}^\dagger_{-k}\hat{c}_k\hat{c}_{-k}-4\hat{c}^\dagger_k\hat{c}_k+1)
+		\label{eq:jwa}
+	\end{align}
+	The Eq.~\eqref{eq:jwa} is independent of the driving force and it can be observed that $\comm{\tilde{H}^{RWA}_{XXZ_k}}{\hat{c}^\dagger_k\hat{c}_k}=0.$ Consequently, the XXZ model is localized regardless of the drive parameters that are available. 
+	\begin{figure}[t!]
+		\includegraphics[width=7.5cm]{corrN8sz0sz3avg_xxz.jpeg}
+		\caption{Temporal average of the Spin-Spin correlation ($\expval{S^z_0 S^z_3}$) is shown for various $(2h/\omega)$ values. The correlation is measured between two spins (i=0, j=3) in a 1D spin-1/2 chain consisting of eight spins, representing a XXZ model. The frequency is set at $\omega=90$, while the anisotropy is considered to be $\Delta=1.5$. The vertical dashed lines represent the roots of the Bessel function ($\mathcal{J}_0$). All $2h/\omega$ exhibit a spin correlation of unity.}
+		\label{fig:xxz}
+	\end{figure}
+
+	We conducted a simulation of the Hamiltonian described in Eq.~\eqref{eq:heisenberg_model} to compute the time-averaged spin-spin correlation $\expval{S^z_0 S^z_3}$ using numerical methods. The system is set with a value of $N=8$, a drive frequency of $\omega=90$, and correlation sites at $i=0$ and $3$. The spin correlation $\expval{S^z_0 S^z_3}$ is determined to be consistently unity for all $2h/\omega$, as shown in Fig.~\ref{fig:xxz}. This supports the analytical expression which suggests the XXZ model becomes localized when a periodically driven field is present, regardless of the drive parameters. Therefore, our approach of detecting localization is not beneficial for the XXZ model.
+	}
 	\end{enumerate}
 	
 	\vskip 1cm 
