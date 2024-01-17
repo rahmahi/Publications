@@ -118,7 +118,7 @@
 		
 		\item The referee says, \comment{``\textit{The discussion related to Fig. 9 could be improved, and it is not clear to me why the standard deviation of temporal fluctuations should vanish for thermalizing systems}"}.\\
 		
-		\response{ We thank the referee to point out the issue. We have improved that particular discussion. We have revised the discussion in Section IV, 3rd para., as well as improved the corresponding Fig.(10) (previously Fig.9) \todo{check the Fig number}. A more detailed explanation follows.
+		\response{ We thank the referee to point out the issue. We have improved that particular discussion. We have revised the discussion in Section IV, 3rd para., as well as improved the corresponding Fig.(10) in the revised manuscript. A more detailed explanation follows.
 			
 			
 			The Hamiltonian for the LMG model,
@@ -183,21 +183,12 @@
 			\end{align}
 			Note that `C' doesn't change.
 			
-			Thus putting the values of $A, B$ \& $C$ in Eq.~\eqref{eq:xxz1} we get,expected
+			Thus putting the values of $A, B$ \& $C$ in Eq.~\eqref{eq:xxz1} we get,
 			\begin{equation}
 			\tilde{H}(t)_{xxz}^{mov} = \frac12\sum_i\bigg[J\hat{\sigma}^x_i\hat{\sigma}^x_{i+1} +J \hat{\sigma}^y_i\hat{\sigma}^y_{i+1} + \Delta\hat{\sigma}^y_i\hat{\sigma}^y_{i+1}\bigg]
 			\label{eq:xxz_mov1}
 			\end{equation}
-			Now we apply Jordan Wigner transformation on the two terms in Eq.~\eqref{eq:xxz_mov1}, which reduces the Hamiltonian to the tight-binding Hamiltonian, 
-			\begin{equation}
-				\tilde{H}_{_{XXZ}} = J\Big[ \sum_i\hat{c}^\dagger_i\hat{c}_{i+1}  + h.c.\Big] + \frac{\Delta}{2}(2\hat{n}_i-1) (2\hat{n}_{i+1}-1)
-			\end{equation}
-			We introduce the fermion operators $\hat{c}_k$ and $\hat{c}^\dagger_k$ in $k$-space, and then evaluate the $\tilde{H}_{_{XXZ}}$ in $k$-space,
-			\begin{equation}
-				\tilde{H}_{_{XXZ_k}} = J\Big[ \sum_k 2\cos(k)\hat{c}^\dagger_k\hat{c}_k  + h.c.\Big] + \frac{\Delta}{2} (16\sin[2](k) \hat{c}^\dagger_k\hat{c}^\dagger_{-k}\hat{c}_k\hat{c}_{-k}-4\hat{c}^\dagger_k\hat{c}_k+1)
-				\label{eq:xxz_k}
-			\end{equation}
-			The Eq.~\eqref{eq:xxz_k} is independent of the driving force and it can be observed that $\comm{\tilde{H}^{RWA}_{XXZ_k}}{\hat{c}^\dagger_k\hat{c}_k}=0$. Additionally, it is found that the physical observable commutes with the Hamiltonian such that $\comm{\tilde{H}(t)_{xxz}}{\sum_i \hat{\sigma}^z_i}=0$. Consequently, the XXZ model exhibits freezing due to the presence of an extensive number of approximately conserved quantities regardless of the drive parameters that are available.
+			
 			
 			However if an integrability breaking term like $\sum_i \hat{\sigma}^x_i$ is augmented in XXZ model, then the dynamics of the system changes over time. The Hamiltonian due to introduction of $\sum_i \hat{\sigma}^x_i$ is,
 			\begin{equation*}
@@ -220,7 +211,7 @@
 		If the drive parameters $h$ and $\omega$ are adjusted in such a way that the ratio $h/\omega$ is one of the root of Bessel function $\mathcal{J}_0$ then $\hat{H}_{_{XXZ + S_x}}$ reduces to $\hat{H}_{xxz}^mov$ which is localized for all $h/\omega$. The second term is zero at roots of Bessel function $\mathcal{J}_0$. Thus a thermal to localized phase crossover can be possible for the XXZ system only when additional symmetry breaking terms are introduced.
 		
 	\begin{figure}[t!]
-		\includegraphics[height=5cm]{xxz_sx_low_high_fr.eps}
+		\includegraphics[height=5cm]{xxz_sx_low_high_fr.jpeg}
 		\caption{The temporal average of the spin-spin correlation $\expval{S^z_0 S^z_3}$ is shown for various $(2h/\omega)$ values. The correlation is measured between two spins (i= 0 and j = 3) in a 1D spin-1/2 chain consisting of eight spins, representing an XXZ model and for additional $S_x$ field to it. The frequency is adjusted to $\omega=0.5$ (left panel-A) and $\omega=90$ (right panel-B), with an anisotropy value of $\Delta=1.5$. The vertical dashed lines represent the roots of the Bessel function ($\mathcal{J}_0$). All $h/\omega$ exhibit a spin correlation of unity for the XXZ model, indicating consistency in localization. Though in the case of the introduction of additional integrability-breaking terms in the XXZ model, localization occurs only when the drive frequency is high and the drive parameter $h/\omega$ is one of the roots of $\mathcal{J}_0$ as shown in Panel-B. However, at low frequency $\omega=0.5$, the system exhibits delocaliztion in spin-spin correlation.}
 		\label{fig:xxz}
 	\end{figure}

@@ -182,8 +182,8 @@ showkeys,
 	At the root of $\mathcal{J}_0\left(\frac{2h}{\omega}\right)$, the longitudinal field survives. However, note that the Bessel function has asymptotic form $\mathcal{J}_0\left(\frac{2h}{\omega}\right)\sim \left(\frac{2h}{\omega}\right)^{-1/2}\cos\left(\frac{2h}{\omega}-\frac{\pi}{4}\right)$, a good approximation for sufficiently  large $h/\omega$. In that limit, if $2h/\omega$ is chosen to lie at a root, then $\mathcal{J}_0\left(\frac{h}{\omega}\right) \sim h^{-1/2}$, which is small for sufficiently large $h$. Thus, the contribution of the longitudinal field is substantially reduced if $h\gg\omega\gg1$, $\mathcal{J}_0\left(\frac{2h}{\omega}\right)=0$, partially recovering dynamical freezing.
 	\begin{figure}[ht!]
 		\centering
-		\includegraphics[width = 7.5cm]{corrN8sz0sz3avg_tfim_sx_xxz_sx.pdf}
-		\caption{\todo[inline]{Better to combine figs 1 and 2 as top and bottom panels. Make sure to change all references to these plots in the text accordingly. Also, change the line colors to blue, and y label to $\expval{S^z_0S^z_3}$}Temporal average of spin-spin correlation $\expval{S^z_0 S^z_3}$ as a function of $2h/\omega$, with $\omega=90$, of a 1D spin-1/2 chain with periodic boundary conditions, consisting of $N=8$ spins in the $TFIM+S_x$ model described by the Hamiltonian in Eq.~\ref{eq:tfim_sx}. The system was evolved for long times $t=300T$, starting from the fully $z-$spin-polarized state at $t=0$,  following which the averages were computed.  The  vertical dashed lines are the roots of $\mathcal{J}_0\left(2h/\omega\right)$. The spin-spin correlation is suppressed at lower roots  of $\mathcal{J}_0\left(2h/\omega\right)$, however it approaches unity at higher roots. \red{Average spin-spin correlation $\expval{S^z_0 S^z_3}$ for a 1D spin-1/2 chain with periodic boundary conditions. The chain consists of $N=8$ spins and is governed by the $TFIM+S_x$ model (Panel-A) as described by the Hamiltonian in Eq.~\ref{eq:tfim_sx}. Panel-B shows the XXZ model described by Eq.~\eqref{eq:xxzsx}. After starting from the fully spin-polarized state for systems at $t=0$, the systems were evolved for a long time $t=300T$ with a high frequency $\omega=90$. Following this, the spin correlation averages were computed.  The vertical dashed lines represent the roots of $\mathcal{J}_0$. In panel- A, the spin-spin correlation is suppressed at lower roots of $\mathcal{J}_0\left(2h/\omega\right)$, but it becomes close to one at higher roots for $TFIM+S_x$. For the $XXZ$ model, the spin-correlation remains constant for all values of $h/\omega$. However, the introduction of an additional $S_x$ results in a localization at only roots of $\mathcal{J}_0\left(h/\omega\right)$ and delocalization away from it as shown in Panel-B.}
+		\includegraphics[width =8cm]{corrN8sz0sz3avg_tfim_sx_xxz_sx.pdf}
+		\caption{Average spin-spin correlation $\expval{S^z_0 S^z_3}$ for a 1D spin-1/2 chain with periodic boundary conditions. The chain consists of $N=8$ spins and is governed by the $TFIM+S_x$ model (Panel-A) as described by the Hamiltonian in Eq.~\ref{eq:tfim_sx}. Panel-B shows the XXZ model described by Eq.~\eqref{eq:xxzsx}. After starting from the fully spin-polarized state for systems at $t=0$, the systems were evolved for a long time $t=300T$ with a high frequency $\omega=90$. Following this, the spin correlation averages were computed.  The vertical dashed lines represent the roots of $\mathcal{J}_0$. In panel- A, the spin-spin correlation is suppressed at lower roots of $\mathcal{J}_0\left(2h/\omega\right)$, but it becomes close to one at higher roots for $TFIM+S_x$. For the $XXZ$ model, the spin-correlation remains constant for all values of $h/\omega$. However, the introduction of an additional $S_x$ results in a localization at only roots of $\mathcal{J}_0\left(h/\omega\right)$ and delocalization away from it as shown in Panel-B.
 		}
 		\label{fig:ipr:tfimsx}
 	\end{figure}
@@ -206,32 +206,35 @@ showkeys,
 	%\caption{Temporal average of spin-spin correlation $\expval{S^z_0 S^z_3}$ as a function of $2h/\omega$ , of the $XXZ$ model described by the Hamiltonian in Eq.~\ref{eq:xxzsx}. All other parameters are identical to those in Fig.~\ref{fig:ipr:tfimsx}.}
 	%\label{fig:xxzsx}
 	%\end{figure}
-	\red{Interestingly, if we apply this approach to investigate the periodically driven XXZ model, we notice that the system remains frozen for all drive parameters in the RWA limit.  The XXZ Hamiltonian, including a longitudinal field, is given by
+	\red{Interestingly, if we apply this approach to investigate the periodically driven XXZ model, we notice that the system remains frozen for all drive parameters \sout{in the RWA limit}. The XXZ Hamiltonian, including a longitudinal field, is given by
 	\begin{multline}
 		H_{_{XXZ+S_{X}}} = \frac12 \sum_{i=1} \bigg[ J \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} +J  \hat{\sigma}^y_i \hat{\sigma}^y_{i+1}\\ + \Delta  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1} + h\cos(\omega t)  \hat{\sigma}^z_i + \hat{\sigma}^x_i\bigg],
 		\label{eq:xxzsx}
 	\end{multline}
 	Transforming to the moving frame  yields
 	\begin{equation}
-	H_{_{XXZ+S_{X}}}^{_{mov}} =H_{_{XXZ}}^{mov} +  ,
+	H_{_{XXZ+S_{x}}}^{mov} =H_{_{XXZ}}^{mov} +  \frac12 \sum_i\Big[ \hat{\sigma}^x_i \cos(\zeta) + \hat{\sigma}^y_i \sin(\zeta)\Big],
 	\label{eq:xxzsxmov}
 	\end{equation}
 	where the moving frame XXZ Hamiltonian
-	\begin{multline}
-	H_{_{XXZ}}^{mov} = \frac12 \sum_i \Bigg\{ J \Big[ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} \cos[2](\zeta) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \sin[2](\zeta)+\\ \frac12\left(\hat{\sigma}^x_i \hat{\sigma}^y_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^x_{i+1}\right)\sin(2\zeta)\Big] \\
-	 + J \Big[ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} \sin[2](\zeta) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \cos[2](\zeta)-\\
-	  \frac12\left(\hat{\sigma}^x_i \hat{\sigma}^y_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^x_{i+1}\right)\sin(2\zeta)\Big] \\
-	 +{\Delta \sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}}\Bigg\},
-	\end{multline}
-	and $\zeta \equiv \frac{h}{\omega}\sin(\omega t)$. Applying the RWA in Eq.~\ref{eq:xxzsxmov} by and smoothing out all harmonic oscillations from the Jacobi Anger expansion yields
 	\begin{align}
-	H_{_{XXZ+S_{X}}}^{_{RWA}} &= H_{_{XXZ}}^{RWA} +  \frac12 \mathcal{J}_0 \left(\frac{h}{\omega}\right)\sum_i \hat{\sigma}^x_i,\nonumber\\
-	H_{_{XXZ}}^{RWA} &=\frac12 \sum_i J\left( \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \right) + \Delta \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}.
+		H_{_{XXZ}}^{mov} =& \frac12 \sum_i \Bigg\{ J \Big[ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} \cos[2](\zeta) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \sin[2](\zeta)\nonumber\\ 
+		&+\frac12\left(\hat{\sigma}^x_i \hat{\sigma}^y_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^x_{i+1}\right)\sin(2\zeta)\Big]\nonumber \\
+		 &+ J \Big[ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} \sin[2](\zeta) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \cos[2](\zeta)\nonumber\\
+		  &-\frac12\left(\hat{\sigma}^x_i \hat{\sigma}^y_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^x_{i+1}\right)\sin(2\zeta)\Big]+\Delta \sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\Bigg\}\nonumber\\
+		  =& \frac12 \sum_i \Bigg\{J\Big(\hat{\sigma}^x_i \hat{\sigma}^x_{i+1}  + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \Big) + \Delta \sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\Bigg\}
 	\end{align}
-	In the absence of the $\hat{\sigma}^x-$field, freezing occurs irrespecive of the druive parameters, as 
-	
-	 Freezing can occur when the drive parameters are engineered such that 
-	 ($h/\omega$) lies on a root of the Bessel function. However, when the ratio $h/\omega$ departs from the roots of $\mathcal{J}_0$, an instance of delocalization takes place.}
+	and $\zeta \equiv \frac{h}{\omega}\sin(\omega t)$. We consider fermionic creation and annihilation operator, $\hat{\sigma}^+$ and $\hat{\sigma}^-$ respectively and transforming in their terms,
+	\begin{align}
+		H_{_{XXZ}}^{mov} =& \sum_i\Bigg[\hat{\sigma}^+_i \hat{\sigma}^-_{i+1} + \hat{\sigma}^-_i \hat{\sigma}^+_{i+1} + \frac{\Delta}{2} \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}\Bigg],
+	\end{align} 
+	where, $\hat{\sigma}^+_i = 1/2(\hat{\sigma}^x_i + i\hat{\sigma}^y_i)$ and $\hat{\sigma}^-_i = 1/2(\hat{\sigma}^x_i - i\hat{\sigma}^y_i)$. The first two terms in the above eqn. together annihilates any possible combinations of states of spins. However, if we populate the system with fully polarized state, which is one of the eigen state of $\displaystyle \sum_i \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}$. This gets the $H_{_{XXZ}}^{mov}$ frozen under periodic drive. Now, if a longitudinal field is introduced in XXZ model as in Eq.~\eqref{eq:xxzsxmov}, it will add single particle dynamics to the system. Now, we apply RWA in Eq.~\ref{eq:xxzsxmov} and smoothing out all harmonic oscillations from the Jacobi Anger expansion yields
+	\begin{align}
+	&H_{_{XXZ+S_{X}}}^{_{RWA}} = H_{_{XXZ}}^{RWA} +  \frac12 \mathcal{J}_0 \left(\frac{h}{\omega}\right)\sum_i \hat{\sigma}^x_i,\nonumber\\
+	&H_{_{XXZ}}^{RWA} =\frac12 \sum_i J\left( \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \right) + \Delta \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}.
+	\end{align}
+	In the absence of the $\hat{\sigma}^x-$field, freezing occurs irrespecive of the druive parameters, as 	
+	Freezing can occur when the drive parameters are engineered such that ($h/\omega$) lies on any root of the Bessel function.}
 
 	Now, if the integrability of the TFIM is broken by extending the range of $x-$spin interactions beyond nearest-neighbor, freezing can \textit{still} be recovered through the emergence of additional approximate conserved quantities at the freezing point (see~\cite{rahaman2024time} for a detailed derivation). The case of all-to-all interactions is particularly interesting, as complete freezing can be achieved in that limit, as demonstrated in the next section. In such cases, freezing has the additional effect of inducing DMBL, suppressing Floquet-thermalization to infinite temperatures. Numerical quantification of localization of a specific (quasi) stationary state in a physically significant representation can be achieved through the computation of the \emph{Inverse Participation Ratio} (IPR).  {The IPR is generally defined as the formal sum over the square of the local density in a physically meaningful space.}~\cite{mukherjee_modulation-assisted_2015,lin_many-body_2018,murphy_generalized_2011, torres-herrera_self-averaging_2020} {In the single particle case,  the IPR, } for a state $\ket{\psi}$ can be written as
 	\begin{equation*}
@@ -651,6 +654,7 @@ showkeys,
 			\label{eq:xxzsxrwa}
 		\end{equation}
 		where, $\displaystyle H_{_{XXZ}}^{_{RWA}} =\sum_i J\left( \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \right) + \Delta \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}$.}
+	
 	Now, if the integrability of the TFIM is broken by extending the range of $x-$spin interactions beyond nearest-neighbor, freezing can \textit{still} be recovered through the emergence of additional approximate conserved quantities at the freezing point (see~\cite{rahaman2024time} for a detailed derivation). The case of all-to-all interactions is particularly interesting, as complete freezing can be achieved in that limit, as demonstrated in the next section. In such cases, freezing has the additional effect of inducing DMBL, suppressing Floquet-thermalization to infinite temperatures. Numerical quantification of localization of a specific (quasi) stationary state in a physically significant representation can be achieved through the computation of the \emph{Inverse Participation Ratio} (IPR).  {The IPR is generally defined as the formal sum over the square of the local density in a physically meaningful space.}~\cite{mukherjee_modulation-assisted_2015,lin_many-body_2018,murphy_generalized_2011, torres-herrera_self-averaging_2020} {In the single particle case,  the IPR, } for a state $\ket{\psi}$ can be written as
 	\begin{equation*}
 		\phi_{IPR}\equiv \int \mathrm{d}\mathbf{x}\;\vert\ip{\mathbf{x}}{\psi}\vert^4.
