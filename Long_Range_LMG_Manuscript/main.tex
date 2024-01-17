@@ -206,17 +206,32 @@ showkeys,
 	%\caption{Temporal average of spin-spin correlation $\expval{S^z_0 S^z_3}$ as a function of $2h/\omega$ , of the $XXZ$ model described by the Hamiltonian in Eq.~\ref{eq:xxzsx}. All other parameters are identical to those in Fig.~\ref{fig:ipr:tfimsx}.}
 	%\label{fig:xxzsx}
 	%\end{figure}
-	\red{On the other hand, if we apply this approach to investigate phase-crossover (thermal/localized) in different models, like the XXZ model that remains localized and never undergoes thermalization (integrable type) when a periodic transverse field is present. Localization can be achieved without the need to control the drive parameters. However, when an additional integrability breaking term, such as $\sum_i \hat{\sigma}^x_i$, is introduced into the system, it significantly alters the overall dynamics. The corresponding Hamiltonian,
+	\red{Interestingly, if we apply this approach to investigate the periodically driven XXZ model, we notice that the system remains frozen for all drive parameters in the RWA limit.  The XXZ Hamiltonian, including a longitudinal field, is given by
 	\begin{multline}
 		H_{_{XXZ+S_{X}}} = \frac12 \sum_{i=1} \bigg[ J \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} +J  \hat{\sigma}^y_i \hat{\sigma}^y_{i+1}\\ + \Delta  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1} + h\cos(\omega t)  \hat{\sigma}^z_i + \hat{\sigma}^x_i\bigg],
 		\label{eq:xxzsx}
 	\end{multline}
-	Applying RWA in Eq.~\eqref{eq:xxzsx} yields,
+	Transforming to the moving frame  yields
 	\begin{equation}
-		H_{_{XXZ+S_{X}}}^{_{RWA}} =H_{_{XXZ}}^{mov} +  \frac12 \mathcal{J}_0 \left(\frac{h}{\omega}\right)\sum_i \hat{\sigma}^x_i,
-		\label{eq:xxzsxrwa}
+	H_{_{XXZ+S_{X}}}^{_{mov}} =H_{_{XXZ}}^{mov} +  ,
+	\label{eq:xxzsxmov}
 	\end{equation}
-	where, $\displaystyle H_{_{XXZ}}^{mov} =\frac12 \sum_i J\left( \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \right) + \Delta \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}$. Localization can occur when the drive parameters are adjusted to match the ratio ($h/\omega$)with one of the roots of the Bessel function. However, when the ratio $h/\omega$ departs from the roots of $\mathcal{J}_0$, an instance of delocalization takes place.}
+	where the moving frame XXZ Hamiltonian
+	\begin{multline}
+	H_{_{XXZ}}^{mov} = \frac12 \sum_i \Bigg\{ J \Big[ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} \cos[2](\zeta) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \sin[2](\zeta)+\\ \frac12\left(\hat{\sigma}^x_i \hat{\sigma}^y_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^x_{i+1}\right)\sin(2\zeta)\Big] \\
+	 + J \Big[ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} \sin[2](\zeta) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \cos[2](\zeta)-\\
+	  \frac12\left(\hat{\sigma}^x_i \hat{\sigma}^y_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^x_{i+1}\right)\sin(2\zeta)\Big] \\
+	 +{\Delta \sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}}\Bigg\},
+	\end{multline}
+	and $\zeta \equiv \frac{h}{\omega}\sin(\omega t)$. Applying the RWA in Eq.~\ref{eq:xxzsxmov} by and smoothing out all harmonic oscillations from the Jacobi Anger expansion yields
+	\begin{align}
+	H_{_{XXZ+S_{X}}}^{_{RWA}} &= H_{_{XXZ}}^{RWA} +  \frac12 \mathcal{J}_0 \left(\frac{h}{\omega}\right)\sum_i \hat{\sigma}^x_i,\nonumber\\
+	H_{_{XXZ}}^{RWA} &=\frac12 \sum_i J\left( \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \right) + \Delta \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}.
+	\end{align}
+	In the absence of the $\hat{\sigma}^x-$field, freezing occurs irrespecive of the druive parameters, as 
+	
+	 Freezing can occur when the drive parameters are engineered such that 
+	 ($h/\omega$) lies on a root of the Bessel function. However, when the ratio $h/\omega$ departs from the roots of $\mathcal{J}_0$, an instance of delocalization takes place.}
 
 	Now, if the integrability of the TFIM is broken by extending the range of $x-$spin interactions beyond nearest-neighbor, freezing can \textit{still} be recovered through the emergence of additional approximate conserved quantities at the freezing point (see~\cite{rahaman2024time} for a detailed derivation). The case of all-to-all interactions is particularly interesting, as complete freezing can be achieved in that limit, as demonstrated in the next section. In such cases, freezing has the additional effect of inducing DMBL, suppressing Floquet-thermalization to infinite temperatures. Numerical quantification of localization of a specific (quasi) stationary state in a physically significant representation can be achieved through the computation of the \emph{Inverse Participation Ratio} (IPR).  {The IPR is generally defined as the formal sum over the square of the local density in a physically meaningful space.}~\cite{mukherjee_modulation-assisted_2015,lin_many-body_2018,murphy_generalized_2011, torres-herrera_self-averaging_2020} {In the single particle case,  the IPR, } for a state $\ket{\psi}$ can be written as
 	\begin{equation*}
