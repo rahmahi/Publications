@@ -181,51 +181,51 @@
 				B &= \sum_{i} J \left[ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} \sin[2](\zeta) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \cos[2](\zeta)- \frac12\left(\hat{\sigma}^x_i \hat{\sigma}^y_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^x_{i+1}\right)\sin(2\zeta)\right],
 				\label{eq:abmov}
 			\end{align}
-			Note that $C$ doesn't change.  Next, we invoke the Jacobi-Anger expansion,
+			Note that `C' doesn't change.
+			
+			Thus putting the values of $A, B$ \& $C$ in Eq.~\eqref{eq:xxz1} we get,expected
+			\begin{equation}
+			\tilde{H}(t)_{xxz}^{mov} = \frac12\sum_i\bigg[J\hat{\sigma}^x_i\hat{\sigma}^x_{i+1} +J \hat{\sigma}^y_i\hat{\sigma}^y_{i+1} + \Delta\hat{\sigma}^y_i\hat{\sigma}^y_{i+1}\bigg]
+			\label{eq:xxz_mov1}
+			\end{equation}
+			Now we apply Jordan Wigner transformation on the two terms in Eq.~\eqref{eq:xxz_mov1}, which reduces the Hamiltonian to the tight-binding Hamiltonian, 
+			\begin{equation}
+				\tilde{H}_{_{XXZ}} = J\Big[ \sum_i\hat{c}^\dagger_i\hat{c}_{i+1}  + h.c.\Big] + \frac{\Delta}{2}(2\hat{n}_i-1) (2\hat{n}_{i+1}-1)
+			\end{equation}
+			We introduce the fermion operators $\hat{c}_k$ and $\hat{c}^\dagger_k$ in $k$-space, and then evaluate the $\tilde{H}_{_{XXZ}}$ in $k$-space,
+			\begin{equation}
+				\tilde{H}_{_{XXZ_k}} = J\Big[ \sum_k 2\cos(k)\hat{c}^\dagger_k\hat{c}_k  + h.c.\Big] + \frac{\Delta}{2} (16\sin[2](k) \hat{c}^\dagger_k\hat{c}^\dagger_{-k}\hat{c}_k\hat{c}_{-k}-4\hat{c}^\dagger_k\hat{c}_k+1)
+				\label{eq:xxz_k}
+			\end{equation}
+			The Eq.~\eqref{eq:xxz_k} is independent of the driving force and it can be observed that $\comm{\tilde{H}^{RWA}_{XXZ_k}}{\hat{c}^\dagger_k\hat{c}_k}=0$. Additionally, it is found that the physical observable commutes with the Hamiltonian such that $\comm{\tilde{H}(t)_{xxz}}{\sum_i \hat{\sigma}^z_i}=0$. Consequently, the XXZ model exhibits freezing due to the presence of an extensive number of approximately conserved quantities regardless of the drive parameters that are available.
+			
+			However if an integrability breaking term like $\sum_i \hat{\sigma}^x_i$ is augmented in XXZ model, then the dynamics of the system changes over time. The Hamiltonian due to introduction of $\sum_i \hat{\sigma}^x_i$ is,
+			\begin{equation*}
+				H(t)_{XXZ + S_x} = \frac12 \left( \sum_{i=1} J \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} +J  \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} + \Delta \hat{\sigma}^z_i \hat{\sigma}^z_{i+1} + h\cos(\omega t) \hat{\sigma}^z_i + \hat{\sigma}^x_i\right).
+				\label{eq:xxz_sx}
+			\end{equation*}
+			In order to move to the rotating frame, the transformation operator to be applied is $\displaystyle \hat{U}(t)$ is, $\hat{U}(t)=\prod_{i} \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right)$. The XXZ part of the Hamiltonian transforms in the same way as before.	The transformation + RWA approximation for the longitudinal field works out as follows. First, we define proper angular momenta $\displaystyle S^{\mu(=x,y,z)} = \frac12\sum_i \hat{\sigma}^\mu_i$, so that we can transform
 			\begin{align*}
-				\cos(\frac{2h}{\omega}\sin(\omega t)) &= \mathcal{J}_0\left(\frac{2h}{\omega}\right) + 2 \sum_{n=1}^\infty \mathcal{J}_{2n}\left(\frac{2h}{\omega}\right)\cos(2n\omega t),\\
-				\sin(\frac{2h}{\omega}\sin(\omega t)) &=-2 \sum_{n=1}^\infty \mathcal{J}_{2n-1}\left(\frac{2h}{\omega}\right)\sin[(2n-1)\omega t],
+				\frac12 \sum_i \hat{\sigma}^x_i & \rightarrow\frac{1}{2} \exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} \hat{\sigma}_{i}^{x}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right) \\
+				& =\left(e^{i 2 \eta S^{z}} S^{x} e^{-i 2 \eta S^{z}}\right),
 			\end{align*}
-			Now,
-			\begin{align}
-				\cos[2](\zeta) &=\frac12\left[1+\cos(2\zeta)\right]=\frac12\left[1+\left\{\mathcal{J}_0\left(\frac{2h}{\omega}\right) + 2 \sum_{n=1}^\infty \mathcal{J}_{2n}\Big(\frac{2h}{\omega}\Big)\cos(2n\omega t)\right\}\right]\\
-				\sin[2](\zeta) &=\frac12\left[1-\cos(2\zeta)\right]=\frac12\left[1-\left\{\mathcal{J}_0\left(\frac{2h}{\omega}\right) + 2 \sum_{n=1}^\infty \mathcal{J}_{2n}\Big(\frac{2h}{\omega}\Big)\cos(2n\omega t)\right\}\right]\\
-				\sin(2\zeta) &= -2 \sum_{n=1}^\infty \mathcal{J}_{2n-1}\Big(\frac{2h}{\omega}\Big)\sin[(2n-1)\omega t]
-			\end{align}
-			We introduce the Rotating Wave Approximation, which neglects the faster oscillating terms in moving frame Hamiltonian. Thus,
-			\begin{align}
-				\cos[2](\zeta) &\simeq\frac12\left[1+\mathcal{J}_0\left(\frac{2h}{\omega}\right)\right]\nonumber\\
-				\sin[2](\zeta) &\simeq\frac12\left[1-\mathcal{J}_0\left(\frac{2h}{\omega}\right)\right]\nonumber\\
-				\sin(2\zeta) &\simeq 0	
-				\label{eq:rwa-ed}
-			\end{align}
-			Putting values from Eq.~\eqref{eq:rwa-ed} and Eqs.~\eqref{eq:abmov} into Eq.~\eqref{eq:xxz1},
-			\begin{align}
-				\tilde{H}(t)^{RWA}_{_{XXZ}}= & \frac14\Bigg[\sum_i J\left\{ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1}\left(1+ \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \left(1- \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\right\}\nonumber\\
-				& \hskip1cm + \sum_i J\left\{ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1}\left(1- \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\ + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \left(1+ \mathcal{J}_0\left(\frac{2h}{\omega}\right)\right)\right\} + 2\Delta \left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)\Bigg]\nonumber\\
-				= & \frac12\Bigg[\sum_i J\left( \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \right) + \Delta \left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)\Bigg]
-				\label{eq:rwa3}
-			\end{align}
-			Now we apply Jordan Wigner transformation on the first two terms in Eq.~\eqref{eq:rwa3}, which reduces the RWA Hamiltonian to the tight-binding Hamiltonian, 
-			\begin{align}
-			\tilde{H}^{RWA}_{XXZ} &= J\Big[ \sum_i\hat{c}^\dagger_i\hat{c}_{i+1}  + H.C.\Big] + \frac{\Delta}{2}\sum_{i}  (2\hat{c}^\dagger_i\hat{c}_i-1) (2\hat{c}^\dagger_{i+1} \hat{c}_{i+1}-1)\nonumber\\
-			&= J\Big[ \sum_i\hat{c}^\dagger_i\hat{c}_{i+1}  + H.C.\Big] + \frac{\Delta}{2}\sum_{i}  (4\hat{c}^\dagger_i\hat{c}_i \hat{c}^\dagger_{i+1} \hat{c}_{i+1} -2\hat{c}^\dagger_i\hat{c}_i-2\hat{c}^\dagger_{i+1}\hat{c}_{i+1}+1)
-			\label{eq:jwa0}
-			\end{align}
+			where we have used the Baker-Campbell-Hausdorff formula, together with the canonical angular momentum commutation relations. Applying the Jacobi Anger expansion again, recalling that $\eta=\frac{h}{2 \omega} \sin (\omega t)$ and taking the RWA that keeps only $0^{th}$ order terms in the expansion, yields
+			\begin{equation}
+				\Big(\frac12 \sum_i \hat{\sigma}^x_i\Big) \rightarrow \left(S^{x} \cos (2 \eta)-S^{y} \sin (2 \eta)\right)^{RWA} \approx \mathcal{J}_{0}\left(\frac{h}{\omega}\right) S^{x} = \mathcal{J}_{0}\left(\frac{h}{\omega}\right)\frac12\sum_i\hat{\sigma}^x_i.
+			\end{equation}
+		Thus the full Hamiltonian after RWA becomes,
+		\begin{equation}
+		\hat{H}_{_{XXZ + S_x}} = H^{mov}_{xxz} + \frac12 \mathcal{J}_{0}\left(\frac{h}{\omega}\right)\sum_i\hat{\sigma}^x_i
+		\end{equation}
+		If the drive parameters $h$ and $\omega$ are adjusted in such a way that the ratio $h/\omega$ is one of the root of Bessel function $\mathcal{J}_0$ then $\hat{H}_{_{XXZ + S_x}}$ reduces to $\hat{H}_{xxz}^mov$ which is localized for all $h/\omega$. The second term is zero at roots of Bessel function $\mathcal{J}_0$. Thus a thermal to localized phase crossover can be possible for the XXZ system only when additional symmetry breaking terms are introduced.
 		
-		We introduce the fermion operators $\hat{c}_k$ and $\hat{c}^\dagger_k$ in $k$-space, and then evaluate the $\tilde{H}^{RWA}_{XXZ}$ in $k$-space,
-	\begin{align}
-		\tilde{H}^{RWA}_{XXZ_k} &= J\Big[ \sum_k 2\cos(k)\hat{c}^\dagger_k\hat{c}_k  + H.C.\Big] + \frac{\Delta}{2}\sum_{i}  (16\sin[2](k) \hat{c}^\dagger_k\hat{c}^\dagger_{-k}\hat{c}_k\hat{c}_{-k}-4\hat{c}^\dagger_k\hat{c}_k+1)
-		\label{eq:jwa}
-	\end{align}
-	The Eq.~\eqref{eq:jwa} is independent of the driving force and it can be observed that $\comm{\tilde{H}^{RWA}_{XXZ_k}}{\hat{c}^\dagger_k\hat{c}_k}=0.$ Consequently, the XXZ model exhibits freezing due to the presence of an extensive number of approximately conserved quantities. \sout{is localized regardless of the drive parameters that are available}. 
 	\begin{figure}[t!]
-		\includegraphics[height=4cm]{corrN8sz0sz3avg_xxz_sx.eps}
-		\caption{Temporal average of the Spin-Spin correlation ($\expval{S^z_0 S^z_3}$) is shown for various $(2h/\omega)$ values. The correlation is measured between two spins (i=0, j=3) in a 1D spin-1/2 chain consisting of eight spins, representing a XXZ model. The frequency is set at $\omega=90$, while the anisotropy is considered to be $\Delta=1.5$. The vertical dashed lines represent the roots of the Bessel function ($\mathcal{J}_0$). All $2h/\omega$ exhibit a spin correlation of unity.}
+		\includegraphics[height=5cm]{xxz_sx_low_high_fr.eps}
+		\caption{The temporal average of the spin-spin correlation $\expval{S^z_0 S^z_3}$ is shown for various $(2h/\omega)$ values. The correlation is measured between two spins (i= 0 and j = 3) in a 1D spin-1/2 chain consisting of eight spins, representing an XXZ model and for additional $S_x$ field to it. The frequency is adjusted to $\omega=0.5$ (left panel-A) and $\omega=90$ (right panel-B), with an anisotropy value of $\Delta=1.5$. The vertical dashed lines represent the roots of the Bessel function ($\mathcal{J}_0$). All $h/\omega$ exhibit a spin correlation of unity for the XXZ model, indicating consistency in localization. Though in the case of the introduction of additional integrability-breaking terms in the XXZ model, localization occurs only when the drive frequency is high and the drive parameter $h/\omega$ is one of the roots of $\mathcal{J}_0$ as shown in Panel-B. However, at low frequency $\omega=0.5$, the system exhibits delocaliztion in spin-spin correlation.}
 		\label{fig:xxz}
 	\end{figure}
 
-	We conducted a simulation of the Hamiltonian described in Eq.~\eqref{eq:heisenberg_model} to compute the time-averaged spin-spin correlation $\expval{S^z_0 S^z_3}$ using numerical methods. The system is set with a value of $N=8$, a drive frequency of $\omega=90$, and correlation sites at $i=0$ and $3$. The spin correlation $\expval{S^z_0 S^z_3}$ is determined to be consistently unity for all $2h/\omega$, as shown in Fig.~\ref{fig:xxz}. This supports the analytical expression which suggests the XXZ model becomes localized when a periodically driven field is present, regardless of the drive parameters. Therefore, our approach of detecting localization is not beneficial for the XXZ model.
+	We conducted a simulation of the Hamiltonian described in Eq.~\eqref{eq:heisenberg_model} to compute the time-averaged spin-spin correlation $\expval{S^z_0 S^z_3}$ using numerical methods. The system is set with a value of $N=8$, a drive frequency of $\omega=90$, and correlation sites at $i=0$ and $3$. The spin correlation $\expval{S^z_0 S^z_3}$ is determined to be consistently unity for all $2h/\omega$, as shown in Fig.~\ref{fig:xxz}. This supports the analytical expression which suggests the XXZ model becomes localized when a periodically driven field is present, regardless of the drive parameters. Although if an additional symmetry breaking term is introduced a localization/delocalization is possible as can be seen in Fig.~\ref{fig:xxz}. So a pure XXZ can not be chosen for our method, however additional $\sum_i \hat{\sigma}^x_{i}$ will manipulate the system to localization-delocalization through the ratio $h/\omega$.
 	}
 	\end{enumerate}
 	
@@ -234,13 +234,12 @@
 	\todo[inline]{UPDATE THE FIGURE NUMBERS!.}
 	\begin{enumerate}
 		\item We have discussed the novelty of our work in page 1, last para.
-		\item We have improved the discussion on how FETH can be applied in some of the nonintegrable systems on page (4), and discussed it with an example in which an integrable breaking term such as $\hat{\sigma^x}$ is augmented to TFIM. Additionally, we have added a Fig. (1) in support of it.
+		\item We have improved the discussion on how FETH can be applied in some of the nonintegrable systems on page (4), and discussed it with an example in which an integrable breaking term such as $\hat{\sigma^x}$ is augmented to TFIM. Also we have discussed the system requirements for localization-delocalizaiton in XXZ model.  Additionally, we have added a Fig. (1) in support of it.
 		\item We have improved the labeling of Figs. 2 and 8 and updated the respective captions.
 		\item We have discussed the size scaling of crossover at page 10 Sec. IV para 2.
 		\item We have improved Fig. 9 by adding an inset fig describing the crossover frequency dependency over system size.
 		\item We have improved Fig. 10.
-		\item We have discussed the standard deviation of heating rate at very small drive frequency at thermodynamic limit where the numerical result corroborates the analytical result.
-		\item We have briefly mentioned in the conclusion section if our method of achieving a phase crossover is possible like the XXZ model. 
+		\item We have discussed the standard deviation of heating rate at very small drive frequency at thermodynamic limit where the numerical result corroborates the analytical result. 
 	\end{enumerate}
 	
 	\bibliography{dmbl_refs}
