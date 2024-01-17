@@ -65,7 +65,7 @@
 			the focus was on determining the onset of DMBL by looking at expectation values of local
 			observable(s). Standard quantities that have been observed include magnetization, heating rate, and fidelity susceptibility. The observables were calculated by running simulations over long durations, and localization was inferred from their dynamics over long but ultimately finite times.
 			
-			The novelty of our paper lies in the investigation on DMBL in the Floquet quasi-stationary states , rather than in the observable dynamics, of the LMG model. Localization in the Floquet modes can be obtained from their Inverse Participation Ratios, which distinguishes between a fully localized state and a thermal state of the system. IPR ranges from scaling inversely with the Hilbert space dimension (a fully distributed or thermal state) to unity (a fully localized state). IPR calculated from Floquet modes is a better indicator of localization, as it is valid for infinite times, as opposed to observable dynamics, where very short time simulations can mask phenomena such as prethermalization. We have revised and updated our Introduction part to elaborate on the novelty of our work.
+			The novelty of our paper lies in the investigation on DMBL in the Floquet quasi-stationary states, rather than in the observable dynamics, of the LMG model. Localization in the Floquet modes can be obtained from their Inverse Participation Ratios, which distinguishes between a fully localized state and a thermal state of the system. IPR ranges from scaling inversely with the Hilbert space dimension (a fully distributed or thermal state) to unity (a fully localized state). IPR calculated from Floquet modes is a better indicator of localization, as it is valid for infinite times, as opposed to observable dynamics, where very short time simulations can mask phenomena such as prethermalization. We have revised and updated our Introduction part to elaborate on the novelty of our work.
 		}
 		
 		\item The referee says, \comment{``\textit{On page 3, the Floquet eigenstate Thermalization hypothesis is stated without references}".}\\
@@ -109,7 +109,7 @@
 		\item The referee says, \comment{``\textit{In the discussion of phase crossover from thermal to DMBL, increasing N in Fig 8 appears to push the regime of the local phase to a larger drive frequency. This seems to raise the same concerns associated with the stability of disorder-induced localization, as in whether one needs infinite disorder or infinite driving frequency to get a localization in the thermodynamic limit. Is this the case?}"}.
 		
 		\response{    	
-			We thank the referee for the comment. We have extended our simulations to larger system sizes and have verified that this is indeed the case. Increasing $N$ pushes the crossover point further to larger values of $\omega$, thus requiring an infinite frequency at an infinite size. We have updated the corresponding Fig.8 with a revised version, and have reported this in Section 4 par. 2.
+			We thank the referee for the comment. We have extended our simulations to larger system sizes and have verified that this is indeed the case. Increasing $N$ pushes the crossover point further to larger values of $\omega$, thus requiring an infinite frequency at an infinite size. We have updated the corresponding figure (Fig.9 in revised manuscript), and have reported this in page 11 Section 4 par. 2.
 		}
 		\item The referee says, \comment{``\textit{Is the heating suppressed at points where the frequency meets the resonance condition? }"}.
 		
@@ -161,14 +161,14 @@
 		\response{
 			We thank the referee for the suggestion. We have further elaborated on this issue in the manuscript. A detailed discussion follows.
 			
-			The generic Heisenberg model
+			The generic XXZ model,
 			\begin{equation*}
-				H = \frac12 \left( \sum_{i=1} J^x \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} +J^y  \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} + J^z  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1} + h(t)  \hat{\sigma}^z_i\right).
+				H = \frac12 \left( \sum_{i=1} J \big(\hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1}\big) + \Delta  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1} + h(t)  \hat{\sigma}^z_i\right).
 				\label{eq:heisenberg_model}
 			\end{equation*}
-			If $J^x= J^y \neq J^z=\Delta$, then it is called a XXZ model. We consider the drive, $h(t) = h \cos(\omega t)$. The unitary evolution operator $\displaystyle \hat{U}(t)$ is $\hat{U}(t)=\prod_{i} \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right)$. Now, the Hamiltonian, in the rotating frame, is
+			We consider the drive, $h(t) = h \cos(\omega t)$. The unitary evolution operator $\displaystyle \hat{U}(t)$ is $\hat{U}(t)=\prod_{i} \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right)$. Now, the Hamiltonian, in the moving frame, is
 			\begin{align}
-				\tilde{H}(t)_{_{XXZ}}= & \frac{1}{2} \exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} J \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + J \hat{\sigma}^y_i \hat{\sigma}^y_{i+1}+ \Delta  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t)\right)\nonumber\\
+				\tilde{H}(t)_{_{XXZ}}^{mov}= & \frac{1}{2} \exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} J \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + J \hat{\sigma}^y_i \hat{\sigma}^y_{i+1}+ \Delta  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t)\right)\nonumber\\
 				= \frac12 \Bigg[& \underbrace{\exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \sum_i\hat{\sigma}_{i}^{z}\right)}_{\mathrm{A}} \nonumber\\
 				& +\underbrace{\exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} J \hat{\sigma}_{i}^{y} \hat{\sigma}_{i+1}^{y}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \sum_i\hat{\sigma}_{i}^{z}\right)}_{\mathrm{B}} \nonumber\\
 				& +\underbrace{\Delta \left(\sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\right)}_{\mathrm{C}}\Bigg]
@@ -176,21 +176,24 @@
 			\end{align}
 			Here, we have split the RHS to three terms (A,B, and C). Now, defining $\zeta = \frac{h}{\omega}\sin(\omega t)$ we get simplifications for each of the three terms as follows.
 			\begin{align}
-				A &= \sum_{i} J \left[ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} \cos[2](\zeta) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \sin[2](\zeta)+ \frac12\left(\hat{\sigma}^x_i \hat{\sigma}^y_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^x_{i+1}\right)\sin(2\zeta)\right],
+				A &= \sum_{i} J \left[ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} \cos[2](\zeta) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \sin[2](\zeta)- \frac12\left(\hat{\sigma}^x_i \hat{\sigma}^y_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^x_{i+1}\right)\sin(2\zeta)\right],
 				\nonumber\\
-				B &= \sum_{i} J \left[ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} \sin[2](\zeta) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \cos[2](\zeta)- \frac12\left(\hat{\sigma}^x_i \hat{\sigma}^y_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^x_{i+1}\right)\sin(2\zeta)\right],
+				B &= \sum_{i} J \left[ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} \sin[2](\zeta) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \cos[2](\zeta)+ \frac12\left(\hat{\sigma}^x_i \hat{\sigma}^y_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^x_{i+1}\right)\sin(2\zeta)\right],
 				\label{eq:abmov}
 			\end{align}
 			Note that `C' doesn't change.
 			
 			Thus putting the values of $A, B$ \& $C$ in Eq.~\eqref{eq:xxz1} we get,
 			\begin{equation}
-			\tilde{H}(t)_{xxz}^{mov} = \frac12\sum_i\bigg[J\hat{\sigma}^x_i\hat{\sigma}^x_{i+1} +J \hat{\sigma}^y_i\hat{\sigma}^y_{i+1} + \Delta\hat{\sigma}^y_i\hat{\sigma}^y_{i+1}\bigg]
+			\tilde{H}(t)_{_{XXZ}}^{mov} = \frac12\sum_i\bigg[J\big(\hat{\sigma}^x_i\hat{\sigma}^x_{i+1} + \hat{\sigma}^y_i\hat{\sigma}^y_{i+1}\big) + \Delta\hat{\sigma}^z_i\hat{\sigma}^z_{i+1}\bigg]
 			\label{eq:xxz_mov1}
 			\end{equation}
-			
-			
-			However if an integrability breaking term like $\sum_i \hat{\sigma}^x_i$ is augmented in XXZ model, then the dynamics of the system changes over time. The Hamiltonian due to introduction of $\sum_i \hat{\sigma}^x_i$ is,
+		 We consider fermionic creation and annihilation operator, $\hat{\sigma}^+$ and $\hat{\sigma}^-$ respectively and transforming the moving frame Hamiltonian in their terms,
+		\begin{align}
+			H_{_{XXZ}}^{mov} =& \sum_i\Bigg[\hat{\sigma}^+_i \hat{\sigma}^-_{i+1} + \hat{\sigma}^-_i \hat{\sigma}^+_{i+1} + \frac{\Delta}{2} \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}\Bigg],
+			\label{eq:xxz_mov2}
+		\end{align} 
+		where, $\hat{\sigma}^+_i = 1/2(\hat{\sigma}^x_i + i\hat{\sigma}^y_i)$ and $\hat{\sigma}^-_i = 1/2(\hat{\sigma}^x_i - i\hat{\sigma}^y_i)$. The first two terms in the above eqn. ~\eqref{eq:xxz_mov2} annihilates together any potential combinations of states of spins. However, if we populate the system with fully polarized state, which is one of the eigen states of $\displaystyle \sum_i \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}$, the contribution from $\displaystyle \sum_i \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}$ gets the moving frame Hamiltonian frozen under periodic drive. However if a longitudinal field $\sum_i \hat{\sigma}^x_i$ is augmented in XXZ model, then the dynamics of the system changes. It adds a single particle dynamics to the moving frame Hamiltonian. Thus the Hamiltonian due to incorporating $\sum_i \hat{\sigma}^x_i$ is,
 			\begin{equation*}
 				H(t)_{XXZ + S_x} = \frac12 \left( \sum_{i=1} J \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} +J  \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} + \Delta \hat{\sigma}^z_i \hat{\sigma}^z_{i+1} + h\cos(\omega t) \hat{\sigma}^z_i + \hat{\sigma}^x_i\right).
 				\label{eq:xxz_sx}
@@ -208,15 +211,15 @@
 		\begin{equation}
 		\hat{H}_{_{XXZ + S_x}} = H^{mov}_{xxz} + \frac12 \mathcal{J}_{0}\left(\frac{h}{\omega}\right)\sum_i\hat{\sigma}^x_i
 		\end{equation}
-		If the drive parameters $h$ and $\omega$ are adjusted in such a way that the ratio $h/\omega$ is one of the root of Bessel function $\mathcal{J}_0$ then $\hat{H}_{_{XXZ + S_x}}$ reduces to $\hat{H}_{xxz}^mov$ which is localized for all $h/\omega$. The second term is zero at roots of Bessel function $\mathcal{J}_0$. Thus a thermal to localized phase crossover can be possible for the XXZ system only when additional symmetry breaking terms are introduced.
-		
+		If the drive parameters $h$ and $\omega$ are adjusted in such a way that the ratio $h/\omega$ is one of the root of Bessel function $\mathcal{J}_0$ then $\hat{H}_{_{XXZ + S_x}}$ reduces to $\hat{H}_{xxz}^{mov}$ which is frozen for all $h/\omega$.
+				
 	\begin{figure}[t!]
 		\includegraphics[height=5cm]{xxz_sx_low_high_fr.jpeg}
-		\caption{The temporal average of the spin-spin correlation $\expval{S^z_0 S^z_3}$ is shown for various $(2h/\omega)$ values. The correlation is measured between two spins (i= 0 and j = 3) in a 1D spin-1/2 chain consisting of eight spins, representing an XXZ model and for additional $S_x$ field to it. The frequency is adjusted to $\omega=0.5$ (left panel-A) and $\omega=90$ (right panel-B), with an anisotropy value of $\Delta=1.5$. The vertical dashed lines represent the roots of the Bessel function ($\mathcal{J}_0$). All $h/\omega$ exhibit a spin correlation of unity for the XXZ model, indicating consistency in localization. Though in the case of the introduction of additional integrability-breaking terms in the XXZ model, localization occurs only when the drive frequency is high and the drive parameter $h/\omega$ is one of the roots of $\mathcal{J}_0$ as shown in Panel-B. However, at low frequency $\omega=0.5$, the system exhibits delocaliztion in spin-spin correlation.}
+		\caption{The temporal average of the spin-spin correlation $\expval{S^z_0 S^z_3}$ is shown for various $(2h/\omega)$ values. The correlation is measured between two spins (i= 0 and j = 3) in a 1D spin-1/2 chain consisting of eight spins, representing an XXZ model and for additional longitudinal field $S_x$ field augmented to it. The frequency is adjusted to $\omega=0.5$ (left panel-A) and $\omega=90$ (right panel-B), with an anisotropy value of $\Delta=1.5$. The vertical dashed lines represent the roots of the Bessel function ($\mathcal{J}_0$). All $h/\omega$ exhibit a spin correlation of unity for the XXZ model, indicating drive-independent freezing. Though in the case of the introduction of additional integrability-breaking terms in the XXZ model, localization occurs only when the drive frequency is high and the drive parameter $h/\omega$ is one of the roots of $\mathcal{J}_0$ as shown in Panel-B. However, at low frequency $\omega=0.5$, the system exhibits thermal behavior.}
 		\label{fig:xxz}
 	\end{figure}
 
-	We conducted a simulation of the Hamiltonian described in Eq.~\eqref{eq:heisenberg_model} to compute the time-averaged spin-spin correlation $\expval{S^z_0 S^z_3}$ using numerical methods. The system is set with a value of $N=8$, a drive frequency of $\omega=90$, and correlation sites at $i=0$ and $3$. The spin correlation $\expval{S^z_0 S^z_3}$ is determined to be consistently unity for all $2h/\omega$, as shown in Fig.~\ref{fig:xxz}. This supports the analytical expression which suggests the XXZ model becomes localized when a periodically driven field is present, regardless of the drive parameters. Although if an additional symmetry breaking term is introduced a localization/delocalization is possible as can be seen in Fig.~\ref{fig:xxz}. So a pure XXZ can not be chosen for our method, however additional $\sum_i \hat{\sigma}^x_{i}$ will manipulate the system to localization-delocalization through the ratio $h/\omega$.
+	We conducted a simulation of the Hamiltonian described in Eq.~\eqref{eq:heisenberg_model} to compute the time-averaged spin-spin correlation $\expval{S^z_0 S^z_3}$ using numerical methods. The system is set with a value of $N=8$, a drive frequency of $\omega=90$, and correlation sites at $i=0$ and $3$. The spin correlation $\expval{S^z_0 S^z_3}$ is determined to be consistently unity for all $h/\omega$, as shown in Fig.~\ref{fig:xxz}. This supports the analytical expression which suggests the XXZ model becomes localized when a periodically driven field is present, regardless of the drive parameters. Although if an additional symmetry breaking term is introduced a freezing is possible only at specific system parameters as can be seen in Fig.~\ref{fig:xxz}. So a pure XXZ can not be chosen for our method, however additional $\sum_i \hat{\sigma}^x_{i}$ term will manipulate the system to exhibit creation or destruction of freezing.
 	}
 	\end{enumerate}
 	
