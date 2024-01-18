@@ -183,11 +183,11 @@ showkeys,
 	\begin{figure}[t!]
 		\centering
 		\includegraphics[width =8cm]{corrN8sz0sz3avg_tfim_sx_xxz_sx.pdf}
-		\caption{Average spin-spin correlation $\expval{S^z_0 S^z_3}$ for a 1D spin-1/2 chain with periodic boundary conditions. The chain consists of $N=8$ spins and is governed by the $TFIM+S_x$ model (Panel-A) as described by the Hamiltonian in Eq.~\ref{eq:tfim_sx}. Panel-B shows the XXZ model described by Eq.~\eqref{eq:xxzsx}. After starting from the fully spin-polarized state for systems at $t=0$, the systems were evolved for a long time $t=300T$ with a high frequency $\omega=90$. Following this, the spin correlation averages were computed.  The vertical dashed lines represent the roots of $\mathcal{J}_0$. In panel- A, the spin-spin correlation is suppressed at lower roots of $\mathcal{J}_0\left(2h/\omega\right)$, but it becomes close to one at higher roots for $TFIM+S_x$. For the $XXZ$ model, the spin-correlation remains constant for all values of $h/\omega$. However, the introduction of an additional $S_x$ results in a localization at only roots of $\mathcal{J}_0\left(h/\omega\right)$ and delocalization away from it as shown in Panel-B.
-		}
+		\caption{Time-average of spin-correlation $\expval{S^z_0 S^z_3}$ for a driven 1D spin-$1/2$ chain with periodic boundary conditions. The chain consists of $N=8$ spins, and was driven harmonically at fixed frequency $\omega=90$.  The system was initially populated in a fully $z-$polarized spin state and evolved numerically till time $t=300T$, where $T=2\pi/\omega$.  The vertical dashed lines represent the roots of the Bessel function $\mathcal{J}_0$.  Panel-A presents results for  the driven $TFIM+S_x$ (the  Hamiltonian in Eq.~\ref{eq:tfim_sx}), and panel-B presents results for the driven  XXZ model (both with and without an $S_x-$field) from the Hamiltonian described in  Eq.~\ref{eq:xxzsx}.
+		For the former, correlations are suppressed at the lower roots of $\mathcal{J}_0\left(2h/\omega\right)$, but approach unity at successively higher roots. For the latter, the correlations remain constant for all values of $h/\omega$. However, the introduction of an additional $S_x-$field results in freezing only at the roots of $\mathcal{J}_0\left(h/\omega\right)$.}
 		\label{fig:ipr:tfimsx}
 	\end{figure}
-	This analysis can be supported by dynamical simulations for small-size systems. We have numerically investigated the spin correlations $\expval{S^z_0 S^z_3}$ of a $1-$dimensional spin chain comprising of $N=8$ spins. The results are plotted against $2h/\omega$ for fixed $\omega$ in Fig.~\ref{fig:ipr:tfimsx}. At the lower roots of $\mathcal{J}_0\left(2h/\omega\right)$,  the correlations are suppressed. However,  they  gradually increase towards unity when the drive parameters are adjusted to lie at progressively higher roots.
+	This analysis can be supported by dynamical simulations for small-size systems. We have utilized QuTiP, the Quantum Toolbox in Python~\cite{qutip}, to numerically investigate the spin correlations $\expval{S^z_0 S^z_3}$ of a $1-$dimensional spin chain comprising of $N=8$ spins. The results are plotted against $2h/\omega$ for fixed $\omega$ in panel-A of  Fig.~\ref{fig:ipr:tfimsx}. At the lower roots of $\mathcal{J}_0\left(2h/\omega\right)$,  the correlations are suppressed. However,  they  gradually increase towards unity when the drive parameters are adjusted to lie at progressively higher roots.
 	
 	%This analysis can also be extended to study freezing in  other symmetry-broken models, such as the XXZ model. When an additional longitudinal field $\sum_i\hat{\sigma}^x_i$ is introduced to a generic XXZ model, the corresponding Hamiltonian,
 	%\begin{multline}
@@ -213,28 +213,26 @@ showkeys,
 	\end{multline}
 	Transforming to the moving frame  yields
 	\begin{equation}
-	H_{_{XXZ+S_{x}}}^{mov} =H_{_{XXZ}}^{mov} +  \frac12 \sum_i\Big[ \hat{\sigma}^x_i \cos(\zeta) + \hat{\sigma}^y_i \sin(\zeta)\Big],
+	H_{_{XXZ+S_{x}}}^{mov} =H_{_{XXZ}}^{mov} +  \frac12 \sum_i\Big[ \hat{\sigma}^x_i \cos(\zeta) + \hat{\sigma}^y_i \sin(\zeta)\Big].
 	\label{eq:xxzsxmov}
 	\end{equation}
-	where the moving frame XXZ Hamiltonian
-	\begin{align}
-		H_{_{XXZ}}^{mov} =& \frac12 \sum_i \Bigg\{ J \Big[ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} \cos[2](\zeta) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \sin[2](\zeta)\nonumber\\ 
-		&-\frac12\left(\hat{\sigma}^x_i \hat{\sigma}^y_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^x_{i+1}\right)\sin(2\zeta)\Big]\nonumber \\
-		 &+ J \Big[ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} \sin[2](\zeta) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \cos[2](\zeta)\nonumber\\
-		  &+\frac12\left(\hat{\sigma}^x_i \hat{\sigma}^y_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^x_{i+1}\right)\sin(2\zeta)\Big]+\Delta \sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\Bigg\}\nonumber\\
-		  =& \frac12 \sum_i \Bigg\{J\Big(\hat{\sigma}^x_i \hat{\sigma}^x_{i+1}  + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \Big) + \Delta \sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\Bigg\},
-	\end{align}
-	and $\zeta \equiv \frac{h}{\omega}\sin(\omega t)$. We consider fermionic creation and annihilation operator, $\hat{\sigma}^+$ and $\hat{\sigma}^-$ respectively and transforming moving frame Hamiltonian in their terms,
-	\begin{align}
-		H_{_{XXZ}}^{mov} =& \sum_i\Bigg[\hat{\sigma}^+_i \hat{\sigma}^-_{i+1} + \hat{\sigma}^-_i \hat{\sigma}^+_{i+1} + \frac{\Delta}{2} \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}\Bigg],
-	\end{align} 
-	where, $\hat{\sigma}^+_i = 1/2(\hat{\sigma}^x_i + i\hat{\sigma}^y_i)$ and $\hat{\sigma}^-_i = 1/2(\hat{\sigma}^x_i - i\hat{\sigma}^y_i)$. The first two terms in the above eqn. annihilates together any potential combinations of states of spins. However, if we populate the system with fully polarized state, which is one of the eigen states of $\displaystyle \sum_i \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}$, the contribution from $\displaystyle \sum_i \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}$ gets the moving frame Hamiltonian frozen under periodic drive. Now, if a longitudinal field is incorporated in XXZ model as described in Eq.~\eqref{eq:xxzsxmov}, it will add single particle dynamics to the XXZ Hamiltonian. Next, we apply RWA in Eq.~\ref{eq:xxzsxmov} and smoothing out all harmonic oscillations from the Jacobi Anger expansion yields
-	\begin{align}
-	&H_{_{XXZ+S_{X}}}^{_{RWA}} = H_{_{XXZ}}^{RWA} +  \frac12 \mathcal{J}_0 \left(\frac{h}{\omega}\right)\sum_i \hat{\sigma}^x_i,\nonumber\\
-	&H_{_{XXZ}}^{RWA} =\frac12 \sum_i J\left( \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \right) + \Delta \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}.
+	Here, $\zeta \equiv \frac{h}{\omega}\sin(\omega t)$, and the moving frame XXZ Hamiltonian is
+%	\begin{align}
+%		H_{_{XXZ}}^{mov} =& \frac12 \sum_i \Bigg\{ J \Big[ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} \cos[2](\zeta) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \sin[2](\zeta)\nonumber\\ 
+%		&-\frac12\left(\hat{\sigma}^x_i \hat{\sigma}^y_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^x_{i+1}\right)\sin(2\zeta)\Big]\nonumber \\
+%		 &+ J \Big[ \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} \sin[2](\zeta) + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \cos[2](\zeta)\nonumber\\
+%		  &+\frac12\left(\hat{\sigma}^x_i \hat{\sigma}^y_{i+1} + \hat{\sigma}^y_i \hat{\sigma}^x_{i+1}\right)\sin(2\zeta)\Big]+\Delta \sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\Bigg\}\nonumber\\
+%		  =& \frac12 \sum_i \Bigg\{J\Big(\hat{\sigma}^x_i \hat{\sigma}^x_{i+1}  + \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} \Big) + \Delta \sum_{i}  \hat{\sigma}_{i}^{z} \hat{\sigma}_{i+1}^{z}\Bigg\},
+%	\end{align}
+\begin{equation}
+	H_{_{XXZ}}^{mov} =  \sum_i\Bigg[J\left(\hat{\sigma}^+_i \hat{\sigma}^-_{i+1} + \hat{\sigma}^-_i \hat{\sigma}^+_{i+1}\right) + \frac{\Delta}{2} \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}\Bigg],
+\end{equation}
+	where $\hat{\sigma}^\pm_i$ are spin ladder operators. Note that the moving frame Hamiltonian has no $\zeta-$dependence. If we populate the system initially in a  fully $z-$polarized state, then $H_{_{XXZ}}^{mov}$ does not contribute to the dynamics at all. The remaining longitudinal field  will simply add single particle dynamics to the state. If we now apply RWA in Eq.~\ref{eq:xxzsxmov} by smoothing out all harmonic oscillations from the Jacobi -Anger expansion, we get
+	\begin{equation}
+	H_{_{XXZ+S_{X}}}^{_{RWA}} = H_{_{XXZ}}^{mov} +  \frac12 \mathcal{J}_0 \left(\frac{h}{\omega}\right)\sum_i \hat{\sigma}^x_i,
 	\label{eq:xxz_sx_rwa}
-	\end{align}
-	Thus freezing can occur in XXZ model regardless of the drive parameters. However when the $\hat{\sigma}^x-$ field is introduced, freezing can occur when the drive parameters are controlled in such manner that ($h/\omega$) lies on any root of the Bessel function.}
+	\end{equation}
+	Thus, freezing can occur in the XXZ model in the absence of a longitudinal field regardless of the drive parameters. However when the field is introduced, freezing can occur only when the drive parameters are controlled in such manner that ($h/\omega$) lies on any root of the Bessel function. We have supported this conclusion with QuTiP simulations~\cite{qutip} similar to those described in the previous paragraph. The resultant spin correlations are plotted against $h/\omega$ for fixed $\omega$ in panel-B of  Fig.~\ref{fig:ipr:tfimsx}. }
 
 	Now, if the integrability of the TFIM is broken by extending the range of $x-$spin interactions beyond nearest-neighbor, freezing can \textit{still} be recovered through the emergence of additional approximate conserved quantities at the freezing point (see~\cite{rahaman2024time} for a detailed derivation). The case of all-to-all interactions is particularly interesting, as complete freezing can be achieved in that limit, as demonstrated in the next section. In such cases, freezing has the additional effect of inducing DMBL, suppressing Floquet-thermalization to infinite temperatures. Numerical quantification of localization of a specific (quasi) stationary state in a physically significant representation can be achieved through the computation of the \emph{Inverse Participation Ratio} (IPR).  {The IPR is generally defined as the formal sum over the square of the local density in a physically meaningful space.}~\cite{mukherjee_modulation-assisted_2015,lin_many-body_2018,murphy_generalized_2011, torres-herrera_self-averaging_2020} {In the single particle case,  the IPR, } for a state $\ket{\psi}$ can be written as
 	\begin{equation*}
@@ -353,7 +351,7 @@ showkeys,
 	As can be readily seen in the figure, the IPR is essentially zero when  $\omega \lesssim 1$. There is considerable structure in the phase diagram for larger drive frequencies, and along the lines given by the roots of $J_0(\eta)$, the IPR is essentially unity, in agreement with eqn.~\ref{eq:lmg_rwa}.
 	
 	In figure~\ref{fig:lmg_ipr_exact}, we show plots of the IPR of the Floquet modes $\ket{\phi^n}$ for $S^2 = \big(N/2\big)\big(N/2 + 1\big)$.
-	These plots were obtained numerically by diagonalizing the propagator $U(t)$ at $t=T$, where $U(t)$ is defined in eqn~\ref{eq:propagator}. This propagator was obtained from simulations of the exact quantum dynamics using QuTiP, the Quantum Toolbox in Python~\cite{qutip}. We kept the frequency at a fairly large value $\omega = 90$ where we expect that RWA would be valid, and $N=\mathcal{O}(10^2)$. The density plot in the upper panel of fig~\ref{fig:lmg_ipr_exact} depicts the IPR of the Floquet states; the abscissa (x-corrdinate)  $\eta=4h/\omega$ and the ordinate is $n/(2N+1)$, where $n\leq 2N$ is a non-negative integer that indexes the Floquet states in increasing order of $m$. The dashed vertical lines correspond to the roots of $J_0(\eta)$. Comparing with the IPR of the TFIM in fig~\ref{fig:ipr:tfim}, we can see a very similar patterns in the immediate neighbourhood of the roots. Evidently, the IPR approaches a value of one for sufficiently large values of the roots, strongly suggesting full DMBL. Deviations occur at the smallest root of $J_0(\eta)$ (around $\eta = 2.405$) due to the contributions from higher order terms in eq~\ref{eq:lmg_jacobiexp}. Thus, a higher root is favored for DMBL.
+	These plots were obtained numerically by diagonalizing the propagator $U(t)$ at $t=T$, where $U(t)$ is defined in eqn~\ref{eq:propagator}. This propagator was obtained from simulations of the exact quantum dynamics using QuTiP~\cite{qutip}. We kept the frequency at a fairly large value $\omega = 90$ where we expect that RWA would be valid, and $N=\mathcal{O}(10^2)$. The density plot in the upper panel of fig~\ref{fig:lmg_ipr_exact} depicts the IPR of the Floquet states; the abscissa (x-corrdinate)  $\eta=4h/\omega$ and the ordinate is $n/(2N+1)$, where $n\leq 2N$ is a non-negative integer that indexes the Floquet states in increasing order of $m$. The dashed vertical lines correspond to the roots of $J_0(\eta)$. Comparing with the IPR of the TFIM in fig~\ref{fig:ipr:tfim}, we can see a very similar patterns in the immediate neighbourhood of the roots. Evidently, the IPR approaches a value of one for sufficiently large values of the roots, strongly suggesting full DMBL. Deviations occur at the smallest root of $J_0(\eta)$ (around $\eta = 2.405$) due to the contributions from higher order terms in eq~\ref{eq:lmg_jacobiexp}. Thus, a higher root is favored for DMBL.
 	
 	The bottom panel of fig~\ref{fig:lmg_ipr_exact} contains cross sections of the full IPR plot for selected values of $\eta$ as indicated in the legend. When the drive amplitude $h$ is adjusted such that $\eta$ is close to a root of $J_0(\eta)$, the Floquet States are mixed, but not entirely thermal, since the IPR does not fall to $\mathcal{O}(N^{-1})$, indicating that localization persists to some extent. However, the further we are from the roots, the closer the IPR gets to one predicted by thermalization.
 	
@@ -407,7 +405,7 @@ showkeys,
 	\begin{figure}[t!]
 		\centering
 		\includegraphics[width =8.5cm]{phase_crossover_LMG.jpeg}
-		\caption{In the top panel, the IPR of the Floquet state with the lowest quasienergy is plotted as a function of $\omega$ for different $N$s, with amplitude $h$ adjusted to ensure that $J_0(\eta)=0$ always.The data points are shown, together with sigmoid curves $\phi_{IPR}=\left[1+e^{-\alpha\left(\omega-\omega_c\right)}\right]^{-1}$ that were fitted to each dataset. The smooth rise in IPR defines a phase crossover (top panel) between a fully thermal phase to a fully localized phase. In the inset, the crossover frequency $\omega_c$ is plotted against $N$, and  is found to rise sharply with N. The bottom panel\todo[inline]{Remove the legend for the line styles only.} plots the IPR versus $N$ for small $\omega$s, also with $h$ adjusted. The curves asymptotically approach the dependency $\phi_{IPR}\sim 1/N$, indicating thermalization at low-$\omega$.}
+		\caption{In the top panel, the IPR of the Floquet state with the lowest quasienergy is plotted as a function of $\omega$ for different $N$s, with amplitude $h$ adjusted to ensure that $J_0(\eta)=0$ always.The data points are shown, together with sigmoid curves $\phi_{IPR}=\left[1+e^{-\alpha\left(\omega-\omega_c\right)}\right]^{-1}$ that were fitted to each dataset. The smooth rise in IPR defines a phase crossover (top panel) between a fully thermal phase to a fully localized phase. In the inset, the crossover frequency $\omega_c$ is plotted against $N$, and  is found to rise sharply with N. The bottom panel plots the IPR versus $N$ for small $\omega$s, also with $h$ adjusted. The curves asymptotically approach the dependency $\phi_{IPR}\sim 1/N$, indicating thermalization at low-$\omega$.}
 		\label{fig:phase_crossover}
 	\end{figure}
 	\begin{figure}[!ht]

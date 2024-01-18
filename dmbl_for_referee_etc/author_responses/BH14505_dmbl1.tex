@@ -78,7 +78,7 @@
 		
 		\response{ We would like to thank the referee for this comment. We acknowledge that there may have been a lack of clarity regarding this matter in the manuscript. We have included additional content in the manuscript (one para in Section 1 page 4, as well as an additional figure of plots from newer simulations) to elaborate on this. A detailed explanation follows:
 			
-			In the manuscript, we applied the RWA on the Hamiltonian following the unitary transformation to investigate the localization in TFIM. Now, an additional longitudinal field $\sigma^x$ to the original TFIM Hamiltonian destroys the integrability of the model.  This does indeed kill the suppression of the fermion number dynamics, but not completely.  Adding a symmetry-breaking field $\sigma^x$ to the driven TFIM yields 
+			In the manuscript, we applied the RWA on the Hamiltonian following the unitary transformation to investigate freezing in TFIM. Now, an additional longitudinal field $\sigma^x$ to the original TFIM Hamiltonian destroys the integrability of the model.  This does indeed kill the suppression of the fermion number dynamics, but not completely.  Adding a symmetry-breaking field $\sigma^x$ to the driven TFIM yields 
 			\begin{equation}
 				\hat{H}_{TFIM+S_x}(t) =\frac{1}{2}\left[\sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}+\sum_{i} \hat{\sigma}_{i}^{x}+h \cos (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right]
 			\end{equation}
@@ -103,7 +103,7 @@
 				\label{fig:TFIM_sx}
 			\end{figure}
 			
-			We have numerically evolved the Hamiltonian $\hat{H}_{TFIM+S_x}(t)$ of Eq. \eqref{eq:tfim_sx1} to investigate the long-time averaged spin-spin correlation $\expval{S^z_i S^z_{j}}$ between two spins (site(i)=0, and site(j)=3) of a 1D spin chain consisting of eight spins (considering the periodic boundary condition).  $\expval{S^z_i S^z_{j}}$ is plotted for different values of the drive parameter ratio $(2h/\omega)$ corresponding to the constant drive frequency $\omega=90$. At lower values of $(2h/\omega)$,$\expval{S^z_i S^z_{j}}$ is found to be suppressed even at the resonance point (root of $\mathcal{J}_0$). As the ratio is found to rise gradually, $\expval{S^z_i S^z_{j}}$ is also found to rise to unity for all peaks. This corroborates the approximation to recover the dynamical localization at points corresponding to the higher roots of $\mathcal{J}_0$.
+			We have numerically evolved the Hamiltonian $\hat{H}_{TFIM+S_x}(t)$ of Eq. \eqref{eq:tfim_sx1} to investigate the long-time averaged spin-spin correlation $\expval{S^z_i S^z_{j}}$ between two spins (site(i)=0, and site(j)=3) of a 1D spin chain consisting of eight spins (considering the periodic boundary condition).  $\expval{S^z_i S^z_{j}}$ is plotted for different values of the drive parameter ratio $(2h/\omega)$ corresponding to the constant drive frequency $\omega=90$. At lower values of $(2h/\omega)$, the time average of $\expval{S^z_i S^z_{j}}$ is found to be suppressed even at the resonance point (root of $\mathcal{J}_0$). As the ratio is found to rise gradually, the time average of $\expval{S^z_i S^z_{j}}$ is also found to rise to unity for all peaks. This corroborates the assertion that freezing is recovered at points corresponding to the higher roots of $\mathcal{J}_0$.
 		}
 		
 		\item The referee says, \comment{``\textit{In the discussion of phase crossover from thermal to DMBL, increasing N in Fig 8 appears to push the regime of the local phase to a larger drive frequency. This seems to raise the same concerns associated with the stability of disorder-induced localization, as in whether one needs infinite disorder or infinite driving frequency to get a localization in the thermodynamic limit. Is this the case?}"}.
@@ -190,10 +190,10 @@
 			\end{equation}
 		 We consider fermionic creation and annihilation operator, $\hat{\sigma}^+$ and $\hat{\sigma}^-$ respectively and transforming the moving frame Hamiltonian in their terms,
 		\begin{align}
-			H_{_{XXZ}}^{mov} =& \sum_i\Bigg[\hat{\sigma}^+_i \hat{\sigma}^-_{i+1} + \hat{\sigma}^-_i \hat{\sigma}^+_{i+1} + \frac{\Delta}{2} \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}\Bigg],
+			H_{_{XXZ}}^{mov} =& \sum_i\Bigg[J\hat{\sigma}^+_i \hat{\sigma}^-_{i+1} + J\hat{\sigma}^-_i \hat{\sigma}^+_{i+1} + \frac{\Delta}{2} \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}\Bigg],
 			\label{eq:xxz_mov2}
 		\end{align} 
-		where, $\hat{\sigma}^+_i = 1/2(\hat{\sigma}^x_i + i\hat{\sigma}^y_i)$ and $\hat{\sigma}^-_i = 1/2(\hat{\sigma}^x_i - i\hat{\sigma}^y_i)$. The first two terms in the above eqn. ~\eqref{eq:xxz_mov2} annihilates together any potential combinations of states of spins. However, if we populate the system with fully polarized state, which is one of the eigen states of $\displaystyle \sum_i \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}$, the contribution from $\displaystyle \sum_i \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}$ gets the moving frame Hamiltonian frozen under periodic drive. However if a longitudinal field $\sum_i \hat{\sigma}^x_i$ is augmented in XXZ model, then the dynamics of the system changes. It adds a single particle dynamics to the moving frame Hamiltonian. Thus the Hamiltonian due to incorporating $\sum_i \hat{\sigma}^x_i$ is,
+		where, $\hat{\sigma}^+_i = 1/2(\hat{\sigma}^x_i + i\hat{\sigma}^y_i)$ and $\hat{\sigma}^-_i = 1/2(\hat{\sigma}^x_i - i\hat{\sigma}^y_i)$. The first two terms in the above eqn. ~\eqref{eq:xxz_mov2} annihilates a fully $z-$polarized state. However, if we populate the system with fully polarized state, which is one of the eigen states of $\displaystyle \sum_i \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}$, the contribution from $\displaystyle \sum_i \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}$ gets the moving frame Hamiltonian frozen under periodic drive. However, if a longitudinal field $\sum_i \hat{\sigma}^x_i$ is augmented in XXZ model, then the dynamics of the system changes. It adds a single particle dynamics to the moving frame Hamiltonian. Thus, the Hamiltonian becomes
 			\begin{equation*}
 				H(t)_{XXZ + S_x} = \frac12 \left( \sum_{i=1} J \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} +J  \hat{\sigma}^y_i \hat{\sigma}^y_{i+1} + \Delta \hat{\sigma}^z_i \hat{\sigma}^z_{i+1} + h\cos(\omega t) \hat{\sigma}^z_i + \hat{\sigma}^x_i\right).
 				\label{eq:xxz_sx}
@@ -215,7 +215,7 @@
 				
 	\begin{figure}[t!]
 		\includegraphics[height=5cm]{xxz_sx_low_high_fr.jpeg}
-		\caption{The temporal average of the spin-spin correlation $\expval{S^z_0 S^z_3}$ is shown for various $(2h/\omega)$ values. The correlation is measured between two spins (i= 0 and j = 3) in a 1D spin-1/2 chain consisting of eight spins, representing an XXZ model and for additional longitudinal field $S_x$ field augmented to it. The frequency is adjusted to $\omega=0.5$ (left panel-A) and $\omega=90$ (right panel-B), with an anisotropy value of $\Delta=1.5$. The vertical dashed lines represent the roots of the Bessel function ($\mathcal{J}_0$). All $h/\omega$ exhibit a spin correlation of unity for the XXZ model, indicating drive-independent freezing. Though in the case of the introduction of additional integrability-breaking terms in the XXZ model, localization occurs only when the drive frequency is high and the drive parameter $h/\omega$ is one of the roots of $\mathcal{J}_0$ as shown in Panel-B. However, at low frequency $\omega=0.5$, the system exhibits thermal behavior.}
+		\caption{The temporal average of the spin-spin correlation $\expval{S^z_0 S^z_3}$ is shown for various $(2h/\omega)$ values. The correlation is measured between two spins (i= 0 and j = 3) in a 1D spin-1/2 chain consisting of eight spins, representing an XXZ model and for additional longitudinal field $S_x$ field augmented to it. The frequency is adjusted to $\omega=0.5$ (left panel-A) and $\omega=90$ (right panel-B), with an anisotropy value of $\Delta=1.5$. The vertical dashed lines represent the roots of the Bessel function ($\mathcal{J}_0$). All $h/\omega$ exhibit a spin correlation of unity for the XXZ model, indicating drive-independent freezing. Though in the case of the introduction of additional integrability-breaking terms in the XXZ model, freezing occurs only when the drive frequency is high and the drive parameter $h/\omega$ is one of the roots of $\mathcal{J}_0$ as shown in Panel-B. However, at low frequency $\omega=0.5$, the system exhibits thermal behavior.}
 		\label{fig:xxz}
 	\end{figure}
 
@@ -227,7 +227,7 @@
 	\noindent \textbf{Summary of important changes to the  manuscript}
 	\begin{enumerate}
 		\item We have discussed the novelty of our work in page 1, last para.
-		\item We have improved the discussion on how FETH can be applied in some of the nonintegrable systems on page (4), and discussed it with an example in which an integrable breaking term such as $\hat{\sigma^x}$ is augmented to TFIM. Also we have discussed the system requirements for localization-delocalizaiton in XXZ model.  Additionally, we have added a Fig. (1) in support of it.
+		\item We have improved the discussion on how FETH can be applied in some of the nonintegrable systems on page (4), and discussed it with an example in which an integrable breaking term such as $\hat{\sigma^x}$ is augmented to TFIM. Also we have discussed the system requirements for freezing-delocalizaiton in XXZ model.  Additionally, we have added a Fig. (1) in support of it.
 		\item We have improved the labeling of Figs. 2 and 8 and updated the respective captions.
 		\item We have discussed the size scaling of crossover at page 11 Sec. IV para 2.
 		\item We have improved Fig. 9 by adding an inset fig describing the crossover frequency dependency over system size.
