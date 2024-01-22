@@ -134,14 +134,15 @@
 				\left({H_0}\right)^2 = \frac{J^2}{4(N-1)^2}\sum_{i\neq j, k \neq l} \hat{\sigma}^z_i \hat{\sigma}^z_j \hat{\sigma}^z_k \hat{\sigma}^z_l 
 			\end{equation}
 			The thermal variance at $T= \infty$ is given by $\displaystyle \sigma^2_{\infty} = \frac{\Tr[H^2_0]}{2^N}$. 
-			Noting that ${H_0}$ is traceless, we only need the trace parts of $\left({H_0}^2\right)$ (the terms in the sums where $i=l, j=k,\;\&\;i=k, j=l$). Thus, we get
+			Noting that ${H_0}$ is traceless, we only need the tracefull parts of $\left({H_0}^2\right)$ (the terms in the sums where $i=k, j=l$; note that 
+			the cases where $i=l, j=k$ are discounted, since the sum $\sum_{i\neq j}$ has been running over bonds rather than pairs). Thus, we get
 			\begin{align*}
 				\sigma_\infty^2 =& \frac{J^2}{4(N-1)^2 2^N}\Tr[\sum_{i\neq j} \mathbbm{1}\otimes\mathbbm{1}\otimes \dots\hat{\sigma}^z_i \hat{\sigma}^z_i\dots\otimes \mathbbm{1} \otimes \dots \hat{\sigma}^z_j\hat{\sigma}^z_j \dots\otimes \mathbbm{1} \otimes\mathbbm{1}\otimes \dots]\\
 				=& \frac{J^2}{4(N-1)^2}   \sum_{i\neq j} 1\\
-				=& \frac{J^2}{4(N-1)^2} \frac{N(N+1)}{2}\\
-				=& \frac{J^2}{8} \frac{N^2+N}{N^2-2N+1}.
+				=& \frac{J^2}{4(N-1)^2}\;\binom{N}{2}\\
+				=& \frac{J^2}{8} \frac{N}{N-1}.
 			\end{align*}
-			When $N\rightarrow \infty$, we have, by l'Hopital's rule,
+			Thus, when $N\rightarrow \infty$, we have
 			\begin{equation}
 				\lim\limits_{N\rightarrow\infty}\sigma_\infty^2 = \frac{J^2}{8}.
 				\label{eq:std_inf}
