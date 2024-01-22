@@ -1,0 +1,90 @@
+\documentclass[aps,prb,reprint,showpacs,floatfix,superscriptaddress, onecolumn, nofootinbib, 10pt]{revtex4-2}
+
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{color}
+\usepackage{epsfig}
+\usepackage{multirow}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{epstopdf}
+\usepackage{subfigure}
+\usepackage{autobreak}
+\usepackage{todonotes}
+\usepackage{physics}
+\usepackage{bbm}
+\usepackage[normalem]{ulem}
+
+
+\usepackage[absolute,overlay]{textpos}
+
+%Macros for mathematical notations
+
+\newcommand{\V}[1]{\boldsymbol{#1}} %# vector
+\newcommand{\M}[1]{\boldsymbol{#1}} %# matrix
+\newcommand{\Set}[1]{\mathbb{#1}} %# set
+\newcommand{\D}[1]{\Delta#1} %# \D{t} for time step size
+\renewcommand{\d}[1]{\delta#1} %# \d{t} for small increment
+\newcommand{\av}[1]{\left\langle #1\right\rangle } %take average
+
+\newcommand{\sM}[1]{\M{\mathcal{#1}}} %matrix in mathcal font
+\newcommand{\dprime}{\prime\prime} % double prime
+%\global\long\def\i{\iota}
+%\renewcommand{\i}{\iota} %i for imaginary unit
+%\renewcommand{\i}{\mathsf i} %i for imaginary unit
+\newcommand{\follows}{\quad\Rightarrow\quad} %=>
+\newcommand{\eqd}{\overset{d}{=}} %=^d
+\newcommand{\spe}[1]{\mathscr{#1}}  %important quantities in mathscr font
+\newcommand{\eps}{\epsilon}
+
+\newcommand{\response}[1]{{\color{black}#1}} % for authors' response
+\newcommand{\comment}[1]{{\color{blue}#1}} % for referee's comment
+
+
+\title{reply to Mori}
+
+\begin{document}
+The numerical results, the equations in our manuscript, and our author response have all been rechecked,
+
+Through out the manuscript, it should be noted that instead of summing over ij index pairs, we have been summing over $i-j$ bonds.
+
+Once we've collected the trace-full contributions $i=k$, $j=l$, the choice $i-j$, $j=k$ becomes irrelevant insofar as the square of the $H_0$ is concerned. In order to account for over count, we would have to multiply $H_0$ by $1/2$ if we had started counting in pairs, and it'd cancel out with the "2" from the extra choice.
+
+As a result, at the thermodynamic limit, the ultimate conclusions remains $J^2/8$.
+
+We have therefore resolved this ambiguity in our response, along with a minor arithmetic error in the penultimate step. By carefully calculating $H_0^2$ on paper using Pauli matrices for N=4, we further confirmed our result (the six perfect squares are the only trace-full terms).
+
+We consider $N=4$ and the corresponding Hamiltonian,
+
+\begin{align}
+H_0 &= \frac{J}{2(N-1)} \sum_{i \ne j} \hat{\sigma^z_i}\hat{\sigma^z_j}\nonumber\\
+&= \frac{J}{2(N-1)} \Big[\hat{\sigma}^z_0 \hat{\sigma}^z_1 + \hat{\sigma}^z_0 \hat{\sigma}^z_2 + \hat{\sigma}^z_0 \hat{\sigma}^z_3 + \hat{\sigma}^z_1 \hat{\sigma}^z_2 + \hat{\sigma}^z_2 \hat{\sigma}^z_3 + \hat{\sigma}^z_3 \hat{\sigma}^z_1\Big]
+\end{align}
+Therefore,
+\begin{align}
+	H_0^2 &= \frac{J^2}{2^2(N-1)^2} \left[\sum_{i \ne j} \hat{\sigma^z_i}\hat{\sigma^z_j}\right]^2\nonumber\\
+	&= \frac{J^2}{2^2(4-1)^2} \Big[\left(\hat{\sigma}^z_0 \hat{\sigma}^z_1\right)^2 + \left(\hat{\sigma}^z_0 \hat{\sigma}^z_2\right)^2  + \left(\hat{\sigma}^z_0 \hat{\sigma}^z_3\right)^2  + \left(\hat{\sigma}^z_1 \hat{\sigma}^z_2\right)^2  + \left(\hat{\sigma}^z_2 \hat{\sigma}^z_3\right)^2  + \left(\hat{\sigma}^z_3 \hat{\sigma}^z_1\right)^2  + ${ all other traceless terms}$\Big]\nonumber\\
+	&= \frac{J^2}{2^2(4-1)^2} \big(\mathbbm{1} \times 6\big)
+\end{align}
+Thus, 
+\begin{equation}
+\frac{\Tr[H_0^2]}{\Tr[\mathbbm{1}]} = \frac{J^2}{4 \times 9} \times 6 = \frac{J^2}{6} .
+\end{equation}
+In case of general system size N,
+
+\begin{align}
+H_0 &= \frac{J}{2(N-1)} \sum_{ij} \hat{\sigma}^z_i \hat{\sigma}^z_j. \\
+${Thus, }$\Tr[H_0^2] &= \frac{J^2}{4(N-1)^2}\Tr\left[\sum_{ij} \hat{\sigma}^z_i \hat{\sigma}^z_j\right]^2\nonumber\\
+&= \frac{J^2}{4(N-1)^2}\; \mathbbm{1} \times\; \binom{N}{2}\nonumber\\
+&=\frac{J^2}{4(N-1)^2}\frac{N(N-1)}{2}\nonumber\\
+&=\frac{J^2}{8}\frac{N}{N-1}
+\end{align}
+
+In the thermodynamic limit, considering $N\to\infty$, $\displaystyle \Tr[H_0^2] \simeq \frac{J^2}{8}$.\\
+
+
+I've enclosed revised drafts of the manuscript and response. Please review them and provide any feedback if any.
+\end{document}
