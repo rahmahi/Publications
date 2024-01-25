@@ -78,28 +78,28 @@
 		
 		\response{ We would like to thank the referee for this comment. We acknowledge that there may have been a lack of clarity regarding this matter in the manuscript. We have included additional content in the manuscript (one para in Section 1 page 4, as well as an additional figure of plots from newer simulations) to elaborate on this. A detailed explanation follows:
 			
-			In the manuscript, we applied the RWA on the Hamiltonian following the unitary transformation to investigate freezing in TFIM. Now, an additional longitudinal field $\sigma^x$ to the original TFIM Hamiltonian destroys the integrability of the model.  This does indeed kill the suppression of the fermion number dynamics, but not completely.  Adding a symmetry-breaking field $\sigma^x$ to the driven TFIM yields 
-			\begin{equation}
-				\hat{H}_{TFIM+S_x}(t) =\frac{1}{2}\left[\sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}+\sum_{i} \hat{\sigma}_{i}^{x}+h \cos (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right]
+		In the manuscript, we applied the RWA on the Hamiltonian following the unitary transformation to investigate freezing in TFIM. Now, an additional longitudinal field $\sigma^x$ to the original TFIM Hamiltonian destroys the integrability of the model.  This does indeed kill the suppression of the fermion number dynamics, but not completely.  Adding a symmetry-breaking field $\sigma^x$ to the driven TFIM yields 
+		\begin{equation}
+			\hat{H}_{TFIM+S_x}(t) =\frac{1}{2}\left[\sum_{i} J \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}+\sum_{i} \hat{\sigma}_{i}^{x}+h \cos (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right]
 			\end{equation}
-			In order to move to the rotating frame, the transformation operator to be applied is $\displaystyle \hat{U}(t)$ is, $\hat{U}(t)=\prod_{i} \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right)$. The TFIM part of the Hamiltonian transforms in the same way as before.	The transformation + RWA approximation for the longitudinal field works out as follows. First, we define proper angular momenta $\displaystyle S^{\mu(=x,y,z)} = \frac12\sum_i \hat{\sigma}^\mu_i$, so that we can transform
-			\begin{align*}
-				\frac12 \sum_i \hat{\sigma}^x_i & \rightarrow\frac{1}{2} \exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} \hat{\sigma}_{i}^{x}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right) \\
+		In order to move to the rotating frame, the transformation operator to be applied is $\displaystyle \hat{U}(t)$ is, $\hat{U}(t)=\prod_{i} \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right)$. The TFIM part of the Hamiltonian transforms in the same way as before.	The transformation + RWA approximation for the longitudinal field works out as follows. First, we define proper angular momenta $\displaystyle S^{\mu(=x,y,z)} = \frac12\sum_i \hat{\sigma}^\mu_i$, so that we can transform
+		\begin{align*}
+			\frac12 \sum_i \hat{\sigma}^x_i & \rightarrow\frac{1}{2} \exp \left(i \frac{h}{2 \omega} \sin (\omega t) \sum_{i} \hat{\sigma}_{i}^{z}\right)\left(\sum_{i} \hat{\sigma}_{i}^{x}\right) \exp \left(-i \frac{h}{2 \omega} \sin (\omega t) \hat{\sigma}_{i}^{z}\right) \\
 				& =\left(e^{i 2 \eta S^{z}} S^{x} e^{-i 2 \eta S^{z}}\right),
-			\end{align*}
-			where we have used the Baker-Campbell-Hausdorff formula, together with the canonical angular momentum commutation relations. Applying the Jacobi Anger expansion again, recalling that $\eta=\frac{h}{2 \omega} \sin (\omega t)$ and taking the RWA that keeps only $0^{th}$ order terms in the expansion, yields
-			\begin{equation}
-				\Big(\frac12 \sum_i \hat{\sigma}^x_i\Big) \rightarrow \left(S^{x} \cos (2 \eta)-S^{y} \sin (2 \eta)\right)^{RWA} \approx \mathcal{J}_{0}\left(\frac{h}{\omega}\right) S^{x} = \mathcal{J}_{0}\left(\frac{h}{\omega}\right)\frac12\sum_i\hat{\sigma}^x_i.
-			\end{equation}
-			Thus, we have the full RWA for $\hat{H}_{_{TFIM+S_{x}}}(t)$,
-			\begin{equation}
-				\hat{H}_{_{TFIM+S_{x}}}^{R W A}= H^{RWA}+\frac12 \mathcal{J}_{0}\left(\frac{h}{\omega}\right) \sum_i\hat{\sigma}^x_i,
-				\label{eq:tfim_sx1}
-			\end{equation}
-			where $H^{RWA}$ is the Rotated wave approximation of the regular TFIM. If the drive parameters $h$ and $\omega$ are adjusted to the root of $\mathcal{J}_0\left(\frac{2h}{\omega}\right)$, then the longitudinal field survives. However, note that the Bessel function has an asymptotic form $\mathcal{J}_0(2x)\sim (2x)^{-1/2}\cos(2x-\pi/4)$, a good approximation for sufficiently large $x$. In that limit, if $2x$ is chosen to lie at a root, then $x\approx (n+3/4)\pi/2$, in which case $\mathcal{J}_0(x) \sim -x^{-1/2}\sin{\left(\pi/8\right)}$, which is small for sufficiently large $x$. Thus, the effective amplitude of the symmetry-breaking field  is substantially reduced if $h\gg\omega$, $\mathcal{J}_0\left(\frac{2h}{\omega}\right)=0$, partially recovering dynamical freezing.
-			\begin{figure}[h!]
-				\includegraphics[width=8.5cm]{corrN8sz0sz3avg_onlynn_tfim_sx.jpeg}
-				\caption{Temporal average of Spin-Spin correlation ($\expval{S^z_i S^z_j}$) for different $(2h/\omega)$, between two spins(i=0, j=3) of a 1D spin-1/2 chain consisting of eight spins denoting a TFIM with an additional longitudianl field($\sum_i\hat{\sigma}^x_i$).  The  vertical dashed lines are the roots of Bessel function($\mathcal{J}_0$). The spin correlation is suppressed at lower ($2h/\omega$) ratio, however it tends to attain unity at higher roots of $\mathcal{J}_0$.}
+		\end{align*}
+		where we have used the Baker-Campbell-Hausdorff formula, together with the canonical angular momentum commutation relations. Applying the Jacobi Anger expansion again, recalling that $\eta=\frac{h}{2 \omega} \sin (\omega t)$ and taking the RWA that keeps only $0^{th}$ order terms in the expansion, yields
+		\begin{equation}
+			\Big(\frac12 \sum_i \hat{\sigma}^x_i\Big) \rightarrow \left(S^{x} \cos (2 \eta)-S^{y} \sin (2 \eta)\right)^{RWA} \approx \mathcal{J}_{0}\left(\frac{h}{\omega}\right) S^{x} = \mathcal{J}_{0}\left(\frac{h}{\omega}\right)\frac12\sum_i\hat{\sigma}^x_i.
+		\end{equation}
+		Thus, we have the full RWA for $\hat{H}_{_{TFIM+S_{x}}}(t)$,
+		\begin{equation}
+			\hat{H}_{_{TFIM+S_{x}}}^{R W A}= H^{RWA}+\frac12 \mathcal{J}_{0}\left(\frac{h}{\omega}\right) \sum_i\hat{\sigma}^x_i,
+			\label{eq:tfim_sx1}
+		\end{equation}
+		where $H^{RWA}$ is the Rotated wave approximation of the regular TFIM. If the drive parameters $h$ and $\omega$ are adjusted to the root of $\mathcal{J}_0\left(\frac{2h}{\omega}\right)$, then the longitudinal field survives. However, note that the Bessel function has an asymptotic form $\mathcal{J}_0(2x)\sim (2x)^{-1/2}\cos(2x-\pi/4)$, a good approximation for sufficiently large $x$. In that limit, if $2x$ is chosen to lie at a root, then $x\approx (n+3/4)\pi/2$, in which case $\mathcal{J}_0(x) \sim -x^{-1/2}\sin{\left(\pi/8\right)}$, which is small for sufficiently large $x$. Thus, the effective amplitude of the symmetry-breaking field  is substantially reduced if $h\gg\omega$, $\mathcal{J}_0\left(\frac{2h}{\omega}\right)=0$, partially recovering dynamical freezing.
+		\begin{figure}[h!]
+			\includegraphics[width=8.5cm]{corrN8sz0sz3avg_onlynn_tfim_sx.jpeg}
+			\caption{Temporal average of Spin-Spin correlation ($\expval{S^z_i S^z_j}$) for different $(2h/\omega)$, between two spins(i=0, j=3) of a 1D spin-1/2 chain consisting of eight spins denoting a TFIM with an additional longitudianl field($\sum_i\hat{\sigma}^x_i$).  The  vertical dashed lines are the roots of Bessel function($\mathcal{J}_0$). The spin correlation is suppressed at lower ($2h/\omega$) ratio, however it tends to attain unity at higher roots of $\mathcal{J}_0$.}
 				\label{fig:TFIM_sx}
 			\end{figure}
 			
@@ -124,9 +124,9 @@
 			The Hamiltonian for the LMG model,
 			\begin{align}
 				\mathcal{H} &= \frac{2}{(N-1)}(S^z)^2 +2\Big[h_0 +h_1 \cos(\omega t)\Big] S^x\nonumber\\
-				&= \frac{1}{2(N-1)}\sum_{i<j}\hat{\sigma}^z_i \hat{\sigma}^z_j +\Big[h_0 +h_1 \cos(\omega t)\Big] \sum_i \hat{\sigma}^x_i
+				&= \frac{1}{2(N-1)}\sum_{i<j}\hat{\sigma}^z_i \hat{\sigma}^z_j +\Big[h_0 +h_1 \cos(\omega t)\Big] \sum_i \hat{\sigma}^x_i,
 			\end{align}
-			In the full Hilbert space, neglecting the dc part ($h_0$) for simplicity, the long-time average of the Hamiltonian in the lab frame is
+			where we have considered proper angular momenta $\displaystyle S^{\mu(=x,y,z)} = \frac12\sum_i \hat{\sigma}^\mu_i$. In the full Hilbert space, neglecting the dc part ($h_0$) for simplicity, the long-time average of the Hamiltonian in the lab frame is
 			\begin{equation*}
 			\bar{\mathcal{H}}	= {H}_0 \equiv \frac{1}{2(N-1)}\sum_{i < j}\hat{\sigma}^z_i \hat{\sigma}^z_j.
 			\end{equation*}
