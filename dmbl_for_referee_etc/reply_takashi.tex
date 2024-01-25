@@ -47,41 +47,23 @@
 \title{reply to Mori}
 
 \begin{document}
-The numerical results, the equations in our manuscript, and our author response have all been rechecked. 
 
-Throughout the manuscript, it should be noted that instead of summing over ij index pairs, we have been summing over $i-j$ bonds. 
+We concur with your suggestion to use subscript notation for the summation symbol in equation (25), namely $\sum_{i<j}$. This will undoubtedly give the spin-bond count in the manuscript greater clarity.
 
-Once we've collected the trace-full contributions $i=k$, $j=l$, the choice $i=l$, $j=k$ becomes irrelevant insofar as the square of $H_0$ is concerned. In order to account for the over count, we would have had to multiply $H_0$ by $1/2$ if we had started counting in pairs, and it'd cancel out with the ``2" from the extra choice. 
-
-As a result, at the thermodynamic limit, the ultimate conclusion remains $J^2/8$.
-
-We have therefore resolved this ambiguity in our response, along with a minor arithmetic error that occurred in the penultimate step. By carefully calculating $H_0^2$ on paper using Pauli matrices for $N=4$, we further confirmed our result (the six perfect squares are the only trace-full terms).
-
-We consider $N=4$ and the corresponding Hamiltonian,
-
-\begin{align}
-H_0 &= \frac{J}{2(N-1)} \sum_{i \ne j} \hat{\sigma^z_i}\hat{\sigma^z_j}\nonumber\\
-&= \frac{J}{2(N-1)} \Big[\hat{\sigma}^z_0 \hat{\sigma}^z_1 + \hat{\sigma}^z_0 \hat{\sigma}^z_2 + \hat{\sigma}^z_0 \hat{\sigma}^z_3 + \hat{\sigma}^z_1 \hat{\sigma}^z_2 + \hat{\sigma}^z_2 \hat{\sigma}^z_3 + \hat{\sigma}^z_3 \hat{\sigma}^z_1\Big]
-\end{align}
-Therefore,
-\begin{align}
-H_0^2 &= \frac{J^2}{2^2(N-1)^2} \left[\sum_{i \ne j} \hat{\sigma^z_i}\hat{\sigma^z_j}\right]^2\nonumber\\
-&= \frac{J^2}{2^2(4-1)^2} \Big[\left(\hat{\sigma}^z_0 \hat{\sigma}^z_1\right)^2 + \left(\hat{\sigma}^z_0 \hat{\sigma}^z_2\right)^2  + \left(\hat{\sigma}^z_0 \hat{\sigma}^z_3\right)^2  + \left(\hat{\sigma}^z_1 \hat{\sigma}^z_2\right)^2  + \left(\hat{\sigma}^z_2 \hat{\sigma}^z_3\right)^2  + \left(\hat{\sigma}^z_3 \hat{\sigma}^z_1\right)^2  + \mbox{all other traceless terms}\Big]\nonumber\\
-&= \frac{J^2}{2^2(4-1)^2} \big(\mathbbm{1} \times 6\big)
-\end{align}
-Thus, 
+We reviewed the KacNorm in the eq.25. Upon inquiry, it was found that a disparity exists between the Hamiltonians presented in the manuscript and the referee's response. The Hamiltonian used in our numerical codes has been found to be,
 \begin{equation}
-\sigma^2_\infty = \frac{\Tr[H_0^2]}{\Tr[\mathbbm{1}]} = \frac{J^2}{4 \times 9} \times 6 = \frac{J^2}{6} .
+    H = \frac{2}{N-1} \sum_{i<j} S^z_i S^z_j + 2h(t) \sum_i S^x_i.
+    \label{eq:hams}
+\end{equation}  
+This can be expressed mathematically in Hilbert space by utilizing the Pauli spin matrix,
+\begin{equation}
+H = \frac{1}{2(N-1)} \sum_{i<j} \hat{\sigma}^z_i \hat{\sigma}^z_j + h(t) \sum_i \hat{\sigma}^x_i.
+\label{eq:hamh}
 \end{equation}
-In case of general system with size N,
-\begin{align}
-H_0 &= \frac{J}{2(N-1)} \sum_{ij} \hat{\sigma}^z_i \hat{\sigma}^z_j. \\
-\mbox{Thus,}  \sigma^2_\infty \sim \frac{\Tr[H_0^2]}{\Tr{\mathbbm{1}}} &= \frac{J^2}{4(N-1)^2 2^N}\Tr\left[\sum_{ij} \hat{\sigma}^z_i \hat{\sigma}^z_j\right]^2\nonumber\\
-&= \frac{J^2}{4(N-1)^2}\; \mathbbm{1} \times\; \binom{N}{2}\nonumber\\
-&=\frac{J^2}{4(N-1)^2}\frac{N(N-1)}{2}\nonumber\\
-&=\frac{J^2}{8}\frac{N}{N-1}
-\end{align}
-In the thermodynamic limit, considering $N\to\infty$, $\displaystyle \sigma^2_\infty \simeq \frac{J^2}{8}$.
+Nevertheless, in the text, in the initial part of Section 2 eq.25, we have formulated the Hamiltonian using Pauli matrices, and the KacNorm deviates from eq. \eqref{eq:hamh}. In order to resolve this inconsistency, we substituted the Pauli matrices in eq.(25) with the total spin operator $\vec{S}$ as stated in eq.\eqref{eq:hams}, which is closely comparable to the LMG Hamiltonian employed in the aforementioned equation which can be found at, https://doi.org/10.1103/PhysRevE.107.044130.
+
+The modification ensures that the system dynamics and graphical plots in manuscripts remain unaltered, while preserving the vital information.
+
 
 \noindent I've enclosed revised drafts of the manuscript and response. Please review them and provide any feedback if any.
 \end{document}
