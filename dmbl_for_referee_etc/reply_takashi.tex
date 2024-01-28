@@ -1,4 +1,4 @@
-\documentclass[showpacs,floatfix,superscriptaddress, onecolumn, nofootinbib, 10pt]{revtex4-2}
+\documentclass[10pt]{article}
 
 \usepackage{amsmath,amsthm,amssymb}
 \usepackage{graphicx}% Include figure files
@@ -44,26 +44,23 @@
 \newcommand{\comment}[1]{{\color{blue}#1}} % for referee's comment
 
 
-\title{reply to Mori}
+\title{Reply to TM}
 
 \begin{document}
+\maketitle
+We agree that the summation sign in equation (25), $\sum_{i<j}$, should be written in subscript notation. This will definitely provide more clarity to the spin-bond count in the manuscript.
 
-We concur with your suggestion to use subscript notation for the summation symbol in equation (25), namely $\sum_{i<j}$. This will undoubtedly give the spin-bond count in the manuscript greater clarity.
-
-We reviewed the KacNorm in the eq.25. Upon inquiry, it was found that a disparity exists between the Hamiltonians presented in the manuscript and the referee's response. The Hamiltonian used in our numerical codes has been found to be,
+We went over the KacNorm in equation 25. More investigation revealed a small discrepancy between the Hamiltonian in our referee response, the one utilized in our simulations and analytical computations, and the one given in the manuscript. In our simulations and computations, we employed the Hamiltonian 
 \begin{equation}
-    H = \frac{2}{N-1} \sum_{i<j} S^z_i S^z_j + 2h(t) \sum_i S^x_i.
-    \label{eq:hams}
-\end{equation}  
-This can be expressed mathematically in Hilbert space by utilizing the Pauli spin matrix,
-\begin{equation}
-H = \frac{1}{2(N-1)} \sum_{i<j} \hat{\sigma}^z_i \hat{\sigma}^z_j + h(t) \sum_i \hat{\sigma}^x_i.
-\label{eq:hamh}
+	H = \sum_{i<j} \frac{2}{N-1} S^z_i S^z_j + 2h(t) \sum_i S^x_i, \label{eq:hams} 
 \end{equation}
-Nevertheless, in the text, in the initial part of Section 2 eq.25, we have formulated the Hamiltonian using Pauli matrices, and the KacNorm deviates from eq. \eqref{eq:hamh}. In order to resolve this inconsistency, we substituted the Pauli matrices in eq.(25) with the total spin operator $\vec{S}$ as stated in eq.\eqref{eq:hams}, which is closely comparable to the LMG Hamiltonian employed in the aforementioned equation which can be found at, https://doi.org/10.1103/PhysRevE.107.044130.
+where $\vec{S}=\frac12\vec{\sigma}$. This was selected since rotation operations on spins become boilerplate algebra and qutip contains built-in algorithms to generate angular momentum matrix members. However, 
+\begin{equation} 
+	H = \frac{1}{2(N-1)} \sum_{i<j} \hat{\sigma}^z_i \hat{\sigma}^z_j + h(t) \sum_i \hat{\sigma}^x_i. \label{eq:hamh} 
+\end{equation} 
+is the result of expressing the Hamiltonian in terms of the $\sigma s$.
 
-The modification ensures that the system dynamics and graphical plots in manuscripts remain unaltered, while preserving the vital information.
+We had presented the Hamiltonian using the $\sigma s$ when we were drafting the paper, but we neglected to alter the KacNorm back to that in the $\sigma$ form in the first section of Section 2 eq. 25. Now, we have $\vec{S}$ in place of $\sigma s$ in equation (25), and it is similar to equation (\eqref{eq:hams}). The change maintains all other information while guaranteeing that the analysis and charts in the manuscript and reviewer response are left intact.
 
-
-\noindent I've enclosed revised drafts of the manuscript and response. Please review them and provide any feedback if any.
+\noindent I've enclosed revised drafts of the manuscript and response. I'd like to send them off soon, so plz. let me know if you have any other questions.
 \end{document}
