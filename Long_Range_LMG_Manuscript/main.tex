@@ -168,12 +168,12 @@ showkeys,
 	\end{equation}
 	It is evident that by manipulating the drive parameters, specifically the amplitude denoted by $h$ and the frequency denoted by $\omega$, in a manner such that $\eta$ is positioned on a root of $J_0(\eta)$, the fermion number can be conserved to a significant extent at this particular resonance. Consequently, it is feasible to exercise direct control over $H^{RWA}$, resulting in a comprehensive suppression of the dynamics of otherwise responsive observables.
 	
-	However, this phenomenon is not trivial to generalize, since the addition of integrability-breaking terms, such as longitudinal fields or additional spin-spin interactions, kills the suppression of fermion number dynamics.  For instance, if we apply an integrability-breaking longitudinal field, the Hamiltonian becomes 
-	\begin{multline}
-		\hat{H}_{_{TFIM+S_{x}}}(t) =\frac12 \Big[\sum^N_{i=1}  \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}+h \cos (\omega t) \sum^N_{i=1} \hat{\sigma}_{i}^{z}\\
-		+\sum^N_{i=1} \hat{\sigma}_{i}^{x}\Big].
+	However, this phenomenon is not trivial to generalize, since the addition of integrability-breaking terms, such as longitudinal fields or additional spin-spin interactions, kills the suppression of fermion number dynamics.  For instance, if we apply an integrability-breaking longitudinal field $S_x = \frac12 \sum_i \hat{\sigma}^x_i$, the Hamiltonian becomes 
+	\begin{align}
+		\hat{H}_{_{TFIM+S_{x}}}(t) &=\frac12 \Bigg[\sum^N_{i=1}  \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}+h \cos (\omega t) \sum^N_{i=1} \hat{\sigma}_{i}^{z}\nonumber\\
+		&\hskip4cm  +\sum^N_{i=1} \hat{\sigma}_{i}^{x}\Bigg].
 		\label{eq:tfim_sx}
-	\end{multline}	
+	\end{align}	
 	Performing the unitary transformation and taking the RWA yields a new RWA Hamiltonian
 	\begin{equation}
 		\hat{H}_{_{TFIM+S_{x}}}^{R W A}= H^{RWA}+\frac12 \mathcal{J}_{0}\left(\frac{h}{\omega}\right) \sum_i\hat{\sigma}^x_i.
@@ -208,7 +208,7 @@ showkeys,
 	H_{_{XXZ+S_{X}}}^{_{RWA}} = H_{_{XXZ}}^{mov} +  \frac12 \mathcal{J}_0 \left(\frac{h}{\omega}\right)\sum_i \hat{\sigma}^x_i,
 	\label{eq:xxz_sx_rwa}
 	\end{equation}
-	Thus, freezing can occur in the XXZ model in the absence of a longitudinal field regardless of the drive parameters. However when the field is introduced, freezing can occur only when the drive parameters are controlled in such manner that ($h/\omega$) lies on any root of the Bessel function. We have supported this conclusion with QuTiP simulations~\cite{qutip} similar to those described in the previous paragraph. The resultant spin correlations are plotted against $h/\omega$ for fixed $\omega$ in panel-B of  fig.~\ref{fig:ipr:tfimsx}. 
+	Thus, freezing can occur in the XXZ model in the absence of a longitudinal field regardless of the drive parameters. However when the $S_x-$ field is introduced, freezing can occur only when the drive parameters are controlled in such manner that ($h/\omega$) lies on any root of the Bessel function. We have supported this conclusion with QuTiP simulations~\cite{qutip} similar to those described in the previous paragraph. The resultant spin correlations are plotted against $h/\omega$ for fixed $\omega$ in panel-B of  fig.~\ref{fig:ipr:tfimsx}. 
 
 	Now, if the integrability of the TFIM is broken by extending the range of $x-$spin interactions beyond nearest-neighbor, freezing can \textit{still} be recovered through the emergence of additional approximate conserved quantities at the freezing point (see~\cite{rahaman2024time} for a detailed derivation). The case of all-to-all interactions is particularly interesting, as complete freezing can be achieved in that limit, as demonstrated in the next section. In such cases, freezing has the additional effect of inducing DMBL, suppressing Floquet-thermalization to infinite temperatures. Numerical quantification of localization of a specific (quasi) stationary state in a physically significant representation can be achieved through the computation of the \emph{Inverse Participation Ratio} (IPR).  {The IPR is generally defined as the formal sum over the square of the local density in a physically meaningful space.}~\cite{mukherjee_modulation-assisted_2015,lin_many-body_2018,murphy_generalized_2011, torres-herrera_self-averaging_2020} {In the single particle case,  the IPR, } for a state $\ket{\psi}$ can be written as
 	\begin{equation*}
