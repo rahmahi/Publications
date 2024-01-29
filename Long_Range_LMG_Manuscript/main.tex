@@ -261,9 +261,9 @@ showkeys,
 	with the total angular momentum $S^2 = \abs{\vec{S}}^2$, where $\vec{S_i}=\frac12 \sum_i \vec{\sigma}_i$. We now choose to populate the system in a state with $S^2=\displaystyle\frac{N}{2}\left(\frac{N}{2}+1\right)$. In that case, the dynamics remains invariant in the  $N+1-$dimensional space spanned by the common eigenstates of $P_{ij} \equiv \displaystyle\frac{1}{2}\left(1+ \vec{\sigma}_i\cdot\vec{\sigma}_j\right), \abs{S}^2$ and $S_z$; the so-called \textit{ Totally Symetric Substace}, or TSS ~\cite{mori_prethermalization_2019}. Let the eigenvalues of $S^z$ in the TSS be $s_n$, and the eigenvectors be $\ket{s_n}$. Here, $s_n=-\frac{1}{2}+\frac{n}{N}$ and the index
 	$n= 0 (1) N$ has $N+1$ values. The dynamics is restricted to this invariant subspace, wherein the matrix elements of the Hamiltonian are given by
 	\begin{align}
-		\mel{s_i}{\hat{H_0}}{s_j} &= -\frac{4}{N-1} s^2_i \delta_{ij},\nonumber\\
+		\mel{s_i}{\hat{H_0}}{s_j} &= -\frac{2}{N-1} s^2_i \delta_{ij},\nonumber\\
 		\mel{s_i}{\hat{H_1}}{s_j} &= \Bigg[\sqrt{\frac{N}{2}\left(\frac{N}{2}+1\right) - Ns_i(Ns_{i + 1})}\delta_{i+1, j} \nonumber\\ 
-		&\hskip 0.7cm +\sqrt{\frac{N}{2}(\frac{N}{2}+1) - Ns_i(Ns_{i- 1})}\delta_{i-1,j}\Bigg].
+		&\hskip 0.7cm +\sqrt{\frac{N}{2}\left(\frac{N}{2}+1\right) - Ns_i(Ns_{i- 1})}\delta_{i-1,j}\Bigg].
 		\label{eq:lmg:tssham}
 	\end{align}
 	These allow for a numerical representation of the Hamiltonian in the TSS.
