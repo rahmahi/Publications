@@ -1,4 +1,4 @@
-\documentclass[aps,prb,reprint,showpacs,floatfix,superscriptaddress, onecolumn, nofootinbib, 9pt]{revtex4-2}
+\documentclass[aps,prb,reprint,showpacs,floatfix,superscriptaddress, onecolumn, nofootinbib, 10pt]{revtex4-2}
 
 \usepackage{amsmath,amsthm,amssymb}
 \usepackage{graphicx}% Include figure files
@@ -17,7 +17,7 @@
 \usepackage{physics}
 \usepackage{bbm}
 \usepackage[normalem]{ulem}
-
+\usepackage[margin=0.5cm]{geometry}
 
 \usepackage[absolute,overlay]{textpos}
 
@@ -148,15 +148,13 @@
 				\label{eq:std_inf}
 			\end{equation} 
 			\begin{figure}[h!]
-				\includegraphics[width=8.5cm]{hbar_avg_std_w0p7.jpg}
+				\includegraphics[width=7.5cm]{hbar_avg_std_w0p7.jpg}
 				\caption{Variation of $\expval{H(t)}_{std}$ with system size(N) at small frequency $\omega=0.7$. $\expval{H(t)}_{std}$ is found to decrease as N increases and at thermodynamic limit it reaches 0.125.}
 				\label{fig:std_N}
 			\end{figure}
 		At low drive frequencies, we thus expect that $\expval{H(t)}_{std}$ will tend to this thermal value. Thus, $\sigma_\infty^2 = 0.125$. The numerical result in fig.\ref{fig:std_N} supports the analytical results of eq. \eqref{eq:std_inf}. We have updated the manuscript with a brief footnote summarizing this point, and added fig.~\ref{fig:std_N} as an inset.
 		}
 		
-		
-		\vskip 2cm
 		\item The referee says, \comment{``\textit{In the conclusion, it is useful to comment on whether this method could be adapted (related to my point 2) to other generic models (say XXZ models)}"}.\\
 		
 		\response{
@@ -224,22 +222,19 @@
 	}
 	\end{enumerate}
 	
-	\vskip 1cm 
 	\noindent \textbf{Summary of important changes to the  manuscript}
 	\begin{enumerate}
 		\item We have discussed the novelty of our work in the Introduction, para. 6.
 		\item We have added references in support of FETH in Section 1 para. 3 (page 3).
 		\item We have improved the discussion on how freezing manifests in more general spin systems, particularly with integrability breaking terms and the XXZ case, in Section 1 paras 4 \& 5 (pages 4\& 5). Additionally, we have inserted a new Fig. (1) in support of our conclusions (all other figures have been renamed accordingly).
-		\item In the preceding manuscript, we represented the Hamiltonian in eq.(25) by employing Pauli spin operators alongside the associated KacNorm. However, it has been determined that the expression for the Hamiltonian was erroneous and did not correspond with the other analytical formulas in the manuscript. To ensure clarity, we have constantly represented the Hamiltonian as eq.(25) exclusively using spin operators, rather than Pauli spin matrices in the revised manuscript. Nevertheless, the KacNorm of the Hamiltonian remains the same. This notation was introduced on page 6, section 2, paragraph 1, and maintained throughout the rest of the manuscript. 
-		\item There was an ambiguity in the summation over spins for LMG Hamiltonian in eq.(25). The subscripts of the summation have been changed to $i<j$ in the revised manuscript, since we are summing over bonds.
-		\item The typographical error has been corrected and the expression of eq.(26) has been revised from $\displaystyle \mel{s_i}{\hat{H_0}}{s_j} = -\frac{4}{N-1} s^2_i \delta_{ij}$ to $\displaystyle \mel{s_i}{\hat{H_0}}{s_j} = -\frac{2}{N-1} s^2_i \delta_{ij}$. Furthermore, we have made a correction to the second part of equation (26) by including a negative sign.
+		\item In the preceding manuscript, we initially represented the Hamiltonian in equation (25) using Pauli matrices and the associated Kac norm. However, a subsequent analysis revealed an inconsistency with other analytical formulas. To enhance clarity and precision, we have consistently revised the representation to solely employ spin operators in equation (25), discarding the use of Pauli matrices. It is important to note that the Kac morm associated with the Hamiltonian remains unchanged. This notation was introduced on page 6, section 2, paragraph 1, and subsequent use is now consistent.
+		
+		\item There was an ambiguity in the summation over spins for LMG Hamiltonian in eq.(25). The subscripts of the summation have been changed to $i<j$ in the revised manuscript, since we have been summing over bonds in our simulations.
+		\item Due to the revisions in item 4, the expression in eq.(26) has been revised from $\displaystyle \mel{s_i}{\hat{H_0}}{s_j} = -\frac{4}{N-1} s^2_i \delta_{ij}$ to $\displaystyle \mel{s_i}{\hat{H_0}}{s_j} = -\frac{2}{N-1} s^2_i \delta_{ij}$. Furthermore, we have made a correction to the second part of equation (26) by including a negative sign.
 		\item We have improved the labeling of Figs. 2 and 8, and updated the respective captions.
 		\item We have discussed the size scaling of crossover in Section IV para 2 (page 11).
 		\item We have improved Fig. 9 by adding an inset figure describing the dependency of the crossover frequency on system size.
 		\item We have improved Fig. 10 by adding an inset that shows a plot of the standard deviation of heating rate $\expval{H}_{std}$ at low frequency range as well. We have also included a brief discussion on this in the caption.
 	\end{enumerate}
-	
-	\bibliography{dmbl_refs}
-	
 	
 \end{document}
