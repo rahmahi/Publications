@@ -176,7 +176,7 @@ Performing the unitary transformation and taking the RWA yields a new RWA Hamilt
 At the root of $\mathcal{J}_0\left(\frac{2h}{\omega}\right)$, the longitudinal field survives. However, note that the Bessel function has asymptotic form $\mathcal{J}_0\left(\frac{2h}{\omega}\right)\sim \left(\frac{2h}{\omega}\right)^{-1/2}\cos\left(\frac{2h}{\omega}-\frac{\pi}{4}\right)$, a good approximation for sufficiently  large $h/\omega$. In that limit, if $2h/\omega$ is chosen to lie at a root, then $\mathcal{J}_0\left(\frac{h}{\omega}\right) \sim h^{-1/2}$, which is small for sufficiently large $h$. Thus, the contribution of the longitudinal field is substantially reduced if $h\gg\omega\gg1$, $\mathcal{J}_0\left(\frac{2h}{\omega}\right)=0$, partially recovering dynamical freezing.
 \begin{figure}[t!]
 	\centering
-	\includegraphics[width =8cm]{corrN8sz0sz3avg_tfim_sx_xxz_sx.jpeg}
+	\includegraphics[width =8cm]{figure_1.jpeg}
 	\caption{Time-average of spin-correlation $\expval{S^z_0 S^z_3}$ for a driven 1D spin-$1/2$ chain with periodic boundary conditions. The chain consists of $N=8$ spins, and was driven harmonically at fixed frequency $\omega=90$.  The system was initially populated in a fully $z-$polarized spin state and evolved numerically till time $t=300T$, where $T=2\pi/\omega$.  The vertical dashed lines represent the roots of the Bessel function $\mathcal{J}_0$.  Panel-A presents results for  the driven $TFIM+S_x$ (the  Hamiltonian in eq.~\ref{eq:tfim_sx}), and panel-B presents results for the driven  XXZ model (both with and without an $S_x-$field) from the Hamiltonian described in  eq.~\ref{eq:xxzsx}.
 	For the former, correlations are suppressed at the lower roots of $\mathcal{J}_0\left(2h/\omega\right)$, but approach unity at successively higher roots. For the latter, the correlations remain constant for all values of $h/\omega$. However, the introduction of an additional $S_x-$field results in freezing only at the roots of $\mathcal{J}_0\left(h/\omega\right)$.}
 	\label{fig:ipr:tfimsx}
@@ -226,7 +226,7 @@ where $n=0,1$. {The full many-body IPR can be obtained from the reduced IPR in e
 In the RWA limit and at resonance , this quantity is unity, indicating very low participation and the onset of freezing.
 \begin{figure}[t!]
 	\centering
-	\includegraphics[width = 8.5cm]{ising_exact_ipr_3panel.jpeg}
+	\includegraphics[width = 8.5cm]{figure_2.jpeg}
 	\caption{Reduced IPR (defined in eq.~\ref{eq:ipr:ising}) {for one of the two Floquet modes obtained from the exact dynamics of the TFIM for size} $N = 100, \omega=90$ {for the entire Brillouin zone (panel A, y-coordinate) and a few drive amplitudes (top panel, x-coordinate). The dashed lines (in panel-A) indicate the roots of} $J_0(\eta)${. The middle panel (B) shows cross-sections of the reduced IPR in} $k-$ {space for four chosen amplitudes. Finally, the bottom panels (C) show semi-log plots of the scaling with} $N$ {of the full many body IPR as defined in eq.}~\ref{eq:ipr:manybody}{, with the left-C panel for a small} $\omega=0.4$, amplitude $h$ {chosen to lie both in and out of the root of} $J_0(\eta)$ {as indicated in the legend, with similar plots on the right-C panel for a large} $\omega=90$. }
 	\label{fig:ipr:tfim}
 \end{figure}
@@ -234,7 +234,7 @@ Figure~\ref{fig:ipr:tfim} shows results from numerically simulating the TFIM dyn
 However, as the TFIM is an integrable spin model, the IPR never drops to a value that is small enough to indicate thermalization. This can be seen in the bottom panels of fig.~\ref{fig:ipr:isinglowfrk}{, where the exponential decay of} $\phi_{IPR}(N)$ {never approaches the thermodynamic scaling law $\phi_{IPR}(N)\sim 2^{-N}$ for either small or large frequencies. Note that, a}t low frequencies, {complete localization} fails due to the unavailibity of zero off-diagonal terms in the  effective transformed Hamiltonian, as well as the absence of integrability breaking terms to counteract the off diagonal terms. 
 \begin{figure}[t!]
 	\centering
-	\includegraphics[width = 8.5cm]{ising_exact_lowfr_ipr.jpeg}
+	\includegraphics[width = 8.5cm]{figure_3.jpeg}
 	\caption{Reduced IPR obtained by adiabatically increasing $\omega$ (top panel x-coordinate) for one the floquet mode obtained from eq.~\ref{eq:ipr:ising} at the root of $J_0(\eta)$ for N = 500. IPR is $\sim 0.5$ (localized yet not fully freezing) upto $\omega \sim 2$, after that, smoothly increased to unity (fully localized and freezing) at higher $\omega \geq 10$ (top panel, y-coordinate). At bottom panel cross-sections for four chosen amplitudes at $\omega =2$ are plotted for a brillouin zone (x-coordinate) with corresponding reduced IPRs (y-coordinate).}
 	\label{fig:ipr:isinglowfrk}
 \end{figure}
@@ -294,7 +294,7 @@ If $\omega$ is large enough to smooth out the harmonic components, we obtain the
 \end{multline}
 \begin{figure}[t!]
 	\centering
-	\includegraphics[width=9.3cm]{wh_phasespace.jpeg}
+	\includegraphics[width=9.3cm]{figure_4.jpeg}
 	\caption{Plot of the numerically averaged IPR (IPR computed using eq.~\ref{eq:ipr:lmg}) in the TSS plotted in the $h-\omega$ plane for $N=100$ spins. In order to display the thermalized region more clearly, $\omega$ is plotted on a logarithmic scale on the x-coordinate. Note that, since the IPR is clearly non-negative, an average IPR of zero means that all Floquet states have zero IPR. Furthermore, the boundedness of IPR in $\phi_{IPR}(n) \leq 1$ ensures that if he average IPR is unity, then all Floquet states have unit IPR.}
 	\label{fig:lmg_phasediag}
 \end{figure}
@@ -307,7 +307,7 @@ may add accidental degeneracies in $\tilde{H}_{\mathrm{RWA}}$. To see this, note
 where the half-integer $-N/2\leq m \leq N/2$ is the eigenvalue corresponding to a particular eigenstate $\ket{m}$ of the symmetry-breaking field $\hat{S}^x$. In order to ensure that no additional degeneracies occur, we have to set $h_0$ in  such a way that no two energies accidentally coincide.
 \begin{figure}[t!]
 	\centering
-	\includegraphics[width = 8.5cm]{ipr_exact_dynm_N50_frq_90_.jpeg}
+	\includegraphics[width = 8.5cm]{figure_5.jpeg}
 	\caption{IPR density plot for all possible Floquet modes (top panel, y-coordinate) for different values of $\eta = 4h/\omega$ (top panel x-coordinate), deduced from eq.~\ref{eq:ipr:lmg} for exact LMG Hamiltonian for N = 50. Blue dashed lines are roots of $J_0(\eta)$. At bottom panel cross-section of IPR (y-coordinate )for four different $\eta$'s plotted for all possible floquet modes(bottom panel, x-coordinate) at $\omega=90$. IPR founds to be $\sim$ unity for all Floquet modes at roots of $J_0$.}
 	\label{fig:lmg_ipr_exact}
 \end{figure}
@@ -329,14 +329,14 @@ Figure~\ref{fig:sx_conserve} shows plots of the long-time average (from $t=0-200
 
 \begin{figure}[t!]
 	\centering
-	\includegraphics[width=9.3cm]{sx_conservation.jpeg}
+	\includegraphics[width=9.3cm]{figure_6.jpeg}
 	\caption{Temporal average of $\expval{\hat{S^x}}$ (y-coordinate) for different $\eta$'s (x-coordinate) is plotted for $\sim 200T$ at higher $\omega$ for different N=10, 20, 50. $\overline{\langle S^x \rangle}$ is found to be unity at roots of $J_0(\eta)$. At points away from resonance points, $\expval{\hat{S^x}}$ falls below unity. The corresponding standard deviation $\expval{\hat{S^x}}_{std}$ supports the variation of $\overline{\langle S^x \rangle}$ (inset figure). $\expval{\hat{S^x}}_{std}$ is $\sim 0$ describing a full freezing of the system at roots of $\mathcal{J}_0(\eta)$ (red vertical solid lines).}
 	\label{fig:sx_conserve}
 \end{figure}
 Small deviations do occur due to the role of  higher order terms in the rotated Hamiltonian in eq.~\ref{eq:lmg_rotated}. This can be demonstrated quantitatively by comparing the IPR obtained from the exact dynamics simulation with that obtained from the dynamics of $\tilde{H}(t)$ in eq.~\ref{eq:lmg_rotated} after truncating the series at orders $k\geq 1$. This comparison can be seen in fig.~\ref{fig:lmg_ipr_rwa11}.
 \begin{figure}[t!]
 	\centering
-	\includegraphics[width =8.5cm]{comparison_LMG_50_highFr90_exact_nd_rwa.jpeg}
+	\includegraphics[width =8.5cm]{figure_7.jpeg}
 	\caption{The comparison between IPR for exact dynamics and RWA with corresponding correction orders. IPR is calculated for four different $\eta$'s and corresponding $J_0(\eta)$ values for colors, Blue :$\eta = 2.40, J_0(\eta) = 0.0$, dashed orange:$\eta = 80.9, J_0(\eta) = 0.0$, Green:$\eta =7.0, J_0(\eta) = 0.3$, Red:$\eta = 13, J_0(\eta)= 0. 2$. At low root of $J_0(\eta)$ IPR is not unity (Blue curve) where at higher root (orange dashed) it is unity while at points away from roots IPR are less than unity in the exact (top panel) plot. RWA does not matches with the exact plot. At all roots of $J_0(\eta)$ IPR is unity(middle panel). RWA with additional higher order terms exhibit similar system pattern(Bottom panel) with exact dynamics.}
 	\label{fig:lmg_ipr_rwa11}
 \end{figure}
@@ -363,7 +363,7 @@ That this is a signature of the underlying quantum dynamics can be readily seen 
 The quantum phase space retains signatures of the classical phase space dynamics when $N=100$, indicating the onset of the persistence of $S^x$ conservation that arises from the resonance condition at high frequencies. 
 \begin{figure}[t!]
 	\centering
-	\includegraphics[width = 9.0 cm]{lmg_poincare.jpeg}
+	\includegraphics[width = 9.0 cm]{figure_8.jpeg}
 	\caption{Phase-space distributions at $\omega=1.0$ (panels $X_{a,b}$), $\omega=2.5$ (panels $Y_{a,b}$) and $\omega=90.0$ (panels $Z_{a,b}$) for $100$ initial conditions. The drive amplitude $h$ is always adjusted such that $\eta=4h/\omega$ lies on the smallest root of $J_0(\eta)$, \textit{i.e.} $\eta=2.4048\dots$. At small $\omega=1.0$, the classical PSOS, obtained from simulating the dynamics in eq.~\ref{eq:class:poinc} (panel $X_{a}$),  shows chaotic behavior, and at panel $Y_{a}$ where $\omega = 2.5$, regular regions start to appear. At higher $\omega = 90.0$, the dominance of regular dynamics can be readily seen (panel $Z_{a}$). The bottom panels plot the corresponding Spectral-Averaged Husimi-Q function, obtained from the Floquet modes $\ket{\phi^n}$ using eq.~\ref{eq:husimi}, and setting $N=100$. The $\omega=1.0$ case (panel $X_{b}$) has a dispersed distribution in color. This is consistent with the chaotic behavior seen in the continuum limit. At $\omega = 2.5$ (panel $Y_{b}$), there is a partial regular pattern observed together with a dispersed pattern. In the $\omega=90-$case (panel $Z_{b}$), the distribution has distinct color contrasts, which is consistent with the regular dynamics pattern seen in the continuum limit.}
 	\label{fig:classical_lipkin}
 \end{figure}
@@ -373,13 +373,13 @@ The analysis of the periodically driven LMG model reveals two distinct scenarios
 To demonstrate this, we investigate the IPR of the  Floquet mode with smallest quasienergy for numerous frequencies and system sizes, along with the associated drive amplitude $h$ keeping the system at a localization point. The results are shown in fig.~\ref{fig:phase_crossover}. In the low-frequency range $\omega \in \left[1.0, 9.0\right]$, the IPR exhibits values well below unity.   {Moreover, as can be seen in the bottom panel of the same figure, when the dynamics is simulated for smaller} $\omega$s, {the fall of} $\phi_{IPR}(N)$ {asymptotically approaches one that characterizes a fully thermal state, where} $\phi_{IPR}(N)\sim 1/N$ {in the TSS. } In the limit  $N\rightarrow\infty$, the inverse participation ratio (IPR) tends towards zero, indicating a fully de-localized state. Contrast this with the IPR plots shown in the bottom left panel of fig.~\ref{fig:ipr:isinglowfrk} {for the integrable TFIM}.  The top panel of fig.~\ref{fig:phase_crossover} {also reveals} a gradual increase {in the unity} {towards unity} of IPR over a certain frequency range, specifically at $\omega \approx 5$. In addition, the rise does not cross with those for different values of $N$, suggesting the onset of a phase crossover~\cite{sierant_2023, sachdev_quantum_2011}. As the size of the system increases, the crossover region becomes smoother, rather than sharper.  The crossover frequency $\omega_c$ have been estimated from the IPR data and plotted for different system sizes $N$ in the inset of fig.~\ref{fig:phase_crossover}. It is observed that $\omega_c$ rises sharply as $N$ increases past $40$. This indicates that $\omega_c$ blows up in the thermodynamic limit, where $N \to \infty$.
 \begin{figure}[t!]
 	\centering
-	\includegraphics[width =8.5cm]{phase_crossover_LMG.jpeg}
+	\includegraphics[width =8.5cm]{figure_9.jpeg}
 	\caption{In the top panel, the IPR of the Floquet state with the lowest quasienergy is plotted as a function of $\omega$ for different $N$s, with amplitude $h$ adjusted to ensure that $J_0(\eta)=0$ always.The data points are shown, together with sigmoid curves $\phi_{IPR}=\left[1+e^{-\alpha\left(\omega-\omega_c\right)}\right]^{-1}$ that were fitted to each dataset. The smooth rise in IPR defines a phase crossover (top panel) between a fully thermal phase to a fully localized phase. In the inset, the crossover frequency $\omega_c$ is plotted against $N$, and  is found to rise sharply with N. The bottom panel plots the IPR versus $N$ for small $\omega$s, also with $h$ adjusted. The curves asymptotically approach the dependency $\phi_{IPR}\sim 1/N$, indicating thermalization at low-$\omega$.}
 	\label{fig:phase_crossover}
 \end{figure}	
 \begin{figure}[ht!]
 	\centering
-	\includegraphics[width = 8.cm]{hbar_avg_std.jpeg}
+	\includegraphics[width = 8.cm]{figure_10.jpeg}
 	\caption{The temporal standard deviation of the heating rate, denoted by $\expval{H}_{std}$, calculated over a span of $t=500 T$ for two system sizes. Here, $h$ is varied to keep $\eta = 4h/\omega$ at the first root of $J_0(\eta)$. In the inset, $\expval{H}_{std}$ is plotted against system size at low-frequency ($\omega=0.7$).}
 	\label{fig:havg_std}
 \end{figure}
