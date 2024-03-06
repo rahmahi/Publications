@@ -1,0 +1,73 @@
+\documentclass[aps,prb,reprint,showpacs,floatfix,superscriptaddress, onecolumn, nofootinbib, 10pt]{revtex4-2}
+
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{color}
+\usepackage{epsfig}
+\usepackage{multirow}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{epstopdf}
+\usepackage{subfigure}
+\usepackage{autobreak}
+\usepackage{todonotes}
+\usepackage{physics}
+\usepackage{bbm}
+\usepackage[normalem]{ulem}
+\usepackage[margin=0.5cm]{geometry}
+
+\usepackage[absolute,overlay]{textpos}
+
+%Macros for mathematical notations
+
+\newcommand{\V}[1]{\boldsymbol{#1}} %# vector
+\newcommand{\M}[1]{\boldsymbol{#1}} %# matrix
+\newcommand{\Set}[1]{\mathbb{#1}} %# set
+\newcommand{\D}[1]{\Delta#1} %# \D{t} for time step size
+\renewcommand{\d}[1]{\delta#1} %# \d{t} for small increment
+\newcommand{\av}[1]{\left\langle #1\right\rangle } %take average
+
+\newcommand{\sM}[1]{\M{\mathcal{#1}}} %matrix in mathcal font
+\newcommand{\dprime}{\prime\prime} % double prime
+%\global\long\def\i{\iota}
+%\renewcommand{\i}{\iota} %i for imaginary unit
+%\renewcommand{\i}{\mathsf i} %i for imaginary unit
+\newcommand{\follows}{\quad\Rightarrow\quad} %=>
+\newcommand{\eqd}{\overset{d}{=}} %=^d
+\newcommand{\spe}[1]{\mathscr{#1}}  %important quantities in mathscr font
+\newcommand{\eps}{\epsilon}
+
+\newcommand{\response}[1]{{\color{black}#1}} % for authors' response
+\newcommand{\comment}[1]{{\color{blue}#1}} % for referee's comment
+
+
+\begin{document}
+	\preprint{Preprint}
+	
+	\title{Response to Referee Comments for Manuscript BH14505}
+	\author{Analabha Roy}
+	\date{\today}
+	
+	\maketitle
+	
+	\vspace{1em}
+	
+	\noindent \textbf{Response to First Referee}
+	
+	\begin{enumerate}
+		\item The referee says, \comment{``\textit{In the updated discussion about the crossover from thermal to dynamic many-body localization and the associated Fig 9, it is now clear from the figure that the DMBL is unstable in the thermodynamic limit and tends towards thermal for any finite value of driving frequency. This indicates that DMBL is not robust in the thermodynamic limit. This caveat needs to be mentioned in the manuscript, in the introduction	and conclusion.}"}\\
+		
+		\response{
+			We thank the referee for this suggestion. At thermodynamic limit it is observed that the DMBL is unstable. This result differs from the behavior of short-range models described in previous studies, where a non-analytic transition occurs from a thermal phase to a strictly local phase at finite driving frequencies. We have revised this discussion the manuscript and updated our Introduction and Conclusion part.
+		}
+	\end{enumerate}
+	
+	\noindent \textbf{Summary of important changes to the  manuscript}
+	\begin{enumerate}
+		\item We have discussed that the DMBL is unstable and tends towards thermal at the thermodynamic limit at Introduction and Conclusion part.
+	\end{enumerate}
+	
+\end{document}
