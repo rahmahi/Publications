@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex main"] 1709787754 "main.aux" "main.bbl" "main" 1709787754
+["bibtex main"] 1709788681 "main.aux" "main.bbl" "main" 1709788693
   "/usr/share/texlive/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "main.aux" 1709787623 28464 14321a2803cbd96d410003fd3a373193 "pdflatex"
+  "main.aux" 1709788693 28464 51b3f0af05f46ed4110662d69d41daa0 "pdflatex"
   "main.bib" 1709787506 29996 f99988cfd0161f1c3b141a2b3f8d3ba8 ""
-  "mainNotes.bib" 1709787623 615 44737746ad24be3ba47cb0ac05bb3efc "pdflatex"
+  "mainNotes.bib" 1709788693 615 44737746ad24be3ba47cb0ac05bb3efc "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1709787622 "/home/daneel/gitrepos/Publications/Long_Range_LMG_Manuscript/main.tex" "main.pdf" "main" 1709787754
+["pdflatex"] 1709788691 "/home/daneel/gitrepos/Publications/Long_Range_LMG_Manuscript/main.tex" "main.pdf" "main" 1709788693
   "/etc/texmf/web2c/texmf.cnf" 1660658159 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/daneel/gitrepos/Publications/Long_Range_LMG_Manuscript/main.tex" 1709787640 60853 6190d995625ada5fd5a026d79543a19f ""
+  "/home/daneel/gitrepos/Publications/Long_Range_LMG_Manuscript/main.tex" 1709788691 60993 de4b27501c0cff90af83b26d703693dc ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx0900.tfm" 1136768653 3584 1a7de6c99457381c64abc1a7c545505f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
@@ -244,10 +244,10 @@
   "figure_7.jpeg" 1709782178 4892682 373206f1568ae0d6c1140abb96e3309c ""
   "figure_8.jpeg" 1709782178 1346270 e5c0dc88da6dd28e3d69142c9bca31d7 ""
   "figure_9.jpeg" 1709782178 535905 94bb32c3d8379243f13963b7d7dc2dd9 ""
-  "main.aux" 1709787623 28464 14321a2803cbd96d410003fd3a373193 "pdflatex"
-  "main.bbl" 1709787754 44457 60de4050ff79c0a89ebe3503c1bc906c "bibtex main"
-  "main.out" 1709787623 2116 ca802e448228b266651431ae4d1856ab "pdflatex"
-  "main.tex" 1709787640 60853 6190d995625ada5fd5a026d79543a19f ""
+  "main.aux" 1709788693 28464 51b3f0af05f46ed4110662d69d41daa0 "pdflatex"
+  "main.bbl" 1709788681 44457 60de4050ff79c0a89ebe3503c1bc906c "bibtex main"
+  "main.out" 1709788693 2116 ca802e448228b266651431ae4d1856ab "pdflatex"
+  "main.tex" 1709788691 60993 de4b27501c0cff90af83b26d703693dc ""
   (generated)
   "main.aux"
   "main.log"
