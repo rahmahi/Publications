@@ -120,7 +120,7 @@ A paradigmatic example is  the driven TFIM in one dimension~\cite{stinchcombe_is
 \begin{align}
 	\label{eq:tfim:hamilt}
 	\hat{H}(t) &= \hat{H}_0 + h_z(t) \; \hat{H}_1,\\
-	\hat{H}_0 &= -\frac{1}{2}\sum^N_{i=1} \hat{\sigma}^x_i \sigma^x_{i+1},\\
+	\hat{H}_0 &= -\frac{1}{2}\sum^N_{i=1} \hat{\sigma}^x_i \hat{\sigma}^x_{i+1},\\
 	\hat{H}_1 &= -\frac{1}{2}\sum_{i=1}^N \hat{\sigma}^z_{i}.
 \end{align}
 Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbor interactions between $N$ number of  spin-$1/2$ particles on a one-dimensional spin network. The transverse field is denoted by $\hat{H}_1$, and is being varied by a time-periodic and harmonic signal $h_z(t) = h_0 + h\cos{\omega t}$, yielding a time period $T=2\pi/\omega$ with amplitude $h$, drive frequency $\omega$, and d.c. field $h_0$. This Hamiltonian can be readily transformed into a spinless pseudo-fermionic system via the Jordan-Wigner transformation~\cite{mbeng_quantum_2020}. When written in momentum space spanned by spinors $\psi_k = (c_{-k}, c^\dagger_k)^T$ of fermions at momentum $k$ created (annihilated) by operators $c^\dagger_k$ ($c_k$), the effective Hamiltonian
@@ -151,7 +151,7 @@ where $J_n(\eta)$ are Bessel Functions, the transformed Hamiltonian simplifies t
 \begin{align}
 	\hat{H}^\prime(t) =& \sum_{\substack{(k,-k) \\ \mbox{pairs}}} \psi^\dagger_k
 	\bigg\{\ \tau_z f_k + 2\tau_x \Delta_k \sum_{n\geq 0} J_{2n}(\eta)\cos{\big(2n\omega t\big)} \nonumber\\
-	&\hskip 0.7cm- 2\tau^y\Delta_k \sum_{n\geq 0} J_{2n+1}(\eta)\sin{\big[\left(2n+1\right)\omega t\big]}   \bigg\}\psi_k.
+	&\hskip 0.7cm- 2\tau_y\Delta_k \sum_{n\geq 0} J_{2n+1}(\eta)\sin{\big[\left(2n+1\right)\omega t\big]}   \bigg\}\psi_k.
 \end{align}
 In the frequency regime  $\omega \gg f_k$, the long-time average $\hat{H}^{\mathrm{RWA}}\equiv\displaystyle\lim_{n\rightarrow\infty}\frac{1}{nT}\int^{nT}_0\mathrm{d}t\;\hat{H}^\prime(t)$ can serve as a suitable approximation for $H^\prime(t)$. This approximation, known as the \emph{rotated wave approximation} (RWA), eliminates the oscillating modes and results in an effective Hamiltonian that is independent of time,
 \begin{equation}
