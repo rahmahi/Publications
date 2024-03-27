@@ -66,7 +66,7 @@ In this article, we use the fact that emergent approximate symmetries can be eng
 
 In addition, we compare the degree of localization of the quasistationary Floquet modes in the LMG model with the TFIM, as well as other short-range models with lower symmetry. To do so, we look at the IPR of the Floquet modes in the representation given by the eigenstates of the symmetry-breaking field. The IPR, closely related to the concept of quantum purity, is defined as the formal sum of the square of the density in some physically meaningful space or representation. A high IPR of a stationary state denotes low participation in most of the representation, and a low IPR distributes participation uniformly across the representation, leading to ergodic dynamics\cite{vu_fermionic_2022}. Thus, IPR~\cite{Misguich2016} is a useful tool for witnessing MBL of a quantum system. For an MBL system, the IPR is unity, and it scales inversely with the {number of spins} when it is thermally distributed~\cite{calixto_inverse_2015}.
 
-In the first section of this paper, we present all essential theoretical frameworks. Our results for the LMG model are presented next in Sec. II. In that section, we have used the RWA ~\cite{fujii_introduction_2017}, where only the slowest rotating terms in the Fourier expansion of the Hamiltonian in a frame corotating with the symmetry breaking drive field are retained. In addition, we have the obtained {numerical simulations of} the Floquet modes and their IPR. They are used to probe the system dynamics in the high and low-frequency domains at both limits of $\beta$. In Sec. III we have used phase space plots to contrast the low and high frequency limits of the LMG model in the thermodynamic limit by mapping it to an equivalent classical Hamiltonian system. Finally, in Sec. IV, we have looked at numerical computations of the IPR of the Floquet modes for different values of the drive parameters, well beyond those that allow for the RWA. We achieved a smooth crossover from a thermal phase to a DMBL phase by increasing the frequency adiabatically while remaining at a freezing point. However, the DMBL phase is unstable at any finite driving frequency in the thermodynamic limit. This result is in contrast to the behavior of short-range models reported in the literature, in which a nonanalytic transition from a thermal phase to a strictly local phase takes place at finite driving parameters~\cite{asmi:floquet:thermalization}. Finally, we conclude with discussions and outlook.
+In the first section of this paper, we present all essential theoretical frameworks. Our results for the LMG model are presented next in Sec.\ref{sec:level3}. In that section, we have used the RWA ~\cite{fujii_introduction_2017}, where only the slowest rotating terms in the Fourier expansion of the Hamiltonian in a frame corotating with the symmetry breaking drive field are retained. In addition, we have the obtained {numerical simulations of} the Floquet modes and their IPR. They are used to probe the system dynamics in the high and low-frequency domains at both limits of $\beta$. In Sec. \ref{sec:level4}. we have used phase space plots to contrast the low and high frequency limits of the LMG model in the thermodynamic limit by mapping it to an equivalent classical Hamiltonian system. Finally, in Sec. \ref{sec:level5}., we have looked at numerical computations of the IPR of the Floquet modes for different values of the drive parameters, well beyond those that allow for the RWA. We achieved a smooth crossover from a thermal phase to a DMBL phase by increasing the frequency adiabatically while remaining at a freezing point. However, the DMBL phase is unstable at any finite driving frequency in the thermodynamic limit. This result is in contrast to the behavior of short-range models reported in the literature, in which a nonanalytic transition from a thermal phase to a strictly local phase takes place at finite driving parameters~\cite{asmi:floquet:thermalization}. Finally, we conclude with discussions and outlook.
 
 \section{\label{sec:background} Background}
 
@@ -108,11 +108,11 @@ where, in the last step, we utilized the fact that $A_{eq}$ is a smooth function
 We now generalize the ETH to nonintegrable many body systems that are closed, but not isolated. In that case, it is possible to impart a periodic time-dependence on the Hamiltonian while still ensuring unitary evolution. If the time period of the drive is $T$, and the corresponding drive frequency $\omega\equiv 2\pi/T$, then the Floquet theorem states that the solutions to the Schr\"{o}dinger equation can be written as $\ket{\psi(t)} = e^{-i\epsilon t/\hbar} \ket{\phi(t)}$, where the $\ket{\phi(t)}$ are $T$-periodic states called \textit{Floquet Modes}, the corresponding $\epsilon\in \mathbb{R}$, are called \textit{quasienergies}. Quasienergy values are not unique, and can be made to be bounded within a Floquet {Brillouin zone},\textit{viz.} a range $[-\omega/2, \omega/2]$\cite{holthaus_floquet_2016,vogl_effective_2020}. As a consequence, the unitary evolution operator can be spit into two parts as follows~\cite{Bukov2014}:
 \begin{equation}
 	\label{eq:propagator}
-	U(t) = e^{-i\hat{K}_F(t)}\;e^{-i\hat{H}_Ft}.
+	\hat{U}(t) = e^{-i\hat{K}_F(t)}\;e^{-i\hat{H}_Ft}.
 \end{equation}
-Here, the micromotion operator $\hat{K}_F(t)$ is time-periodic in $T$, with $\hat{K}_F(0)=0$, and the Floquet Hamiltonian  {$\hat{H}_F = e^{i\hat{K}_F(t)} \left[\hat{H}(t)-i\partial_t\right] e^{-i \hat{K}_F(t)}$}. Thus, if the system is strobed at integer multiples of $T$ only, then the unitary evolution matches that of a time independent Hamiltonian $H_F$. This can capture most of the exact dynamics at large frequencies. In such systems, the \textit{Floquet eigenstate thermalization hypothesis} (FETH)~\cite{Mori_2018, Mori_2023_1} posits that, subject to specific conditions and in the context of a system of significant size, the Floquet modes themselves exhibit thermal state-like behavior, \textit{i.e.}, $\hat{H}\approx \hat{H}_F$ in Eq.~(\ref{eq:aeq}). However, in contrast to the isolated systems, the loss of energy conservation allows for the mixing of all Floquet modes in the ensuing dynamics, not just those with quasienergies near $E$. Were this to actually happen in the ensuing dynamics,  it can be reconciled with ETH by ensuring that the right-hand sideS of Eq.~(\ref{eq:aeq}) is independent of $\beta$, \textit{i.e.}{, an infinite temperature ensemble}~\cite{alessio}. In other words, the nonequilibrium steady state of the system tends to an infinite temperature, maximum entropy density matrix.
+Here, the micromotion operator $\hat{K}_F(t)$ is time-periodic in $T$, with $\hat{K}_F(0)=0$, and the Floquet Hamiltonian  {$\hat{H}_F = e^{i\hat{K}_F(t)} \left[\hat{H}(t)-i\partial_t\right] e^{-i \hat{K}_F(t)}$}. Thus, if the system is strobed at integer multiples of $T$ only, then the unitary evolution matches that of a time independent Hamiltonian $\hat{H}_F$. This can capture most of the exact dynamics at large frequencies. In such systems, the \textit{Floquet eigenstate thermalization hypothesis} (FETH)~\cite{Mori_2018, Mori_2023_1} posits that, subject to specific conditions and in the context of a system of significant size, the Floquet modes themselves exhibit thermal state-like behavior, \textit{i.e.}, $\hat{H}\approx \hat{H}_F$ in Eq.~(\ref{eq:aeq}). However, in contrast to the isolated systems, the loss of energy conservation allows for the mixing of all Floquet modes in the ensuing dynamics, not just those with quasienergies near $E$. Were this to actually happen in the ensuing dynamics,  it can be reconciled with ETH by ensuring that the right-hand side of Eq.~(\ref{eq:aeq}) is independent of $\beta$, \textit{i.e.}{, an infinite temperature ensemble}~\cite{alessio}. In other words, the nonequilibrium steady state of the system tends to an infinite temperature, maximum entropy density matrix.
 
-However, drive parameters like amplitude, frequency, and duty-cycle strongly affect the structure of the Floquet modes $\ket{\phi}$. Thus, they can be engineered to prevent the kind of full mixing that would lead to infinite temperatures, manifesting suppression of thermalization dynamically. Thus, this type of \textit{Floquet Engineering} can produce \textit{Dynamical many-body localization} (DMBL), where the system fails to reach thermal equilibrium and remains localized, possibly  near its initial state, even at large times. This paradigm seems similar to standard many-body localization\cite{Sougata2023, sierant_2023}, where disorder, locality, and integrability can cause athermality via breakdown in the Srednicki ansatz. However, DMBL {stems from periodic driving}, and thus can occur regardless of disorder, locality of observables, or system integrability, all of which have been studied for MBL onset~\cite{Sougata2023,Fabien2018,garratt_resonant_2022}.
+However, drive parameters like amplitude, frequency, and duty-cycle strongly affect the structure of the Floquet modes $\ket{\phi}$. Thus, they can be engineered to prevent the kind of full mixing that would lead to infinite temperatures, manifesting suppression of thermalization dynamically. Thus, this type of \textit{Floquet Engineering} can produce \textit{dynamical many-body localization} (DMBL), where the system fails to reach thermal equilibrium and remains localized, possibly  near its initial state, even at large times. This paradigm seems similar to standard many-body localization\cite{Sougata2023, sierant_2023}, where disorder, locality, and integrability can cause athermality via breakdown in the Srednicki ansatz. However, DMBL {stems from periodic driving}, and thus can occur regardless of disorder, locality of observables, or system integrability, all of which have been studied for MBL onset~\cite{Sougata2023,Fabien2018,garratt_resonant_2022}.
 
 Integrable many-body systems do not exhibit thermalization. When subjected to time-periodic drives, Floquet engineering allows for the introduction of additional approximate conserved quantities that dynamically suppress the evolution of certain observables by hysteresis. This type of \textit{freezing} of response
 has been shown in integrable systems~\cite{roy_fate_2015}.
@@ -120,25 +120,25 @@ A paradigmatic example is  the driven TFIM in one dimension~\cite{stinchcombe_is
 \begin{align}
 	\label{eq:tfim:hamilt}
 	\hat{H}(t) &= \hat{H}_0 + h_z(t) \; \hat{H}_1,\\
-	\hat{H}_0 &= -\frac{1}{2}\sum^N_{i=1} \sigma^x_i \sigma^x_{i+1},\\
-	\hat{H}_1 &= -\frac{1}{2}\sum_{i=1}^N \sigma^z_{i}.
+	\hat{H}_0 &= -\frac{1}{2}\sum^N_{i=1} \hat{\sigma}^x_i \sigma^x_{i+1},\\
+	\hat{H}_1 &= -\frac{1}{2}\sum_{i=1}^N \hat{\sigma}^z_{i}.
 \end{align}
 Here, the undriven Hamiltonian $\hat{H}_0$ consists of nearest-neighbor interactions between $N$ number of  spin-$1/2$ particles on a one-dimensional spin network. The transverse field is denoted by $\hat{H}_1$, and is being varied by a time-periodic and harmonic signal $h_z(t) = h_0 + h\cos{\omega t}$, yielding a time period $T=2\pi/\omega$ with amplitude $h$, drive frequency $\omega$, and d.c. field $h_0$. This Hamiltonian can be readily transformed into a spinless pseudo-fermionic system via the Jordan-Wigner transformation~\cite{mbeng_quantum_2020}. When written in momentum space spanned by spinors $\psi_k = (c_{-k}, c^\dagger_k)^T$ of fermions at momentum $k$ created (annihilated) by operators $c^\dagger_k$ ($c_k$), the effective Hamiltonian
 \begin{equation}
 	\label{eq:TFIM:fermions}
-	H(t) = \sum_{(k,-k)-\mbox{pairs}} \psi^\dagger_k
+	\hat{H}(t) = \sum_{(k,-k)-\mbox{pairs}} \psi^\dagger_k
 	\Bigg[\ \bigg(f_k - h_z(t)\bigg)\tau_z +  \tau_x \Delta_k\Bigg]\psi_k ,
 \end{equation}
 where $f_k = \cos{k}$, $\Delta_k = \sin{k}$, $\tau_{xyz}$ are the three Pauli Matrices, and the sum is over distinct $(k, -k)$ \textit{Cooper Pairs}. We can transform our system to a frame that rotates with the time-varying symmetry-breaking field. This is achieved by the means of the unitary transformation operator~\cite{Engelhardt2013}
 \begin{align}
 	\label{eq:rotation:tfim}
-	U(t) &= \prod_k U_k(t)\\
-	U_k(t) &= \exp{\Big[\frac{i h}{\omega}\sin{\omega t}\Big]\tau_z}.\nonumber
+	\hat{U}(t) &= \prod_k \hat{U}_k(t)\\
+	\hat{U}_k(t) &= \exp{\Big[\frac{i h}{\omega}\sin{\omega t}\Big]\tau_z}.\nonumber
 \end{align} 
-The resulting transformed Hamiltonian $H^\prime(t) = U^\dagger(t)\;H(t)\;U(t)-iU^\dagger(t)\;\partial_tU(t)$ simplifies to
+The resulting transformed Hamiltonian $\hat{H}^\prime(t) = \hat{U}^\dagger(t)\;\hat{H}(t)\;\hat{U}(t)-i\hat{U}^\dagger(t)\;\partial_t\hat{U}(t)$ simplifies to
 \begin{multline}
 	\label{eq:rotated:tfim}
-	H^\prime(t) = \sum_{(k,-k)-\mbox{pairs}} \psi^\dagger_k
+	\hat{H}^\prime(t) = \sum_{(k,-k)-\mbox{pairs}} \psi^\dagger_k
 	\bigg[\ \tau_z f_k + \tau_x \cos{\big(\eta\sin{\omega t}\big)}  \\
 	+ \tau_y \sin{\big(\eta\sin{\omega t}\big)}\bigg]\psi_k,
 \end{multline}
@@ -149,19 +149,19 @@ where we defined $\eta=2h/\omega$. Using the Jacobi-Anger formula~\cite{arfkenma
 \end{equation} 
 where $J_n(\eta)$ are Bessel Functions, the transformed Hamiltonian simplifies to \\
 \begin{align}
-	H^\prime(t) =& \sum_{\substack{(k,-k) \\ \mbox{pairs}}} \psi^\dagger_k
+	\hat{H}^\prime(t) =& \sum_{\substack{(k,-k) \\ \mbox{pairs}}} \psi^\dagger_k
 	\bigg\{\ \tau_z f_k + 2\tau_x \Delta_k \sum_{n\geq 0} J_{2n}(\eta)\cos{\big(2n\omega t\big)} \nonumber\\
 	&\hskip 0.7cm- 2\tau^y\Delta_k \sum_{n\geq 0} J_{2n+1}(\eta)\sin{\big[\left(2n+1\right)\omega t\big]}   \bigg\}\psi_k.
 \end{align}
-In the frequency regime  $\omega \gg f_k$, the long-time average $H^{\mathrm{RWA}}\equiv\displaystyle\lim_{n\rightarrow\infty}\frac{1}{nT}\int^{nT}_0\mathrm{d}t\;H^\prime(t)$ can serve as a suitable approximation for $H^\prime(t)$. This approximation, known as the \emph{rotated wave approximation} (RWA), eliminates the oscillating modes and results in an effective Hamiltonian that is independent of time,
+In the frequency regime  $\omega \gg f_k$, the long-time average $\hat{H}^{\mathrm{RWA}}\equiv\displaystyle\lim_{n\rightarrow\infty}\frac{1}{nT}\int^{nT}_0\mathrm{d}t\;\hat{H}^\prime(t)$ can serve as a suitable approximation for $H^\prime(t)$. This approximation, known as the \emph{rotated wave approximation} (RWA), eliminates the oscillating modes and results in an effective Hamiltonian that is independent of time,
 \begin{equation}
 	\label{eq:hrwa:tfim}
-	H^{\mathrm{RWA}} = \sum_{(k,-k)-\mbox{pairs}} \psi^\dagger_k
+	\hat{H}^{\mathrm{RWA}} = \sum_{(k,-k)-\mbox{pairs}} \psi^\dagger_k
 	\bigg[\ f_k\tau_z + 2 J_0(\eta) \Delta_k\tau_x \bigg]\psi_k.
 \end{equation}
-It is evident that by manipulating the drive parameters, specifically the amplitude denoted by $h$ and the frequency denoted by $\omega$, in a manner such that $\eta$ is positioned on a root of $J_0(\eta)$, the fermion number can be conserved to a significant extent at this particular point. Consequently, it is feasible to exercise direct control over $H^{\mathrm{RWA}}$, resulting in a comprehensive suppression of the dynamics of otherwise responsive observables.
+It is evident that by manipulating the drive parameters, specifically the amplitude denoted by $h$ and the frequency denoted by $\omega$, in a manner such that $\eta$ is positioned on a root of $J_0(\eta)$, the fermion number can be conserved to a significant extent at this particular point. Consequently, it is feasible to exercise direct control over $\hat{H}^{\mathrm{RWA}}$, resulting in a comprehensive suppression of the dynamics of otherwise responsive observables.
 
-However, this phenomenon is not trivial to generalize, since the addition of integrability-breaking terms, such as longitudinal fields or additional spin-spin interactions, kills the suppression of fermion number dynamics.  For instance, if we apply an integrability-breaking longitudinal field $S_x = \frac12 \sum_i \hat{\sigma}^x_i$, then the Hamiltonian becomes 
+However, this phenomenon is not trivial to generalize, since the addition of integrability-breaking terms, such as longitudinal fields or additional spin-spin interactions, kills the suppression of fermion number dynamics.  For instance, if we apply an integrability-breaking longitudinal field $\hat{S}_x = \frac12 \sum_i \hat{\sigma}^x_i$, then the Hamiltonian becomes 
 \begin{align}
 	\hat{H}_{_\mathrm{TFIM+S_{x}}}(t) &=\frac12 \Bigg[\sum^N_{i=1}  \hat{\sigma}_{i}^{x} \hat{\sigma}_{i+1}^{x}+h \cos (\omega t) \sum^N_{i=1} \hat{\sigma}_{i}^{z}\nonumber\\
 	&\hskip4cm  +\sum^N_{i=1} \hat{\sigma}_{i}^{x}\Bigg].
@@ -169,36 +169,36 @@ However, this phenomenon is not trivial to generalize, since the addition of int
 \end{align}	
 Performing the unitary transformation and taking the RWA yields a new RWA Hamiltonian
 \begin{equation}
-	\hat{H}_{_\mathrm{TFIM+S_{x}}}^{\mathrm{RWA}}= H^{\mathrm{RWA}}+\frac12 \mathcal{J}_{0}\left(\frac{h}{\omega}\right) \sum_i\hat{\sigma}^x_i.
+	\hat{H}_{_\mathrm{TFIM+S_{x}}}^{\mathrm{RWA}}= \hat{H}^{\mathrm{RWA}}+\frac12 J_{0}\left(\frac{h}{\omega}\right) \sum_i\hat{\sigma}^x_i.
 	\label{eq:tfim_sx1}
 \end{equation}
-At the root of $\mathcal{J}_0\left(\frac{2h}{\omega}\right)$, the longitudinal field survives. However, note that the Bessel function has asymptotic form $\mathcal{J}_0\left(\frac{2h}{\omega}\right)\sim \left(\frac{2h}{\omega}\right)^{-1/2}\cos\left(\frac{2h}{\omega}-\frac{\pi}{4}\right)$, a good approximation for sufficiently  large $h/\omega$. In that limit, if $2h/\omega$ is chosen to lie at a root, then $\mathcal{J}_0\left(\frac{h}{\omega}\right) \sim h^{-1/2}$, which is small for sufficiently large $h$. Thus, the contribution of the longitudinal field is substantially reduced if $h\gg\omega\gg1$, $\mathcal{J}_0\left(\frac{2h}{\omega}\right)=0$, partially recovering dynamical freezing.
+At the root of $J_0\left(\frac{2h}{\omega}\right)$, the longitudinal field survives. However, note that the Bessel function has asymptotic form $J_0\left(\frac{2h}{\omega}\right)\sim \left(\frac{2h}{\omega}\right)^{-1/2}\cos\left(\frac{2h}{\omega}-\frac{\pi}{4}\right)$, a good approximation for sufficiently  large $h/\omega$. In that limit, if $2h/\omega$ is chosen to lie at a root, then $J_0\left(\frac{h}{\omega}\right) \sim h^{-1/2}$, which is small for sufficiently large $h$. Thus, the contribution of the longitudinal field is substantially reduced if $h\gg\omega\gg1$, $J_0\left(\frac{2h}{\omega}\right)=0$, partially recovering dynamical freezing.
 \begin{figure}[t!]
 	\centering
 	\includegraphics[width =8cm]{figure_1.jpeg}
-	\caption{Time-average of spin-correlation $\expval{S^z_0 S^z_3}$ for a driven 1D spin-$1/2$ chain with periodic boundary conditions. The chain consists of $N=8$ spins, and was driven harmonically at fixed frequency $\omega=90$.  The system was initially populated in a fully $z-$polarized spin state and evolved numerically till time $t=300T$, where $T=2\pi/\omega$.  The vertical dashed lines represent the roots of the Bessel function $\mathcal{J}_0$.  Panel (A) presents results for  the driven $\mathrm{TFIM+S_x}$ (the  Hamiltonian in Eq.~(\ref{eq:tfim_sx}), and panel (B) presents results for the driven  $\mathrm{XXZ}$ model (both with and without an $S_x-$field) from the Hamiltonian described in  Eq.~(\ref{eq:xxzsx}).
-	For the former, correlations are suppressed at the lower roots of $\mathcal{J}_0\left(2h/\omega\right)$, but approach unity at successively higher roots. For the latter, the correlations remain constant for all values of $h/\omega$. However, the introduction of an additional $S_x-$ field results in freezing only at the roots of $\mathcal{J}_0\left(h/\omega\right)$.}
+	\caption{Time-average of spin-correlation $\expval{S^z_0 S^z_3}$ for a driven 1D spin-$1/2$ chain with periodic boundary conditions. The chain consists of $N=8$ spins, and was driven harmonically at fixed frequency $\omega=90$.  The system was initially populated in a fully $z-$polarized spin state and evolved numerically till time $t=300T$, where $T=2\pi/\omega$.  The vertical dashed lines represent the roots of the Bessel function $J_0$.  Panel (A) presents results for  the driven $\mathrm{TFIM+S_x}$ (the  Hamiltonian in Eq.~(\ref{eq:tfim_sx}), and panel (B) presents results for the driven  $\mathrm{XXZ}$ model (both with and without an $S_x-$field) from the Hamiltonian described in  Eq.~(\ref{eq:xxzsx}).
+	For the former, correlations are suppressed at the lower roots of $J_0\left(2h/\omega\right)$, but approach unity at successively higher roots. For the latter, the correlations remain constant for all values of $h/\omega$. However, the introduction of an additional $S_x-$ field results in freezing only at the roots of $J_0\left(h/\omega\right)$.}
 	\label{fig:ipr:tfimsx}
 \end{figure}
-This analysis can be supported by dynamical simulations for small-size systems. We have utilized QuTiP, the quantum toolbox in Python~\cite{qutip}, to numerically investigate the spin correlations $\expval{S^z_0 S^z_3}$ of a one-dimensional spin chain comprising of $N=8$ spins. The results are plotted against $2h/\omega$ for fixed $\omega$ in panel-A of  Fig.~\ref{fig:ipr:tfimsx}(A). At the lower roots of $\mathcal{J}_0\left(2h/\omega\right)$,  the correlations are suppressed. However,  they  gradually increase towards unity when the drive parameters are adjusted to lie at progressively higher roots.
+This analysis can be supported by dynamical simulations for small-size systems. We have utilized QuTiP, the quantum toolbox in Python~\cite{qutip}, to numerically investigate the spin correlations $\expval{S^z_0 S^z_3}$ of a one-dimensional spin chain comprising of $N=8$ spins. The results are plotted against $2h/\omega$ for fixed $\omega$ in panel-A of  Fig.~\ref{fig:ipr:tfimsx}(A). At the lower roots of $J_0\left(2h/\omega\right)$,  the correlations are suppressed. However,  they  gradually increase towards unity when the drive parameters are adjusted to lie at progressively higher roots.
 
 Interestingly, if we apply this approach to investigate the periodically driven $XXZ$ model, we notice that the system remains frozen for all drive parameters. The $XXZ$ Hamiltonian, including a longitudinal field, is given by
 \begin{multline}
-	H_{_{XXZ+S_{X}}} = \frac12 \sum_{i=1} \bigg[ J \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} +J  \hat{\sigma}^y_i \hat{\sigma}^y_{i+1}\\ + \Delta  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1} + h\cos(\omega t)  \hat{\sigma}^z_i + \hat{\sigma}^x_i\bigg],
+	\hat{H}_{_{XXZ+S_{x}}} = \frac12 \sum_{i=1} \bigg[ J \hat{\sigma}^x_i \hat{\sigma}^x_{i+1} +J  \hat{\sigma}^y_i \hat{\sigma}^y_{i+1}\\ + \Delta  \hat{\sigma}^z_i \hat{\sigma}^z_{i+1} + h\cos(\omega t)  \hat{\sigma}^z_i + \hat{\sigma}^x_i\bigg],
 	\label{eq:xxzsx}
 \end{multline}
 Transforming to the moving frame  yields
 \begin{equation}
-H_{_{XXZ+S_{x}}}^{mov} =H_{_{XXZ}}^{mov} +  \frac12 \sum_i\Big[ \hat{\sigma}^x_i \cos(\zeta) + \hat{\sigma}^y_i \sin(\zeta)\Big].
+\hat{H}_{_{XXZ+S_{x}}}^{mov} =\hat{H}_{_{XXZ}}^{mov} +  \frac12 \sum_i\Big[ \hat{\sigma}^x_i \cos(\zeta) + \hat{\sigma}^y_i \sin(\zeta)\Big].
 \label{eq:xxzsxmov}
 \end{equation}
 Here, $\zeta \equiv \frac{h}{\omega}\sin(\omega t)$, and the moving frame $XXZ$ Hamiltonian is
 \begin{equation}
-H_{_{XXZ}}^{mov} =  \sum_i\Bigg[J\left(\hat{\sigma}^+_i \hat{\sigma}^-_{i+1} + \hat{\sigma}^-_i \hat{\sigma}^+_{i+1}\right) + \frac{\Delta}{2} \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}\Bigg],
+\hat{H}_{_{XXZ}}^{mov} =  \sum_i\Bigg[J\left(\hat{\sigma}^+_i \hat{\sigma}^-_{i+1} + \hat{\sigma}^-_i \hat{\sigma}^+_{i+1}\right) + \frac{\Delta}{2} \hat{\sigma}^z_i \hat{\sigma}^z_{i+1}\Bigg],
 \end{equation}
 where $\hat{\sigma}^\pm_i$ are spin ladder operators. Note that the moving frame Hamiltonian has no $\zeta-$dependence. If we populate the system initially in a  fully $z-$polarized state, then $H_{_{XXZ}}^{mov}$ does not contribute to the dynamics at all. The remaining longitudinal field  will simply add single particle dynamics to the state. If we now apply RWA in Eq.~(\ref{eq:xxzsxmov}) by smoothing out all harmonic oscillations from the Jacobi -Anger expansion, we get
 \begin{equation}
-H_{_{XXZ+S_{X}}}^{_{RWA}} = H_{_{XXZ}}^{mov} +  \frac12 \mathcal{J}_0 \left(\frac{h}{\omega}\right)\sum_i \hat{\sigma}^x_i,
+\hat{H}_{_{XXZ+S_{x}}}^{_{RWA}} = \hat{H}_{_{XXZ}}^{mov} +  \frac12 J_0 \left(\frac{h}{\omega}\right)\sum_i \hat{\sigma}^x_i,
 \label{eq:xxz_sx_rwa}
 \end{equation}
 Thus, freezing can occur in the $XXZ$ model in the absence of a longitudinal field regardless of the drive parameters. However when the $S_x-$ field is introduced, freezing can occur only when the drive parameters are controlled in such manner that ($h/\omega$) lies on any root of the Bessel function. We have supported this conclusion with QuTiP simulations~\cite{qutip} similar to those described in the previous paragraph. The resultant spin correlations are plotted against $h/\omega$ for fixed $\omega$ in Fig.~\ref{fig:ipr:tfimsx}(B). 
@@ -246,8 +246,8 @@ The periodically driven {Lipkin Meshkov Glick (LMG)} model~\cite{lmg1965_1,defen
 \end{equation}
 Here, the undriven part $\hat{H}_0$ and the driven part $\hat{H}_1$ are, respectively, 
 	\begin{eqnarray}
-		\hat{H}_0 &=& -\frac{2}{N-1} \sum_{i<j}S^z_i S^z_j,\nonumber \\
-		\hat{H}_1 &=& -2 \sum_i S^x_i.
+		\hat{H}_0 &=& -\frac{2}{N-1} \sum_{i<j}\hat{S}^z_i \hat{S}^z_j,\nonumber \\
+		\hat{H}_1 &=& -2 \sum_i \hat{S}^x_i.
 		\label{eq:h0h1}
 	\end{eqnarray}
 	The Kac-norm of $2/(N-1)$ arises from the choice to maintain the extensivity of the interaction energy. The Hamiltonian in Eq.~(\ref{eq:driven:ham}) commutes
@@ -272,9 +272,9 @@ This is analogous to the rotation performed for the TFIM in Eqs.~(\ref{eq:rotati
 to simplify the transformed Hamiltonian $\tilde{H}(t) = \hat{U}^\dagger(t)\;\hat{H}(t)\;\hat{U}(t) - \hat{U}^\dagger(t)\;\partial_t\hat{U}(t)$, yielding
 \begin{align}
 	\label{eq:lmg_rotated}
-	\tilde{H}(t)& = -\frac{1}{N-1}\Big[\big(S^z\big)^2 \big(1+\cos{4\tau}\big)+ \big(S^y\big)^2 \big(1-\cos{4\tau}\big)\nonumber \\  
-	&\hskip 2.5cm + \pb{S^y}{S^z}
-	\sin{4\tau}\Big] - 2 h_0 S^x.
+	\tilde{H}(t)& = -\frac{1}{N-1}\Big[\big(\hat{S}^z\big)^2 \big(1+\cos{4\tau}\big)+ \big(\hat{S}^y\big)^2 \big(1-\cos{4\tau}\big)\nonumber \\  
+	&\hskip 2.5cm + \pb{\hat{S}^y}{\hat{S}^z}
+	\sin{4\tau}\Big] - 2 h_0 \hat{S}^x.
 \end{align}
 Next, we define $\eta\equiv 4h/\omega$ and use the Jacobi-Anger formula in Eq.~(\ref{eq:jacobi})
 to expand $\tilde{H}(t)$. This yields
@@ -329,7 +329,7 @@ Figure~\ref{fig:sx_conserve} shows plots of the long-time average (from $t=0$-$2
 \begin{figure}[t!]
 	\centering
 	\includegraphics[width=9.3cm]{figure_6.jpeg}
-	\caption{Temporal average of $\expval{\hat{S^x}}$ ($y$-coordinate) for different $\eta$'s ($x$-coordinate) is plotted for $\sim 200T$ at higher $\omega$ for different N=10, 20, 50. $\overline{\langle S^x \rangle}$ is found to be unity at roots of $J_0(\eta)$. At points away from these points, $\expval{\hat{S^x}}$ falls below unity. The corresponding standard deviation $\expval{\hat{S^x}}_{std}$ supports the variation of $\overline{\langle S^x \rangle}$ (inset figure). $\expval{\hat{S^x}}_{std}$ is $\sim 0$ describing a full freezing of the system at roots of $\mathcal{J}_0(\eta)$ (red vertical solid lines).}
+	\caption{Temporal average of $\expval{\hat{S^x}}$ ($y$-coordinate) for different $\eta$'s ($x$-coordinate) is plotted for $\sim 200T$ at higher $\omega$ for different N=10, 20, 50. $\overline{\langle S^x \rangle}$ is found to be unity at roots of $J_0(\eta)$. At points away from these points, $\expval{\hat{S^x}}$ falls below unity. The corresponding standard deviation $\expval{\hat{S^x}}_{std}$ supports the variation of $\overline{\langle S^x \rangle}$ (inset figure). $\expval{\hat{S^x}}_{std}$ is $\sim 0$ describing a full freezing of the system at roots of $J_0(\eta)$ (red vertical solid lines).}
 	\label{fig:sx_conserve}
 \end{figure}
 Small deviations do occur due to the role of  higher order terms in the rotated Hamiltonian in Eq.~(\ref{eq:lmg_rotated}). This can be demonstrated quantitatively by comparing the IPR obtained from the exact dynamics simulation with that obtained from the dynamics of $\tilde{H}(t)$ in Eq.~(\ref{eq:lmg_rotated}) after truncating the series at orders $k\geq 1$. This comparison can be seen in Fig.~\ref{fig:lmg_ipr_rwa11}.
